@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1 class="title">
+  Welcome To My Banking Project!
+</h1>
+<div class="box">
+  <h2 class="subtitle">Project Description</h2>
+  <p>
+    This project uses Flask, Flask-Login, and Flask-SQLAlchemy to create this website.<br>
+    The project is a fake banking website that emulates the 
+    major functionalities of most banking websites.<br>
+    This includes functionality like:
+    <hr>
+    
+    <ul>
+      <li>Securely accessing your bank user account</li>
+
+      <li>Withdrawals and deposits from bank accounts</li>
+
+      <li>Information about bank accounts</li>
+    </ul>
+
+    <hr>
+    There were several simplifications necessary to be able to build this project:
+    <hr>
+    <ul>
+      <li>Withdrawals, deposits, and balances are in no way backed up with 
+        any kind of currency and in no way represent real money.
+      </li>
+  
+      <li>Account creation and closure can be done automatically online,
+        normally this would require a phone call to the bank but this 
+        is the best solution.
+      </li>
+  
+      <li>
+        Because the goal is to simply emulate the functionality necessary for a banking website,<br>
+        users can start an account with any amount of money in an account and deposit or withdraw as<br>
+        much as they would like.
+      </li>
+  
+    </ul>
+  </p>
+</div>
+
+<div class="box">
+  <h2 class="subtitle">Project Goals</h2>
+</div>
+
+<hr>
+<p>
+
+</p>
+{% endblock %}

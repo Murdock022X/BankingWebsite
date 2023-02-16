@@ -1,0 +1,51 @@
+{% extends "form_base.html" %}
+
+{% block content %}
+<script src=
+'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js'>
+    </script>
+
+<div class="column is-4 is-offset-4">
+    <h2 class="title">Create Account</h2>
+    <div class="box has-background-success has-text-black">
+        <h3>Savings Account</h3>
+        <div class="box has-text-black">
+            <h4>Interest Rate: {{ rates.savings_ir }}</h4>
+            <h4>Minimum Balance: {{ rates.savings_min }}</h4>
+        </div>
+        
+        <h3>Checkings Account</h3>
+        <div class="box has-text-black">
+            <h4>Interest Rate: {{ rates.checkings_ir }}</h4>
+            <h4>Minimum Balance: {{ rates.checkings_min }}</h4>
+        </div>
+    </div>
+
+    <div class="box has-background-success">
+        <form method="POST">
+            <div class="select is-success">
+                <select name="acc_type" value="{{ request.form['acc_type'] }}">
+                    <option value="0">Savings</option>
+                    <option value="1">Checkings</option>
+                </select>
+            </div>
+
+            <hr class="is-success">
+
+            <div class="field is-success">
+                <div class="control">
+                    <input class="input is-large has-text-black" type="text" name="bal" placeholder="Starting Balance" value="{{ request.form['bal'] }}">
+                </div>
+            </div>
+
+            <div class="field is-success">
+                <div class="control">
+                    <input class="input is-large has-text-black" type="password" name="password" placeholder="Your Password" value="{{ request.form['password'] }}">
+                </div>
+            </div>
+
+            <button type="submit" class="button is-block is-info is-large is-fullwidth">Create Account</button>
+        </form>
+    </div>
+</div>
+{% endblock %}

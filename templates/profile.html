@@ -1,0 +1,21 @@
+{% extends "form_base.html" %}
+
+{% block content %}
+
+<h3 class="has-text-black">Welcome {{ user.name }}!</h3>
+
+<h4 class="has-text-black">User Info</h4>
+<hr>
+<div class="box has-text-left has-background-success has-text-black">
+    <p>Username: {{ user.username }}</p>
+    <p>Associated Accounts:</p>
+
+    <ul>
+    {% for acc_no in accounts %}
+      <li>{{ acc_no }}</li>
+    {% endfor %}
+    </ul>
+
+</div>
+
+{% endblock %}

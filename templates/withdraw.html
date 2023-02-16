@@ -1,0 +1,18 @@
+{% extends "form_base.html" %}
+
+{% block content %}
+
+<div class="box has-background-success">
+    <form method="POST">
+
+        <div class="field">
+            <div class="control">
+                <input class="input is-large" type="text" name="bal" placeholder="Balance To Withdraw" value="{{ request.form['bal'] }}">
+            </div>
+        </div>
+
+        <button type="submit" class="button is-block is-info is-large is-fullwidth">Withdraw</button>
+    </form>
+</div>
+
+{% endblock %}

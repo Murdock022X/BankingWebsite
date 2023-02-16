@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Banking Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css" />
+</head>
+
+<body>
+    <nav class="navbar is-success is-fixed-top">
+        <div class="navbar-brand is-success">
+            <a class="navbar-item has-text-black is-success" href="{{ url_for('main.home') }}">
+                <strong>Home</strong>
+            </a>
+        
+            <a role="button" id="burger" class="navbar-burger" aria-label="menu" aria-expanded="false">
+                <span class="is-black has-background-black" aria-hidden="true"></span>
+                <span class="is-black has-background-black" aria-hidden="true"></span>
+                <span class="is-black has-background-black" aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div class="navbar-menu has-background-success" id="nav-links">
+            <div class="navbar-start">
+                <a href="{{ url_for('main.profile') }}" class="navbar-item has-text-black">Profile</a>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link has-text-black is-arrowless">Accounts</a>
+                    <div class="navbar-dropdown has-text-black">
+                        <a href="{{ url_for('main.view_accounts') }}" class="navbar-item has-text-black">View Accounts</a>
+                        <a href="{{ url_for('main.create_account') }}" class="navbar-item has-text-black">Create Account</a>
+                        <a href="{{ url_for('main.summary') }}" class="navbar-item has-text-black">Summary</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="navbar-end is-success">
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a href="{{ url_for('auth.login') }}" class="button is-white">Login</a>
+                        <a href="{{ url_for('auth.signup') }}" class="button is-white">Sign Up</a>
+                        <a href="{{ url_for('auth.logout') }}" class="button is-white">Logout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <hr>
+
+    {% with messages = get_flashed_messages() %}
+
+    {% if messages %}
+
+    <div class="notification is-danger has-text-centered">
+        {{ messages[0] }}
+    </div>
+
+    {% endif %}
+
+    {% endwith %}
+
+    <div class="hero-body">
+        <div class="container has-text-centered">
+            {% block content %}
+            {% endblock %}
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='nav.js') }}"></script>
+</body>
+
+</html>

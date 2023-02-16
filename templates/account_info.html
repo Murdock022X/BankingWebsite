@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>Account Number {{ acc['acc_no'] }}</h1>
+<div class="box has-background-success">
+    <h2>Balance: {{ acc['bal'] }}</h2>
+    <h2>Minimum Balance Allowed: {{ acc['min_bal'] }}</h2>
+    <h2>Interest Rate: {{ acc['ir'] }}</h2>
+    <hr>
+    <div class="buttons">
+      <a href="{{ url_for('main.withdraw', acc_no=acc['acc_int']) }}" class="button is-white">Withdraw</a>
+      <a href="{{ url_for('main.deposit', acc_no=acc['acc_int']) }}" class="button is-white">Deposit</a>
+    </div>
+</div>
+
+{% endblock %}
