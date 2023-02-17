@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{% for message in messages %}
+
+<div class="box has-background-success">
+    <p>{{ message }}</p>
+</div>
+
+{% endfor %}
+
+{% endblock %}

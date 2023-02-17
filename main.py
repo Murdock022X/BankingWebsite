@@ -6,9 +6,9 @@ from format import format_acc_no, format_money, format_acc, \
     format_rates, deep_format_acc
 from werkzeug.security import check_password_hash
 from app import db
-from accounts import make_withdrawal, make_deposit, get_account
-
-import accounts
+from accounts import make_withdrawal, make_deposit, get_account, delete_acc, \
+    checkings_savings_retrieval, get_accounts_user, transfer_all
+from utils import get_messages
 
 main = Blueprint('main', __name__)
 
@@ -29,7 +29,7 @@ def profile():
 @login_required
 def view_accounts():
     savings_accounts, checkings_accounts = \
-                    accounts.checkings_savings_retrieval(current_user.username)
+                    checkings_savings_retrieval(current_user.username)
 
     return render_template('accounts.html', savings_accounts=savings_accounts,
                            checkings_accounts=checkings_accounts)
@@ -84,7 +84,7 @@ def create_account():
 @main.route('/summary/')
 @login_required
 def summary():
-    accs = accounts.get_accounts_user(username=current_user.username)
+    accs = get_accounts_user(username=current_user.username)
     user_accounts = []
     for acc in accs:
         user_accounts.append(deep_format_acc(acc))
@@ -143,12 +143,16 @@ def delete_account(acc_no):
             hash = current_user.password
 
             if check_password_hash(hash, password):
-                delete_status = delete_account(acc_no)
+                transfer_status = transfer_all(acc_no, transfer_no)
 
-                if delete_status:
-                    return redirect(url_for('main.view_accounts'))
+                if not transfer_status:
+                    flash('Invalid Account Transfer Number')
+                
                 else:
-                    flash('Invalid Account To Delete')
+                    delete_acc(acc_no)
+
+                    return redirect(url_for('main.view_accounts'))
+
 
             else:
                 flash('Incorrect Password')
@@ -160,3 +164,9 @@ def delete_account(acc_no):
 def account_info(acc_no):
     acc = deep_format_acc(get_account(acc_no))
     return render_template('account_info.html', acc=acc)
+
+@main.route('/notifications/')
+@login_required
+def notification_center():
+    messages = get_messages(current_user.username)
+    return render_template('notification_center.html', messages=messages)

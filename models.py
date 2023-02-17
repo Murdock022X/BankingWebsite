@@ -49,3 +49,23 @@ class Bank_Settings(db.Model):
     # Store checkings minimum balance
     checkings_min = db.Column(db.Float)
 
+class Messages(db.Model):
+    # Id for message
+    id = db.Column(db.Integer, primary_key=True)
+
+    # Associated username
+    username = db.Column(db.String(100))
+
+    # Content with message
+    content = db.Column(db.String(5000))
+
+class Transactions(db.Model):
+    transaction_no = db.Column(db.Integer, primary_key=True)
+
+    username = db.Column(db.String(100))
+
+    frm_acc = db.Column(db.Integer)
+
+    to_acc = db.Column(db.Integer)
+
+    amt = db.Column(db.Float)

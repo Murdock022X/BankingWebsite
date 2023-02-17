@@ -2,7 +2,7 @@
 
 {% block content %}
 
-<h2 class="has-text-black">Savings Accounts</h2>
+<h2 class="title has-text-black">Savings Accounts</h2>
 {% for acc in savings_accounts %}
   <div class="box has-background-success has-text-black">
     <h4>Account Number: {{ acc['acc_no'] }}</h4>
@@ -18,7 +18,7 @@
   </div>
 {% endfor %}
 
-<h2 class="has-text-black">Checkings Accounts</h2>
+<h2 class="title has-text-black">Checkings Accounts</h2>
 {% for acc in checkings_accounts %}
   <div class="box has-background-success has-text-black">
     <h4>Account Number: {{ acc['acc_no'] }}</h4>
