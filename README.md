@@ -14,9 +14,11 @@ reproduce was:
 - View various breakdowns of your transactions
 
 ## Project Description
-This project uses Flask, Flask-Login, and Flask-SQLAlchemy to create this website.
-There were several simplifications necessary to be able to build this project:
-- Withdrawals, deposits, and balances are in no way backed up with any kind of currency and in no way represent real money.
+This project uses Flask, Flask-Login, and Flask-SQLAlchemy to create this 
+website. There were several simplifications necessary to be able to build 
+this project:
+- Withdrawals, deposits, and balances are in no way backed up with any kind of 
+currency and in no way represent real money.
 - Account creation and closure can be done automatically online, normally this 
 would require a phone call to the bank but this is the best solution.
 - Because the goal is to simply emulate the functionality necessary for a 

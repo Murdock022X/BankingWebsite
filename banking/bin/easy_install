@@ -1,4 +1,4 @@
-#!/home/orthanc/v2/internet_banking/banking/bin/python3
+#!/home/orthanc/banking_website/v2/internet_banking/banking/bin/python3
 # -*- coding: utf-8 -*-
 import re
 import sys

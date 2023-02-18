@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/home/orthanc/v2/internet_banking/banking"
+VIRTUAL_ENV="/home/orthanc/banking_website/v2/internet_banking/banking"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

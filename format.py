@@ -40,3 +40,6 @@ def deep_format_acc(acc):
     res['acc_int'] = acc.acc_no
 
     return res
+
+def format_statement_filename(statement):
+    return 'STATEMENT_' + str(statement.date) + '.pdf'

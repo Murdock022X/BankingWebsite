@@ -1,14 +1,14 @@
 from flask import Blueprint, render_template, redirect, \
-    request, flash, url_for
+    request, flash, url_for, Response
 from flask_login import login_required, current_user, LoginManager
-from models import User, Account, Bank_Settings
+from models import User, Account, Bank_Settings, Messages, Alerts
 from format import format_acc_no, format_money, format_acc, \
-    format_rates, deep_format_acc
+    format_rates, deep_format_acc, format_statement_filename
 from werkzeug.security import check_password_hash
 from app import db
 from accounts import make_withdrawal, make_deposit, get_account, delete_acc, \
     checkings_savings_retrieval, get_accounts_user, transfer_all
-from utils import get_messages
+from utils import get_messages, get_alerts, MyFPDF, get_statements, get_statement
 
 main = Blueprint('main', __name__)
 
@@ -165,8 +165,65 @@ def account_info(acc_no):
     acc = deep_format_acc(get_account(acc_no))
     return render_template('account_info.html', acc=acc)
 
-@main.route('/notifications/')
+@main.route('/alerts/')
 @login_required
-def notification_center():
+def alerts():
+    alerts = get_alerts()
+    return render_template('alerts.html', alerts=alerts)
+
+@main.route('/messages/')
+@login_required
+def messages():
     messages = get_messages(current_user.username)
-    return render_template('notification_center.html', messages=messages)
+
+    res = [message for message in messages]
+
+    return render_template('messages.html', messages=res)\
+
+@main.route('/eStatements/')
+@login_required
+def view_eStatements():
+    statements = get_statements(current_user.username)
+    return render_template('eStatements.html', statements=statements)
+
+@main.route('/<int:id>/eStatements/')
+@login_required
+def generate_eStatement(id):
+    
+    statement = get_statement(id)
+
+    pdf = MyFPDF()
+
+    pdf.add_page()
+
+    data = render_template('eStatement_form.html', statement=statement)
+
+    pdf.write_html(data)
+
+    headers = {}
+
+    headers['Content-Disposition'] = 'attachment;filename=' + format_statement_filename(statement)
+
+    return Response(pdf.output(dest='S').encode('latin-1'), headers=headers)
+
+@main.route('/<int:id>/delete_alert/')
+@login_required
+def delete_alert(id):
+    alert = Alerts.query.get(id)
+
+    db.session.delete(alert)
+
+    db.session.commit()
+
+    return redirect(url_for('main.alerts'))
+
+@main.route('/<int:id>/delete_messages/')
+@login_required
+def delete_message(id):
+    message = Messages.query.get(id)
+
+    db.session.delete(message)
+
+    db.session.commit()
+
+    return redirect(url_for('main.messages'))

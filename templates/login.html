@@ -1,9 +1,8 @@
 {% extends "form_base.html" %}
 
 {% block content %}
-<script src=
-'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js'>
-    </script>
+
+<script src="https://kit.fontawesome.com/211e3cc0ac.js" crossorigin="anonymous"></script>
 
 <div class="column is-4 is-offset-4">
     <h3 class="title">Login</h3>
@@ -14,7 +13,7 @@
                 <div class="control has-icons-left">
                     <input class="input is-large" type="text" name="username" placeholder="Your Username" value="{{ request.form['username'] }}">
                     <span class="icon is-left">
-                        <i class="fas fa-user"></i>
+                        <i class="fa-user"></i>
                     </span>
                 </div>
             </div>

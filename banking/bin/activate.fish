@@ -29,7 +29,7 @@ end
 # unset irrelevant variables
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/home/orthanc/v2/internet_banking/banking"
+set -gx VIRTUAL_ENV "/home/orthanc/banking_website/v2/internet_banking/banking"
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH

@@ -1,9 +1,9 @@
 from flask import Blueprint, render_template, redirect, request, url_for, flash
-import flask
-from flask_login import LoginManager, login_user, logout_user, current_user, login_required
+from flask_login import LoginManager, login_user, logout_user, current_user
 from werkzeug.security import generate_password_hash, check_password_hash
 from models import User
 from app import db
+from admin import Admin_Tools
 
 auth = Blueprint('auth', __name__)
 
@@ -58,6 +58,10 @@ def signup():
             # Add user to database and commit
             db.session.add(new_user)
             db.session.commit()
+
+            flash('Successfully Created User Account')
+
+            Admin_Tools.send_message(username=username, content='Welcome To Your New Account!')
 
             # Redirect to login
             return redirect(url_for('auth.login'))

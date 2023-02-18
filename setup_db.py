@@ -14,7 +14,7 @@ def main():
         db.session.add(models.Bank_Settings(savings_ir=savings_ir,
         savings_min=savings_min, checkings_ir=checkings_ir, 
         checkings_min=checkings_min))
-        
+
         db.session.commit()
 
     return 1

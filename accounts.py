@@ -78,3 +78,24 @@ def transfer_all(acc_no, transfer_no):
 
     return True
 
+def transfer(acc_no, transfer_no, amt):
+    acc = Account.query.get(acc_no)
+
+    if not acc:
+        return False
+
+    transfer_acc = Account.query.get(transfer_no)
+
+    if not transfer_acc:
+        return False
+
+    if acc.bal - amt < acc.min_bal:
+        return False
+
+    acc.bal -= amt
+
+    transfer_acc.bal += amt
+
+    db.session.commit()
+
+    return True

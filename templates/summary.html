@@ -1,31 +1,30 @@
-{% extends "base.html" %}
+{% extends "form_base.html" %}
 
 {% block content %}
-
+<h1 class="title">Summary Of Accounts</h1>
 <div class="box has-background-success">
-<table class="table is-fullwidth is-striped is-hoverable is-bordered">
-    <thead>
-        <tr>
-            <th><abbr title="Account Number">Account Number</abbr></th>
-            <th><abbr title="Account Type">Account Type</abbr></th>
-            <th><abbr title="Balance">Balance</abbr></th>
-            <th><abbr title="Interest Rate">Interest Rate</abbr></th>
-            <th><abbr title="Minimum Balance">Minimum Balance</abbr></th>
-        </tr>
-    </thead>
-    <tbody>
-        {% for acc in accounts %}
+    <table class="table is-fullwidth is-striped is-hoverable is-bordered has-text-black">
+        <thead>
             <tr>
-                <td><a href="{{ url_for('main.account_info', acc_no=acc['acc_int']) }}">{{ acc['acc_no'] }}</a></td>
-                <td>{{ acc['acc_type'] }}</td>
-                <td>{{ acc['bal'] }}</td>
-                <td>{{ acc['ir'] }}</td>
-                <td>{{ acc['min_bal'] }}</td>
+                <th><abbr title="Account Number">Account Number</abbr></th>
+                <th><abbr title="Account Type">Account Type</abbr></th>
+                <th><abbr title="Balance">Balance</abbr></th>
+                <th><abbr title="Interest Rate">Interest Rate</abbr></th>
+                <th><abbr title="Minimum Balance">Minimum Balance</abbr></th>
             </tr>
-        {% endfor %}
-    </tbody>
-</table>
-
+        </thead>
+        <tbody>
+            {% for acc in accounts %}
+                <tr>
+                    <td><a href="{{ url_for('main.account_info', acc_no=acc['acc_int']) }}">{{ acc['acc_no'] }}</a></td>
+                    <td>{{ acc['acc_type'] }}</td>
+                    <td>{{ acc['bal'] }}</td>
+                    <td>{{ acc['ir'] }}</td>
+                    <td>{{ acc['min_bal'] }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
 </div>
 
 {% endblock %}
