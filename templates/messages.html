@@ -26,15 +26,15 @@
 {% for message in messages %}
 
 <div class="box has-background-success has-text-black">
-    <p>{{ message.date }}</p>
+    <p>{{ message['date'] }}</p>
 
     <hr>
 
-    <p>{{ message.content }}</p>
+    <p>{{ message['content'] }}</p>
 
     <hr>
 
-    <a href="{{ url_for('main.delete_message', id=message.id) }}">
+    <a href="{{ url_for('main.delete_message', id=message['id']) }}">
         <span class="icon is-left">
             <i class="fas fa-trash fa-sharp"></i>
         </span>

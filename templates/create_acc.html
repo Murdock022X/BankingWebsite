@@ -23,8 +23,9 @@
 
     <div class="box has-background-success">
         <form method="POST">
+            <label class="label">Account Type</label>
             <div class="select is-success">
-                <select name="acc_type" value="{{ request.form['acc_type'] }}">
+                <select name="acc_type" value="{{ request.form['acc_type'] }}" autocomplete="">
                     <option value="0">Savings</option>
                     <option value="1">Checkings</option>
                 </select>
@@ -32,15 +33,17 @@
 
             <hr class="is-success">
 
+            <label class="label">Starting Balance</label>
             <div class="field is-success">
                 <div class="control">
-                    <input class="input is-large has-text-black" type="text" name="bal" placeholder="Starting Balance" value="{{ request.form['bal'] }}">
+                    <input class="input is-large has-text-black" type="text" name="bal" placeholder="100.00">
                 </div>
             </div>
 
+            <label class="label">Password</label>
             <div class="field is-success">
                 <div class="control">
-                    <input class="input is-large has-text-black" type="password" name="password" placeholder="Your Password" value="{{ request.form['password'] }}">
+                    <input class="input is-large has-text-black" type="password" name="password" placeholder="password">
                 </div>
             </div>
 

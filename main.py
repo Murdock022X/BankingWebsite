@@ -2,8 +2,8 @@ from flask import Blueprint, render_template, redirect, \
     request, flash, url_for, Response
 from flask_login import login_required, current_user, LoginManager
 from models import User, Account, Bank_Settings, Messages, Alerts
-from format import format_acc_no, format_money, format_acc, \
-    format_rates, deep_format_acc, format_statement_filename
+from format import format_acc_no, format_money, format_acc, format_rates, \
+    deep_format_acc, format_statement_filename, format_date
 from werkzeug.security import check_password_hash
 from app import db
 from accounts import make_withdrawal, make_deposit, get_account, delete_acc, \
@@ -169,6 +169,7 @@ def account_info(acc_no):
 @login_required
 def alerts():
     alerts = get_alerts()
+
     return render_template('alerts.html', alerts=alerts)
 
 @main.route('/messages/')
@@ -176,9 +177,7 @@ def alerts():
 def messages():
     messages = get_messages(current_user.username)
 
-    res = [message for message in messages]
-
-    return render_template('messages.html', messages=res)\
+    return render_template('messages.html', messages=messages)
 
 @main.route('/eStatements/')
 @login_required
@@ -205,17 +204,6 @@ def generate_eStatement(id):
     headers['Content-Disposition'] = 'attachment;filename=' + format_statement_filename(statement)
 
     return Response(pdf.output(dest='S').encode('latin-1'), headers=headers)
-
-@main.route('/<int:id>/delete_alert/')
-@login_required
-def delete_alert(id):
-    alert = Alerts.query.get(id)
-
-    db.session.delete(alert)
-
-    db.session.commit()
-
-    return redirect(url_for('main.alerts'))
 
 @main.route('/<int:id>/delete_messages/')
 @login_required

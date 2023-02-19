@@ -5,9 +5,10 @@
 <div class="box has-background-success">
     <form method="POST">
 
+        <label class="label">Withdrawal Amount</label>
         <div class="field">
             <div class="control">
-                <input class="input is-large" type="text" name="bal" placeholder="Balance To Withdraw" value="{{ request.form['bal'] }}">
+                <input class="input is-large" autocomplete="off" type="text" name="bal" placeholder="100.00">
             </div>
         </div>
 

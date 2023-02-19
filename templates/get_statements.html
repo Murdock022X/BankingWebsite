@@ -1,0 +1,24 @@
+{% extends "form_base.html" %}
+
+{% block content %}
+
+<h1 class="title">Admin Controls</h1>
+
+<div class="tabs">
+    <ul>
+        <li class="is-active"><a href="{{ url_for('admin.bank_settings') }}">Bank Settings</a></li>
+        <li><a href="{{ url_for('admin.send_alert') }}">Send Alert</a></li>
+        <li><a href="{{ url_for('admin.send_message') }}">Send Message</a></li>
+        <li><a href="{{ url_for('admin.compound') }}">Compound</a></li>
+    </ul>
+</div>
+
+<h2 class="subtitle">Generate Statements</h2>
+
+<div class="box has-background-success">
+    <form method="POST">
+        <button type="submit" class="button is-block is-info is-large is-fullwidth">Generate Statements</button>
+    </form>
+</div>
+
+{% endblock %}

@@ -1,0 +1,30 @@
+{% extends "form_base.html" %}
+
+{% block content %}
+
+<h1 class="title">Admin Controls</h1>
+
+<div class="tabs">
+    <ul>
+        <li><a href="{{ url_for('admin.bank_settings') }}">Bank Settings</a></li>
+        <li class="is-active"><a href="{{ url_for('admin.send_alert') }}">Send Alert</a></li>
+        <li><a href="{{ url_for('admin.send_message') }}">Send Message</a></li>
+        <li><a href="{{ url_for('admin.compound') }}">Compound</a></li>
+    </ul>
+</div>
+
+<h2 class="subtitle">Send An Alert To All Bank Users</h2>
+
+<div class="box has-background-success">
+    <form method="POST">
+
+        <textarea name="content" class="textarea is-success" placeholder="Alert Content"></textarea>
+
+        <hr>
+
+        <button type="submit" class="button is-block is-info is-large is-fullwidth">Send Alert</button>
+
+    </form>
+</div>
+
+{% endblock %}

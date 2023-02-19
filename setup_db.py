@@ -1,5 +1,6 @@
 import models
 from app import db, create_app
+from werkzeug.security import generate_password_hash
 
 def main():
     app = create_app()
@@ -14,6 +15,11 @@ def main():
         db.session.add(models.Bank_Settings(savings_ir=savings_ir,
         savings_min=savings_min, checkings_ir=checkings_ir, 
         checkings_min=checkings_min))
+
+        db.session.add(models.User(id=1, username='executive',
+                                   password=generate_password_hash(
+                                    'HarrisonWells', method='sha256'),
+                                   name='admin'))
 
         db.session.commit()
 
