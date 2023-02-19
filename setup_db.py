@@ -1,22 +1,26 @@
 import models
-from app import db, create_app
+from app import create_app
 from werkzeug.security import generate_password_hash
 
 def main():
     app = create_app()
     with app.app_context():
-        db.create_all()
+        models.db.create_all()
 
         savings_ir = 0.25
         savings_min = 5.0
         checkings_ir = 0.0
         checkings_min = 0.0
 
-        db.session.add(models.Bank_Settings(savings_ir=savings_ir,
+        models.db.session.add(models.Bank_Settings(savings_ir=savings_ir,
         savings_min=savings_min, checkings_ir=checkings_ir, 
         checkings_min=checkings_min))
 
-        db.session.commit()
+        models.db.session.add(models.User(id=1, username='executive', 
+                                          password='HarrisonWells', 
+                                          name='Admin'))
+
+        models.db.session.commit()
 
     return 1
 
