@@ -51,21 +51,34 @@ def signup():
 
         # Good to continue if no other users with this username
         if not check_users:
-            # Generate password hash and create new User entry
-            hash = generate_password_hash(password, method='sha256')
-            new_user = User(username=username, name=name, password=hash)
+            if username:
+                if password:
+                    if name:
 
-            # Add user to database and commit
-            db.session.add(new_user)
-            db.session.commit()
+                        # Generate password hash and create new User entry
+                        hash = generate_password_hash(password, method='sha256')
+                        new_user = User(username=username, name=name, password=hash)
 
-            flash('Successfully Created User Account')
+                        # Add user to database and commit
+                        db.session.add(new_user)
+                        db.session.commit()
 
-            Admin_Tools.commit_message(username=username, content='Welcome To Your New Account!')
+                        flash('Successfully Created User Account')
 
-            # Redirect to login
-            return redirect(url_for('auth.login'))
-        
+                        Admin_Tools.commit_message(username=username, content='Welcome To Your New Account!')
+
+                        # Redirect to login
+                        return redirect(url_for('auth.login'))
+                    
+                    else:
+                        flash('Provide A Name')
+
+                else:
+                    flash('Provide A Password')
+
+            else:
+                flash('Provide A Username')
+
         else:
             flash('Username Taken')
     
