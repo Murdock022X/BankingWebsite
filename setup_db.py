@@ -16,11 +16,6 @@ def main():
         savings_min=savings_min, checkings_ir=checkings_ir, 
         checkings_min=checkings_min))
 
-        db.session.add(models.User(id=1, username='executive',
-                                   password=generate_password_hash(
-                                    'HarrisonWells', method='sha256'),
-                                   name='admin'))
-
         db.session.commit()
 
     return 1
