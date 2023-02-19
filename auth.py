@@ -61,7 +61,7 @@ def signup():
 
             flash('Successfully Created User Account')
 
-            Admin_Tools.send_message(username=username, content='Welcome To Your New Account!')
+            Admin_Tools.commit_message(username=username, content='Welcome To Your New Account!')
 
             # Redirect to login
             return redirect(url_for('auth.login'))
