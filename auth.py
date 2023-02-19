@@ -61,11 +61,6 @@ def signup():
 
                         # Add user to database and commit
                         db.session.add(new_user)
-                        db.session.commit()
-
-                        flash('Successfully Created User Account')
-
-                        Admin_Tools.commit_message(username=username, content='Welcome To Your New Account!')
 
                         # Redirect to login
                         return redirect(url_for('auth.login'))
