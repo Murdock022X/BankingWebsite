@@ -40,64 +40,66 @@ def login():
 
     return render_template('login.html')
 
-@auth.route('/signup', methods=['GET', 'POST'])
-def signup():
-    if request.method == 'POST':
-        logging.basicConfig(filename='debug.log', level=logging.DEBUG)
-        logging.debug(datetime.now())
-        logging.debug('Signup page active, POST request recieved')
-        logging.debug('Using Database URI: %s' % (current_app.config['SQLALCHEMY_DATABASE_URI']))
-        # Get username, password, and name.
-        username = request.form['username']
-        password = request.form['password']
-        name = request.form['name']
+@auth.route('/signup', methods=['GET'])
+def signup()
 
-        logging.debug('Recieved: Username %s, Password %s, Name %s' % (username, password, name))
+@auth.route('/commit_signup/', methods=['POST'])
+def commit_signup():
+    logging.basicConfig(filename='debug.log', level=logging.DEBUG)
+    logging.debug(datetime.now())
+    logging.debug('Signup page active, POST request recieved')
+    logging.debug('Using Database URI: %s' % (current_app.config['SQLALCHEMY_DATABASE_URI']))
+    # Get username, password, and name.
+    username = request.form['username']
+    password = request.form['password']
+    name = request.form['name']
 
-        # Query for other users
-        check_users = User.query.filter_by(username=username).first()
+    logging.debug('Recieved: Username %s, Password %s, Name %s' % (username, password, name))
 
-        # Good to continue if no other users with this username
-        if not check_users:
-            if username:
-                if password:
-                    if name:
+    # Query for other users
+    check_users = User.query.filter_by(username=username).first()
 
-                        logging.debug('Valid submission attempting to commit to db')
+    # Good to continue if no other users with this username
+    if not check_users:
+        if username:
+            if password:
+                if name:
 
-                        # Generate password hash and create new User entry
-                        hash = generate_password_hash(password, method='sha256')
-                        new_user = User(username=username, name=name, password=hash)
+                    logging.debug('Valid submission attempting to commit to db')
 
-                        # Add user to database and commit
-                        db.session.add(new_user)
+                    # Generate password hash and create new User entry
+                    hash = generate_password_hash(password, method='sha256')
+                    new_user = User(username=username, name=name, password=hash)
 
-                        logging.debug('New user added to session')
+                    # Add user to database and commit
+                    db.session.add(new_user)
 
-                        db.session.commit()
+                    logging.debug('New user added to session')
 
-                        logging.debug('Session committed to database, ')
+                    db.session.commit()
 
-                        # Redirect to login
-                        return redirect(url_for('auth.login'))
-                    
-                    else:
-                        logging.debug('Did not provide name')
-                        flash('Provide A Name')
+                    logging.debug('Session committed to database, ')
 
+                    # Redirect to login
+                    return redirect(url_for('auth.login'))
+                
                 else:
-                    logging.debug('Did not provide password')
-                    flash('Provide A Password')
+                    logging.debug('Did not provide name')
+                    flash('Provide A Name')
 
             else:
                 logging.debug('Did not provide password')
-                flash('Provide A Username')
+                flash('Provide A Password')
 
         else:
-            logging.debug('Found users with username: %s' % (check_users.username))
-            flash('Username Taken')
+            logging.debug('Did not provide password')
+            flash('Provide A Username')
+
+    else:
+        logging.debug('Found users with username: %s' % (check_users.username))
+        flash('Username Taken')
     
-    return render_template('signup.html')
+    return redirect(url_for('auth.signup'))
 
 @auth.route('/logout')
 def logout():
