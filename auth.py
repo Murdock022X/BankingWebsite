@@ -40,8 +40,9 @@ def login():
 
     return render_template('login.html')
 
-@auth.route('/signup', methods=['GET'])
-def signup()
+@auth.route('/signup/', methods=['GET'])
+def signup():
+    return render_template('signup.html')
 
 @auth.route('/commit_signup/', methods=['POST'])
 def commit_signup():
