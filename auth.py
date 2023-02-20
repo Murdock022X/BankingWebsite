@@ -62,6 +62,8 @@ def signup():
                         # Add user to database and commit
                         db.session.add(new_user)
 
+                        db.session.commit()
+
                         # Redirect to login
                         return redirect(url_for('auth.login'))
                     
