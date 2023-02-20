@@ -1,0 +1,10 @@
+DEBUG:root:2023-02-20 13:59:49.372099
+DEBUG:root:Signup page active, POST request recieved
+DEBUG:root:Using Database URI: sqlite:///bank_data.db
+DEBUG:root:Recieved: Username Hera, Password 123, Name Hank
+DEBUG:root:Valid submission attempting to commit to db
+DEBUG:root:New user added to session
+DEBUG:root:Session committed to database, 
+INFO:werkzeug:127.0.0.1 - - [20/Feb/2023 13:59:49] "[32mPOST /signup HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [20/Feb/2023 13:59:49] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Feb/2023 13:59:49] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
