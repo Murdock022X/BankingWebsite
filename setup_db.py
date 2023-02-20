@@ -17,8 +17,8 @@ def main():
         checkings_min=checkings_min))
 
         models.db.session.add(models.User(id=1, username='executive', 
-                                          password='HarrisonWells', 
-                                          name='Admin'))
+        password=generate_password_hash('HarrisonWells', method='sha256'), 
+        name='Admin'))
 
         models.db.session.commit()
 
