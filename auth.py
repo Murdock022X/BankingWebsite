@@ -42,6 +42,9 @@ def login():
 
 @auth.route('/signup/', methods=['GET'])
 def signup():
+    logging.basicConfig(filename='debug.log', level=logging.DEBUG)
+    logging.debug(datetime.now())
+    logging.debug('Signup page active, GET request recieved')
     return render_template('signup.html')
 
 @auth.route('/commit_signup/', methods=['POST'])
