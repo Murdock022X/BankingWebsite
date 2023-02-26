@@ -1,16 +1,19 @@
 from flask import Flask
 from flask_login import LoginManager
 from flask_sqlalchemy import SQLAlchemy
+import json
 
 db = SQLAlchemy()
 
 def create_app():
     app = Flask(__name__)
-
-    app.config['SECRET_KEY'] = 'SPQR'
+    cf = open('config.json', 'r')
+    config = json.load(cf)
+    cf.close()
+    app.config['SECRET_KEY'] = config['SECRET_KEY']
 
     # Database initialization
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///bank_data.db'
+    app.config['SQLALCHEMY_DATABASE_URI'] = config['SQLALCHEMY_DATABASE_URI']
 
     db.init_app(app)
 
@@ -37,5 +40,5 @@ def create_app():
     @login_manager.user_loader
     def load_user(id):
         return User.query.get(int(id))
-    
+
     return app

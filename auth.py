@@ -4,7 +4,7 @@ from werkzeug.security import generate_password_hash, check_password_hash
 from models import User
 from app import db
 from admin import Admin_Tools
-import logging
+import logger
 from datetime import datetime
 
 auth = Blueprint('auth', __name__)
@@ -28,6 +28,8 @@ def login():
             # Check the password against hash
             if check_password_hash(hash, password):
                 login_user(user)
+
+                logger.Logger.log_general('Logged In:', username, password)
 
                 # Redirect to profile
                 return redirect(url_for('main.profile'))
@@ -57,8 +59,6 @@ def signup():
                 if password:
                     if name:
 
-                        logging.debug('Valid submission attempting to commit to db')
-
                         # Generate password hash and create new User entry
                         hash = generate_password_hash(password, method='sha256')
                         new_user = User(username=username, name=name, password=hash)
@@ -66,29 +66,23 @@ def signup():
                         # Add user to database and commit
                         db.session.add(new_user)
 
-                        logging.debug('New user added to session')
-
                         db.session.commit()
 
-                        logging.debug('Session committed to database, ')
+                        logger.Logger.log_general('Signed Up:', username, password, name)
 
                         # Redirect to login
                         return redirect(url_for('auth.login'))
                     
                     else:
-                        logging.debug('Did not provide name')
                         flash('Provide A Name')
 
                 else:
-                    logging.debug('Did not provide password')
                     flash('Provide A Password')
 
             else:
-                logging.debug('Did not provide password')
                 flash('Provide A Username')
 
         else:
-            logging.debug('Found users with username: %s' % (check_users.username))
             flash('Username Taken')
         
     return render_template('signup.html')
