@@ -16,3 +16,6 @@ class Logger():
 
         logging.info(res)
 
+    def executed(self, line):
+        logging.info(line)
+

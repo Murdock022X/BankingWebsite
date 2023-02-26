@@ -29,7 +29,7 @@ def login():
             if check_password_hash(hash, password):
                 login_user(user)
 
-                logger.Logger.log_general('Logged In:', username, password)
+                logger.Logger.log_general('Logged In:', username)
 
                 # Redirect to profile
                 return redirect(url_for('main.profile'))
@@ -45,6 +45,8 @@ def login():
 @auth.route('/signup/', methods=['GET', 'POST'])
 def signup():
     if request.method == 'POST':
+        logger.Logger.log_general('Post signup')
+
         # Get username, password, and name.
         username = request.form['username']
         password = request.form['password']
@@ -68,7 +70,7 @@ def signup():
 
                         db.session.commit()
 
-                        logger.Logger.log_general('Signed Up:', username, password, name)
+                        logger.Logger.log_general('Signed Up:', username, hash, name)
 
                         # Redirect to login
                         return redirect(url_for('auth.login'))
@@ -85,6 +87,7 @@ def signup():
         else:
             flash('Username Taken')
         
+    logger.Logger.log_general('Rendering signup')
     return render_template('signup.html')
 
 @auth.route('/logout')
