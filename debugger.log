@@ -1,1 +1,6 @@
-
+20:02:04,577 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+20:02:04,577 werkzeug INFO [33mPress CTRL+C to quit[0m
+20:02:12,128 werkzeug INFO 127.0.0.1 - - [26/Feb/2023 20:02:12] "GET / HTTP/1.1" 200 -
+20:02:12,155 werkzeug INFO 127.0.0.1 - - [26/Feb/2023 20:02:12] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+20:02:12,296 werkzeug INFO 127.0.0.1 - - [26/Feb/2023 20:02:12] "GET /static/favicon.ico HTTP/1.1" 200 -
