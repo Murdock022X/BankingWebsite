@@ -1,6 +1,11 @@
-20:02:04,577 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+21:23:54,941 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on http://127.0.0.1:5000
-20:02:04,577 werkzeug INFO [33mPress CTRL+C to quit[0m
-20:02:12,128 werkzeug INFO 127.0.0.1 - - [26/Feb/2023 20:02:12] "GET / HTTP/1.1" 200 -
-20:02:12,155 werkzeug INFO 127.0.0.1 - - [26/Feb/2023 20:02:12] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
-20:02:12,296 werkzeug INFO 127.0.0.1 - - [26/Feb/2023 20:02:12] "GET /static/favicon.ico HTTP/1.1" 200 -
+21:23:54,942 werkzeug INFO [33mPress CTRL+C to quit[0m
+21:24:01,448 werkzeug INFO 127.0.0.1 - - [26/Feb/2023 21:24:01] "GET / HTTP/1.1" 200 -
+21:24:01,484 werkzeug INFO 127.0.0.1 - - [26/Feb/2023 21:24:01] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+21:28:12,535 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+21:28:12,535 werkzeug INFO [33mPress CTRL+C to quit[0m
+21:28:17,84 werkzeug INFO 127.0.0.1 - - [26/Feb/2023 21:28:17] "GET / HTTP/1.1" 200 -
+21:28:17,121 werkzeug INFO 127.0.0.1 - - [26/Feb/2023 21:28:17] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+21:28:17,253 werkzeug INFO 127.0.0.1 - - [26/Feb/2023 21:28:17] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
