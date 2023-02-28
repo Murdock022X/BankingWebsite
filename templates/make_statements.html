@@ -6,10 +6,11 @@
 
 <div class="tabs">
     <ul>
-        <li class="is-active"><a href="{{ url_for('admin.bank_settings') }}">Bank Settings</a></li>
+        <li><a href="{{ url_for('admin.bank_settings') }}">Bank Settings</a></li>
         <li><a href="{{ url_for('admin.send_alert') }}">Send Alert</a></li>
         <li><a href="{{ url_for('admin.send_message') }}">Send Message</a></li>
         <li><a href="{{ url_for('admin.compound') }}">Compound</a></li>
+        <li class="is-active"><a href="{{ url_for('admin.make_statements') }}">Generate eStatements For All Users</a></li>
     </ul>
 </div>
 

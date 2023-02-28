@@ -38,11 +38,14 @@
                 <a href="{{ url_for('main.alerts') }}" class="navbar-item has-text-black">Notification Center</a>
                 <a href="{{ url_for('main.view_eStatements') }}" class="navbar-item has-text-black">eStatements</a>
                 {% if current_user.id == 1 %}
-                <a href="{{ url_for('admin.bank_settings') }}" class="navbar-item has-text-black">Admin Page</a>
+                    <a href="{{ url_for('admin.bank_settings') }}" class="navbar-item has-text-black">Admin Page</a>
                 {% endif %}
             </div>
 
             <div class="navbar-end is-success">
+                {% if current_user.is_authenticated %}
+                    <p class="navbar-item has-text-black">Logged In: {{ current_user.username }}</p>
+                {% endif %}
                 <div class="navbar-item">
                     <div class="buttons">
                         <a href="{{ url_for('auth.login') }}" class="button is-white">Login</a>

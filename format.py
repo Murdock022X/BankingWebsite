@@ -1,4 +1,4 @@
-from datetime import datetime
+from datetime import datetime, date
 
 def format_acc(acc):
     # Format all aspects of account
@@ -43,8 +43,8 @@ def deep_format_acc(acc):
 
     return res
 
-def format_statement_filename(statement):
-    return 'STATEMENT_' + str(statement.date) + '.pdf'
+def format_statement_filename(username):
+    return 'STATEMENT_' + username + '_' + date.today().strftime('%m_%d_%y') + '.pdf'
 
 def format_date(dt: datetime):
 

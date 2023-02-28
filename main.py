@@ -1,14 +1,15 @@
 from flask import Blueprint, render_template, redirect, \
-    request, flash, url_for, Response
+    request, flash, url_for, Response, send_file
 from flask_login import login_required, current_user, LoginManager
-from models import User, Account, Bank_Settings, Messages, Alerts
+from models import User, Account, Bank_Settings, Messages, Alerts, Statements
 from format import format_acc_no, format_money, format_acc, format_rates, \
     deep_format_acc, format_statement_filename, format_date
 from werkzeug.security import check_password_hash
 from app import db
 from accounts import make_withdrawal, make_deposit, get_account, delete_acc, \
     checkings_savings_retrieval, get_accounts_user, transfer_all
-from utils import get_messages, get_alerts, MyFPDF, get_statements, get_statement
+from utils import get_messages, get_alerts, get_statements, get_statement
+from pathlib import Path
 
 main = Blueprint('main', __name__)
 
@@ -179,32 +180,6 @@ def messages():
 
     return render_template('messages.html', messages=messages)
 
-@main.route('/eStatements/')
-@login_required
-def view_eStatements():
-    statements = get_statements(current_user.username)
-    return render_template('eStatements.html', statements=statements)
-
-@main.route('/<int:id>/eStatements/')
-@login_required
-def generate_eStatement(id):
-    
-    statement = get_statement(id)
-
-    pdf = MyFPDF()
-
-    pdf.add_page()
-
-    data = render_template('eStatement_form.html', statement=statement)
-
-    pdf.write_html(data)
-
-    headers = {}
-
-    headers['Content-Disposition'] = 'attachment;filename=' + format_statement_filename(statement)
-
-    return Response(pdf.output(dest='S').encode('latin-1'), headers=headers)
-
 @main.route('/<int:id>/delete_messages/')
 @login_required
 def delete_message(id):
@@ -215,3 +190,29 @@ def delete_message(id):
     db.session.commit()
 
     return redirect(url_for('main.messages'))
+
+@main.route('/view_eStatements/', methods=['GET','POST'])
+@login_required
+def view_eStatements():
+    statements = Statements.query.filter_by(username=current_user.username)
+
+    filenames = {}
+
+    for statement in statements:
+        filenames[statement.id] = Path(statement.path).parts[-1]
+
+    return render_template('eStatements.html', statements=statements, filenames=filenames)
+
+@main.route('/<int:id>/get_eStatement/', methods=['GET','POST'])
+@login_required
+def get_eStatement(id):
+    statement = Statements.query.get(id)
+
+    pdf_pth = statement.path
+
+    pp = Path(pdf_pth)
+    
+    file_name = pp.parts[-1]
+
+    return send_file(pdf_pth, as_attachment=True)
+

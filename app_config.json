@@ -1,0 +1,5 @@
+{
+    "SECRET_KEY": "a9baf875baedf518924bdae9414dab",
+    "SQLALCHEMY_DATABASE_URI": "sqlite:///bank_data.db",
+    "LOGFILE": "debugger.log"
+}

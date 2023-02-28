@@ -9,3 +9,566 @@
 21:28:17,84 werkzeug INFO 127.0.0.1 - - [26/Feb/2023 21:28:17] "GET / HTTP/1.1" 200 -
 21:28:17,121 werkzeug INFO 127.0.0.1 - - [26/Feb/2023 21:28:17] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
 21:28:17,253 werkzeug INFO 127.0.0.1 - - [26/Feb/2023 21:28:17] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+23:47:27,949 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+23:47:27,949 werkzeug INFO [33mPress CTRL+C to quit[0m
+23:47:33,477 werkzeug INFO 127.0.0.1 - - [27/Feb/2023 23:47:33] "GET / HTTP/1.1" 200 -
+23:47:33,506 werkzeug INFO 127.0.0.1 - - [27/Feb/2023 23:47:33] "GET /static/nav.js HTTP/1.1" 200 -
+23:47:33,627 werkzeug INFO 127.0.0.1 - - [27/Feb/2023 23:47:33] "[33mGET /icons/favicon.ico HTTP/1.1[0m" 404 -
+23:47:38,556 werkzeug INFO 127.0.0.1 - - [27/Feb/2023 23:47:38] "GET /login HTTP/1.1" 200 -
+23:47:38,573 werkzeug INFO 127.0.0.1 - - [27/Feb/2023 23:47:38] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+23:47:42,775 root INFO Log Info: executive 
+23:47:42,775 werkzeug INFO 127.0.0.1 - - [27/Feb/2023 23:47:42] "[32mPOST /login HTTP/1.1[0m" 302 -
+23:47:42,790 werkzeug INFO 127.0.0.1 - - [27/Feb/2023 23:47:42] "GET /profile/ HTTP/1.1" 200 -
+23:47:42,806 werkzeug INFO 127.0.0.1 - - [27/Feb/2023 23:47:42] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+23:47:46,113 werkzeug INFO 127.0.0.1 - - [27/Feb/2023 23:47:46] "GET / HTTP/1.1" 200 -
+23:47:46,128 werkzeug INFO 127.0.0.1 - - [27/Feb/2023 23:47:46] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+23:49:20,974 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+23:49:20,974 werkzeug INFO [33mPress CTRL+C to quit[0m
+23:49:24,888 werkzeug INFO 127.0.0.1 - - [27/Feb/2023 23:49:24] "GET / HTTP/1.1" 200 -
+23:49:24,898 werkzeug INFO 127.0.0.1 - - [27/Feb/2023 23:49:24] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+23:49:27,47 werkzeug INFO 127.0.0.1 - - [27/Feb/2023 23:49:27] "[32mGET /logout HTTP/1.1[0m" 302 -
+23:49:27,52 werkzeug INFO 127.0.0.1 - - [27/Feb/2023 23:49:27] "GET / HTTP/1.1" 200 -
+23:49:27,62 werkzeug INFO 127.0.0.1 - - [27/Feb/2023 23:49:27] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+23:49:28,727 werkzeug INFO 127.0.0.1 - - [27/Feb/2023 23:49:28] "GET /login HTTP/1.1" 200 -
+23:49:28,742 werkzeug INFO 127.0.0.1 - - [27/Feb/2023 23:49:28] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+23:49:36,183 werkzeug INFO 127.0.0.1 - - [27/Feb/2023 23:49:36] "POST /login HTTP/1.1" 200 -
+23:49:36,195 werkzeug INFO 127.0.0.1 - - [27/Feb/2023 23:49:36] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+23:49:37,686 root INFO Log Info: 
+23:49:37,688 werkzeug INFO 127.0.0.1 - - [27/Feb/2023 23:49:37] "GET /signup/ HTTP/1.1" 200 -
+23:49:37,700 werkzeug INFO 127.0.0.1 - - [27/Feb/2023 23:49:37] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+23:49:50,653 root INFO Log Info: 
+23:49:50,659 root INFO Log Info: hankm sha256$BIplTnT4s5rtAIP1$3b327e007b678e2131ff23d3b97ca4e3a2439a4e0d10fe640d0e31e438cdb21f Hank 
+23:49:50,660 werkzeug INFO 127.0.0.1 - - [27/Feb/2023 23:49:50] "[32mPOST /signup/ HTTP/1.1[0m" 302 -
+23:49:50,665 werkzeug INFO 127.0.0.1 - - [27/Feb/2023 23:49:50] "GET /login HTTP/1.1" 200 -
+23:49:50,684 werkzeug INFO 127.0.0.1 - - [27/Feb/2023 23:49:50] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+23:49:56,430 root INFO Log Info: hankm 
+23:49:56,431 werkzeug INFO 127.0.0.1 - - [27/Feb/2023 23:49:56] "[32mPOST /login HTTP/1.1[0m" 302 -
+23:49:56,439 werkzeug INFO 127.0.0.1 - - [27/Feb/2023 23:49:56] "GET /profile/ HTTP/1.1" 200 -
+23:49:56,455 werkzeug INFO 127.0.0.1 - - [27/Feb/2023 23:49:56] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+23:49:59,998 werkzeug INFO 127.0.0.1 - - [27/Feb/2023 23:49:59] "GET /alerts/ HTTP/1.1" 200 -
+23:50:00,16 werkzeug INFO 127.0.0.1 - - [27/Feb/2023 23:50:00] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+23:50:14,900 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+23:50:14,900 werkzeug INFO [33mPress CTRL+C to quit[0m
+23:50:17,222 werkzeug INFO 127.0.0.1 - - [27/Feb/2023 23:50:17] "GET /alerts/ HTTP/1.1" 200 -
+23:50:17,232 werkzeug INFO 127.0.0.1 - - [27/Feb/2023 23:50:17] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+23:54:22,870 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+23:54:22,870 werkzeug INFO [33mPress CTRL+C to quit[0m
+23:54:26,412 werkzeug INFO 127.0.0.1 - - [27/Feb/2023 23:54:26] "GET /alerts/ HTTP/1.1" 200 -
+23:54:26,427 werkzeug INFO 127.0.0.1 - - [27/Feb/2023 23:54:26] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+23:54:28,883 werkzeug INFO 127.0.0.1 - - [27/Feb/2023 23:54:28] "GET /alerts/ HTTP/1.1" 200 -
+23:54:28,894 werkzeug INFO 127.0.0.1 - - [27/Feb/2023 23:54:28] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+23:54:31,3 werkzeug INFO 127.0.0.1 - - [27/Feb/2023 23:54:31] "GET /profile/ HTTP/1.1" 200 -
+23:54:31,17 werkzeug INFO 127.0.0.1 - - [27/Feb/2023 23:54:31] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+13:30:16,881 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+13:30:16,882 werkzeug INFO [33mPress CTRL+C to quit[0m
+16:01:01,355 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+16:01:01,355 werkzeug INFO [33mPress CTRL+C to quit[0m
+16:01:06,889 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 16:01:06] "GET / HTTP/1.1" 200 -
+16:01:06,939 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 16:01:06] "GET /static/nav.js HTTP/1.1" 200 -
+16:01:07,225 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 16:01:07] "[33mGET /icons/favicon.ico HTTP/1.1[0m" 404 -
+16:01:09,994 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 16:01:09] "[32mGET /eStatements/ HTTP/1.1[0m" 302 -
+16:01:10,20 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 16:01:10] "GET /login?next=%2FeStatements%2F HTTP/1.1" 200 -
+16:01:10,57 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 16:01:10] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+16:01:11,968 root INFO Log Info: executive 
+16:01:11,969 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 16:01:11] "[32mPOST /login?next=%2FeStatements%2F HTTP/1.1[0m" 302 -
+16:01:11,987 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 16:01:11] "GET /profile/ HTTP/1.1" 200 -
+16:01:12,24 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 16:01:12] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+16:01:12,823 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 16:01:12] "GET /bank_settings/ HTTP/1.1" 200 -
+16:01:12,853 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 16:01:12] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+16:01:14,457 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 16:01:14] "GET /send_alert/ HTTP/1.1" 200 -
+16:01:14,485 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 16:01:14] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+16:01:15,300 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 16:01:15] "GET /send_message/ HTTP/1.1" 200 -
+16:01:15,330 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 16:01:15] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+16:01:16,391 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 16:01:16] "GET /compound/ HTTP/1.1" 200 -
+16:01:16,422 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 16:01:16] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+16:06:00,441 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+16:06:00,442 werkzeug INFO [33mPress CTRL+C to quit[0m
+16:06:03,392 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 16:06:03] "GET /compound/ HTTP/1.1" 200 -
+16:06:03,413 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 16:06:03] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+16:06:04,644 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 16:06:04] "GET /get_statements/ HTTP/1.1" 200 -
+16:06:04,671 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 16:06:04] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+16:06:06,779 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 16:06:06] "POST /get_statements/ HTTP/1.1" 200 -
+16:06:06,806 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 16:06:06] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+16:06:41,138 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+16:06:41,138 werkzeug INFO [33mPress CTRL+C to quit[0m
+16:06:44,837 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 16:06:44] "POST /get_statements/ HTTP/1.1" 200 -
+16:06:44,858 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 16:06:44] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+16:06:47,296 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 16:06:47] "GET /compound/ HTTP/1.1" 200 -
+16:06:47,321 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 16:06:47] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+16:06:49,601 root INFO Log Info: 
+16:06:49,606 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 16:06:49] "GET /signup/ HTTP/1.1" 200 -
+16:06:49,636 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 16:06:49] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+16:07:00,992 root INFO Log Info: 
+16:07:01,6 root INFO Log Info: jack sha256$iOksbhMzC33ztRu9$1d6102526010c069781b6f6039f8a816de9f5941d600b41f88174aa92cf25ec5 Hank 
+16:07:01,6 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 16:07:01] "[32mPOST /signup/ HTTP/1.1[0m" 302 -
+16:07:01,20 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 16:07:01] "GET /login HTTP/1.1" 200 -
+16:07:01,65 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 16:07:01] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+16:07:08,253 root INFO Log Info: jack 
+16:07:08,254 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 16:07:08] "[32mPOST /login HTTP/1.1[0m" 302 -
+16:07:08,267 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 16:07:08] "GET /profile/ HTTP/1.1" 200 -
+16:07:08,308 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 16:07:08] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+16:07:12,482 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 16:07:12] "GET /create_account/ HTTP/1.1" 200 -
+16:07:12,513 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 16:07:12] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+16:07:17,862 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 16:07:17] "[32mPOST /create_account/ HTTP/1.1[0m" 302 -
+16:07:17,890 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 16:07:17] "GET /accounts/ HTTP/1.1" 200 -
+16:07:17,928 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 16:07:17] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+16:07:23,622 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 16:07:23] "GET /login HTTP/1.1" 200 -
+16:07:23,661 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 16:07:23] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+16:07:27,242 root INFO Log Info: executive 
+16:07:27,244 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 16:07:27] "[32mPOST /login HTTP/1.1[0m" 302 -
+16:07:27,257 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 16:07:27] "GET /profile/ HTTP/1.1" 200 -
+16:07:27,292 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 16:07:27] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+16:07:28,602 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 16:07:28] "GET /bank_settings/ HTTP/1.1" 200 -
+16:07:28,640 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 16:07:28] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+16:07:29,355 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 16:07:29] "GET /get_statements/ HTTP/1.1" 200 -
+16:07:29,386 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 16:07:29] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+16:07:30,167 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 16:07:30] "POST /get_statements/ HTTP/1.1" 200 -
+16:07:30,193 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 16:07:30] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+16:07:31,915 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 16:07:31] "GET /login HTTP/1.1" 200 -
+16:07:31,940 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 16:07:31] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+16:07:42,291 root INFO Log Info: jack 
+16:07:42,292 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 16:07:42] "[32mPOST /login HTTP/1.1[0m" 302 -
+16:07:42,305 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 16:07:42] "GET /profile/ HTTP/1.1" 200 -
+16:07:42,341 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 16:07:42] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+16:07:44,47 app ERROR Exception on /eStatements/ [GET]
+Traceback (most recent call last):
+  File "/home/orthanc/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1964, in _exec_single_context
+    self.dialect.do_execute(
+  File "/home/orthanc/.local/lib/python3.8/site-packages/sqlalchemy/engine/default.py", line 747, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.OperationalError: no such column: statements.path
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/dist-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/dist-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/dist-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/orthanc/.local/lib/python3.8/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "/home/orthanc/banking_website_v2/main.py", line 186, in view_eStatements
+    return render_template('eStatements.html', statements=statements)
+  File "/usr/local/lib/python3.8/dist-packages/flask/templating.py", line 147, in render_template
+    return _render(app, template, context)
+  File "/usr/local/lib/python3.8/dist-packages/flask/templating.py", line 130, in _render
+    rv = template.render(context)
+  File "/usr/local/lib/python3.8/dist-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/usr/local/lib/python3.8/dist-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/orthanc/banking_website_v2/templates/eStatements.html", line 1, in top-level template code
+    {% extends "form_base.html" %}
+  File "/home/orthanc/banking_website_v2/templates/form_base.html", line 76, in top-level template code
+    {% block content %}
+  File "/home/orthanc/banking_website_v2/templates/eStatements.html", line 15, in block 'content'
+    {% for statement in statements %}
+  File "/home/orthanc/.local/lib/python3.8/site-packages/sqlalchemy/orm/query.py", line 2841, in __iter__
+    result = self._iter()
+  File "/home/orthanc/.local/lib/python3.8/site-packages/sqlalchemy/orm/query.py", line 2855, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+  File "/home/orthanc/.local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 2229, in execute
+    return self._execute_internal(
+  File "/home/orthanc/.local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 2124, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+  File "/home/orthanc/.local/lib/python3.8/site-packages/sqlalchemy/orm/context.py", line 252, in orm_execute_statement
+    result = conn.execute(
+  File "/home/orthanc/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1414, in execute
+    return meth(
+  File "/home/orthanc/.local/lib/python3.8/site-packages/sqlalchemy/sql/elements.py", line 485, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "/home/orthanc/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1638, in _execute_clauseelement
+    ret = self._execute_context(
+  File "/home/orthanc/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1842, in _execute_context
+    return self._exec_single_context(
+  File "/home/orthanc/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1983, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "/home/orthanc/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 2325, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/home/orthanc/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1964, in _exec_single_context
+    self.dialect.do_execute(
+  File "/home/orthanc/.local/lib/python3.8/site-packages/sqlalchemy/engine/default.py", line 747, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) no such column: statements.path
+[SQL: SELECT statements.id AS statements_id, statements.username AS statements_username, statements.date AS statements_date, statements.name AS statements_name, statements.path AS statements_path 
+FROM statements 
+WHERE statements.username = ?]
+[parameters: ('jack',)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+16:07:44,91 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 16:07:44] "[35m[1mGET /eStatements/ HTTP/1.1[0m" 500 -
+16:07:44,176 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 16:07:44] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+16:19:01,898 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+16:19:01,898 werkzeug INFO [33mPress CTRL+C to quit[0m
+16:19:06,23 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 16:19:06] "[33mGET /eStatements/ HTTP/1.1[0m" 404 -
+16:19:09,832 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 16:19:09] "[33mGET /eStatements/ HTTP/1.1[0m" 404 -
+16:19:22,778 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+16:19:22,778 werkzeug INFO [33mPress CTRL+C to quit[0m
+16:19:22,781 werkzeug INFO  * Restarting with stat
+16:19:23,155 werkzeug WARNING  * Debugger is active!
+16:19:23,163 werkzeug INFO  * Debugger PIN: 210-459-412
+16:19:26,473 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 16:19:26] "[33mGET /eStatements/ HTTP/1.1[0m" 404 -
+16:19:29,202 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 16:19:29] "[33mGET /eStatements/ HTTP/1.1[0m" 404 -
+16:21:00,680 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 16:21:00] "[33mGET /eStatements/ HTTP/1.1[0m" 404 -
+16:22:08,124 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+16:22:08,124 werkzeug INFO [33mPress CTRL+C to quit[0m
+16:22:08,127 werkzeug INFO  * Restarting with stat
+16:22:08,624 werkzeug WARNING  * Debugger is active!
+16:22:08,625 werkzeug INFO  * Debugger PIN: 210-459-412
+16:22:12,212 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 16:22:12] "GET / HTTP/1.1" 200 -
+16:22:12,267 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 16:22:12] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+16:22:15,518 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 16:22:15] "[35m[1mGET /view_eStatements/ HTTP/1.1[0m" 500 -
+16:22:15,548 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 16:22:15] "GET /view_eStatements/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+16:22:15,548 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 16:22:15] "GET /view_eStatements/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+16:22:15,623 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 16:22:15] "GET /view_eStatements/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+16:22:15,701 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 16:22:15] "[36mGET /view_eStatements/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+16:23:24,665 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+16:23:24,665 werkzeug INFO [33mPress CTRL+C to quit[0m
+16:23:24,668 werkzeug INFO  * Restarting with stat
+16:23:25,115 werkzeug WARNING  * Debugger is active!
+16:23:25,115 werkzeug INFO  * Debugger PIN: 210-459-412
+16:23:27,413 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 16:23:27] "[32mGET /view_eStatements/ HTTP/1.1[0m" 302 -
+16:23:27,447 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 16:23:27] "GET /login?next=%2Fview_eStatements%2F HTTP/1.1" 200 -
+16:23:27,477 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 16:23:27] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+16:23:29,161 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 16:23:29] "POST /login?next=%2Fview_eStatements%2F HTTP/1.1" 200 -
+16:23:29,187 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 16:23:29] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+16:23:35,714 root INFO Log Info: executive 
+16:23:35,715 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 16:23:35] "[32mPOST /login?next=%2Fview_eStatements%2F HTTP/1.1[0m" 302 -
+16:23:35,732 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 16:23:35] "GET /profile/ HTTP/1.1" 200 -
+16:23:35,755 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 16:23:35] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+16:23:37,139 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 16:23:37] "GET /view_eStatements/ HTTP/1.1" 200 -
+16:23:37,169 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 16:23:37] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+16:23:38,867 root INFO Log Info: 
+16:23:38,874 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 16:23:38] "GET /signup/ HTTP/1.1" 200 -
+16:23:38,902 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 16:23:38] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+16:23:48,80 root INFO Log Info: 
+16:23:48,89 root INFO Log Info: jack sha256$Hd3xm8GTVbCQSwXG$b20133059659bf3833f2683f8eebf14c0039c77e2fbf2f17c38d5bb42c4c329c Hank 
+16:23:48,90 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 16:23:48] "[32mPOST /signup/ HTTP/1.1[0m" 302 -
+16:23:48,103 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 16:23:48] "GET /login HTTP/1.1" 200 -
+16:23:48,147 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 16:23:48] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+16:23:54,557 root INFO Log Info: jack 
+16:23:54,559 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 16:23:54] "[32mPOST /login HTTP/1.1[0m" 302 -
+16:23:54,571 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 16:23:54] "GET /profile/ HTTP/1.1" 200 -
+16:23:54,612 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 16:23:54] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+16:23:55,544 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 16:23:55] "GET /view_eStatements/ HTTP/1.1" 200 -
+16:23:55,576 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 16:23:55] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+17:01:59,383 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+17:01:59,383 werkzeug INFO [33mPress CTRL+C to quit[0m
+17:02:07,769 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 17:02:07] "GET / HTTP/1.1" 200 -
+17:02:07,824 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 17:02:07] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+17:02:09,575 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 17:02:09] "GET /login HTTP/1.1" 200 -
+17:02:09,607 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 17:02:09] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+17:02:12,453 root INFO Log Info: jack 
+17:02:12,455 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 17:02:12] "[32mPOST /login HTTP/1.1[0m" 302 -
+17:02:12,482 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 17:02:12] "GET /profile/ HTTP/1.1" 200 -
+17:02:12,520 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 17:02:12] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+17:02:14,250 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 17:02:14] "GET /create_account/ HTTP/1.1" 200 -
+17:02:14,286 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 17:02:14] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+17:02:19,541 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 17:02:19] "[32mPOST /create_account/ HTTP/1.1[0m" 302 -
+17:02:19,563 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 17:02:19] "GET /accounts/ HTTP/1.1" 200 -
+17:02:19,602 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 17:02:19] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+17:02:22,174 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 17:02:22] "GET /login HTTP/1.1" 200 -
+17:02:22,211 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 17:02:22] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+17:02:26,62 root INFO Log Info: executive 
+17:02:26,63 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 17:02:26] "[32mPOST /login HTTP/1.1[0m" 302 -
+17:02:26,78 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 17:02:26] "GET /profile/ HTTP/1.1" 200 -
+17:02:26,118 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 17:02:26] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+17:02:27,417 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 17:02:27] "GET /bank_settings/ HTTP/1.1" 200 -
+17:02:27,450 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 17:02:27] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+17:02:28,497 app ERROR Exception on /get_statements/ [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/dist-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/dist-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/dist-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/orthanc/.local/lib/python3.8/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "/home/orthanc/banking_website_v2/admin.py", line 215, in make_statements
+    return render_template('get_statements.html')
+  File "/usr/local/lib/python3.8/dist-packages/flask/templating.py", line 146, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/usr/local/lib/python3.8/dist-packages/jinja2/environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/usr/local/lib/python3.8/dist-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "/usr/local/lib/python3.8/dist-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/usr/local/lib/python3.8/dist-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/usr/local/lib/python3.8/dist-packages/flask/templating.py", line 62, in get_source
+    return self._get_source_fast(environment, template)
+  File "/usr/local/lib/python3.8/dist-packages/flask/templating.py", line 98, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: get_statements.html
+17:02:28,499 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 17:02:28] "[35m[1mGET /get_statements/ HTTP/1.1[0m" 500 -
+17:02:41,43 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+17:02:41,43 werkzeug INFO [33mPress CTRL+C to quit[0m
+17:02:41,44 werkzeug INFO  * Restarting with stat
+17:02:41,460 werkzeug WARNING  * Debugger is active!
+17:02:41,460 werkzeug INFO  * Debugger PIN: 210-459-412
+17:02:46,958 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 17:02:46] "[35m[1mGET /get_statements/ HTTP/1.1[0m" 500 -
+17:02:46,990 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 17:02:46] "GET /get_statements/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+17:02:46,992 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 17:02:46] "GET /get_statements/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+17:02:47,11 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 17:02:47] "GET /get_statements/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+17:02:47,115 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 17:02:47] "[36mGET /get_statements/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+17:03:24,252 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+17:03:24,252 werkzeug INFO [33mPress CTRL+C to quit[0m
+17:03:24,253 werkzeug INFO  * Restarting with stat
+17:03:24,673 werkzeug WARNING  * Debugger is active!
+17:03:24,673 werkzeug INFO  * Debugger PIN: 210-459-412
+17:03:28,684 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 17:03:28] "GET /get_statements/ HTTP/1.1" 200 -
+17:03:28,719 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 17:03:28] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+17:03:30,189 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 17:03:30] "POST /get_statements/ HTTP/1.1" 200 -
+17:03:30,217 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 17:03:30] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+17:03:33,299 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 17:03:33] "GET /login HTTP/1.1" 200 -
+17:03:33,332 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 17:03:33] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+17:03:40,362 root INFO Log Info: jack 
+17:03:40,364 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 17:03:40] "[32mPOST /login HTTP/1.1[0m" 302 -
+17:03:40,379 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 17:03:40] "GET /profile/ HTTP/1.1" 200 -
+17:03:40,414 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 17:03:40] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+17:03:41,465 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 17:03:41] "GET /view_eStatements/ HTTP/1.1" 200 -
+17:03:41,500 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 17:03:41] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+17:03:45,891 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 17:03:45] "[35m[1mGET /2/get_eStatement/ HTTP/1.1[0m" 500 -
+17:03:45,928 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 17:03:45] "GET /2/get_eStatement/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+17:03:45,928 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 17:03:45] "GET /2/get_eStatement/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+17:03:45,946 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 17:03:45] "GET /2/get_eStatement/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+17:03:46,18 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 17:03:46] "[36mGET /2/get_eStatement/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+17:04:33,469 werkzeug INFO  * Detected change in '/home/orthanc/banking_website_v2/main.py', reloading
+17:04:33,563 werkzeug INFO  * Restarting with stat
+17:04:33,983 werkzeug WARNING  * Debugger is active!
+17:04:33,983 werkzeug INFO  * Debugger PIN: 210-459-412
+17:04:37,619 werkzeug INFO  * Detected change in '/home/orthanc/banking_website_v2/main.py', reloading
+17:04:37,714 werkzeug INFO  * Restarting with stat
+17:04:38,152 werkzeug WARNING  * Debugger is active!
+17:04:38,152 werkzeug INFO  * Debugger PIN: 210-459-412
+17:10:32,460 werkzeug INFO  * Detected change in '/home/orthanc/banking_website_v2/main.py', reloading
+17:10:32,542 werkzeug INFO  * Restarting with stat
+17:10:32,929 werkzeug WARNING  * Debugger is active!
+17:10:32,929 werkzeug INFO  * Debugger PIN: 210-459-412
+17:10:35,652 werkzeug INFO  * Detected change in '/home/orthanc/banking_website_v2/main.py', reloading
+17:10:35,755 werkzeug INFO  * Restarting with stat
+17:10:36,215 werkzeug WARNING  * Debugger is active!
+17:10:36,215 werkzeug INFO  * Debugger PIN: 210-459-412
+17:10:38,701 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+17:10:38,701 werkzeug INFO [33mPress CTRL+C to quit[0m
+17:10:38,702 werkzeug INFO  * Restarting with stat
+17:10:39,121 werkzeug WARNING  * Debugger is active!
+17:10:39,121 werkzeug INFO  * Debugger PIN: 210-459-412
+17:10:51,161 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 17:10:51] "GET / HTTP/1.1" 200 -
+17:10:51,216 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 17:10:51] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+17:10:54,240 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 17:10:54] "GET /view_eStatements/ HTTP/1.1" 200 -
+17:10:54,271 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 17:10:54] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+17:10:56,50 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 17:10:56] "[35m[1mGET /2/get_eStatement/ HTTP/1.1[0m" 500 -
+17:10:56,87 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 17:10:56] "[36mGET /2/get_eStatement/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+17:10:56,88 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 17:10:56] "[36mGET /2/get_eStatement/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+17:10:56,108 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 17:10:56] "[36mGET /2/get_eStatement/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+17:12:05,993 werkzeug INFO  * Detected change in '/home/orthanc/banking_website_v2/format.py', reloading
+17:12:06,82 werkzeug INFO  * Restarting with stat
+17:12:06,466 werkzeug WARNING  * Debugger is active!
+17:12:06,467 werkzeug INFO  * Debugger PIN: 210-459-412
+17:12:09,374 werkzeug INFO  * Detected change in '/home/orthanc/banking_website_v2/format.py', reloading
+17:12:09,453 werkzeug INFO  * Restarting with stat
+17:12:09,834 werkzeug WARNING  * Debugger is active!
+17:12:09,835 werkzeug INFO  * Debugger PIN: 210-459-412
+17:19:24,976 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+17:19:24,976 werkzeug INFO [33mPress CTRL+C to quit[0m
+17:19:24,977 werkzeug INFO  * Restarting with stat
+17:19:25,392 werkzeug WARNING  * Debugger is active!
+17:19:25,392 werkzeug INFO  * Debugger PIN: 210-459-412
+17:19:33,89 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 17:19:33] "GET / HTTP/1.1" 200 -
+17:19:33,145 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 17:19:33] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+17:19:34,913 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 17:19:34] "GET /view_eStatements/ HTTP/1.1" 200 -
+17:19:34,945 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 17:19:34] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+17:19:36,379 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 17:19:36] "[35m[1mGET /2/get_eStatement/ HTTP/1.1[0m" 500 -
+17:19:36,416 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 17:19:36] "[36mGET /2/get_eStatement/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+17:19:36,417 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 17:19:36] "[36mGET /2/get_eStatement/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+17:19:36,432 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 17:19:36] "[36mGET /2/get_eStatement/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+17:19:52,521 werkzeug INFO  * Detected change in '/home/orthanc/banking_website_v2/main.py', reloading
+17:19:52,660 werkzeug INFO  * Restarting with stat
+17:19:53,120 werkzeug WARNING  * Debugger is active!
+17:19:53,121 werkzeug INFO  * Debugger PIN: 210-459-412
+17:19:56,51 werkzeug INFO  * Detected change in '/home/orthanc/banking_website_v2/main.py', reloading
+17:19:56,134 werkzeug INFO  * Restarting with stat
+17:19:56,517 werkzeug WARNING  * Debugger is active!
+17:19:56,518 werkzeug INFO  * Debugger PIN: 210-459-412
+17:20:02,860 werkzeug INFO  * Detected change in '/home/orthanc/banking_website_v2/main.py', reloading
+17:20:02,948 werkzeug INFO  * Restarting with stat
+17:20:03,413 werkzeug WARNING  * Debugger is active!
+17:20:03,414 werkzeug INFO  * Debugger PIN: 210-459-412
+17:20:06,130 werkzeug INFO  * Detected change in '/home/orthanc/banking_website_v2/main.py', reloading
+17:20:06,209 werkzeug INFO  * Restarting with stat
+17:20:06,629 werkzeug WARNING  * Debugger is active!
+17:20:06,629 werkzeug INFO  * Debugger PIN: 210-459-412
+17:20:11,803 werkzeug INFO  * Detected change in '/home/orthanc/banking_website_v2/main.py', reloading
+17:20:11,905 werkzeug INFO  * Restarting with stat
+17:20:12,313 werkzeug WARNING  * Debugger is active!
+17:20:12,314 werkzeug INFO  * Debugger PIN: 210-459-412
+17:20:16,653 werkzeug INFO  * Detected change in '/home/orthanc/banking_website_v2/main.py', reloading
+17:20:16,746 werkzeug INFO  * Restarting with stat
+17:20:17,125 werkzeug WARNING  * Debugger is active!
+17:20:17,126 werkzeug INFO  * Debugger PIN: 210-459-412
+17:21:22,854 werkzeug INFO  * Detected change in '/home/orthanc/banking_website_v2/main.py', reloading
+17:21:23,51 werkzeug INFO  * Restarting with stat
+17:21:23,570 werkzeug WARNING  * Debugger is active!
+17:21:23,570 werkzeug INFO  * Debugger PIN: 210-459-412
+17:21:23,590 werkzeug INFO  * Detected change in '/home/orthanc/banking_website_v2/main.py', reloading
+17:21:23,716 werkzeug INFO  * Restarting with stat
+17:21:24,173 werkzeug WARNING  * Debugger is active!
+17:21:24,173 werkzeug INFO  * Debugger PIN: 210-459-412
+17:21:35,504 werkzeug INFO  * Detected change in '/home/orthanc/banking_website_v2/main.py', reloading
+17:21:35,611 werkzeug INFO  * Restarting with stat
+17:21:36,13 werkzeug WARNING  * Debugger is active!
+17:21:36,14 werkzeug INFO  * Debugger PIN: 210-459-412
+17:21:48,843 werkzeug INFO  * Detected change in '/home/orthanc/banking_website_v2/main.py', reloading
+17:21:48,931 werkzeug INFO  * Restarting with stat
+17:21:49,428 werkzeug WARNING  * Debugger is active!
+17:21:49,429 werkzeug INFO  * Debugger PIN: 128-659-760
+17:21:52,375 werkzeug INFO  * Detected change in '/home/orthanc/banking_website_v2/main.py', reloading
+17:21:52,468 werkzeug INFO  * Restarting with stat
+17:21:52,870 werkzeug WARNING  * Debugger is active!
+17:21:52,870 werkzeug INFO  * Debugger PIN: 210-459-412
+17:22:00,820 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+17:22:00,820 werkzeug INFO [33mPress CTRL+C to quit[0m
+17:22:00,821 werkzeug INFO  * Restarting with stat
+17:22:01,200 werkzeug WARNING  * Debugger is active!
+17:22:01,201 werkzeug INFO  * Debugger PIN: 210-459-412
+17:22:10,109 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 17:22:10] "GET / HTTP/1.1" 200 -
+17:22:10,167 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 17:22:10] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+17:22:11,967 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 17:22:11] "GET /view_eStatements/ HTTP/1.1" 200 -
+17:22:11,997 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 17:22:11] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+17:22:13,256 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 17:22:13] "[35m[1mGET /2/get_eStatement/ HTTP/1.1[0m" 500 -
+17:22:13,290 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 17:22:13] "[36mGET /2/get_eStatement/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+17:22:13,290 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 17:22:13] "[36mGET /2/get_eStatement/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+17:22:13,309 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 17:22:13] "[36mGET /2/get_eStatement/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+17:22:32,332 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+17:22:32,333 werkzeug INFO [33mPress CTRL+C to quit[0m
+17:22:32,333 werkzeug INFO  * Restarting with stat
+17:22:32,768 werkzeug WARNING  * Debugger is active!
+17:22:32,769 werkzeug INFO  * Debugger PIN: 210-459-412
+17:22:37,226 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 17:22:37] "GET /2/get_eStatement/ HTTP/1.1" 200 -
+17:23:29,307 werkzeug INFO  * Detected change in '/home/orthanc/banking_website_v2/main.py', reloading
+17:23:29,390 werkzeug INFO  * Restarting with stat
+17:23:29,771 werkzeug WARNING  * Debugger is active!
+17:23:29,772 werkzeug INFO  * Debugger PIN: 210-459-412
+17:24:00,416 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+17:24:00,417 werkzeug INFO [33mPress CTRL+C to quit[0m
+17:24:00,418 werkzeug INFO  * Restarting with stat
+17:24:00,910 werkzeug WARNING  * Debugger is active!
+17:24:00,911 werkzeug INFO  * Debugger PIN: 210-459-412
+17:24:03,498 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 17:24:03] "GET / HTTP/1.1" 200 -
+17:24:03,551 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 17:24:03] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+17:24:05,443 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 17:24:05] "GET /view_eStatements/ HTTP/1.1" 200 -
+17:24:05,480 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 17:24:05] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+17:24:06,630 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 17:24:06] "GET /2/get_eStatement/ HTTP/1.1" 200 -
+17:25:51,473 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+17:25:51,473 werkzeug INFO [33mPress CTRL+C to quit[0m
+17:25:51,474 werkzeug INFO  * Restarting with stat
+17:25:51,974 werkzeug WARNING  * Debugger is active!
+17:25:51,975 werkzeug INFO  * Debugger PIN: 210-459-412
+17:25:57,295 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 17:25:57] "[35m[1mGET /view_eStatements/ HTTP/1.1[0m" 500 -
+17:25:57,330 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 17:25:57] "[36mGET /view_eStatements/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+17:25:57,330 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 17:25:57] "[36mGET /view_eStatements/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+17:25:57,351 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 17:25:57] "[36mGET /view_eStatements/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+17:25:57,457 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 17:25:57] "[36mGET /view_eStatements/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+17:26:31,584 werkzeug INFO  * Detected change in '/home/orthanc/banking_website_v2/main.py', reloading
+17:26:31,737 werkzeug INFO  * Restarting with stat
+17:26:32,193 werkzeug WARNING  * Debugger is active!
+17:26:32,194 werkzeug INFO  * Debugger PIN: 210-459-412
+17:26:35,967 werkzeug INFO  * Detected change in '/home/orthanc/banking_website_v2/main.py', reloading
+17:26:36,117 werkzeug INFO  * Restarting with stat
+17:26:36,611 werkzeug WARNING  * Debugger is active!
+17:26:36,611 werkzeug INFO  * Debugger PIN: 128-659-760
+17:26:45,603 werkzeug INFO  * Detected change in '/home/orthanc/banking_website_v2/main.py', reloading
+17:26:45,682 werkzeug INFO  * Restarting with stat
+17:26:46,57 werkzeug WARNING  * Debugger is active!
+17:26:46,57 werkzeug INFO  * Debugger PIN: 128-659-760
+17:26:57,576 werkzeug INFO  * Detected change in '/home/orthanc/banking_website_v2/main.py', reloading
+17:26:57,654 werkzeug INFO  * Restarting with stat
+17:26:58,125 werkzeug WARNING  * Debugger is active!
+17:26:58,126 werkzeug INFO  * Debugger PIN: 128-659-760
+17:26:59,624 werkzeug INFO  * Detected change in '/home/orthanc/banking_website_v2/main.py', reloading
+17:26:59,711 werkzeug INFO  * Restarting with stat
+17:27:00,171 werkzeug WARNING  * Debugger is active!
+17:27:00,171 werkzeug INFO  * Debugger PIN: 210-459-412
+17:27:03,124 werkzeug INFO  * Detected change in '/home/orthanc/banking_website_v2/main.py', reloading
+17:27:03,196 werkzeug INFO  * Restarting with stat
+17:27:03,647 werkzeug WARNING  * Debugger is active!
+17:27:03,647 werkzeug INFO  * Debugger PIN: 210-459-412
+17:27:08,125 werkzeug INFO  * Detected change in '/home/orthanc/banking_website_v2/main.py', reloading
+17:27:08,229 werkzeug INFO  * Restarting with stat
+17:27:08,681 werkzeug WARNING  * Debugger is active!
+17:27:08,682 werkzeug INFO  * Debugger PIN: 210-459-412
+17:27:10,124 werkzeug INFO  * Detected change in '/home/orthanc/banking_website_v2/main.py', reloading
+17:27:10,285 werkzeug INFO  * Restarting with stat
+17:27:10,770 werkzeug WARNING  * Debugger is active!
+17:27:10,770 werkzeug INFO  * Debugger PIN: 210-459-412
+17:27:16,467 werkzeug INFO  * Detected change in '/home/orthanc/banking_website_v2/main.py', reloading
+17:27:16,618 werkzeug INFO  * Restarting with stat
+17:27:17,51 werkzeug WARNING  * Debugger is active!
+17:27:17,51 werkzeug INFO  * Debugger PIN: 128-659-760
+17:27:18,556 werkzeug INFO  * Detected change in '/home/orthanc/banking_website_v2/main.py', reloading
+17:27:18,708 werkzeug INFO  * Restarting with stat
+17:27:19,105 werkzeug WARNING  * Debugger is active!
+17:27:19,105 werkzeug INFO  * Debugger PIN: 128-659-760
+17:27:21,887 werkzeug INFO  * Detected change in '/home/orthanc/banking_website_v2/main.py', reloading
+17:27:22,10 werkzeug INFO  * Restarting with stat
+17:27:22,461 werkzeug WARNING  * Debugger is active!
+17:27:22,462 werkzeug INFO  * Debugger PIN: 210-459-412
+17:27:25,387 werkzeug INFO  * Detected change in '/home/orthanc/banking_website_v2/main.py', reloading
+17:27:25,485 werkzeug INFO  * Restarting with stat
+17:27:25,896 werkzeug WARNING  * Debugger is active!
+17:27:25,896 werkzeug INFO  * Debugger PIN: 210-459-412
+17:27:30,996 werkzeug INFO  * Detected change in '/home/orthanc/banking_website_v2/main.py', reloading
+17:27:31,111 werkzeug INFO  * Restarting with stat
+17:27:31,553 werkzeug WARNING  * Debugger is active!
+17:27:31,554 werkzeug INFO  * Debugger PIN: 128-659-760
+17:27:34,382 werkzeug INFO  * Detected change in '/home/orthanc/banking_website_v2/main.py', reloading
+17:27:34,501 werkzeug INFO  * Restarting with stat
+17:27:34,935 werkzeug WARNING  * Debugger is active!
+17:27:34,936 werkzeug INFO  * Debugger PIN: 210-459-412
+17:27:55,808 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+17:27:55,808 werkzeug INFO [33mPress CTRL+C to quit[0m
+17:27:55,809 werkzeug INFO  * Restarting with stat
+17:27:56,226 werkzeug WARNING  * Debugger is active!
+17:27:56,227 werkzeug INFO  * Debugger PIN: 210-459-412
+17:27:59,448 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 17:27:59] "GET /view_eStatements/ HTTP/1.1" 200 -
+17:27:59,480 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 17:27:59] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+17:28:04,998 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 17:28:04] "[36mGET /2/get_eStatement/ HTTP/1.1[0m" 304 -
+17:29:24,543 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+17:29:24,543 werkzeug INFO [33mPress CTRL+C to quit[0m
+17:29:24,544 werkzeug INFO  * Restarting with stat
+17:29:24,988 werkzeug WARNING  * Debugger is active!
+17:29:24,989 werkzeug INFO  * Debugger PIN: 210-459-412
+17:29:29,535 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 17:29:29] "GET /view_eStatements/ HTTP/1.1" 200 -
+17:29:29,565 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 17:29:29] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+17:29:30,409 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 17:29:30] "[36mGET /2/get_eStatement/ HTTP/1.1[0m" 304 -

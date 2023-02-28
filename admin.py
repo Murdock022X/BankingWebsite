@@ -1,8 +1,11 @@
-from models import Account, Alerts, Messages, Bank_Settings
+from models import User, Account, Alerts, Messages, Bank_Settings, Statements
 from app import db
-from datetime import datetime
-from flask import Blueprint, render_template, redirect, flash, request
+from datetime import datetime, date
+from flask import Blueprint, render_template, redirect, flash, request, current_app
 from flask_login import login_required, current_user
+from utils import MyFPDF
+from format import format_statement_filename
+from pathlib import Path
 
 class Admin_Tools():
 
@@ -43,7 +46,7 @@ class Admin_Tools():
 
         return True
     
-    def commit_message(content, username):
+    def commit_message(self, content, username):
         dt = datetime.now()
 
         message = Messages(date=dt, username=username, content=content)
@@ -53,13 +56,64 @@ class Admin_Tools():
         db.session.commit()
 
         return True
-    
-    def assemble_statement(username):
-        pass
 
     def assemble_statements():
-        pass
-                
+        users = User.query.all()
+
+        for user in users:
+            sm = Statement_Maker(user.username)
+
+            statement = Statements(username=user.username, date=date.today(), name=sm.state_data.name, path=str(sm.pth))
+            db.session.add(statement)
+
+            db.session.commit()
+
+            sm.write()
+
+
+class Account_Metrics():
+
+    def __init__(self, accounts):
+        
+        self.total_bal = 0
+
+        for acc in accounts:
+            self.total_bal += acc.bal
+
+class Statement_Maker(Admin_Tools):
+    def __init__(self, username):
+        self.username = username
+        self.state_data = Statement_Data(username)
+        self.pdf = MyFPDF()
+        self.pdf.add_page()
+        html_page = render_template('eStatement_form.html', statement_data=self.state_data)
+        self.pdf.write_html(html_page) 
+
+        project_root = current_app.config['PROJECT_ROOT']
+        dir_pth = project_root / Path('pdfs') / Path(self.username)
+        if not dir_pth.exists():
+            dir_pth.mkdir(parents=True)
+
+        name = format_statement_filename(self.username)
+
+        self.pth = dir_pth / Path(name)
+
+    def write(self):
+        self.pdf.output(name=self.pth).encode('latin-1')
+
+class Statement_Data():
+
+    def __init__(self, username):
+        self.username = username
+
+        self.name = User.query.filter_by(username=username).first().name
+
+        accounts = Account.query.filter_by(username=username)
+        self.acc_metrics = Account_Metrics(accounts=accounts)
+
+    def get_acc_metrics(self):
+        return self.acc_metrics
+
 admin = Blueprint('admin', __name__)
 
 @admin.route('/bank_settings/', methods=['POST', 'GET'])
@@ -125,8 +179,6 @@ def send_message():
         username = request.form['username']
         content = request.form['content']
 
-
-
         if not content:
             flash('No Content Provided!')
 
@@ -152,7 +204,7 @@ def compound():
 
 @admin.route('/get_statements/', methods=['POST', 'GET'])
 @login_required
-def get_statements():
+def make_statements():
     if current_user.id != 1:
         flash('Only Admins Can Access That Page')
         return redirect('profile.html')
@@ -160,4 +212,4 @@ def get_statements():
     if request.method == 'POST':
         Admin_Tools.assemble_statements()
 
-    return render_template('get_statements.html')
+    return render_template('make_statements.html')

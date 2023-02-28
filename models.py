@@ -92,3 +92,5 @@ class Statements(db.Model):
 
     name = db.Column(db.String(100))
     
+    path = db.Column(db.String(1000))
+    

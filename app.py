@@ -2,19 +2,29 @@ from flask import Flask
 from flask_login import LoginManager
 from flask_sqlalchemy import SQLAlchemy
 import json
+import os
+from pathlib import Path
 
 db = SQLAlchemy()
 
 def create_app():
+    # Initialize app
     app = Flask(__name__)
-    cf = open('config.json', 'r')
+
+    # Load configuration
+    cf = open('app_config.json', 'r')
     config = json.load(cf)
     cf.close()
+
+    # Initialize secret key in app config.
     app.config['SECRET_KEY'] = config['SECRET_KEY']
 
-    # Database initialization
+    # Initialize sqlalchemy database uri in app config.
     app.config['SQLALCHEMY_DATABASE_URI'] = config['SQLALCHEMY_DATABASE_URI']
 
+    app.config['PROJECT_ROOT'] = Path(os.path.realpath(os.path.dirname(__file__)))
+
+    # Initialize app
     db.init_app(app)
 
     # Create authorization blueprint
@@ -25,6 +35,7 @@ def create_app():
     from main import main
     app.register_blueprint(main)
 
+    # Create admin blueprint
     from admin import admin
     app.register_blueprint(admin)
 

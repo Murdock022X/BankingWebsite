@@ -1,6 +1,11 @@
 import logging
+import json
 
-logging.basicConfig(filename='debugger.log',
+config = {}
+with open('app_config.json') as cf:
+    config = json.load(cf)
+
+logging.basicConfig(filename=config['LOGFILE'],
                     filemode='a',
                     format='%(asctime)s,%(msecs)d %(name)s %(levelname)s %(message)s',
                     datefmt='%H:%M:%S',
