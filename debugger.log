@@ -1137,3 +1137,426 @@ jinja2.exceptions.TemplateNotFound: get_statements.html
 20:33:37,603 werkzeug INFO  * Restarting with stat
 20:33:38,174 werkzeug WARNING  * Debugger is active!
 20:33:38,174 werkzeug INFO  * Debugger PIN: 796-328-194
+03:00:25,235 app ERROR Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1964, in _exec_single_context
+    self.dialect.do_execute(
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 747, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.OperationalError: no such table: user
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/hankm/banking_website_v2/main.py", line 18, in home
+    return render_template('home.html')
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/flask/templating.py", line 147, in render_template
+    return _render(app, template, context)
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/flask/templating.py", line 128, in _render
+    app.update_template_context(context)
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/flask/app.py", line 997, in update_template_context
+    context.update(func())
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/flask_login/utils.py", line 407, in _user_context_processor
+    return dict(current_user=_get_user())
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/flask_login/utils.py", line 372, in _get_user
+    current_app.login_manager._load_user()
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/flask_login/login_manager.py", line 364, in _load_user
+    user = self._user_callback(user_id)
+  File "/home/hankm/banking_website_v2/app.py", line 53, in load_user
+    return User.query.get(int(id))
+  File "<string>", line 2, in get
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/sqlalchemy/util/deprecations.py", line 383, in warned
+    return fn(*args, **kwargs)  # type: ignore[no-any-return]
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/sqlalchemy/orm/query.py", line 1130, in get
+    return self._get_impl(ident, loading.load_on_pk_identity)
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/sqlalchemy/orm/query.py", line 1139, in _get_impl
+    return self.session._get_impl(
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 3670, in _get_impl
+    return db_load_fn(
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/sqlalchemy/orm/loading.py", line 670, in load_on_pk_identity
+    session.execute(
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 2229, in execute
+    return self._execute_internal(
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 2124, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/sqlalchemy/orm/context.py", line 253, in orm_execute_statement
+    result = conn.execute(
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1414, in execute
+    return meth(
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/sqlalchemy/sql/elements.py", line 485, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1638, in _execute_clauseelement
+    ret = self._execute_context(
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1842, in _execute_context
+    return self._exec_single_context(
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1983, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 2325, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1964, in _exec_single_context
+    self.dialect.do_execute(
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 747, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) no such table: user
+[SQL: SELECT user.id AS user_id, user.username AS user_username, user.password AS user_password, user.name AS user_name 
+FROM user 
+WHERE user.id = ?]
+[parameters: (1,)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+03:02:02,380 app ERROR Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1964, in _exec_single_context
+    self.dialect.do_execute(
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 747, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.OperationalError: no such table: user
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/hankm/banking_website_v2/main.py", line 18, in home
+    return render_template('home.html')
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/flask/templating.py", line 147, in render_template
+    return _render(app, template, context)
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/flask/templating.py", line 128, in _render
+    app.update_template_context(context)
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/flask/app.py", line 997, in update_template_context
+    context.update(func())
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/flask_login/utils.py", line 407, in _user_context_processor
+    return dict(current_user=_get_user())
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/flask_login/utils.py", line 372, in _get_user
+    current_app.login_manager._load_user()
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/flask_login/login_manager.py", line 364, in _load_user
+    user = self._user_callback(user_id)
+  File "/home/hankm/banking_website_v2/app.py", line 53, in load_user
+    return User.query.get(int(id))
+  File "<string>", line 2, in get
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/sqlalchemy/util/deprecations.py", line 383, in warned
+    return fn(*args, **kwargs)  # type: ignore[no-any-return]
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/sqlalchemy/orm/query.py", line 1130, in get
+    return self._get_impl(ident, loading.load_on_pk_identity)
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/sqlalchemy/orm/query.py", line 1139, in _get_impl
+    return self.session._get_impl(
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 3670, in _get_impl
+    return db_load_fn(
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/sqlalchemy/orm/loading.py", line 670, in load_on_pk_identity
+    session.execute(
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 2229, in execute
+    return self._execute_internal(
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 2124, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/sqlalchemy/orm/context.py", line 253, in orm_execute_statement
+    result = conn.execute(
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1414, in execute
+    return meth(
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/sqlalchemy/sql/elements.py", line 485, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1638, in _execute_clauseelement
+    ret = self._execute_context(
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1842, in _execute_context
+    return self._exec_single_context(
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1983, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 2325, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1964, in _exec_single_context
+    self.dialect.do_execute(
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 747, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) no such table: user
+[SQL: SELECT user.id AS user_id, user.username AS user_username, user.password AS user_password, user.name AS user_name 
+FROM user 
+WHERE user.id = ?]
+[parameters: (1,)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+03:02:50,55 root INFO Log Info: 
+03:02:50,65 app ERROR Exception on /signup/ [GET]
+Traceback (most recent call last):
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1964, in _exec_single_context
+    self.dialect.do_execute(
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 747, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.OperationalError: no such table: user
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/hankm/banking_website_v2/auth.py", line 91, in signup
+    return render_template('signup.html')
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/flask/templating.py", line 147, in render_template
+    return _render(app, template, context)
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/flask/templating.py", line 128, in _render
+    app.update_template_context(context)
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/flask/app.py", line 997, in update_template_context
+    context.update(func())
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/flask_login/utils.py", line 407, in _user_context_processor
+    return dict(current_user=_get_user())
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/flask_login/utils.py", line 372, in _get_user
+    current_app.login_manager._load_user()
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/flask_login/login_manager.py", line 364, in _load_user
+    user = self._user_callback(user_id)
+  File "/home/hankm/banking_website_v2/app.py", line 53, in load_user
+    return User.query.get(int(id))
+  File "<string>", line 2, in get
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/sqlalchemy/util/deprecations.py", line 383, in warned
+    return fn(*args, **kwargs)  # type: ignore[no-any-return]
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/sqlalchemy/orm/query.py", line 1130, in get
+    return self._get_impl(ident, loading.load_on_pk_identity)
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/sqlalchemy/orm/query.py", line 1139, in _get_impl
+    return self.session._get_impl(
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 3670, in _get_impl
+    return db_load_fn(
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/sqlalchemy/orm/loading.py", line 670, in load_on_pk_identity
+    session.execute(
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 2229, in execute
+    return self._execute_internal(
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 2124, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/sqlalchemy/orm/context.py", line 253, in orm_execute_statement
+    result = conn.execute(
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1414, in execute
+    return meth(
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/sqlalchemy/sql/elements.py", line 485, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1638, in _execute_clauseelement
+    ret = self._execute_context(
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1842, in _execute_context
+    return self._exec_single_context(
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1983, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 2325, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1964, in _exec_single_context
+    self.dialect.do_execute(
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 747, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) no such table: user
+[SQL: SELECT user.id AS user_id, user.username AS user_username, user.password AS user_password, user.name AS user_name 
+FROM user 
+WHERE user.id = ?]
+[parameters: (1,)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+03:02:55,119 root INFO Log Info: 
+03:02:55,121 app ERROR Exception on /signup/ [GET]
+Traceback (most recent call last):
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1964, in _exec_single_context
+    self.dialect.do_execute(
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 747, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.OperationalError: no such table: user
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/hankm/banking_website_v2/auth.py", line 91, in signup
+    return render_template('signup.html')
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/flask/templating.py", line 147, in render_template
+    return _render(app, template, context)
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/flask/templating.py", line 128, in _render
+    app.update_template_context(context)
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/flask/app.py", line 997, in update_template_context
+    context.update(func())
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/flask_login/utils.py", line 407, in _user_context_processor
+    return dict(current_user=_get_user())
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/flask_login/utils.py", line 372, in _get_user
+    current_app.login_manager._load_user()
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/flask_login/login_manager.py", line 364, in _load_user
+    user = self._user_callback(user_id)
+  File "/home/hankm/banking_website_v2/app.py", line 53, in load_user
+    return User.query.get(int(id))
+  File "<string>", line 2, in get
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/sqlalchemy/util/deprecations.py", line 383, in warned
+    return fn(*args, **kwargs)  # type: ignore[no-any-return]
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/sqlalchemy/orm/query.py", line 1130, in get
+    return self._get_impl(ident, loading.load_on_pk_identity)
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/sqlalchemy/orm/query.py", line 1139, in _get_impl
+    return self.session._get_impl(
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 3670, in _get_impl
+    return db_load_fn(
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/sqlalchemy/orm/loading.py", line 670, in load_on_pk_identity
+    session.execute(
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 2229, in execute
+    return self._execute_internal(
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 2124, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/sqlalchemy/orm/context.py", line 253, in orm_execute_statement
+    result = conn.execute(
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1414, in execute
+    return meth(
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/sqlalchemy/sql/elements.py", line 485, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1638, in _execute_clauseelement
+    ret = self._execute_context(
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1842, in _execute_context
+    return self._exec_single_context(
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1983, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 2325, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1964, in _exec_single_context
+    self.dialect.do_execute(
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 747, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) no such table: user
+[SQL: SELECT user.id AS user_id, user.username AS user_username, user.password AS user_password, user.name AS user_name 
+FROM user 
+WHERE user.id = ?]
+[parameters: (1,)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+03:04:22,165 root INFO Log Info: 
+03:04:22,172 app ERROR Exception on /signup/ [GET]
+Traceback (most recent call last):
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1964, in _exec_single_context
+    self.dialect.do_execute(
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 747, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.OperationalError: no such table: user
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/hankm/banking_website_v2/auth.py", line 91, in signup
+    return render_template('signup.html')
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/flask/templating.py", line 147, in render_template
+    return _render(app, template, context)
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/flask/templating.py", line 128, in _render
+    app.update_template_context(context)
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/flask/app.py", line 997, in update_template_context
+    context.update(func())
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/flask_login/utils.py", line 407, in _user_context_processor
+    return dict(current_user=_get_user())
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/flask_login/utils.py", line 372, in _get_user
+    current_app.login_manager._load_user()
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/flask_login/login_manager.py", line 364, in _load_user
+    user = self._user_callback(user_id)
+  File "/home/hankm/banking_website_v2/app.py", line 53, in load_user
+    return User.query.get(int(id))
+  File "<string>", line 2, in get
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/sqlalchemy/util/deprecations.py", line 383, in warned
+    return fn(*args, **kwargs)  # type: ignore[no-any-return]
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/sqlalchemy/orm/query.py", line 1130, in get
+    return self._get_impl(ident, loading.load_on_pk_identity)
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/sqlalchemy/orm/query.py", line 1139, in _get_impl
+    return self.session._get_impl(
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 3670, in _get_impl
+    return db_load_fn(
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/sqlalchemy/orm/loading.py", line 670, in load_on_pk_identity
+    session.execute(
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 2229, in execute
+    return self._execute_internal(
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 2124, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/sqlalchemy/orm/context.py", line 253, in orm_execute_statement
+    result = conn.execute(
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1414, in execute
+    return meth(
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/sqlalchemy/sql/elements.py", line 485, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1638, in _execute_clauseelement
+    ret = self._execute_context(
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1842, in _execute_context
+    return self._exec_single_context(
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1983, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 2325, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1964, in _exec_single_context
+    self.dialect.do_execute(
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 747, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) no such table: user
+[SQL: SELECT user.id AS user_id, user.username AS user_username, user.password AS user_password, user.name AS user_name 
+FROM user 
+WHERE user.id = ?]
+[parameters: (1,)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+03:05:10,496 root INFO Log Info: 
+03:05:12,882 root INFO Log Info: 
+03:32:48,389 root INFO Log Info: executive 
+03:33:03,897 root INFO Log Info: 
+03:33:17,7 root INFO Log Info: 
+03:33:17,24 root INFO Log Info: hankm sha256$vy0NXxKEmrZx2E5k$3bdf1eb14ee8d3d472615a2aa2b0da5b451c9729cefcb9ed1ff64c68a34aa8c3 Hank 
+03:33:55,372 root INFO Log Info: hankm 
+03:34:26,45 root INFO Log Info: executive 
+03:34:58,663 app ERROR Exception on /get_statements/ [POST]
+Traceback (most recent call last):
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "/home/hankm/banking_website_v2/admin.py", line 212, in make_statements
+    Admin_Tools.assemble_all_statements()
+  File "/home/hankm/banking_website_v2/admin.py", line 64, in assemble_all_statements
+    sm = Statement_Maker(user.username)
+  File "/home/hankm/banking_website_v2/admin.py", line 89, in __init__
+    self.pdf.write_html(html_page)
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/fpdf/html.py", line 400, in write_html
+    text = h2p.unescape(text) # To deal with HTML entities
+AttributeError: 'HTML2FPDF' object has no attribute 'unescape'
+03:35:28,73 app ERROR Exception on /get_statements/ [POST]
+Traceback (most recent call last):
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "/home/hankm/banking_website_v2/admin.py", line 212, in make_statements
+    Admin_Tools.assemble_all_statements()
+  File "/home/hankm/banking_website_v2/admin.py", line 64, in assemble_all_statements
+    sm = Statement_Maker(user.username)
+  File "/home/hankm/banking_website_v2/admin.py", line 89, in __init__
+    self.pdf.write_html(html_page)
+  File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/fpdf/html.py", line 400, in write_html
+    text = h2p.unescape(text) # To deal with HTML entities
+AttributeError: 'HTML2FPDF' object has no attribute 'unescape'
