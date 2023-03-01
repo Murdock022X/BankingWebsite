@@ -209,6 +209,6 @@ def make_statements():
         return redirect('profile.html')
     
     if request.method == 'POST':
-        Admin_Tools.assemble_statements()
+        Admin_Tools.assemble_all_statements()
 
     return render_template('make_statements.html')
