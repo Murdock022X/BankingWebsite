@@ -99,7 +99,7 @@ class Statement_Maker(Admin_Tools):
         self.pth = dir_pth / Path(name)
 
     def write(self):
-        self.pdf.output(name=self.pth).encode('latin-1')
+        self.pdf.output(name=self.pth)
 
 class Statement_Data():
 
