@@ -841,3 +841,299 @@ jinja2.exceptions.TemplateNotFound: get_statements.html
 19:55:31,361 fpdf.output DEBUG - document_outline: 197.0B
 19:55:31,364 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 19:55:31] "POST /get_statements/ HTTP/1.1" 200 -
 19:55:31,388 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 19:55:31] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+20:22:27,223 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+20:22:27,224 werkzeug INFO [33mPress CTRL+C to quit[0m
+20:22:27,224 werkzeug INFO  * Restarting with stat
+20:22:27,757 werkzeug WARNING  * Debugger is active!
+20:22:27,757 werkzeug INFO  * Debugger PIN: 796-328-194
+20:22:30,248 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 20:22:30] "GET / HTTP/1.1" 200 -
+20:22:30,302 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 20:22:30] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+20:22:34,371 root INFO Log Info: 
+20:22:34,390 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 20:22:34] "GET /signup/ HTTP/1.1" 200 -
+20:22:34,437 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 20:22:34] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+20:22:42,410 root INFO Log Info: 
+20:22:42,414 root INFO Log Info: 
+20:22:42,416 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 20:22:42] "POST /signup/ HTTP/1.1" 200 -
+20:22:42,440 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 20:22:42] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+20:22:45,765 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 20:22:45] "GET /login HTTP/1.1" 200 -
+20:22:45,796 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 20:22:45] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+20:22:51,148 root INFO Log Info: kla 
+20:22:51,149 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 20:22:51] "[32mPOST /login HTTP/1.1[0m" 302 -
+20:22:51,164 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 20:22:51] "GET /profile/ HTTP/1.1" 200 -
+20:22:51,198 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 20:22:51] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+20:22:54,94 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 20:22:54] "GET /accounts/ HTTP/1.1" 200 -
+20:22:54,126 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 20:22:54] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+20:22:55,483 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 20:22:55] "GET /create_account/ HTTP/1.1" 200 -
+20:22:55,514 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 20:22:55] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+20:23:07,219 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 20:23:07] "[32mPOST /create_account/ HTTP/1.1[0m" 302 -
+20:23:07,234 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 20:23:07] "GET /accounts/ HTTP/1.1" 200 -
+20:23:07,275 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 20:23:07] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+20:23:11,555 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 20:23:11] "GET /login HTTP/1.1" 200 -
+20:23:11,591 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 20:23:11] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+20:23:15,97 root INFO Log Info: executive 
+20:23:15,98 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 20:23:15] "[32mPOST /login HTTP/1.1[0m" 302 -
+20:23:15,111 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 20:23:15] "GET /profile/ HTTP/1.1" 200 -
+20:23:15,148 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 20:23:15] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+20:23:16,701 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 20:23:16] "GET /bank_settings/ HTTP/1.1" 200 -
+20:23:16,732 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 20:23:16] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+20:23:18,163 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 20:23:18] "GET /get_statements/ HTTP/1.1" 200 -
+20:23:18,194 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 20:23:18] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+20:23:18,824 fpdf.html DEBUG H 4.2333333333333325
+20:23:18,824 fpdf.html DEBUG write '' h=4
+20:23:18,849 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 20:23:18] "[35m[1mPOST /get_statements/ HTTP/1.1[0m" 500 -
+20:23:18,874 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 20:23:18] "GET /get_statements/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+20:23:18,874 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 20:23:18] "GET /get_statements/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+20:23:18,935 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 20:23:18] "GET /get_statements/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+20:23:18,996 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 20:23:18] "[36mGET /get_statements/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+20:23:26,639 werkzeug INFO  * Detected change in '/home/orthanc/banking_website_v2/admin.py', reloading
+20:23:26,789 werkzeug INFO  * Restarting with stat
+20:23:27,381 werkzeug WARNING  * Debugger is active!
+20:23:27,381 werkzeug INFO  * Debugger PIN: 796-328-194
+20:23:31,471 werkzeug INFO  * Detected change in '/home/orthanc/banking_website_v2/admin.py', reloading
+20:23:31,645 werkzeug INFO  * Restarting with stat
+20:23:32,214 werkzeug WARNING  * Debugger is active!
+20:23:32,215 werkzeug INFO  * Debugger PIN: 796-328-194
+20:23:33,252 werkzeug INFO  * Detected change in '/home/orthanc/banking_website_v2/admin.py', reloading
+20:23:33,411 werkzeug INFO  * Restarting with stat
+20:23:35,396 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+20:23:35,397 werkzeug INFO [33mPress CTRL+C to quit[0m
+20:23:35,397 werkzeug INFO  * Restarting with stat
+20:23:35,887 werkzeug WARNING  * Debugger is active!
+20:23:35,887 werkzeug INFO  * Debugger PIN: 796-328-194
+20:23:40,576 fpdf.html DEBUG H 4.2333333333333325
+20:23:40,577 fpdf.html DEBUG write '' h=4
+20:23:40,577 fpdf.html DEBUG STARTTAG html {}
+20:23:40,577 fpdf.html DEBUG write '' h=4
+20:23:40,577 fpdf.html DEBUG STARTTAG head {}
+20:23:40,577 fpdf.html DEBUG write '' h=4
+20:23:40,577 fpdf.html DEBUG STARTTAG meta {'charset': 'utf-8'}
+20:23:40,577 fpdf.html DEBUG write '' h=4
+20:23:40,577 fpdf.html DEBUG STARTTAG meta {'http-equiv': 'X-UA-Compatible', 'content': 'IE=edge'}
+20:23:40,577 fpdf.html DEBUG write '' h=4
+20:23:40,577 fpdf.html DEBUG STARTTAG meta {'name': 'viewport', 'content': 'width=device-width, initial-scale=1'}
+20:23:40,577 fpdf.html DEBUG write '' h=4
+20:23:40,577 fpdf.html DEBUG STARTTAG title {}
+20:23:40,577 fpdf.html DEBUG write 'Statement For Admin' h=4
+20:23:40,578 fpdf.html DEBUG ENDTAG title
+20:23:40,578 fpdf.html DEBUG write '' h=4
+20:23:40,578 fpdf.html DEBUG STARTTAG link {'rel': 'stylesheet', 'href': 'https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css'}
+20:23:40,578 fpdf.html DEBUG ENDTAG link
+20:23:40,578 fpdf.html DEBUG write '' h=4
+20:23:40,579 fpdf.html DEBUG ENDTAG head
+20:23:40,579 fpdf.html WARNING Unexpected HTML end tag </head>, start tag was <meta>
+20:23:40,579 fpdf.html DEBUG write '' h=4
+20:23:40,579 fpdf.html DEBUG STARTTAG body {}
+20:23:40,579 fpdf.html DEBUG write '' h=4
+20:23:40,579 fpdf.html DEBUG STARTTAG br {}
+20:23:40,579 fpdf.html DEBUG write '' h=4
+20:23:40,579 fpdf.html DEBUG STARTTAG hr {}
+20:23:40,579 fpdf.html DEBUG write '' h=4
+20:23:40,579 fpdf.html DEBUG STARTTAG h2 {'class': 'subtitle'}
+20:23:40,579 fpdf.html DEBUG H 6.35
+20:23:40,580 fpdf.html DEBUG write 'Overview' h=6
+20:23:40,580 fpdf.html DEBUG ENDTAG h2
+20:23:40,580 fpdf.html DEBUG H 4.2333333333333325
+20:23:40,580 fpdf.html DEBUG write '' h=4
+20:23:40,580 fpdf.html DEBUG STARTTAG ul {}
+20:23:40,580 fpdf.html DEBUG write '' h=4
+20:23:40,580 fpdf.html DEBUG STARTTAG li {}
+20:23:40,581 fpdf.html DEBUG write 'Account Summary Total 0' h=4
+20:23:40,581 fpdf.html DEBUG ENDTAG li
+20:23:40,581 fpdf.html DEBUG write '' h=4
+20:23:40,581 fpdf.html DEBUG STARTTAG li {}
+20:23:40,581 fpdf.html DEBUG write 'Accrued Interest During This Period' h=4
+20:23:40,581 fpdf.html DEBUG ENDTAG li
+20:23:40,582 fpdf.html DEBUG write '' h=4
+20:23:40,582 fpdf.html DEBUG ENDTAG ul
+20:23:40,582 fpdf.html DEBUG write '' h=4
+20:23:40,582 fpdf.html DEBUG ENDTAG body
+20:23:40,582 fpdf.html DEBUG write '' h=4
+20:23:40,582 fpdf.html DEBUG ENDTAG html
+20:23:40,582 fpdf.html WARNING Unexpected HTML end tag </html>, start tag was <meta>
+20:23:40,582 fpdf.html WARNING Missing HTML end tag for <meta>
+20:23:40,593 fpdf.output DEBUG Final size summary of the biggest document sections:
+20:23:40,593 fpdf.output DEBUG - pages: 564.0B
+20:23:40,593 fpdf.output DEBUG - fonts: 99.0B
+20:23:40,593 fpdf.output DEBUG - document_outline: 197.0B
+20:23:40,597 fpdf.html DEBUG H 4.2333333333333325
+20:23:40,597 fpdf.html DEBUG write '' h=4
+20:23:40,597 fpdf.html DEBUG STARTTAG html {}
+20:23:40,597 fpdf.html DEBUG write '' h=4
+20:23:40,597 fpdf.html DEBUG STARTTAG head {}
+20:23:40,597 fpdf.html DEBUG write '' h=4
+20:23:40,597 fpdf.html DEBUG STARTTAG meta {'charset': 'utf-8'}
+20:23:40,597 fpdf.html DEBUG write '' h=4
+20:23:40,598 fpdf.html DEBUG STARTTAG meta {'http-equiv': 'X-UA-Compatible', 'content': 'IE=edge'}
+20:23:40,598 fpdf.html DEBUG write '' h=4
+20:23:40,598 fpdf.html DEBUG STARTTAG meta {'name': 'viewport', 'content': 'width=device-width, initial-scale=1'}
+20:23:40,598 fpdf.html DEBUG write '' h=4
+20:23:40,598 fpdf.html DEBUG STARTTAG title {}
+20:23:40,598 fpdf.html DEBUG write 'Statement For Hank' h=4
+20:23:40,599 fpdf.html DEBUG ENDTAG title
+20:23:40,599 fpdf.html DEBUG write '' h=4
+20:23:40,599 fpdf.html DEBUG STARTTAG link {'rel': 'stylesheet', 'href': 'https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css'}
+20:23:40,599 fpdf.html DEBUG ENDTAG link
+20:23:40,599 fpdf.html DEBUG write '' h=4
+20:23:40,599 fpdf.html DEBUG ENDTAG head
+20:23:40,599 fpdf.html WARNING Unexpected HTML end tag </head>, start tag was <meta>
+20:23:40,599 fpdf.html DEBUG write '' h=4
+20:23:40,600 fpdf.html DEBUG STARTTAG body {}
+20:23:40,600 fpdf.html DEBUG write '' h=4
+20:23:40,600 fpdf.html DEBUG STARTTAG br {}
+20:23:40,600 fpdf.html DEBUG write '' h=4
+20:23:40,600 fpdf.html DEBUG STARTTAG hr {}
+20:23:40,600 fpdf.html DEBUG write '' h=4
+20:23:40,600 fpdf.html DEBUG STARTTAG h2 {'class': 'subtitle'}
+20:23:40,601 fpdf.html DEBUG H 6.35
+20:23:40,601 fpdf.html DEBUG write 'Overview' h=6
+20:23:40,601 fpdf.html DEBUG ENDTAG h2
+20:23:40,601 fpdf.html DEBUG H 4.2333333333333325
+20:23:40,601 fpdf.html DEBUG write '' h=4
+20:23:40,601 fpdf.html DEBUG STARTTAG ul {}
+20:23:40,602 fpdf.html DEBUG write '' h=4
+20:23:40,602 fpdf.html DEBUG STARTTAG li {}
+20:23:40,602 fpdf.html DEBUG write 'Account Summary Total 1000.0' h=4
+20:23:40,602 fpdf.html DEBUG ENDTAG li
+20:23:40,602 fpdf.html DEBUG write '' h=4
+20:23:40,602 fpdf.html DEBUG STARTTAG li {}
+20:23:40,603 fpdf.html DEBUG write 'Accrued Interest During This Period' h=4
+20:23:40,603 fpdf.html DEBUG ENDTAG li
+20:23:40,603 fpdf.html DEBUG write '' h=4
+20:23:40,603 fpdf.html DEBUG ENDTAG ul
+20:23:40,603 fpdf.html DEBUG write '' h=4
+20:23:40,604 fpdf.html DEBUG ENDTAG body
+20:23:40,604 fpdf.html DEBUG write '' h=4
+20:23:40,604 fpdf.html DEBUG ENDTAG html
+20:23:40,604 fpdf.html WARNING Unexpected HTML end tag </html>, start tag was <meta>
+20:23:40,604 fpdf.html WARNING Missing HTML end tag for <meta>
+20:23:40,615 fpdf.output DEBUG Final size summary of the biggest document sections:
+20:23:40,615 fpdf.output DEBUG - pages: 567.0B
+20:23:40,615 fpdf.output DEBUG - fonts: 99.0B
+20:23:40,615 fpdf.output DEBUG - document_outline: 197.0B
+20:23:40,619 fpdf.html DEBUG H 4.2333333333333325
+20:23:40,619 fpdf.html DEBUG write '' h=4
+20:23:40,619 fpdf.html DEBUG STARTTAG html {}
+20:23:40,619 fpdf.html DEBUG write '' h=4
+20:23:40,619 fpdf.html DEBUG STARTTAG head {}
+20:23:40,619 fpdf.html DEBUG write '' h=4
+20:23:40,620 fpdf.html DEBUG STARTTAG meta {'charset': 'utf-8'}
+20:23:40,620 fpdf.html DEBUG write '' h=4
+20:23:40,620 fpdf.html DEBUG STARTTAG meta {'http-equiv': 'X-UA-Compatible', 'content': 'IE=edge'}
+20:23:40,620 fpdf.html DEBUG write '' h=4
+20:23:40,620 fpdf.html DEBUG STARTTAG meta {'name': 'viewport', 'content': 'width=device-width, initial-scale=1'}
+20:23:40,620 fpdf.html DEBUG write '' h=4
+20:23:40,620 fpdf.html DEBUG STARTTAG title {}
+20:23:40,621 fpdf.html DEBUG write 'Statement For Hank' h=4
+20:23:40,621 fpdf.html DEBUG ENDTAG title
+20:23:40,621 fpdf.html DEBUG write '' h=4
+20:23:40,621 fpdf.html DEBUG STARTTAG link {'rel': 'stylesheet', 'href': 'https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css'}
+20:23:40,621 fpdf.html DEBUG ENDTAG link
+20:23:40,621 fpdf.html DEBUG write '' h=4
+20:23:40,622 fpdf.html DEBUG ENDTAG head
+20:23:40,622 fpdf.html WARNING Unexpected HTML end tag </head>, start tag was <meta>
+20:23:40,622 fpdf.html DEBUG write '' h=4
+20:23:40,622 fpdf.html DEBUG STARTTAG body {}
+20:23:40,622 fpdf.html DEBUG write '' h=4
+20:23:40,622 fpdf.html DEBUG STARTTAG br {}
+20:23:40,622 fpdf.html DEBUG write '' h=4
+20:23:40,622 fpdf.html DEBUG STARTTAG hr {}
+20:23:40,623 fpdf.html DEBUG write '' h=4
+20:23:40,623 fpdf.html DEBUG STARTTAG h2 {'class': 'subtitle'}
+20:23:40,623 fpdf.html DEBUG H 6.35
+20:23:40,623 fpdf.html DEBUG write 'Overview' h=6
+20:23:40,623 fpdf.html DEBUG ENDTAG h2
+20:23:40,623 fpdf.html DEBUG H 4.2333333333333325
+20:23:40,624 fpdf.html DEBUG write '' h=4
+20:23:40,624 fpdf.html DEBUG STARTTAG ul {}
+20:23:40,624 fpdf.html DEBUG write '' h=4
+20:23:40,624 fpdf.html DEBUG STARTTAG li {}
+20:23:40,624 fpdf.html DEBUG write 'Account Summary Total 0' h=4
+20:23:40,624 fpdf.html DEBUG ENDTAG li
+20:23:40,624 fpdf.html DEBUG write '' h=4
+20:23:40,625 fpdf.html DEBUG STARTTAG li {}
+20:23:40,625 fpdf.html DEBUG write 'Accrued Interest During This Period' h=4
+20:23:40,625 fpdf.html DEBUG ENDTAG li
+20:23:40,625 fpdf.html DEBUG write '' h=4
+20:23:40,625 fpdf.html DEBUG ENDTAG ul
+20:23:40,625 fpdf.html DEBUG write '' h=4
+20:23:40,626 fpdf.html DEBUG ENDTAG body
+20:23:40,626 fpdf.html DEBUG write '' h=4
+20:23:40,626 fpdf.html DEBUG ENDTAG html
+20:23:40,626 fpdf.html WARNING Unexpected HTML end tag </html>, start tag was <meta>
+20:23:40,626 fpdf.html WARNING Missing HTML end tag for <meta>
+20:23:40,633 fpdf.output DEBUG Final size summary of the biggest document sections:
+20:23:40,633 fpdf.output DEBUG - pages: 563.0B
+20:23:40,633 fpdf.output DEBUG - fonts: 99.0B
+20:23:40,633 fpdf.output DEBUG - document_outline: 197.0B
+20:23:40,636 fpdf.html DEBUG H 4.2333333333333325
+20:23:40,637 fpdf.html DEBUG write '' h=4
+20:23:40,637 fpdf.html DEBUG STARTTAG html {}
+20:23:40,637 fpdf.html DEBUG write '' h=4
+20:23:40,637 fpdf.html DEBUG STARTTAG head {}
+20:23:40,637 fpdf.html DEBUG write '' h=4
+20:23:40,637 fpdf.html DEBUG STARTTAG meta {'charset': 'utf-8'}
+20:23:40,637 fpdf.html DEBUG write '' h=4
+20:23:40,637 fpdf.html DEBUG STARTTAG meta {'http-equiv': 'X-UA-Compatible', 'content': 'IE=edge'}
+20:23:40,637 fpdf.html DEBUG write '' h=4
+20:23:40,638 fpdf.html DEBUG STARTTAG meta {'name': 'viewport', 'content': 'width=device-width, initial-scale=1'}
+20:23:40,638 fpdf.html DEBUG write '' h=4
+20:23:40,638 fpdf.html DEBUG STARTTAG title {}
+20:23:40,638 fpdf.html DEBUG write 'Statement For Nate' h=4
+20:23:40,638 fpdf.html DEBUG ENDTAG title
+20:23:40,638 fpdf.html DEBUG write '' h=4
+20:23:40,639 fpdf.html DEBUG STARTTAG link {'rel': 'stylesheet', 'href': 'https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css'}
+20:23:40,639 fpdf.html DEBUG ENDTAG link
+20:23:40,639 fpdf.html DEBUG write '' h=4
+20:23:40,639 fpdf.html DEBUG ENDTAG head
+20:23:40,639 fpdf.html WARNING Unexpected HTML end tag </head>, start tag was <meta>
+20:23:40,639 fpdf.html DEBUG write '' h=4
+20:23:40,639 fpdf.html DEBUG STARTTAG body {}
+20:23:40,639 fpdf.html DEBUG write '' h=4
+20:23:40,639 fpdf.html DEBUG STARTTAG br {}
+20:23:40,639 fpdf.html DEBUG write '' h=4
+20:23:40,640 fpdf.html DEBUG STARTTAG hr {}
+20:23:40,640 fpdf.html DEBUG write '' h=4
+20:23:40,640 fpdf.html DEBUG STARTTAG h2 {'class': 'subtitle'}
+20:23:40,640 fpdf.html DEBUG H 6.35
+20:23:40,640 fpdf.html DEBUG write 'Overview' h=6
+20:23:40,640 fpdf.html DEBUG ENDTAG h2
+20:23:40,640 fpdf.html DEBUG H 4.2333333333333325
+20:23:40,641 fpdf.html DEBUG write '' h=4
+20:23:40,641 fpdf.html DEBUG STARTTAG ul {}
+20:23:40,641 fpdf.html DEBUG write '' h=4
+20:23:40,641 fpdf.html DEBUG STARTTAG li {}
+20:23:40,641 fpdf.html DEBUG write 'Account Summary Total 710.99' h=4
+20:23:40,641 fpdf.html DEBUG ENDTAG li
+20:23:40,642 fpdf.html DEBUG write '' h=4
+20:23:40,642 fpdf.html DEBUG STARTTAG li {}
+20:23:40,642 fpdf.html DEBUG write 'Accrued Interest During This Period' h=4
+20:23:40,642 fpdf.html DEBUG ENDTAG li
+20:23:40,642 fpdf.html DEBUG write '' h=4
+20:23:40,642 fpdf.html DEBUG ENDTAG ul
+20:23:40,642 fpdf.html DEBUG write '' h=4
+20:23:40,642 fpdf.html DEBUG ENDTAG body
+20:23:40,643 fpdf.html DEBUG write '' h=4
+20:23:40,643 fpdf.html DEBUG ENDTAG html
+20:23:40,643 fpdf.html WARNING Unexpected HTML end tag </html>, start tag was <meta>
+20:23:40,643 fpdf.html WARNING Missing HTML end tag for <meta>
+20:23:40,652 fpdf.output DEBUG Final size summary of the biggest document sections:
+20:23:40,652 fpdf.output DEBUG - pages: 565.0B
+20:23:40,652 fpdf.output DEBUG - fonts: 99.0B
+20:23:40,652 fpdf.output DEBUG - document_outline: 197.0B
+20:23:40,664 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 20:23:40] "POST /get_statements/ HTTP/1.1" 200 -
+20:23:40,686 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 20:23:40] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+20:23:42,915 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 20:23:42] "GET /login HTTP/1.1" 200 -
+20:23:42,942 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 20:23:42] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+20:23:48,664 root INFO Log Info: kla 
+20:23:48,665 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 20:23:48] "[32mPOST /login HTTP/1.1[0m" 302 -
+20:23:48,680 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 20:23:48] "GET /profile/ HTTP/1.1" 200 -
+20:23:48,716 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 20:23:48] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+20:23:49,972 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 20:23:49] "GET /view_eStatements/ HTTP/1.1" 200 -
+20:23:50,1 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 20:23:50] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+20:23:55,233 werkzeug INFO 127.0.0.1 - - [28/Feb/2023 20:23:55] "GET /6/get_eStatement/ HTTP/1.1" 200 -
+20:33:37,395 werkzeug INFO  * Detected change in '/home/orthanc/banking_website_v2/admin.py', reloading
+20:33:37,603 werkzeug INFO  * Restarting with stat
+20:33:38,174 werkzeug WARNING  * Debugger is active!
+20:33:38,174 werkzeug INFO  * Debugger PIN: 796-328-194

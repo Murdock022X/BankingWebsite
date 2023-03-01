@@ -46,7 +46,7 @@ class Admin_Tools():
 
         return True
     
-    def commit_message(self, content, username):
+    def commit_message(content, username):
         dt = datetime.now()
 
         message = Messages(date=dt, username=username, content=content)
@@ -57,7 +57,7 @@ class Admin_Tools():
 
         return True
 
-    def assemble_statements():
+    def assemble_all_statements():
         users = User.query.all()
 
         for user in users:
@@ -69,7 +69,6 @@ class Admin_Tools():
             db.session.commit()
 
             sm.write()
-
 
 class Account_Metrics():
 
