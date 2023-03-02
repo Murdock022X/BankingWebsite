@@ -1560,3 +1560,154 @@ Traceback (most recent call last):
   File "/home/hankm/banking_website_v2/banking/lib/python3.10/site-packages/fpdf/html.py", line 400, in write_html
     text = h2p.unescape(text) # To deal with HTML entities
 AttributeError: 'HTML2FPDF' object has no attribute 'unescape'
+10:11:55,872 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+10:11:55,872 werkzeug INFO [33mPress CTRL+C to quit[0m
+10:12:00,188 werkzeug INFO 127.0.0.1 - - [01/Mar/2023 10:12:00] "GET / HTTP/1.1" 200 -
+10:12:00,226 werkzeug INFO 127.0.0.1 - - [01/Mar/2023 10:12:00] "GET /static/nav.js HTTP/1.1" 200 -
+10:12:00,410 werkzeug INFO 127.0.0.1 - - [01/Mar/2023 10:12:00] "[33mGET /icons/favicon.ico HTTP/1.1[0m" 404 -
+10:14:00,837 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+10:14:00,837 werkzeug INFO [33mPress CTRL+C to quit[0m
+10:14:05,523 werkzeug INFO 127.0.0.1 - - [01/Mar/2023 10:14:05] "GET / HTTP/1.1" 200 -
+10:14:05,545 werkzeug INFO 127.0.0.1 - - [01/Mar/2023 10:14:05] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+10:14:46,723 werkzeug INFO 127.0.0.1 - - [01/Mar/2023 10:14:46] "GET / HTTP/1.1" 200 -
+10:14:46,734 werkzeug INFO 127.0.0.1 - - [01/Mar/2023 10:14:46] "GET /static/nav.js HTTP/1.1" 200 -
+10:14:49,284 werkzeug INFO 127.0.0.1 - - [01/Mar/2023 10:14:49] "GET / HTTP/1.1" 200 -
+10:14:49,293 werkzeug INFO 127.0.0.1 - - [01/Mar/2023 10:14:49] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+10:14:50,84 werkzeug INFO 127.0.0.1 - - [01/Mar/2023 10:14:50] "[32mGET /profile/ HTTP/1.1[0m" 302 -
+10:14:50,93 werkzeug INFO 127.0.0.1 - - [01/Mar/2023 10:14:50] "GET /login?next=%2Fprofile%2F HTTP/1.1" 200 -
+10:14:50,109 werkzeug INFO 127.0.0.1 - - [01/Mar/2023 10:14:50] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+10:15:12,941 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+10:15:12,942 werkzeug INFO [33mPress CTRL+C to quit[0m
+10:15:17,126 werkzeug INFO 127.0.0.1 - - [01/Mar/2023 10:15:17] "GET /login?next=%2Fprofile%2F HTTP/1.1" 200 -
+10:15:17,141 werkzeug INFO 127.0.0.1 - - [01/Mar/2023 10:15:17] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+10:15:20,862 werkzeug INFO 127.0.0.1 - - [01/Mar/2023 10:15:20] "GET / HTTP/1.1" 200 -
+10:15:20,887 werkzeug INFO 127.0.0.1 - - [01/Mar/2023 10:15:20] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+10:15:45,217 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+10:15:45,217 werkzeug INFO [33mPress CTRL+C to quit[0m
+10:15:47,895 werkzeug INFO 127.0.0.1 - - [01/Mar/2023 10:15:47] "GET / HTTP/1.1" 200 -
+10:15:47,906 werkzeug INFO 127.0.0.1 - - [01/Mar/2023 10:15:47] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+10:15:51,679 werkzeug INFO 127.0.0.1 - - [01/Mar/2023 10:15:51] "GET / HTTP/1.1" 200 -
+10:15:51,703 werkzeug INFO 127.0.0.1 - - [01/Mar/2023 10:15:51] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+10:18:05,5 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+10:18:05,5 werkzeug INFO [33mPress CTRL+C to quit[0m
+10:18:09,674 werkzeug INFO 127.0.0.1 - - [01/Mar/2023 10:18:09] "GET / HTTP/1.1" 200 -
+10:18:09,698 werkzeug INFO 127.0.0.1 - - [01/Mar/2023 10:18:09] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+10:18:09,821 werkzeug INFO 127.0.0.1 - - [01/Mar/2023 10:18:09] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+10:18:53,812 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+10:18:53,812 werkzeug INFO [33mPress CTRL+C to quit[0m
+10:18:58,698 werkzeug INFO 127.0.0.1 - - [01/Mar/2023 10:18:58] "GET / HTTP/1.1" 200 -
+10:18:58,726 werkzeug INFO 127.0.0.1 - - [01/Mar/2023 10:18:58] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+10:20:08,183 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+10:20:08,183 werkzeug INFO [33mPress CTRL+C to quit[0m
+10:20:13,579 werkzeug INFO 127.0.0.1 - - [01/Mar/2023 10:20:13] "GET / HTTP/1.1" 200 -
+10:20:13,608 werkzeug INFO 127.0.0.1 - - [01/Mar/2023 10:20:13] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+10:21:55,373 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+10:21:55,373 werkzeug INFO [33mPress CTRL+C to quit[0m
+10:21:58,895 werkzeug INFO 127.0.0.1 - - [01/Mar/2023 10:21:58] "GET / HTTP/1.1" 200 -
+10:21:58,905 werkzeug INFO 127.0.0.1 - - [01/Mar/2023 10:21:58] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+10:22:02,65 werkzeug INFO 127.0.0.1 - - [01/Mar/2023 10:22:02] "GET / HTTP/1.1" 200 -
+10:22:02,93 werkzeug INFO 127.0.0.1 - - [01/Mar/2023 10:22:02] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+10:22:24,99 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+10:22:24,100 werkzeug INFO [33mPress CTRL+C to quit[0m
+10:22:27,573 werkzeug INFO 127.0.0.1 - - [01/Mar/2023 10:22:27] "GET / HTTP/1.1" 200 -
+10:22:27,601 werkzeug INFO 127.0.0.1 - - [01/Mar/2023 10:22:27] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+10:22:50,82 werkzeug INFO 127.0.0.1 - - [01/Mar/2023 10:22:50] "GET / HTTP/1.1" 200 -
+10:22:50,113 werkzeug INFO 127.0.0.1 - - [01/Mar/2023 10:22:50] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+10:22:50,238 werkzeug INFO 127.0.0.1 - - [01/Mar/2023 10:22:50] "[33mGET /icons/favicon.ico HTTP/1.1[0m" 404 -
+11:04:09,398 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+11:04:09,398 werkzeug INFO [33mPress CTRL+C to quit[0m
+11:04:14,416 werkzeug INFO 127.0.0.1 - - [02/Mar/2023 11:04:14] "GET / HTTP/1.1" 200 -
+11:04:14,448 werkzeug INFO 127.0.0.1 - - [02/Mar/2023 11:04:14] "GET /static/nav.js HTTP/1.1" 200 -
+11:04:14,708 werkzeug INFO 127.0.0.1 - - [02/Mar/2023 11:04:14] "[33mGET /icons/favicon.ico HTTP/1.1[0m" 404 -
+11:06:59,666 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+11:06:59,666 werkzeug INFO [33mPress CTRL+C to quit[0m
+11:07:06,950 werkzeug INFO 127.0.0.1 - - [02/Mar/2023 11:07:06] "GET / HTTP/1.1" 200 -
+11:07:06,994 werkzeug INFO 127.0.0.1 - - [02/Mar/2023 11:07:06] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+11:07:07,208 werkzeug INFO 127.0.0.1 - - [02/Mar/2023 11:07:07] "[33mGET /icons/favicon.ico?v=2 HTTP/1.1[0m" 404 -
+11:09:13,272 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+11:09:13,272 werkzeug INFO [33mPress CTRL+C to quit[0m
+11:09:18,140 app ERROR Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/dist-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/dist-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/dist-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/orthanc/banking_website_v2/main.py", line 18, in home
+    return render_template('home.html')
+  File "/usr/local/lib/python3.8/dist-packages/flask/templating.py", line 147, in render_template
+    return _render(app, template, context)
+  File "/usr/local/lib/python3.8/dist-packages/flask/templating.py", line 130, in _render
+    rv = template.render(context)
+  File "/usr/local/lib/python3.8/dist-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/usr/local/lib/python3.8/dist-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/orthanc/banking_website_v2/templates/home.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/orthanc/banking_website_v2/templates/base.html", line 10, in top-level template code
+    <link rel="icon" type="image/x-icon" href="{{ url_for('icons', 'favicon.ico') }}"/>
+TypeError: url_for() takes 2 positional arguments but 3 were given
+11:09:18,144 werkzeug INFO 127.0.0.1 - - [02/Mar/2023 11:09:18] "[35m[1mGET / HTTP/1.1[0m" 500 -
+11:09:18,362 werkzeug INFO 127.0.0.1 - - [02/Mar/2023 11:09:18] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+11:10:57,385 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+11:10:57,385 werkzeug INFO [33mPress CTRL+C to quit[0m
+11:11:01,280 app ERROR Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/dist-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/dist-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/dist-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/orthanc/banking_website_v2/main.py", line 18, in home
+    return render_template('home.html')
+  File "/usr/local/lib/python3.8/dist-packages/flask/templating.py", line 147, in render_template
+    return _render(app, template, context)
+  File "/usr/local/lib/python3.8/dist-packages/flask/templating.py", line 130, in _render
+    rv = template.render(context)
+  File "/usr/local/lib/python3.8/dist-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/usr/local/lib/python3.8/dist-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/orthanc/banking_website_v2/templates/home.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/orthanc/banking_website_v2/templates/base.html", line 10, in top-level template code
+    <link rel="icon" type="image/x-icon" href="{{ url_for('icons', filename='favicon.ico') }}"/>
+  File "/usr/local/lib/python3.8/dist-packages/flask/app.py", line 2031, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+  File "/usr/local/lib/python3.8/dist-packages/flask/app.py", line 2020, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+  File "/usr/local/lib/python3.8/dist-packages/werkzeug/routing/map.py", line 917, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'icons' with values ['filename']. Did you mean 'main.view_accounts' instead?
+11:11:01,283 werkzeug INFO 127.0.0.1 - - [02/Mar/2023 11:11:01] "[35m[1mGET / HTTP/1.1[0m" 500 -
+11:16:30,987 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+11:16:30,987 werkzeug INFO [33mPress CTRL+C to quit[0m
+11:16:35,238 werkzeug INFO 127.0.0.1 - - [02/Mar/2023 11:16:35] "GET / HTTP/1.1" 200 -
+11:16:35,293 werkzeug INFO 127.0.0.1 - - [02/Mar/2023 11:16:35] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+11:19:20,30 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+11:19:20,31 werkzeug INFO [33mPress CTRL+C to quit[0m
+11:19:23,917 werkzeug INFO 127.0.0.1 - - [02/Mar/2023 11:19:23] "GET / HTTP/1.1" 200 -
+11:19:23,947 werkzeug INFO 127.0.0.1 - - [02/Mar/2023 11:19:23] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+11:19:24,168 werkzeug INFO 127.0.0.1 - - [02/Mar/2023 11:19:24] "GET /static/favicon.ico HTTP/1.1" 200 -

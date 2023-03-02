@@ -1,5 +1,5 @@
 from flask import Blueprint, render_template, redirect, \
-    request, flash, url_for, Response, send_file
+    request, flash, url_for, Response, send_file, current_app, send_from_directory
 from flask_login import login_required, current_user, LoginManager
 from models import User, Account, Bank_Settings, Messages, Alerts, Statements
 from format import format_acc_no, format_money, format_acc, format_rates, \
@@ -216,3 +216,8 @@ def get_eStatement(id):
 
     return send_file(pdf_pth, as_attachment=True)
 
+@main.route('/favicon.ico')
+def favicon():
+    pth = Path(current_app.root_path) / Path('icons') / Path('favicon.ico')
+
+    return send_from_directory(str(pth))
