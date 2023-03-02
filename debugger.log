@@ -1711,3 +1711,9 @@ werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'icons'
 11:19:23,917 werkzeug INFO 127.0.0.1 - - [02/Mar/2023 11:19:23] "GET / HTTP/1.1" 200 -
 11:19:23,947 werkzeug INFO 127.0.0.1 - - [02/Mar/2023 11:19:23] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
 11:19:24,168 werkzeug INFO 127.0.0.1 - - [02/Mar/2023 11:19:24] "GET /static/favicon.ico HTTP/1.1" 200 -
+17:30:38,197 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+17:30:38,197 werkzeug INFO [33mPress CTRL+C to quit[0m
+17:31:45,516 werkzeug INFO 127.0.0.1 - - [02/Mar/2023 17:31:45] "GET / HTTP/1.1" 200 -
+17:31:45,528 werkzeug INFO 127.0.0.1 - - [02/Mar/2023 17:31:45] "GET /static/nav.js HTTP/1.1" 200 -
+17:31:45,689 werkzeug INFO 127.0.0.1 - - [02/Mar/2023 17:31:45] "GET /static/favicon.ico HTTP/1.1" 200 -
