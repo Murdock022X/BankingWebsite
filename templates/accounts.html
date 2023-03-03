@@ -11,6 +11,7 @@
     <h4>Interest Rate: {{ acc['ir'] }}</h4>
     <hr>
     <div class="buttons">
+      <a href="{{ url_for('main.account_graph', acc_no=acc['acc_int']) }}" class="button is-white">Account History</a>
       <a href="{{ url_for('main.withdraw', acc_no=acc['acc_int']) }}" class="button is-white">Withdraw</a>
       <a href="{{ url_for('main.deposit', acc_no=acc['acc_int']) }}" class="button is-white">Deposit</a>
       <a href="{{ url_for('main.delete_account', acc_no=acc['acc_int']) }}" class="button is-white">Delete Account</a>
@@ -27,6 +28,7 @@
     <h4>Interest Rate: {{ acc['ir'] }}</h4>
     <hr>
     <div class="buttons">
+      <a href="{{ url_for('main.account_graph', acc_no=acc['acc_int']) }}" class="button is-white">Account History</a>
       <a href="{{ url_for('main.withdraw', acc_no=acc['acc_int']) }}" class="button is-white">Withdraw</a>
       <a href="{{ url_for('main.deposit', acc_no=acc['acc_int']) }}" class="button is-white">Deposit</a>
       <a href="{{ url_for('main.delete_account', acc_no=acc['acc_int']) }}" class="button is-white">Delete Account</a>

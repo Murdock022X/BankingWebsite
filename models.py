@@ -93,4 +93,13 @@ class Statements(db.Model):
     name = db.Column(db.String(100))
     
     path = db.Column(db.String(1000))
+
+class Monthly_Bal(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+
+    acc_no = db.Column(db.Integer)
+
+    date = db.Column(db.Date)
+
+    bal = db.Column(db.Float)
     

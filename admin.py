@@ -1,7 +1,9 @@
-from models import User, Account, Alerts, Messages, Bank_Settings, Statements
+from models import User, Account, Alerts, Messages, Bank_Settings, \
+    Statements, Monthly_Bal
 from app import db
 from datetime import datetime, date
-from flask import Blueprint, render_template, redirect, flash, request, current_app
+from flask import Blueprint, render_template, redirect, flash, \
+    request, current_app
 from flask_login import login_required, current_user
 from utils import MyFPDF
 from format import format_statement_filename
@@ -69,6 +71,21 @@ class Admin_Tools():
             db.session.commit()
 
             sm.write()
+
+    def commit_monthly_bal(acc_no):
+        acc = Account.query.get(acc_no)
+        
+        bal_statement = Monthly_Bal(acc_no=acc_no, date=date.today(), bal=acc.bal)
+
+        db.session.add(bal_statement)
+
+        db.session.commit()
+
+    def commit_all_monthly_bal():
+        accounts = Account.query.all()
+
+        for account in accounts:
+            Admin_Tools.commit_monthly_bal(account.acc_no)
 
 class Account_Metrics():
 

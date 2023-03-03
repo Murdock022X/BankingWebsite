@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<script>
+    url = {{ url|tojson }}
+</script>
+
+<section class="hero">
+    <div class="hero-body">
+        <div class="container">
+            <p class="title">Account History Chart</p>
+
+            {% if valid %}
+
+            <canvas id="account_history_chart"></canvas>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+            <script src="{{ url_for('static', filename='account_graph.js') }}"></script>
+
+            {% else %}
+
+            <p class="subtitle">No Data Yet</p>
+
+            {% endif %}
+        </div>
+    </div>
+</section>
+
+{% endblock %}

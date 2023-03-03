@@ -1,7 +1,9 @@
 from flask import Blueprint, render_template, redirect, \
-    request, flash, url_for, Response, send_file, current_app, send_from_directory
+    request, flash, url_for, Response, send_file, current_app, \
+        send_from_directory
 from flask_login import login_required, current_user, LoginManager
-from models import User, Account, Bank_Settings, Messages, Alerts, Statements
+from models import User, Account, Bank_Settings, Messages, \
+    Alerts, Statements, Monthly_Bal
 from format import format_acc_no, format_money, format_acc, format_rates, \
     deep_format_acc, format_statement_filename, format_date
 from werkzeug.security import check_password_hash
@@ -216,8 +218,28 @@ def get_eStatement(id):
 
     return send_file(pdf_pth, as_attachment=True)
 
-@main.route('/favicon.ico')
-def favicon():
-    pth = Path(current_app.root_path) / Path('icons') / Path('favicon.ico')
+@main.route('/<int:acc_no>/account_graph/')
+@login_required
+def account_graph(acc_no):
+    acc = Monthly_Bal.query.filter_by(acc_no=acc_no)
 
-    return send_from_directory(str(pth))
+    valid = False
+    if acc:
+        valid = True 
+
+    url = url_for("main.account_graph_data", acc_no=acc_no)
+
+    return render_template('account_graph.html', acc_no=acc_no, url=url, valid=valid)
+
+@main.route('/<int:acc_no>/account_graph_data/')
+@login_required
+def account_graph_data(acc_no):
+    monthly_balances = Monthly_Bal.query.filter_by(acc_no=acc_no)
+
+    labels = [str(month.date) for month in monthly_balances]
+    values = [month.bal for month in monthly_balances]
+
+    chart_max = max(values) * 1.25
+    step_val = max(values) * 1.25 / 20
+
+    return {"labels": labels, "values": values, "chart_max": chart_max, "step_val": step_val}
