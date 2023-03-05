@@ -1711,6 +1711,7 @@ werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'icons'
 11:19:23,917 werkzeug INFO 127.0.0.1 - - [02/Mar/2023 11:19:23] "GET / HTTP/1.1" 200 -
 11:19:23,947 werkzeug INFO 127.0.0.1 - - [02/Mar/2023 11:19:23] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
 11:19:24,168 werkzeug INFO 127.0.0.1 - - [02/Mar/2023 11:19:24] "GET /static/favicon.ico HTTP/1.1" 200 -
+<<<<<<< HEAD
 21:40:47,53 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on http://127.0.0.1:5000
 21:40:47,53 werkzeug INFO [33mPress CTRL+C to quit[0m
@@ -2199,3 +2200,1229 @@ TypeError: render_template() takes 1 positional argument but 2 were given
 02:36:11,845 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 02:36:11] "[36mGET /static/account_graph.js HTTP/1.1[0m" 304 -
 02:36:11,854 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 02:36:11] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
 02:36:11,868 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 02:36:11] "GET /1/account_graph_data/ HTTP/1.1" 200 -
+=======
+17:30:38,197 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+17:30:38,197 werkzeug INFO [33mPress CTRL+C to quit[0m
+17:31:45,516 werkzeug INFO 127.0.0.1 - - [02/Mar/2023 17:31:45] "GET / HTTP/1.1" 200 -
+17:31:45,528 werkzeug INFO 127.0.0.1 - - [02/Mar/2023 17:31:45] "GET /static/nav.js HTTP/1.1" 200 -
+17:31:45,689 werkzeug INFO 127.0.0.1 - - [02/Mar/2023 17:31:45] "GET /static/favicon.ico HTTP/1.1" 200 -
+>>>>>>> 53a479e789408feeb10093e679fe338576a5b1f9
+02:42:59,459 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+02:42:59,460 werkzeug INFO [33mPress CTRL+C to quit[0m
+02:43:02,400 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 02:43:02] "GET / HTTP/1.1" 200 -
+02:43:02,448 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 02:43:02] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+02:43:05,219 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 02:43:05] "GET /login HTTP/1.1" 200 -
+02:43:05,251 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 02:43:05] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+02:43:06,425 root INFO Log Info: executive 
+02:43:06,427 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 02:43:06] "[32mPOST /login HTTP/1.1[0m" 302 -
+02:43:06,451 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 02:43:06] "GET /profile/ HTTP/1.1" 200 -
+02:43:06,488 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 02:43:06] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+02:43:08,174 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 02:43:08] "GET /accounts/ HTTP/1.1" 200 -
+02:43:08,207 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 02:43:08] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+02:43:09,184 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 02:43:09] "GET /1/account_graph/ HTTP/1.1" 200 -
+02:43:09,216 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 02:43:09] "[36mGET /static/account_graph.js HTTP/1.1[0m" 304 -
+02:43:09,219 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 02:43:09] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+02:43:09,242 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 02:43:09] "GET /1/account_graph_data/ HTTP/1.1" 200 -
+08:55:37,715 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+08:55:37,715 werkzeug INFO [33mPress CTRL+C to quit[0m
+08:55:42,447 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 08:55:42] "GET / HTTP/1.1" 200 -
+08:55:42,492 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 08:55:42] "GET /static/nav.js HTTP/1.1" 200 -
+08:55:45,91 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 08:55:45] "GET /login HTTP/1.1" 200 -
+08:55:45,133 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 08:55:45] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+08:55:46,404 root INFO Log Info: executive 
+08:55:46,406 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 08:55:46] "[32mPOST /login HTTP/1.1[0m" 302 -
+08:55:46,427 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 08:55:46] "GET /profile/ HTTP/1.1" 200 -
+08:55:46,457 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 08:55:46] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+08:55:48,728 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 08:55:48] "GET /accounts/ HTTP/1.1" 200 -
+08:55:48,758 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 08:55:48] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+08:55:50,364 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 08:55:50] "GET /1/account_graph/ HTTP/1.1" 200 -
+08:55:50,401 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 08:55:50] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+08:55:50,401 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 08:55:50] "GET /static/account_graph.js HTTP/1.1" 200 -
+08:55:50,444 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 08:55:50] "GET /1/account_graph_data/ HTTP/1.1" 200 -
+08:57:29,465 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+08:57:29,466 werkzeug INFO [33mPress CTRL+C to quit[0m
+08:57:33,226 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 08:57:33] "GET / HTTP/1.1" 200 -
+08:57:33,285 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 08:57:33] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+08:57:34,917 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 08:57:34] "GET /accounts/ HTTP/1.1" 200 -
+08:57:34,946 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 08:57:34] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+08:57:35,779 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 08:57:35] "GET /1/account_graph/ HTTP/1.1" 200 -
+08:57:35,810 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 08:57:35] "GET /static/account_graph.js HTTP/1.1" 200 -
+08:57:35,814 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 08:57:35] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+08:57:35,845 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 08:57:35] "GET /1/account_graph_data/ HTTP/1.1" 200 -
+08:58:52,381 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+08:58:52,382 werkzeug INFO [33mPress CTRL+C to quit[0m
+08:58:57,561 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 08:58:57] "GET / HTTP/1.1" 200 -
+08:58:57,615 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 08:58:57] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+08:59:00,77 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 08:59:00] "GET /accounts/ HTTP/1.1" 200 -
+08:59:00,107 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 08:59:00] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+08:59:01,635 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 08:59:01] "GET /1/account_graph/ HTTP/1.1" 200 -
+08:59:01,668 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 08:59:01] "[36mGET /static/account_graph.js HTTP/1.1[0m" 304 -
+08:59:01,671 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 08:59:01] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+08:59:01,688 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 08:59:01] "GET /1/account_graph_data/ HTTP/1.1" 200 -
+08:59:58,866 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 08:59:58] "GET /accounts/ HTTP/1.1" 200 -
+08:59:58,893 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 08:59:58] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+09:00:00,631 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 09:00:00] "GET /1/withdraw/ HTTP/1.1" 200 -
+09:00:00,658 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 09:00:00] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+09:00:04,599 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 09:00:04] "[32mPOST /1/withdraw/ HTTP/1.1[0m" 302 -
+09:00:04,616 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 09:00:04] "GET /accounts/ HTTP/1.1" 200 -
+09:00:04,652 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 09:00:04] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+09:01:25,343 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+09:01:25,344 werkzeug INFO [33mPress CTRL+C to quit[0m
+09:06:14,851 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+09:06:14,851 werkzeug INFO [33mPress CTRL+C to quit[0m
+09:06:18,650 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 09:06:18] "GET / HTTP/1.1" 200 -
+09:06:18,705 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 09:06:18] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+09:06:21,909 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 09:06:21] "[32mGET /accounts/ HTTP/1.1[0m" 302 -
+09:06:21,932 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 09:06:21] "GET /login?next=%2Faccounts%2F HTTP/1.1" 200 -
+09:06:21,965 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 09:06:21] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+09:06:24,18 root INFO Log Info: executive 
+09:06:24,20 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 09:06:24] "[32mPOST /login?next=%2Faccounts%2F HTTP/1.1[0m" 302 -
+09:06:24,41 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 09:06:24] "GET /profile/ HTTP/1.1" 200 -
+09:06:24,77 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 09:06:24] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+09:06:25,675 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 09:06:25] "GET /accounts/ HTTP/1.1" 200 -
+09:06:25,707 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 09:06:25] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+09:06:26,469 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 09:06:26] "GET /1/account_graph/ HTTP/1.1" 200 -
+09:06:26,500 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 09:06:26] "[36mGET /static/account_graph.js HTTP/1.1[0m" 304 -
+09:06:26,504 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 09:06:26] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+09:06:26,527 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 09:06:26] "GET /1/account_graph_data/ HTTP/1.1" 200 -
+09:07:33,606 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+09:07:33,607 werkzeug INFO [33mPress CTRL+C to quit[0m
+09:07:38,999 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 09:07:38] "GET / HTTP/1.1" 200 -
+09:07:39,55 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 09:07:39] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+09:07:41,2 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 09:07:41] "GET /accounts/ HTTP/1.1" 200 -
+09:07:41,36 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 09:07:41] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+09:07:49,284 app ERROR Exception on /1/account_graph/ [GET]
+Traceback (most recent call last):
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "/home/orthanc/banking_website_v2/main.py", line 227, in account_graph
+    if len(data) > 1:
+TypeError: object of type 'Query' has no len()
+09:07:49,286 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 09:07:49] "[35m[1mGET /1/account_graph/ HTTP/1.1[0m" 500 -
+09:07:49,375 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 09:07:49] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+09:10:02,771 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+09:10:02,771 werkzeug INFO [33mPress CTRL+C to quit[0m
+09:10:06,648 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 09:10:06] "GET / HTTP/1.1" 200 -
+09:10:06,700 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 09:10:06] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+09:10:08,673 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 09:10:08] "GET /accounts/ HTTP/1.1" 200 -
+09:10:08,706 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 09:10:08] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+09:10:09,725 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 09:10:09] "GET /1/account_graph/ HTTP/1.1" 200 -
+09:10:09,759 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 09:10:09] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+09:10:09,763 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 09:10:09] "[36mGET /static/account_graph.js HTTP/1.1[0m" 304 -
+09:10:09,778 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 09:10:09] "GET /1/account_graph_data/ HTTP/1.1" 200 -
+09:11:19,567 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+09:11:19,568 werkzeug INFO [33mPress CTRL+C to quit[0m
+09:11:52,558 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+09:11:52,558 werkzeug INFO [33mPress CTRL+C to quit[0m
+09:11:57,123 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 09:11:57] "GET / HTTP/1.1" 200 -
+09:11:57,177 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 09:11:57] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+09:11:59,820 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 09:11:59] "GET /accounts/ HTTP/1.1" 200 -
+09:11:59,851 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 09:11:59] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+09:12:01,999 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 09:12:01] "GET /1/account_graph/ HTTP/1.1" 200 -
+09:12:02,31 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 09:12:02] "[36mGET /static/account_graph.js HTTP/1.1[0m" 304 -
+09:12:02,37 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 09:12:02] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+09:12:02,53 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 09:12:02] "GET /1/account_graph_data/ HTTP/1.1" 200 -
+09:15:17,317 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+09:15:17,317 werkzeug INFO [33mPress CTRL+C to quit[0m
+09:15:20,977 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 09:15:20] "GET / HTTP/1.1" 200 -
+09:15:21,26 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 09:15:21] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+09:15:22,900 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 09:15:22] "GET /accounts/ HTTP/1.1" 200 -
+09:15:22,932 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 09:15:22] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+09:15:24,54 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 09:15:24] "GET /1/account_graph/ HTTP/1.1" 200 -
+09:15:24,86 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 09:15:24] "[36mGET /static/account_graph.js HTTP/1.1[0m" 304 -
+09:15:24,90 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 09:15:24] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+09:15:24,108 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 09:15:24] "GET /1/account_graph_data/ HTTP/1.1" 200 -
+13:25:13,403 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+13:25:13,403 werkzeug INFO [33mPress CTRL+C to quit[0m
+13:25:18,486 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:25:18] "GET / HTTP/1.1" 200 -
+13:25:18,518 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:25:18] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+13:25:20,759 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:25:20] "[32mGET /accounts/ HTTP/1.1[0m" 302 -
+13:25:20,780 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:25:20] "GET /login?next=%2Faccounts%2F HTTP/1.1" 200 -
+13:25:20,798 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:25:20] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+13:25:23,342 root INFO Log Info: executive 
+13:25:23,343 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:25:23] "[32mPOST /login?next=%2Faccounts%2F HTTP/1.1[0m" 302 -
+13:25:23,357 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:25:23] "GET /profile/ HTTP/1.1" 200 -
+13:25:23,378 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:25:23] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+13:25:25,426 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:25:25] "GET /accounts/ HTTP/1.1" 200 -
+13:25:25,444 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:25:25] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+13:25:26,194 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:25:26] "GET /1/account_graph/ HTTP/1.1" 200 -
+13:25:26,214 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:25:26] "GET /static/account_graph.js HTTP/1.1" 200 -
+13:25:26,217 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:25:26] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+13:25:26,227 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:25:26] "GET /1/account_graph_data/ HTTP/1.1" 200 -
+13:29:30,357 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+13:29:30,357 werkzeug INFO [33mPress CTRL+C to quit[0m
+13:29:33,243 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:29:33] "GET / HTTP/1.1" 200 -
+13:29:33,295 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:29:33] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+13:29:35,512 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:29:35] "GET /accounts/ HTTP/1.1" 200 -
+13:29:35,541 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:29:35] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+13:29:36,401 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:29:36] "GET /1/account_graph/ HTTP/1.1" 200 -
+13:29:36,435 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:29:36] "GET /static/account_graph.js HTTP/1.1" 200 -
+13:29:36,441 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:29:36] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+13:29:36,454 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:29:36] "GET /1/account_graph_data/ HTTP/1.1" 200 -
+13:38:02,956 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+13:38:02,956 werkzeug INFO [33mPress CTRL+C to quit[0m
+13:38:06,712 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:38:06] "GET / HTTP/1.1" 200 -
+13:38:06,766 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:38:06] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+13:38:08,564 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:38:08] "GET /accounts/ HTTP/1.1" 200 -
+13:38:08,600 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:38:08] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+13:38:09,481 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:38:09] "GET /1/account_graph/ HTTP/1.1" 200 -
+13:38:09,518 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:38:09] "GET /static/account_graph.js HTTP/1.1" 200 -
+13:38:09,523 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:38:09] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+13:38:09,541 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:38:09] "GET /1/account_graph_data/ HTTP/1.1" 200 -
+13:39:38,436 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+13:39:38,437 werkzeug INFO [33mPress CTRL+C to quit[0m
+13:39:40,974 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:39:40] "GET / HTTP/1.1" 200 -
+13:39:41,37 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:39:41] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+13:39:42,726 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:39:42] "GET /accounts/ HTTP/1.1" 200 -
+13:39:42,759 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:39:42] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+13:39:43,611 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:39:43] "GET /1/account_graph/ HTTP/1.1" 200 -
+13:39:43,643 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:39:43] "GET /static/account_graph.js HTTP/1.1" 200 -
+13:39:43,647 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:39:43] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+13:39:43,663 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:39:43] "GET /1/account_graph_data/ HTTP/1.1" 200 -
+13:41:19,237 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+13:41:19,238 werkzeug INFO [33mPress CTRL+C to quit[0m
+13:41:21,27 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:41:21] "GET / HTTP/1.1" 200 -
+13:41:21,76 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:41:21] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+13:41:22,830 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:41:22] "GET /accounts/ HTTP/1.1" 200 -
+13:41:22,869 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:41:22] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+13:41:24,1 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:41:24] "GET /1/account_graph/ HTTP/1.1" 200 -
+13:41:24,48 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:41:24] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+13:41:24,48 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:41:24] "GET /static/account_graph.js HTTP/1.1" 200 -
+13:41:24,67 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:41:24] "GET /1/account_graph_data/ HTTP/1.1" 200 -
+13:43:11,209 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+13:43:11,209 werkzeug INFO [33mPress CTRL+C to quit[0m
+13:43:13,500 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:43:13] "GET / HTTP/1.1" 200 -
+13:43:13,567 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:43:13] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+13:43:15,28 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:43:15] "GET /create_account/ HTTP/1.1" 200 -
+13:43:15,65 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:43:15] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+13:43:16,465 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:43:16] "GET /accounts/ HTTP/1.1" 200 -
+13:43:16,502 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:43:16] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+13:43:17,516 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:43:17] "GET /1/account_graph/ HTTP/1.1" 200 -
+13:43:17,554 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:43:17] "GET /static/account_graph.js HTTP/1.1" 200 -
+13:43:17,555 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:43:17] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+13:43:17,572 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:43:17] "GET /1/account_graph_data/ HTTP/1.1" 200 -
+13:43:57,742 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+13:43:57,742 werkzeug INFO [33mPress CTRL+C to quit[0m
+13:44:00,788 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:44:00] "GET / HTTP/1.1" 200 -
+13:44:00,847 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:44:00] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+13:44:02,606 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:44:02] "GET /accounts/ HTTP/1.1" 200 -
+13:44:02,633 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:44:02] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+13:44:03,478 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:44:03] "GET /1/account_graph/ HTTP/1.1" 200 -
+13:44:03,507 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:44:03] "GET /static/account_graph.js HTTP/1.1" 200 -
+13:44:03,509 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:44:03] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+13:44:03,521 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:44:03] "GET /1/account_graph_data/ HTTP/1.1" 200 -
+13:45:02,288 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+13:45:02,288 werkzeug INFO [33mPress CTRL+C to quit[0m
+13:45:05,979 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:45:05] "GET /accounts/ HTTP/1.1" 200 -
+13:45:06,12 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:45:06] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+13:45:07,57 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:45:07] "GET /1/account_graph/ HTTP/1.1" 200 -
+13:45:07,97 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:45:07] "GET /static/account_graph.js HTTP/1.1" 200 -
+13:45:07,98 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:45:07] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+13:45:07,116 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:45:07] "GET /1/account_graph_data/ HTTP/1.1" 200 -
+13:45:24,763 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+13:45:24,763 werkzeug INFO [33mPress CTRL+C to quit[0m
+13:45:34,70 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:45:34] "GET /1/account_graph/ HTTP/1.1" 200 -
+13:45:34,98 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:45:34] "GET /static/account_graph.js HTTP/1.1" 200 -
+13:45:34,101 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:45:34] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+13:45:34,120 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:45:34] "GET /1/account_graph_data/ HTTP/1.1" 200 -
+13:45:34,169 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:45:34] "GET /static/favicon.ico HTTP/1.1" 200 -
+13:45:37,41 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:45:37] "GET /create_account/ HTTP/1.1" 200 -
+13:45:37,81 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:45:37] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+13:45:38,673 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:45:38] "GET /accounts/ HTTP/1.1" 200 -
+13:45:38,710 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:45:38] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+13:45:40,554 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:45:40] "GET /create_account/ HTTP/1.1" 200 -
+13:45:40,589 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:45:40] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+13:45:45,9 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:45:45] "GET /accounts/ HTTP/1.1" 200 -
+13:45:45,47 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:45:45] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+13:45:46,439 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:45:46] "GET /1/account_graph/ HTTP/1.1" 200 -
+13:45:46,480 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:45:46] "[36mGET /static/account_graph.js HTTP/1.1[0m" 304 -
+13:45:46,481 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:45:46] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+13:45:46,500 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:45:46] "GET /1/account_graph_data/ HTTP/1.1" 200 -
+13:46:14,2 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+13:46:14,3 werkzeug INFO [33mPress CTRL+C to quit[0m
+13:46:18,351 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:46:18] "GET / HTTP/1.1" 200 -
+13:46:18,410 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:46:18] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+13:46:20,123 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:46:20] "GET /accounts/ HTTP/1.1" 200 -
+13:46:20,160 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:46:20] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+13:46:20,917 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:46:20] "GET /1/account_graph/ HTTP/1.1" 200 -
+13:46:20,957 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:46:20] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+13:46:20,958 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:46:20] "GET /static/account_graph.js HTTP/1.1" 200 -
+13:46:20,976 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:46:20] "GET /1/account_graph_data/ HTTP/1.1" 200 -
+13:50:25,204 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+13:50:25,204 werkzeug INFO [33mPress CTRL+C to quit[0m
+13:50:27,808 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:50:27] "GET / HTTP/1.1" 200 -
+13:50:27,870 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:50:27] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+13:50:30,7 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:50:30] "GET /accounts/ HTTP/1.1" 200 -
+13:50:30,44 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:50:30] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+13:50:30,868 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:50:30] "GET /1/account_graph/ HTTP/1.1" 200 -
+13:50:30,910 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:50:30] "GET /static/account_graph.js HTTP/1.1" 200 -
+13:50:30,913 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:50:30] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+13:50:30,927 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:50:30] "GET /1/account_graph_data/ HTTP/1.1" 200 -
+13:51:52,743 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+13:51:52,744 werkzeug INFO [33mPress CTRL+C to quit[0m
+13:51:55,196 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:51:55] "GET / HTTP/1.1" 200 -
+13:51:55,265 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:51:55] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+13:51:56,849 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:51:56] "GET /accounts/ HTTP/1.1" 200 -
+13:51:56,884 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:51:56] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+13:51:58,213 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:51:58] "GET /1/account_graph/ HTTP/1.1" 200 -
+13:51:58,254 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:51:58] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+13:51:58,255 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:51:58] "[36mGET /static/account_graph.js HTTP/1.1[0m" 304 -
+13:51:59,419 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:51:59] "GET /1/account_graph_data/ HTTP/1.1" 200 -
+13:56:15,610 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+13:56:15,610 werkzeug INFO [33mPress CTRL+C to quit[0m
+13:56:18,146 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:56:18] "GET / HTTP/1.1" 200 -
+13:56:18,197 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:56:18] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+13:56:19,921 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:56:19] "GET /accounts/ HTTP/1.1" 200 -
+13:56:19,964 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:56:19] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+13:56:21,175 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:56:21] "GET /1/account_graph/ HTTP/1.1" 200 -
+13:56:21,215 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:56:21] "GET /static/account_graph.js HTTP/1.1" 200 -
+13:56:21,219 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:56:21] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+13:57:34,283 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+13:57:34,283 werkzeug INFO [33mPress CTRL+C to quit[0m
+13:57:36,195 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:57:36] "GET / HTTP/1.1" 200 -
+13:57:36,244 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:57:36] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+13:57:37,800 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:57:37] "GET /accounts/ HTTP/1.1" 200 -
+13:57:37,837 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:57:37] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+13:57:38,670 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:57:38] "GET /1/account_graph/ HTTP/1.1" 200 -
+13:57:38,708 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:57:38] "GET /static/account_graph.js HTTP/1.1" 200 -
+13:57:38,709 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:57:38] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+13:58:55,694 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+13:58:55,694 werkzeug INFO [33mPress CTRL+C to quit[0m
+13:58:57,823 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:58:57] "GET / HTTP/1.1" 200 -
+13:58:57,869 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:58:57] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+13:59:00,106 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:59:00] "GET /accounts/ HTTP/1.1" 200 -
+13:59:00,146 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:59:00] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+13:59:00,864 app ERROR Exception on /1/account_graph/ [GET]
+Traceback (most recent call last):
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "/home/orthanc/banking_website_v2/main.py", line 239, in account_graph
+    return render_template('account_graph.html', acc_no=acc_no, url=url, valid=valid)
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/flask/templating.py", line 147, in render_template
+    return _render(app, template, context)
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/flask/templating.py", line 130, in _render
+    rv = template.render(context)
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/orthanc/banking_website_v2/templates/account_graph.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/orthanc/banking_website_v2/templates/base.html", line 75, in top-level template code
+    {% block content %}
+  File "/home/orthanc/banking_website_v2/templates/account_graph.html", line 17, in block 'content'
+    <script src="{{ url_for('node_modules', filename='chart.js') }}">
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/flask/app.py", line 2034, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/flask/app.py", line 2023, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/werkzeug/routing/map.py", line 917, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'node_modules' with values ['filename']. Did you mean 'main.delete_message' instead?
+13:59:00,870 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:59:00] "[35m[1mGET /1/account_graph/ HTTP/1.1[0m" 500 -
+13:59:00,968 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:59:00] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+13:59:21,894 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+13:59:21,895 werkzeug INFO [33mPress CTRL+C to quit[0m
+13:59:23,706 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:59:23] "GET / HTTP/1.1" 200 -
+13:59:23,758 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:59:23] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+13:59:25,498 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:59:25] "GET /accounts/ HTTP/1.1" 200 -
+13:59:25,539 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:59:25] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+13:59:26,475 app ERROR Exception on /1/account_graph/ [GET]
+Traceback (most recent call last):
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "/home/orthanc/banking_website_v2/main.py", line 239, in account_graph
+    return render_template('account_graph.html', acc_no=acc_no, url=url, valid=valid)
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/flask/templating.py", line 147, in render_template
+    return _render(app, template, context)
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/flask/templating.py", line 130, in _render
+    rv = template.render(context)
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/orthanc/banking_website_v2/templates/account_graph.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/orthanc/banking_website_v2/templates/base.html", line 75, in top-level template code
+    {% block content %}
+  File "/home/orthanc/banking_website_v2/templates/account_graph.html", line 17, in block 'content'
+    <script src="{{ url_for('node_modules', filename='chart.js') }}"></script>
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/flask/app.py", line 2034, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/flask/app.py", line 2023, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/werkzeug/routing/map.py", line 917, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'node_modules' with values ['filename']. Did you mean 'main.delete_message' instead?
+13:59:26,481 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 13:59:26] "[35m[1mGET /1/account_graph/ HTTP/1.1[0m" 500 -
+14:06:16,695 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+14:06:16,695 werkzeug INFO [33mPress CTRL+C to quit[0m
+14:06:20,205 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 14:06:20] "GET / HTTP/1.1" 200 -
+14:06:20,257 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 14:06:20] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+14:06:22,51 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 14:06:22] "GET /accounts/ HTTP/1.1" 200 -
+14:06:22,88 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 14:06:22] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+14:06:22,896 app ERROR Exception on /1/account_graph/ [GET]
+Traceback (most recent call last):
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "/home/orthanc/banking_website_v2/main.py", line 239, in account_graph
+    return render_template('account_graph.html', acc_no=acc_no, url=url, valid=valid)
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/flask/templating.py", line 147, in render_template
+    return _render(app, template, context)
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/flask/templating.py", line 130, in _render
+    rv = template.render(context)
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/orthanc/banking_website_v2/templates/account_graph.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/orthanc/banking_website_v2/templates/base.html", line 75, in top-level template code
+    {% block content %}
+  File "/home/orthanc/banking_website_v2/templates/account_graph.html", line 17, in block 'content'
+    <script src="{{ url_for('node_modules/chart.js/dist', filename='chart.umd.js') }}"></script>
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/flask/app.py", line 2034, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/flask/app.py", line 2023, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/werkzeug/routing/map.py", line 917, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'node_modules/chart.js/dist' with values ['filename']. Did you mean 'main.deposit' instead?
+14:06:22,902 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 14:06:22] "[35m[1mGET /1/account_graph/ HTTP/1.1[0m" 500 -
+14:07:29,940 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+14:07:29,940 werkzeug INFO [33mPress CTRL+C to quit[0m
+14:07:32,429 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 14:07:32] "GET / HTTP/1.1" 200 -
+14:07:32,490 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 14:07:32] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+14:07:34,500 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 14:07:34] "GET /accounts/ HTTP/1.1" 200 -
+14:07:34,549 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 14:07:34] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+14:07:36,7 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 14:07:36] "GET /1/account_graph/ HTTP/1.1" 200 -
+14:07:36,44 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 14:07:36] "[33mGET /1/node_modules/chart.js/dist/chart.umd.js HTTP/1.1[0m" 404 -
+14:07:36,48 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 14:07:36] "GET /static/account_graph.js HTTP/1.1" 200 -
+14:07:36,54 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 14:07:36] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+14:07:36,70 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 14:07:36] "GET /1/account_graph_data/ HTTP/1.1" 200 -
+14:12:25,699 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+14:12:25,700 werkzeug INFO [33mPress CTRL+C to quit[0m
+14:12:27,679 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 14:12:27] "GET / HTTP/1.1" 200 -
+14:12:27,737 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 14:12:27] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+14:12:29,836 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 14:12:29] "GET /accounts/ HTTP/1.1" 200 -
+14:12:29,868 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 14:12:29] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+14:12:30,755 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 14:12:30] "GET /1/account_graph/ HTTP/1.1" 200 -
+14:12:30,800 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 14:12:30] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+14:12:30,801 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 14:12:30] "[36mGET /static/account_graph.js HTTP/1.1[0m" 304 -
+14:12:30,955 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 14:12:30] "GET /1/account_graph_data/ HTTP/1.1" 200 -
+14:12:57,738 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+14:12:57,739 werkzeug INFO [33mPress CTRL+C to quit[0m
+14:13:00,329 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 14:13:00] "GET / HTTP/1.1" 200 -
+14:13:00,392 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 14:13:00] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+14:13:02,820 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 14:13:02] "GET /accounts/ HTTP/1.1" 200 -
+14:13:02,857 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 14:13:02] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+14:13:03,832 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 14:13:03] "GET /1/account_graph/ HTTP/1.1" 200 -
+14:13:03,885 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 14:13:03] "GET /static/account_graph.js HTTP/1.1" 200 -
+14:13:03,888 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 14:13:03] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+14:13:03,913 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 14:13:03] "GET /1/account_graph_data/ HTTP/1.1" 200 -
+14:14:23,967 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+14:14:23,968 werkzeug INFO [33mPress CTRL+C to quit[0m
+14:14:28,184 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 14:14:28] "GET / HTTP/1.1" 200 -
+14:14:28,236 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 14:14:28] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+14:14:30,156 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 14:14:30] "[32mGET /accounts/ HTTP/1.1[0m" 302 -
+14:14:30,186 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 14:14:30] "GET /login?next=%2Faccounts%2F HTTP/1.1" 200 -
+14:14:30,224 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 14:14:30] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+14:14:31,716 root INFO Log Info: executive 
+14:14:31,717 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 14:14:31] "[32mPOST /login?next=%2Faccounts%2F HTTP/1.1[0m" 302 -
+14:14:31,737 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 14:14:31] "GET /profile/ HTTP/1.1" 200 -
+14:14:31,772 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 14:14:31] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+14:14:33,930 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 14:14:33] "GET /accounts/ HTTP/1.1" 200 -
+14:14:33,959 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 14:14:33] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+14:14:35,154 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 14:14:35] "GET /1/account_graph/ HTTP/1.1" 200 -
+14:14:35,193 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 14:14:35] "GET /static/account_graph.js HTTP/1.1" 200 -
+14:14:35,194 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 14:14:35] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+14:14:35,215 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 14:14:35] "GET /1/account_graph_data/ HTTP/1.1" 200 -
+14:14:52,275 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+14:14:52,275 werkzeug INFO [33mPress CTRL+C to quit[0m
+14:14:55,37 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 14:14:55] "GET /1/account_graph/ HTTP/1.1" 200 -
+14:14:55,62 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 14:14:55] "GET /static/account_graph.js HTTP/1.1" 200 -
+14:14:55,65 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 14:14:55] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+14:14:55,79 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 14:14:55] "GET /1/account_graph_data/ HTTP/1.1" 200 -
+14:14:55,157 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 14:14:55] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+14:14:58,317 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 14:14:58] "GET /profile/ HTTP/1.1" 200 -
+14:14:58,349 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 14:14:58] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+14:14:59,631 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 14:14:59] "GET /accounts/ HTTP/1.1" 200 -
+14:14:59,661 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 14:14:59] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+14:15:00,896 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 14:15:00] "GET /1/account_graph/ HTTP/1.1" 200 -
+14:15:00,930 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 14:15:00] "[36mGET /static/account_graph.js HTTP/1.1[0m" 304 -
+14:15:00,933 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 14:15:00] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+14:15:00,945 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 14:15:00] "GET /1/account_graph_data/ HTTP/1.1" 200 -
+15:05:47,929 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+15:05:47,929 werkzeug INFO [33mPress CTRL+C to quit[0m
+15:05:51,748 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 15:05:51] "GET / HTTP/1.1" 200 -
+15:05:51,798 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 15:05:51] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+15:05:53,376 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 15:05:53] "GET /accounts/ HTTP/1.1" 200 -
+15:05:53,408 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 15:05:53] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+15:05:54,273 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 15:05:54] "GET /1/account_graph/ HTTP/1.1" 200 -
+15:05:54,307 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 15:05:54] "[36mGET /static/account_graph.js HTTP/1.1[0m" 304 -
+15:05:54,311 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 15:05:54] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+15:05:54,324 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 15:05:54] "GET /1/account_graph_data/ HTTP/1.1" 200 -
+15:06:18,422 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+15:06:18,422 werkzeug INFO [33mPress CTRL+C to quit[0m
+15:06:21,485 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 15:06:21] "GET / HTTP/1.1" 200 -
+15:06:21,531 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 15:06:21] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+15:06:22,987 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 15:06:22] "GET /accounts/ HTTP/1.1" 200 -
+15:06:23,19 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 15:06:23] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+15:06:24,505 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 15:06:24] "GET /1/account_graph/ HTTP/1.1" 200 -
+15:06:24,537 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 15:06:24] "GET /static/account_graph.js HTTP/1.1" 200 -
+15:06:24,547 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 15:06:24] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+15:06:24,563 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 15:06:24] "GET /1/account_graph_data/ HTTP/1.1" 200 -
+15:08:16,357 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+15:08:16,358 werkzeug INFO [33mPress CTRL+C to quit[0m
+15:08:20,953 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 15:08:20] "GET /1/account_graph/ HTTP/1.1" 200 -
+15:08:20,980 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 15:08:20] "GET /static/account_graph.js HTTP/1.1" 200 -
+15:08:20,982 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 15:08:20] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+15:08:21,9 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 15:08:21] "GET /1/account_graph_data/ HTTP/1.1" 200 -
+15:08:21,100 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 15:08:21] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+15:09:51,574 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+15:09:51,574 werkzeug INFO [33mPress CTRL+C to quit[0m
+15:09:53,709 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 15:09:53] "GET / HTTP/1.1" 200 -
+15:09:53,767 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 15:09:53] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+15:09:55,277 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 15:09:55] "GET /create_account/ HTTP/1.1" 200 -
+15:09:55,308 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 15:09:55] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+15:09:56,526 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 15:09:56] "GET /accounts/ HTTP/1.1" 200 -
+15:09:56,561 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 15:09:56] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+15:09:57,383 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 15:09:57] "GET /1/account_graph/ HTTP/1.1" 200 -
+15:09:57,420 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 15:09:57] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+15:09:57,421 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 15:09:57] "GET /static/account_graph.js HTTP/1.1" 200 -
+15:09:57,448 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 15:09:57] "GET /1/account_graph_data/ HTTP/1.1" 200 -
+15:12:45,940 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+15:12:45,941 werkzeug INFO [33mPress CTRL+C to quit[0m
+15:12:48,459 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 15:12:48] "GET /1/account_graph/ HTTP/1.1" 200 -
+15:12:48,490 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 15:12:48] "GET /static/account_graph.js HTTP/1.1" 200 -
+15:12:48,494 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 15:12:48] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+15:12:48,513 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 15:12:48] "GET /1/account_graph_data/ HTTP/1.1" 200 -
+15:12:48,581 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 15:12:48] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+15:14:35,353 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+15:14:35,353 werkzeug INFO [33mPress CTRL+C to quit[0m
+15:14:46,831 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 15:14:46] "GET /1/account_graph/ HTTP/1.1" 200 -
+15:14:46,857 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 15:14:46] "GET /static/account_graph.js HTTP/1.1" 200 -
+15:14:46,860 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 15:14:46] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+15:14:46,876 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 15:14:46] "GET /1/account_graph_data/ HTTP/1.1" 200 -
+15:14:46,936 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 15:14:46] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+15:17:41,740 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+15:17:41,740 werkzeug INFO [33mPress CTRL+C to quit[0m
+15:17:45,302 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 15:17:45] "GET /1/account_graph/ HTTP/1.1" 200 -
+15:17:45,333 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 15:17:45] "GET /static/account_graph.js HTTP/1.1" 200 -
+15:17:45,334 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 15:17:45] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+15:17:45,350 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 15:17:45] "GET /1/account_graph_data/ HTTP/1.1" 200 -
+15:17:45,413 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 15:17:45] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+15:17:59,740 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+15:17:59,741 werkzeug INFO [33mPress CTRL+C to quit[0m
+15:18:02,187 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 15:18:02] "GET /1/account_graph/ HTTP/1.1" 200 -
+15:18:02,214 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 15:18:02] "GET /static/account_graph.js HTTP/1.1" 200 -
+15:18:02,220 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 15:18:02] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+15:18:02,233 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 15:18:02] "GET /1/account_graph_data/ HTTP/1.1" 200 -
+15:18:02,302 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 15:18:02] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+15:20:13,631 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+15:20:13,631 werkzeug INFO [33mPress CTRL+C to quit[0m
+15:20:16,524 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 15:20:16] "GET /1/account_graph/ HTTP/1.1" 200 -
+15:20:16,552 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 15:20:16] "GET /static/account_graph.js HTTP/1.1" 200 -
+15:20:16,556 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 15:20:16] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+15:20:16,574 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 15:20:16] "GET /1/account_graph_data/ HTTP/1.1" 200 -
+15:20:16,640 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 15:20:16] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+15:20:58,727 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+15:20:58,727 werkzeug INFO [33mPress CTRL+C to quit[0m
+15:21:01,830 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 15:21:01] "GET /1/account_graph/ HTTP/1.1" 200 -
+15:21:01,858 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 15:21:01] "GET /static/account_graph.js HTTP/1.1" 200 -
+15:21:01,862 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 15:21:01] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+15:21:01,889 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 15:21:01] "GET /1/account_graph_data/ HTTP/1.1" 200 -
+15:21:01,954 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 15:21:01] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+15:21:14,985 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+15:21:14,985 werkzeug INFO [33mPress CTRL+C to quit[0m
+15:21:16,910 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 15:21:16] "GET /1/account_graph/ HTTP/1.1" 200 -
+15:21:16,944 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 15:21:16] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+15:21:16,944 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 15:21:16] "GET /static/account_graph.js HTTP/1.1" 200 -
+15:21:16,968 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 15:21:16] "GET /1/account_graph_data/ HTTP/1.1" 200 -
+15:21:17,35 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 15:21:17] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+15:24:21,755 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+15:24:21,756 werkzeug INFO [33mPress CTRL+C to quit[0m
+15:24:24,511 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 15:24:24] "GET /1/account_graph/ HTTP/1.1" 200 -
+15:24:24,537 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 15:24:24] "GET /static/account_graph.js HTTP/1.1" 200 -
+15:24:24,543 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 15:24:24] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+15:24:24,566 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 15:24:24] "GET /1/account_graph_data/ HTTP/1.1" 200 -
+15:24:24,617 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 15:24:24] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+15:25:11,306 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+15:25:11,307 werkzeug INFO [33mPress CTRL+C to quit[0m
+15:25:14,159 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 15:25:14] "GET /1/account_graph/ HTTP/1.1" 200 -
+15:25:14,187 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 15:25:14] "GET /static/account_graph.js HTTP/1.1" 200 -
+15:25:14,190 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 15:25:14] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+15:25:14,263 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 15:25:14] "GET /1/account_graph_data/ HTTP/1.1" 200 -
+15:25:14,487 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 15:25:14] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+15:26:06,818 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+15:26:06,819 werkzeug INFO [33mPress CTRL+C to quit[0m
+15:26:10,112 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 15:26:10] "GET /1/account_graph/ HTTP/1.1" 200 -
+15:26:10,140 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 15:26:10] "GET /static/account_graph.js HTTP/1.1" 200 -
+15:26:10,144 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 15:26:10] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+15:26:10,161 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 15:26:10] "GET /1/account_graph_data/ HTTP/1.1" 200 -
+15:26:10,340 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 15:26:10] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+15:28:08,962 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+15:28:08,963 werkzeug INFO [33mPress CTRL+C to quit[0m
+15:28:12,66 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 15:28:12] "GET /1/account_graph/ HTTP/1.1" 200 -
+15:28:12,92 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 15:28:12] "GET /static/account_graph.js HTTP/1.1" 200 -
+15:28:12,100 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 15:28:12] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+15:28:12,118 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 15:28:12] "GET /1/account_graph_data/ HTTP/1.1" 200 -
+15:28:12,196 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 15:28:12] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+16:52:46,730 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+16:52:46,730 werkzeug INFO [33mPress CTRL+C to quit[0m
+16:52:52,390 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 16:52:52] "GET /1/account_graph/ HTTP/1.1" 200 -
+16:52:52,416 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 16:52:52] "GET /static/account_graph.js HTTP/1.1" 200 -
+16:52:52,421 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 16:52:52] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+16:52:52,453 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 16:52:52] "GET /1/account_graph_data/ HTTP/1.1" 200 -
+16:52:52,640 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 16:52:52] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+16:54:03,998 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+16:54:03,998 werkzeug INFO [33mPress CTRL+C to quit[0m
+16:54:06,346 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 16:54:06] "GET /1/account_graph/ HTTP/1.1" 200 -
+16:54:06,371 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 16:54:06] "GET /static/account_graph.js HTTP/1.1" 200 -
+16:54:06,375 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 16:54:06] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+16:54:06,402 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 16:54:06] "GET /1/account_graph_data/ HTTP/1.1" 200 -
+16:54:06,465 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 16:54:06] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+16:54:22,843 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 16:54:22] "GET /profile/ HTTP/1.1" 200 -
+16:54:22,877 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 16:54:22] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+16:54:27,492 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 16:54:27] "GET /accounts/ HTTP/1.1" 200 -
+16:54:27,541 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 16:54:27] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+16:54:30,333 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 16:54:30] "GET /create_account/ HTTP/1.1" 200 -
+16:54:30,374 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 16:54:30] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+16:54:33,513 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 16:54:33] "GET /summary/ HTTP/1.1" 200 -
+16:54:33,563 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 16:54:33] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+16:54:35,96 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 16:54:35] "GET /1/account_info/ HTTP/1.1" 200 -
+16:54:35,131 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 16:54:35] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+16:54:38,819 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 16:54:38] "GET /alerts/ HTTP/1.1" 200 -
+16:54:38,866 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 16:54:38] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+16:54:40,899 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 16:54:40] "GET /messages/ HTTP/1.1" 200 -
+16:54:40,942 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 16:54:40] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+16:54:42,36 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 16:54:42] "GET /view_eStatements/ HTTP/1.1" 200 -
+16:54:42,85 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 16:54:42] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+16:54:43,310 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 16:54:43] "GET /bank_settings/ HTTP/1.1" 200 -
+16:54:43,344 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 16:54:43] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+16:54:44,391 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 16:54:44] "GET /profile/ HTTP/1.1" 200 -
+16:54:44,440 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 16:54:44] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+16:54:45,211 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 16:54:45] "GET / HTTP/1.1" 200 -
+16:54:45,247 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 16:54:45] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+16:54:57,786 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 16:54:57] "GET /bank_settings/ HTTP/1.1" 200 -
+16:54:57,833 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 16:54:57] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+16:54:59,485 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 16:54:59] "GET /send_alert/ HTTP/1.1" 200 -
+16:54:59,523 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 16:54:59] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+16:55:00,555 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 16:55:00] "GET /compound/ HTTP/1.1" 200 -
+16:55:00,604 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 16:55:00] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+16:55:01,111 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 16:55:01] "GET /get_statements/ HTTP/1.1" 200 -
+16:55:01,148 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 16:55:01] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+16:55:07,514 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 16:55:07] "GET /view_eStatements/ HTTP/1.1" 200 -
+16:55:07,566 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 16:55:07] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+16:55:08,646 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 16:55:08] "GET /alerts/ HTTP/1.1" 200 -
+16:55:08,685 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 16:55:08] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+16:55:10,25 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 16:55:10] "GET /messages/ HTTP/1.1" 200 -
+16:55:10,81 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 16:55:10] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+16:55:12,4 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 16:55:12] "GET /accounts/ HTTP/1.1" 200 -
+16:55:12,43 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 16:55:12] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+16:56:05,47 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 16:56:05] "GET /1/account_graph/ HTTP/1.1" 200 -
+16:56:05,97 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 16:56:05] "[36mGET /static/account_graph.js HTTP/1.1[0m" 304 -
+16:56:05,103 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 16:56:05] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+16:56:05,125 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 16:56:05] "GET /1/account_graph_data/ HTTP/1.1" 200 -
+16:56:47,644 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+16:56:47,644 werkzeug INFO [33mPress CTRL+C to quit[0m
+16:56:50,517 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 16:56:50] "GET /1/account_graph/ HTTP/1.1" 200 -
+16:56:50,546 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 16:56:50] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+16:56:50,549 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 16:56:50] "GET /static/account_graph.js HTTP/1.1" 200 -
+16:56:50,568 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 16:56:50] "GET /1/account_graph_data/ HTTP/1.1" 200 -
+16:56:50,636 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 16:56:50] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+17:04:42,936 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+17:04:42,936 werkzeug INFO [33mPress CTRL+C to quit[0m
+17:04:48,265 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 17:04:48] "GET /1/account_graph/ HTTP/1.1" 200 -
+17:04:48,296 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 17:04:48] "GET /static/account_graph.js HTTP/1.1" 200 -
+17:04:48,299 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 17:04:48] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+17:04:48,333 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 17:04:48] "GET /1/account_graph_data/ HTTP/1.1" 200 -
+17:04:48,530 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 17:04:48] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+17:19:35,882 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+17:19:35,882 werkzeug INFO [33mPress CTRL+C to quit[0m
+17:19:39,925 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 17:19:39] "GET /1/account_graph/ HTTP/1.1" 200 -
+17:19:39,954 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 17:19:39] "GET /static/account_graph.js HTTP/1.1" 200 -
+17:19:39,955 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 17:19:39] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+17:19:39,974 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 17:19:39] "GET /1/account_graph_data/ HTTP/1.1" 200 -
+17:19:40,41 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 17:19:40] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+17:20:10,881 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+17:20:10,881 werkzeug INFO [33mPress CTRL+C to quit[0m
+17:20:12,319 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 17:20:12] "GET / HTTP/1.1" 200 -
+17:20:12,380 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 17:20:12] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+17:20:14,961 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 17:20:14] "GET /accounts/ HTTP/1.1" 200 -
+17:20:15,1 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 17:20:15] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+17:20:16,187 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 17:20:16] "GET /1/account_graph/ HTTP/1.1" 200 -
+17:20:16,230 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 17:20:16] "[36mGET /static/account_graph.js HTTP/1.1[0m" 304 -
+17:20:16,233 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 17:20:16] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+17:20:16,260 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 17:20:16] "GET /1/account_graph_data/ HTTP/1.1" 200 -
+18:02:14,668 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 18:02:14] "GET /1/account_graph/ HTTP/1.1" 200 -
+18:02:14,708 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 18:02:14] "[36mGET /static/account_graph.js HTTP/1.1[0m" 304 -
+18:02:14,712 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 18:02:14] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:02:14,742 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 18:02:14] "GET /1/account_graph_data/ HTTP/1.1" 200 -
+18:02:14,931 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 18:02:14] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+18:25:39,827 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+18:25:39,828 werkzeug INFO [33mPress CTRL+C to quit[0m
+18:25:43,337 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 18:25:43] "GET /1/account_graph/ HTTP/1.1" 200 -
+18:25:43,368 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 18:25:43] "GET /static/account_graph.js HTTP/1.1" 200 -
+18:25:43,371 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 18:25:43] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:25:43,394 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 18:25:43] "GET /1/account_graph_data/ HTTP/1.1" 200 -
+18:25:43,464 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 18:25:43] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+18:39:27,118 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 18:39:27] "GET /1/account_graph/ HTTP/1.1" 200 -
+18:39:27,151 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 18:39:27] "[36mGET /static/account_graph.js HTTP/1.1[0m" 304 -
+18:39:27,155 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 18:39:27] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:39:27,173 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 18:39:27] "GET /1/account_graph_data/ HTTP/1.1" 200 -
+18:39:27,241 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 18:39:27] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+18:42:10,935 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 18:42:10] "GET /bank_settings/ HTTP/1.1" 200 -
+18:42:10,974 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 18:42:10] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:42:12,424 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 18:42:12] "GET /view_eStatements/ HTTP/1.1" 200 -
+18:42:12,478 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 18:42:12] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:42:14,165 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 18:42:14] "GET /bank_settings/ HTTP/1.1" 200 -
+18:42:14,199 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 18:42:14] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:42:15,325 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 18:42:15] "GET /get_statements/ HTTP/1.1" 200 -
+18:42:15,377 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 18:42:15] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:42:16,80 fpdf.html DEBUG H 4.2333333333333325
+18:42:16,82 fpdf.html DEBUG write '' h=4
+18:42:16,82 fpdf.html DEBUG STARTTAG html {}
+18:42:16,82 fpdf.html DEBUG write '' h=4
+18:42:16,82 fpdf.html DEBUG STARTTAG head {}
+18:42:16,83 fpdf.html DEBUG write '' h=4
+18:42:16,83 fpdf.html DEBUG STARTTAG meta {'charset': 'utf-8'}
+18:42:16,83 fpdf.html DEBUG write '' h=4
+18:42:16,83 fpdf.html DEBUG STARTTAG meta {'http-equiv': 'X-UA-Compatible', 'content': 'IE=edge'}
+18:42:16,83 fpdf.html DEBUG write '' h=4
+18:42:16,83 fpdf.html DEBUG STARTTAG meta {'name': 'viewport', 'content': 'width=device-width, initial-scale=1'}
+18:42:16,83 fpdf.html DEBUG write '' h=4
+18:42:16,84 fpdf.html DEBUG STARTTAG title {}
+18:42:16,84 fpdf.html DEBUG write 'Statement For Admin' h=4
+18:42:16,85 fpdf.html DEBUG ENDTAG title
+18:42:16,85 fpdf.html DEBUG write '' h=4
+18:42:16,86 fpdf.html DEBUG STARTTAG link {'rel': 'stylesheet', 'href': 'https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css'}
+18:42:16,86 fpdf.html DEBUG ENDTAG link
+18:42:16,86 fpdf.html DEBUG write '' h=4
+18:42:16,86 fpdf.html DEBUG ENDTAG head
+18:42:16,86 fpdf.html WARNING Unexpected HTML end tag </head>, start tag was <meta>
+18:42:16,86 fpdf.html DEBUG write '' h=4
+18:42:16,86 fpdf.html DEBUG STARTTAG body {}
+18:42:16,87 fpdf.html DEBUG write '' h=4
+18:42:16,87 fpdf.html DEBUG STARTTAG br {}
+18:42:16,87 fpdf.html DEBUG write '' h=4
+18:42:16,87 fpdf.html DEBUG STARTTAG hr {}
+18:42:16,87 fpdf.html DEBUG write '' h=4
+18:42:16,88 fpdf.html DEBUG STARTTAG h2 {'class': 'subtitle'}
+18:42:16,88 fpdf.html DEBUG H 6.35
+18:42:16,88 fpdf.html DEBUG write 'Overview' h=6
+18:42:16,88 fpdf.html DEBUG ENDTAG h2
+18:42:16,88 fpdf.html DEBUG H 4.2333333333333325
+18:42:16,89 fpdf.html DEBUG write '' h=4
+18:42:16,89 fpdf.html DEBUG STARTTAG ul {}
+18:42:16,89 fpdf.html DEBUG write '' h=4
+18:42:16,89 fpdf.html DEBUG STARTTAG li {}
+18:42:16,89 fpdf.html DEBUG write 'Account Summary Total 767.0' h=4
+18:42:16,90 fpdf.html DEBUG ENDTAG li
+18:42:16,90 fpdf.html DEBUG write '' h=4
+18:42:16,90 fpdf.html DEBUG STARTTAG li {}
+18:42:16,91 fpdf.html DEBUG write 'Accrued Interest During This Period' h=4
+18:42:16,91 fpdf.html DEBUG ENDTAG li
+18:42:16,91 fpdf.html DEBUG write '' h=4
+18:42:16,91 fpdf.html DEBUG ENDTAG ul
+18:42:16,92 fpdf.html DEBUG write '' h=4
+18:42:16,92 fpdf.html DEBUG ENDTAG body
+18:42:16,92 fpdf.html DEBUG write '' h=4
+18:42:16,92 fpdf.html DEBUG ENDTAG html
+18:42:16,92 fpdf.html WARNING Unexpected HTML end tag </html>, start tag was <meta>
+18:42:16,92 fpdf.html WARNING Missing HTML end tag for <meta>
+18:42:16,105 fpdf.output DEBUG Final size summary of the biggest document sections:
+18:42:16,106 fpdf.output DEBUG - pages: 567.0B
+18:42:16,106 fpdf.output DEBUG - fonts: 99.0B
+18:42:16,106 fpdf.output DEBUG - document_outline: 197.0B
+18:42:16,110 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 18:42:16] "POST /get_statements/ HTTP/1.1" 200 -
+18:42:16,135 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 18:42:16] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:42:16,901 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 18:42:16] "GET /view_eStatements/ HTTP/1.1" 200 -
+18:42:16,946 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 18:42:16] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:42:18,121 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 18:42:18] "GET /1/get_eStatement/ HTTP/1.1" 200 -
+18:42:47,94 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+18:42:47,94 werkzeug INFO [33mPress CTRL+C to quit[0m
+18:42:52,203 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 18:42:52] "GET /bank_settings/ HTTP/1.1" 200 -
+18:42:52,246 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 18:42:52] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:42:53,192 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 18:42:53] "GET /get_statements/ HTTP/1.1" 200 -
+18:42:53,244 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 18:42:53] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:42:53,955 fpdf.html DEBUG H 4.2333333333333325
+18:42:53,956 fpdf.html DEBUG write '' h=4
+18:42:53,956 fpdf.html DEBUG STARTTAG html {}
+18:42:53,956 fpdf.html DEBUG write '' h=4
+18:42:53,956 fpdf.html DEBUG STARTTAG head {}
+18:42:53,956 fpdf.html DEBUG write '' h=4
+18:42:53,956 fpdf.html DEBUG STARTTAG meta {'charset': 'utf-8'}
+18:42:53,956 fpdf.html DEBUG write '' h=4
+18:42:53,957 fpdf.html DEBUG STARTTAG meta {'http-equiv': 'X-UA-Compatible', 'content': 'IE=edge'}
+18:42:53,957 fpdf.html DEBUG write '' h=4
+18:42:53,957 fpdf.html DEBUG STARTTAG meta {'name': 'viewport', 'content': 'width=device-width, initial-scale=1'}
+18:42:53,957 fpdf.html DEBUG write '' h=4
+18:42:53,957 fpdf.html DEBUG STARTTAG title {}
+18:42:53,957 fpdf.html DEBUG write 'Statement For Admin' h=4
+18:42:53,958 fpdf.html DEBUG ENDTAG title
+18:42:53,958 fpdf.html DEBUG write '' h=4
+18:42:53,958 fpdf.html DEBUG STARTTAG link {'rel': 'stylesheet', 'href': 'https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css'}
+18:42:53,959 fpdf.html DEBUG ENDTAG link
+18:42:53,959 fpdf.html DEBUG write '' h=4
+18:42:53,959 fpdf.html DEBUG ENDTAG head
+18:42:53,959 fpdf.html WARNING Unexpected HTML end tag </head>, start tag was <meta>
+18:42:53,959 fpdf.html DEBUG write '' h=4
+18:42:53,959 fpdf.html DEBUG STARTTAG body {}
+18:42:53,959 fpdf.html DEBUG write '' h=4
+18:42:53,960 fpdf.html DEBUG STARTTAG hr {}
+18:42:53,960 fpdf.html DEBUG write '' h=4
+18:42:53,960 fpdf.html DEBUG STARTTAG h2 {'class': 'subtitle'}
+18:42:53,960 fpdf.html DEBUG H 6.35
+18:42:53,960 fpdf.html DEBUG write 'Overview' h=6
+18:42:53,961 fpdf.html DEBUG ENDTAG h2
+18:42:53,961 fpdf.html DEBUG H 4.2333333333333325
+18:42:53,961 fpdf.html DEBUG write '' h=4
+18:42:53,961 fpdf.html DEBUG STARTTAG ul {}
+18:42:53,961 fpdf.html DEBUG write '' h=4
+18:42:53,961 fpdf.html DEBUG STARTTAG li {}
+18:42:53,962 fpdf.html DEBUG write 'Account Summary Total 767.0' h=4
+18:42:53,962 fpdf.html DEBUG ENDTAG li
+18:42:53,962 fpdf.html DEBUG write '' h=4
+18:42:53,962 fpdf.html DEBUG STARTTAG li {}
+18:42:53,963 fpdf.html DEBUG write 'Accrued Interest During This Period' h=4
+18:42:53,963 fpdf.html DEBUG ENDTAG li
+18:42:53,963 fpdf.html DEBUG write '' h=4
+18:42:53,963 fpdf.html DEBUG ENDTAG ul
+18:42:53,964 fpdf.html DEBUG write '' h=4
+18:42:53,964 fpdf.html DEBUG ENDTAG body
+18:42:53,964 fpdf.html DEBUG write '' h=4
+18:42:53,964 fpdf.html DEBUG ENDTAG html
+18:42:53,964 fpdf.html WARNING Unexpected HTML end tag </html>, start tag was <meta>
+18:42:53,964 fpdf.html WARNING Missing HTML end tag for <meta>
+18:42:53,982 fpdf.output DEBUG Final size summary of the biggest document sections:
+18:42:53,982 fpdf.output DEBUG - pages: 567.0B
+18:42:53,982 fpdf.output DEBUG - fonts: 99.0B
+18:42:53,982 fpdf.output DEBUG - document_outline: 197.0B
+18:42:53,989 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 18:42:53] "POST /get_statements/ HTTP/1.1" 200 -
+18:42:54,20 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 18:42:54] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:42:54,733 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 18:42:54] "GET /view_eStatements/ HTTP/1.1" 200 -
+18:42:54,778 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 18:42:54] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:42:56,438 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 18:42:56] "GET /1/get_eStatement/ HTTP/1.1" 200 -
+18:43:03,836 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 18:43:03] "GET /2/get_eStatement/ HTTP/1.1" 200 -
+18:43:20,273 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+18:43:20,273 werkzeug INFO [33mPress CTRL+C to quit[0m
+18:43:26,313 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 18:43:26] "GET / HTTP/1.1" 200 -
+18:43:26,367 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 18:43:26] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:43:29,482 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 18:43:29] "GET /accounts/ HTTP/1.1" 200 -
+18:43:29,517 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 18:43:29] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:43:32,589 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 18:43:32] "GET /bank_settings/ HTTP/1.1" 200 -
+18:43:32,626 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 18:43:32] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:43:33,667 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 18:43:33] "GET /get_statements/ HTTP/1.1" 200 -
+18:43:33,721 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 18:43:33] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:43:34,379 fpdf.html DEBUG H 4.2333333333333325
+18:43:34,380 fpdf.html DEBUG write '' h=4
+18:43:34,380 fpdf.html DEBUG STARTTAG html {}
+18:43:34,380 fpdf.html DEBUG write '' h=4
+18:43:34,380 fpdf.html DEBUG STARTTAG head {}
+18:43:34,381 fpdf.html DEBUG write '' h=4
+18:43:34,381 fpdf.html DEBUG STARTTAG meta {'charset': 'utf-8'}
+18:43:34,381 fpdf.html DEBUG write '' h=4
+18:43:34,381 fpdf.html DEBUG STARTTAG meta {'http-equiv': 'X-UA-Compatible', 'content': 'IE=edge'}
+18:43:34,381 fpdf.html DEBUG write '' h=4
+18:43:34,381 fpdf.html DEBUG STARTTAG meta {'name': 'viewport', 'content': 'width=device-width, initial-scale=1'}
+18:43:34,381 fpdf.html DEBUG write '' h=4
+18:43:34,381 fpdf.html DEBUG STARTTAG title {}
+18:43:34,381 fpdf.html DEBUG write 'Statement For Admin' h=4
+18:43:34,382 fpdf.html DEBUG ENDTAG title
+18:43:34,383 fpdf.html DEBUG write '' h=4
+18:43:34,383 fpdf.html DEBUG STARTTAG link {'rel': 'stylesheet', 'href': 'https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css'}
+18:43:34,383 fpdf.html DEBUG ENDTAG link
+18:43:34,383 fpdf.html DEBUG write '' h=4
+18:43:34,383 fpdf.html DEBUG ENDTAG head
+18:43:34,383 fpdf.html WARNING Unexpected HTML end tag </head>, start tag was <meta>
+18:43:34,383 fpdf.html DEBUG write '' h=4
+18:43:34,383 fpdf.html DEBUG STARTTAG body {}
+18:43:34,384 fpdf.html DEBUG write '' h=4
+18:43:34,384 fpdf.html DEBUG STARTTAG h2 {'class': 'subtitle'}
+18:43:34,384 fpdf.html DEBUG H 6.35
+18:43:34,384 fpdf.html DEBUG write 'Overview' h=6
+18:43:34,384 fpdf.html DEBUG ENDTAG h2
+18:43:34,384 fpdf.html DEBUG H 4.2333333333333325
+18:43:34,384 fpdf.html DEBUG write '' h=4
+18:43:34,385 fpdf.html DEBUG STARTTAG ul {}
+18:43:34,385 fpdf.html DEBUG write '' h=4
+18:43:34,385 fpdf.html DEBUG STARTTAG li {}
+18:43:34,385 fpdf.html DEBUG write 'Account Summary Total 767.0' h=4
+18:43:34,386 fpdf.html DEBUG ENDTAG li
+18:43:34,386 fpdf.html DEBUG write '' h=4
+18:43:34,386 fpdf.html DEBUG STARTTAG li {}
+18:43:34,386 fpdf.html DEBUG write 'Accrued Interest During This Period' h=4
+18:43:34,387 fpdf.html DEBUG ENDTAG li
+18:43:34,387 fpdf.html DEBUG write '' h=4
+18:43:34,387 fpdf.html DEBUG ENDTAG ul
+18:43:34,387 fpdf.html DEBUG write '' h=4
+18:43:34,387 fpdf.html DEBUG ENDTAG body
+18:43:34,387 fpdf.html DEBUG write '' h=4
+18:43:34,387 fpdf.html DEBUG ENDTAG html
+18:43:34,387 fpdf.html WARNING Unexpected HTML end tag </html>, start tag was <meta>
+18:43:34,387 fpdf.html WARNING Missing HTML end tag for <meta>
+18:43:34,406 fpdf.output DEBUG Final size summary of the biggest document sections:
+18:43:34,407 fpdf.output DEBUG - pages: 358.0B
+18:43:34,407 fpdf.output DEBUG - fonts: 99.0B
+18:43:34,407 fpdf.output DEBUG - document_outline: 194.0B
+18:43:34,414 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 18:43:34] "POST /get_statements/ HTTP/1.1" 200 -
+18:43:34,440 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 18:43:34] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:43:35,244 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 18:43:35] "GET /view_eStatements/ HTTP/1.1" 200 -
+18:43:35,270 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 18:43:35] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:43:36,606 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 18:43:36] "GET /1/get_eStatement/ HTTP/1.1" 200 -
+18:45:18,266 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 18:45:18] "GET / HTTP/1.1" 200 -
+18:45:18,305 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 18:45:18] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:45:35,438 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 18:45:35] "GET /profile/ HTTP/1.1" 200 -
+18:45:35,476 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 18:45:35] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:46:13,15 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 18:46:13] "GET /accounts/ HTTP/1.1" 200 -
+18:46:13,52 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 18:46:13] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:46:19,602 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 18:46:19] "GET /1/account_graph/ HTTP/1.1" 200 -
+18:46:19,646 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 18:46:19] "[36mGET /static/account_graph.js HTTP/1.1[0m" 304 -
+18:46:19,650 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 18:46:19] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:46:19,683 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 18:46:19] "GET /1/account_graph_data/ HTTP/1.1" 200 -
+18:46:25,850 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 18:46:25] "GET /create_account/ HTTP/1.1" 200 -
+18:46:25,898 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 18:46:25] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:46:29,438 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 18:46:29] "GET /summary/ HTTP/1.1" 200 -
+18:46:29,487 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 18:46:29] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:46:35,610 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 18:46:35] "GET /alerts/ HTTP/1.1" 200 -
+18:46:35,654 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 18:46:35] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:46:36,762 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 18:46:36] "GET /messages/ HTTP/1.1" 200 -
+18:46:36,828 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 18:46:36] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:46:37,300 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 18:46:37] "GET /alerts/ HTTP/1.1" 200 -
+18:46:37,344 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 18:46:37] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:46:38,124 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 18:46:38] "GET /view_eStatements/ HTTP/1.1" 200 -
+18:46:38,166 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 18:46:38] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:46:41,364 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 18:46:41] "[36mGET /1/get_eStatement/ HTTP/1.1[0m" 304 -
+18:46:49,526 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 18:46:49] "GET /bank_settings/ HTTP/1.1" 200 -
+18:46:49,566 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 18:46:49] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:47:30,613 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 18:47:30] "GET /bank_settings/ HTTP/1.1" 200 -
+18:47:30,644 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 18:47:30] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:47:32,381 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 18:47:32] "GET /view_eStatements/ HTTP/1.1" 200 -
+18:47:32,426 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 18:47:32] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:47:34,508 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 18:47:34] "GET /alerts/ HTTP/1.1" 200 -
+18:47:34,553 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 18:47:34] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:47:35,478 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 18:47:35] "GET /messages/ HTTP/1.1" 200 -
+18:47:35,520 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 18:47:35] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:47:37,497 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 18:47:37] "GET /alerts/ HTTP/1.1" 200 -
+18:47:37,541 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 18:47:37] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:47:38,352 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 18:47:38] "GET /messages/ HTTP/1.1" 200 -
+18:47:38,402 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 18:47:38] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:47:39,154 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 18:47:39] "GET /alerts/ HTTP/1.1" 200 -
+18:47:39,202 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 18:47:39] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:47:39,716 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 18:47:39] "GET /view_eStatements/ HTTP/1.1" 200 -
+18:47:39,760 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 18:47:39] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:47:40,762 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 18:47:40] "GET /bank_settings/ HTTP/1.1" 200 -
+18:47:40,802 werkzeug INFO 127.0.0.1 - - [03/Mar/2023 18:47:40] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+14:12:42,184 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+14:12:42,184 werkzeug INFO [33mPress CTRL+C to quit[0m
+14:12:45,782 werkzeug INFO 127.0.0.1 - - [04/Mar/2023 14:12:45] "GET / HTTP/1.1" 200 -
+14:12:45,814 werkzeug INFO 127.0.0.1 - - [04/Mar/2023 14:12:45] "GET /static/nav.js HTTP/1.1" 200 -
+14:12:47,667 werkzeug INFO 127.0.0.1 - - [04/Mar/2023 14:12:47] "[32mGET /profile/ HTTP/1.1[0m" 302 -
+14:12:47,679 werkzeug INFO 127.0.0.1 - - [04/Mar/2023 14:12:47] "GET /login?next=%2Fprofile%2F HTTP/1.1" 200 -
+14:12:47,696 werkzeug INFO 127.0.0.1 - - [04/Mar/2023 14:12:47] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+14:12:49,753 root INFO Log Info: executive 
+14:12:49,754 werkzeug INFO 127.0.0.1 - - [04/Mar/2023 14:12:49] "[32mPOST /login?next=%2Fprofile%2F HTTP/1.1[0m" 302 -
+14:12:49,764 werkzeug INFO 127.0.0.1 - - [04/Mar/2023 14:12:49] "GET /profile/ HTTP/1.1" 200 -
+14:12:49,782 werkzeug INFO 127.0.0.1 - - [04/Mar/2023 14:12:49] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+14:12:54,540 werkzeug INFO 127.0.0.1 - - [04/Mar/2023 14:12:54] "GET /accounts/ HTTP/1.1" 200 -
+14:12:54,555 werkzeug INFO 127.0.0.1 - - [04/Mar/2023 14:12:54] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+14:12:55,490 werkzeug INFO 127.0.0.1 - - [04/Mar/2023 14:12:55] "GET /1/account_graph/ HTTP/1.1" 200 -
+14:12:55,508 werkzeug INFO 127.0.0.1 - - [04/Mar/2023 14:12:55] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+14:12:55,508 werkzeug INFO 127.0.0.1 - - [04/Mar/2023 14:12:55] "GET /static/account_graph.js HTTP/1.1" 200 -
+14:12:55,608 werkzeug INFO 127.0.0.1 - - [04/Mar/2023 14:12:55] "GET /1/account_graph_data/ HTTP/1.1" 200 -
+14:12:59,624 root INFO Log Info: 
+14:12:59,627 werkzeug INFO 127.0.0.1 - - [04/Mar/2023 14:12:59] "GET /signup/ HTTP/1.1" 200 -
+14:12:59,645 werkzeug INFO 127.0.0.1 - - [04/Mar/2023 14:12:59] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+14:13:06,620 root INFO Log Info: 
+14:13:06,627 root INFO Log Info: nate sha256$eNuBQX6YWlQm52ug$b256c871041ebbabbb371ed738a9e1b004b313e410836fea395d1f72d0e653d5 Hank 
+14:13:06,628 werkzeug INFO 127.0.0.1 - - [04/Mar/2023 14:13:06] "[32mPOST /signup/ HTTP/1.1[0m" 302 -
+14:13:06,637 werkzeug INFO 127.0.0.1 - - [04/Mar/2023 14:13:06] "GET /login HTTP/1.1" 200 -
+14:13:06,671 werkzeug INFO 127.0.0.1 - - [04/Mar/2023 14:13:06] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+14:13:12,316 root INFO Log Info: nate 
+14:13:12,317 werkzeug INFO 127.0.0.1 - - [04/Mar/2023 14:13:12] "[32mPOST /login HTTP/1.1[0m" 302 -
+14:13:12,324 werkzeug INFO 127.0.0.1 - - [04/Mar/2023 14:13:12] "GET /profile/ HTTP/1.1" 200 -
+14:13:12,343 werkzeug INFO 127.0.0.1 - - [04/Mar/2023 14:13:12] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+14:13:43,442 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+14:13:43,443 werkzeug INFO [33mPress CTRL+C to quit[0m
+14:13:53,188 werkzeug INFO 127.0.0.1 - - [04/Mar/2023 14:13:53] "GET / HTTP/1.1" 200 -
+14:13:53,222 werkzeug INFO 127.0.0.1 - - [04/Mar/2023 14:13:53] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+14:13:54,503 werkzeug INFO 127.0.0.1 - - [04/Mar/2023 14:13:54] "GET /accounts/ HTTP/1.1" 200 -
+14:13:54,519 werkzeug INFO 127.0.0.1 - - [04/Mar/2023 14:13:54] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+14:14:01,846 werkzeug INFO 127.0.0.1 - - [04/Mar/2023 14:14:01] "GET /profile/ HTTP/1.1" 200 -
+14:14:01,862 werkzeug INFO 127.0.0.1 - - [04/Mar/2023 14:14:01] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+14:25:35,666 werkzeug INFO 127.0.0.1 - - [04/Mar/2023 14:25:35] "GET /create_account/ HTTP/1.1" 200 -
+14:25:35,683 werkzeug INFO 127.0.0.1 - - [04/Mar/2023 14:25:35] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+14:25:42,309 werkzeug INFO 127.0.0.1 - - [04/Mar/2023 14:25:42] "GET /summary/ HTTP/1.1" 200 -
+14:25:42,325 werkzeug INFO 127.0.0.1 - - [04/Mar/2023 14:25:42] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+14:25:43,529 werkzeug INFO 127.0.0.1 - - [04/Mar/2023 14:25:43] "GET /accounts/ HTTP/1.1" 200 -
+14:25:43,545 werkzeug INFO 127.0.0.1 - - [04/Mar/2023 14:25:43] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+14:25:44,712 werkzeug INFO 127.0.0.1 - - [04/Mar/2023 14:25:44] "GET /create_account/ HTTP/1.1" 200 -
+14:25:44,728 werkzeug INFO 127.0.0.1 - - [04/Mar/2023 14:25:44] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+14:25:46,84 werkzeug INFO 127.0.0.1 - - [04/Mar/2023 14:25:46] "GET /alerts/ HTTP/1.1" 200 -
+14:25:46,100 werkzeug INFO 127.0.0.1 - - [04/Mar/2023 14:25:46] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+14:25:47,347 werkzeug INFO 127.0.0.1 - - [04/Mar/2023 14:25:47] "GET /messages/ HTTP/1.1" 200 -
+14:25:47,363 werkzeug INFO 127.0.0.1 - - [04/Mar/2023 14:25:47] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+14:25:47,897 werkzeug INFO 127.0.0.1 - - [04/Mar/2023 14:25:47] "GET /alerts/ HTTP/1.1" 200 -
+14:25:47,913 werkzeug INFO 127.0.0.1 - - [04/Mar/2023 14:25:47] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+14:25:48,602 werkzeug INFO 127.0.0.1 - - [04/Mar/2023 14:25:48] "GET /view_eStatements/ HTTP/1.1" 200 -
+14:25:48,620 werkzeug INFO 127.0.0.1 - - [04/Mar/2023 14:25:48] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+14:27:42,599 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+14:27:42,600 werkzeug INFO [33mPress CTRL+C to quit[0m
+14:27:46,788 werkzeug INFO 127.0.0.1 - - [04/Mar/2023 14:27:46] "GET / HTTP/1.1" 200 -
+14:27:46,818 werkzeug INFO 127.0.0.1 - - [04/Mar/2023 14:27:46] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+14:27:51,279 werkzeug INFO 127.0.0.1 - - [04/Mar/2023 14:27:51] "GET /accounts/ HTTP/1.1" 200 -
+14:27:51,295 werkzeug INFO 127.0.0.1 - - [04/Mar/2023 14:27:51] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+14:27:53,433 werkzeug INFO 127.0.0.1 - - [04/Mar/2023 14:27:53] "GET /login HTTP/1.1" 200 -
+14:27:53,459 werkzeug INFO 127.0.0.1 - - [04/Mar/2023 14:27:53] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+14:27:54,890 root INFO Log Info: executive 
+14:27:54,891 werkzeug INFO 127.0.0.1 - - [04/Mar/2023 14:27:54] "[32mPOST /login HTTP/1.1[0m" 302 -
+14:27:54,900 werkzeug INFO 127.0.0.1 - - [04/Mar/2023 14:27:54] "GET /profile/ HTTP/1.1" 200 -
+14:27:54,920 werkzeug INFO 127.0.0.1 - - [04/Mar/2023 14:27:54] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+14:27:56,284 werkzeug INFO 127.0.0.1 - - [04/Mar/2023 14:27:56] "GET /accounts/ HTTP/1.1" 200 -
+14:27:56,299 werkzeug INFO 127.0.0.1 - - [04/Mar/2023 14:27:56] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+14:27:57,204 werkzeug INFO 127.0.0.1 - - [04/Mar/2023 14:27:57] "GET /1/account_graph/ HTTP/1.1" 200 -
+14:27:57,226 werkzeug INFO 127.0.0.1 - - [04/Mar/2023 14:27:57] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+14:27:57,226 werkzeug INFO 127.0.0.1 - - [04/Mar/2023 14:27:57] "[36mGET /static/account_graph.js HTTP/1.1[0m" 304 -
+14:28:06,23 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+14:28:06,23 werkzeug INFO [33mPress CTRL+C to quit[0m
+14:28:08,134 werkzeug INFO 127.0.0.1 - - [04/Mar/2023 14:28:08] "GET /1/account_graph/ HTTP/1.1" 200 -
+14:28:08,150 werkzeug INFO 127.0.0.1 - - [04/Mar/2023 14:28:08] "[36mGET /static/account_graph.js HTTP/1.1[0m" 304 -
+14:28:08,150 werkzeug INFO 127.0.0.1 - - [04/Mar/2023 14:28:08] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+14:28:08,158 werkzeug INFO 127.0.0.1 - - [04/Mar/2023 14:28:08] "GET /1/account_graph_data/ HTTP/1.1" 200 -
+14:28:08,219 werkzeug INFO 127.0.0.1 - - [04/Mar/2023 14:28:08] "GET /static/favicon.ico HTTP/1.1" 200 -
+14:30:48,221 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+14:30:48,221 werkzeug INFO [33mPress CTRL+C to quit[0m
+14:30:54,497 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+14:30:54,497 werkzeug INFO [33mPress CTRL+C to quit[0m
+14:31:03,524 werkzeug INFO 127.0.0.1 - - [04/Mar/2023 14:31:03] "GET /1/account_graph/ HTTP/1.1" 200 -
+14:31:03,538 werkzeug INFO 127.0.0.1 - - [04/Mar/2023 14:31:03] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+14:31:03,538 werkzeug INFO 127.0.0.1 - - [04/Mar/2023 14:31:03] "GET /static/account_graph.js HTTP/1.1" 200 -
+14:31:03,547 werkzeug INFO 127.0.0.1 - - [04/Mar/2023 14:31:03] "GET /1/account_graph_data/ HTTP/1.1" 200 -
+14:31:03,584 werkzeug INFO 127.0.0.1 - - [04/Mar/2023 14:31:03] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+14:32:24,371 werkzeug INFO 127.0.0.1 - - [04/Mar/2023 14:32:24] "GET /accounts/ HTTP/1.1" 200 -
+14:32:24,387 werkzeug INFO 127.0.0.1 - - [04/Mar/2023 14:32:24] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+14:32:26,307 werkzeug INFO 127.0.0.1 - - [04/Mar/2023 14:32:26] "GET /1/deposit/ HTTP/1.1" 200 -
+14:32:26,321 werkzeug INFO 127.0.0.1 - - [04/Mar/2023 14:32:26] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+14:32:30,42 werkzeug INFO 127.0.0.1 - - [04/Mar/2023 14:32:30] "[32mPOST /1/deposit/ HTTP/1.1[0m" 302 -
+14:32:30,49 werkzeug INFO 127.0.0.1 - - [04/Mar/2023 14:32:30] "GET /accounts/ HTTP/1.1" 200 -
+14:32:30,68 werkzeug INFO 127.0.0.1 - - [04/Mar/2023 14:32:30] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+14:34:29,684 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+14:34:29,685 werkzeug INFO [33mPress CTRL+C to quit[0m
+15:32:59,265 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+15:32:59,265 werkzeug INFO [33mPress CTRL+C to quit[0m
+15:33:08,269 werkzeug INFO 127.0.0.1 - - [04/Mar/2023 15:33:08] "GET / HTTP/1.1" 200 -
+15:33:08,295 werkzeug INFO 127.0.0.1 - - [04/Mar/2023 15:33:08] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+15:33:11,980 werkzeug INFO 127.0.0.1 - - [04/Mar/2023 15:33:11] "GET /create_account/ HTTP/1.1" 200 -
+15:33:12,1 werkzeug INFO 127.0.0.1 - - [04/Mar/2023 15:33:12] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+15:33:14,12 werkzeug INFO 127.0.0.1 - - [04/Mar/2023 15:33:14] "GET /accounts/ HTTP/1.1" 200 -
+15:33:14,29 werkzeug INFO 127.0.0.1 - - [04/Mar/2023 15:33:14] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+15:33:15,370 werkzeug INFO 127.0.0.1 - - [04/Mar/2023 15:33:15] "GET /create_account/ HTTP/1.1" 200 -
+15:33:15,388 werkzeug INFO 127.0.0.1 - - [04/Mar/2023 15:33:15] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+15:33:24,139 werkzeug INFO 127.0.0.1 - - [04/Mar/2023 15:33:24] "[32mPOST /create_account/ HTTP/1.1[0m" 302 -
+15:33:24,152 werkzeug INFO 127.0.0.1 - - [04/Mar/2023 15:33:24] "GET /accounts/ HTTP/1.1" 200 -
+15:33:24,173 werkzeug INFO 127.0.0.1 - - [04/Mar/2023 15:33:24] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+15:33:27,383 werkzeug INFO 127.0.0.1 - - [04/Mar/2023 15:33:27] "GET /1/account_graph/ HTTP/1.1" 200 -
+15:33:27,402 werkzeug INFO 127.0.0.1 - - [04/Mar/2023 15:33:27] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+13:56:04,306 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+13:56:04,307 werkzeug INFO [33mPress CTRL+C to quit[0m
+13:56:08,154 werkzeug INFO 127.0.0.1 - - [05/Mar/2023 13:56:08] "GET / HTTP/1.1" 200 -
+13:56:08,213 werkzeug INFO 127.0.0.1 - - [05/Mar/2023 13:56:08] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+13:56:10,388 werkzeug INFO 127.0.0.1 - - [05/Mar/2023 13:56:10] "GET /login HTTP/1.1" 200 -
+13:56:10,441 werkzeug INFO 127.0.0.1 - - [05/Mar/2023 13:56:10] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+13:56:12,84 root INFO Log Info: executive 
+13:56:12,87 werkzeug INFO 127.0.0.1 - - [05/Mar/2023 13:56:12] "[32mPOST /login HTTP/1.1[0m" 302 -
+13:56:12,108 werkzeug INFO 127.0.0.1 - - [05/Mar/2023 13:56:12] "GET /profile/ HTTP/1.1" 200 -
+13:56:12,149 werkzeug INFO 127.0.0.1 - - [05/Mar/2023 13:56:12] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+13:56:14,511 werkzeug INFO 127.0.0.1 - - [05/Mar/2023 13:56:14] "GET /accounts/ HTTP/1.1" 200 -
+13:56:14,540 werkzeug INFO 127.0.0.1 - - [05/Mar/2023 13:56:14] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+13:56:15,761 werkzeug INFO 127.0.0.1 - - [05/Mar/2023 13:56:15] "GET /1/account_graph/ HTTP/1.1" 200 -
+13:56:15,809 werkzeug INFO 127.0.0.1 - - [05/Mar/2023 13:56:15] "[36mGET /static/account_graph.js HTTP/1.1[0m" 304 -
+13:56:15,815 werkzeug INFO 127.0.0.1 - - [05/Mar/2023 13:56:15] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+13:56:15,828 werkzeug INFO 127.0.0.1 - - [05/Mar/2023 13:56:15] "GET /1/account_graph_data/ HTTP/1.1" 200 -
+14:06:38,245 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+14:06:38,246 werkzeug INFO [33mPress CTRL+C to quit[0m
+14:06:41,154 werkzeug INFO 127.0.0.1 - - [05/Mar/2023 14:06:41] "GET /1/account_graph/ HTTP/1.1" 200 -
+14:06:41,175 werkzeug INFO 127.0.0.1 - - [05/Mar/2023 14:06:41] "[36mGET /static/account_graph.js HTTP/1.1[0m" 304 -
+14:06:41,179 werkzeug INFO 127.0.0.1 - - [05/Mar/2023 14:06:41] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+14:06:41,211 app ERROR Exception on /1/account_graph_data/ [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/dist-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/dist-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/dist-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/orthanc/.local/lib/python3.8/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "/home/orthanc/banking_website_v2/main.py", line 245, in account_graph_data
+    labels = [format_date_for_graph(month.date) for month in monthly_balances]
+  File "/home/orthanc/banking_website_v2/main.py", line 245, in <listcomp>
+    labels = [format_date_for_graph(month.date) for month in monthly_balances]
+  File "/home/orthanc/banking_website_v2/format.py", line 92, in format_date_for_graph
+    res += day_map[int(str(dt.day[-1]))] + ', ' + dt.year
+TypeError: 'int' object is not subscriptable
+14:06:41,215 werkzeug INFO 127.0.0.1 - - [05/Mar/2023 14:06:41] "[35m[1mGET /1/account_graph_data/ HTTP/1.1[0m" 500 -
+14:06:41,379 werkzeug INFO 127.0.0.1 - - [05/Mar/2023 14:06:41] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+14:07:35,814 app ERROR Exception on /1/account_graph_data/ [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/dist-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/dist-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/dist-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/orthanc/.local/lib/python3.8/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "/home/orthanc/banking_website_v2/main.py", line 245, in account_graph_data
+    labels = [format_date_for_graph(month.date) for month in monthly_balances]
+  File "/home/orthanc/banking_website_v2/main.py", line 245, in <listcomp>
+    labels = [format_date_for_graph(month.date) for month in monthly_balances]
+  File "/home/orthanc/banking_website_v2/format.py", line 92, in format_date_for_graph
+    res += day_map[int(str(dt.day[-1]))] + ', ' + dt.year
+TypeError: 'int' object is not subscriptable
+14:07:35,816 werkzeug INFO 127.0.0.1 - - [05/Mar/2023 14:07:35] "[35m[1mGET /1/account_graph_data/ HTTP/1.1[0m" 500 -
+14:07:36,38 werkzeug INFO 127.0.0.1 - - [05/Mar/2023 14:07:36] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+14:08:15,262 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+14:08:15,262 werkzeug INFO [33mPress CTRL+C to quit[0m
+14:08:20,521 werkzeug INFO 127.0.0.1 - - [05/Mar/2023 14:08:20] "GET /1/account_graph/ HTTP/1.1" 200 -
+14:08:20,571 werkzeug INFO 127.0.0.1 - - [05/Mar/2023 14:08:20] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+14:08:20,573 werkzeug INFO 127.0.0.1 - - [05/Mar/2023 14:08:20] "[36mGET /static/account_graph.js HTTP/1.1[0m" 304 -
+14:08:20,635 app ERROR Exception on /1/account_graph_data/ [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/dist-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/dist-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/dist-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/orthanc/.local/lib/python3.8/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "/home/orthanc/banking_website_v2/main.py", line 245, in account_graph_data
+    labels = [format_date_for_graph(month.date) for month in monthly_balances]
+  File "/home/orthanc/banking_website_v2/main.py", line 245, in <listcomp>
+    labels = [format_date_for_graph(month.date) for month in monthly_balances]
+  File "/home/orthanc/banking_website_v2/format.py", line 92, in format_date_for_graph
+    res += day_map[int(str(dt.day[-1]))] + ', ' + dt.year
+TypeError: 'int' object is not subscriptable
+14:08:20,638 werkzeug INFO 127.0.0.1 - - [05/Mar/2023 14:08:20] "[35m[1mGET /1/account_graph_data/ HTTP/1.1[0m" 500 -
+14:09:00,446 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+14:09:00,446 werkzeug INFO [33mPress CTRL+C to quit[0m
+14:09:03,819 werkzeug INFO 127.0.0.1 - - [05/Mar/2023 14:09:03] "GET /1/account_graph/ HTTP/1.1" 200 -
+14:09:03,850 werkzeug INFO 127.0.0.1 - - [05/Mar/2023 14:09:03] "[36mGET /static/account_graph.js HTTP/1.1[0m" 304 -
+14:09:03,855 werkzeug INFO 127.0.0.1 - - [05/Mar/2023 14:09:03] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+14:09:03,895 werkzeug INFO 127.0.0.1 - - [05/Mar/2023 14:09:03] "GET /1/account_graph_data/ HTTP/1.1" 200 -
+14:09:04,126 werkzeug INFO 127.0.0.1 - - [05/Mar/2023 14:09:04] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+14:10:28,518 werkzeug INFO 127.0.0.1 - - [05/Mar/2023 14:10:28] "GET /1/account_graph/ HTTP/1.1" 200 -
+14:10:28,542 werkzeug INFO 127.0.0.1 - - [05/Mar/2023 14:10:28] "[36mGET /static/account_graph.js HTTP/1.1[0m" 304 -
+14:10:28,552 werkzeug INFO 127.0.0.1 - - [05/Mar/2023 14:10:28] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+14:10:28,570 werkzeug INFO 127.0.0.1 - - [05/Mar/2023 14:10:28] "GET /1/account_graph_data/ HTTP/1.1" 200 -
+14:10:28,756 werkzeug INFO 127.0.0.1 - - [05/Mar/2023 14:10:28] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -

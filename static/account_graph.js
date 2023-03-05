@@ -1,3 +1,17 @@
+const chartAreaBorder = {
+    id: 'chartAreaBorder',
+    beforeDraw(chart, args, options) {
+      const {ctx, chartArea: {left, top, width, height}} = chart;
+      ctx.save();
+      ctx.strokeStyle = options.borderColor;
+      ctx.lineWidth = options.borderWidth;
+      ctx.setLineDash(options.borderDash || []);
+      ctx.lineDashOffset = options.borderDashOffset;
+      ctx.strokeRect(left, top, width, height);
+      ctx.restore();
+    }
+};
+
 function make_chart(data) {
     new Chart(document.getElementById("account_history_chart"), {
         type: "line",
@@ -8,8 +22,9 @@ function make_chart(data) {
                     label: "Balance",
                     data: data.values,
                     fill: false,
+                    backgroundColor: "rgb(35, 209, 96)",
                     borderColor: "rgb(35, 209, 96)",
-                    lineTension: 0.1
+                    lineTension: 0.0
                 }
             ]
         },
@@ -23,15 +38,57 @@ function make_chart(data) {
                 intersect: true
             },
             scales: {
-                yAxes: [{
+                x: {
                     display: true,
+                    title: {
+                        display: true,
+                        text: 'Date',
+                        color: 'black'
+                    },
+                    grid: {
+                        tickColor: 'black'
+                    },
                     ticks: {
-                        beginAtZero: true,
-                        steps: 20,
-                        stepValue: data.step_val,
-                        max: data.chart_max
+                        color: 'black'
                     }
-                }]
+                },
+                y: {
+                    display: true,
+
+                    beginAtZero: true,
+                    suggestedMax: data.chart_max,
+                    title: {
+                        display: true,
+                        text: 'Balance (USD)',
+                        color: 'black'
+                    },
+                    grid: {
+                        tickColor: 'black'
+                    },
+                    ticks: {
+                        color: 'black',
+                        callback: (value) => {
+                            return Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD'}).format(value);
+                        }
+                    }
+                }
+            },
+            plugins: {
+                tooltip: {
+                    callbacks: {
+                        label: function(context) {
+                            let label = context.dataset.label || '';
+
+                            if (label) {
+                                label += ': ';
+                            }
+                            if (context.parsed.y !== null) {
+                                label += new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(context.parsed.y);
+                            }
+                            return label;
+                        }
+                    }
+                }
             }
         }
     });

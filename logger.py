@@ -10,7 +10,6 @@ logging.basicConfig(filename=config['LOGFILE'],
                     format='%(asctime)s,%(msecs)d %(name)s %(levelname)s %(message)s',
                     datefmt='%H:%M:%S',
                     level=logging.DEBUG)
-
 class Logger():
 
     def log_general(self, *args):

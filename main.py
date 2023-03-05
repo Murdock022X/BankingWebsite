@@ -3,9 +3,10 @@ from flask import Blueprint, render_template, redirect, \
         send_from_directory
 from flask_login import login_required, current_user, LoginManager
 from models import User, Account, Bank_Settings, Messages, \
-    Alerts, Statements, Monthly_Bal
+    Alerts, Statements, Daily_Bal
 from format import format_acc_no, format_money, format_acc, format_rates, \
-    deep_format_acc, format_statement_filename, format_date
+    deep_format_acc, format_statement_filename, format_date, \
+        format_date_for_graph
 from werkzeug.security import check_password_hash
 from app import db
 from accounts import make_withdrawal, make_deposit, get_account, delete_acc, \
@@ -75,7 +76,6 @@ def create_account():
                     flash('Starting Balance Smaller Than Minimum Balance Allowed')
                 
                 else:
-                    print(acc_type)
                     new_acc = Account(acc_type=acc_type, username=current_user.username, ir=ir, min_bal=min_bal, bal=bal)
                     db.session.add(new_acc)
                     db.session.commit()
@@ -221,11 +221,17 @@ def get_eStatement(id):
 @main.route('/<int:acc_no>/account_graph/')
 @login_required
 def account_graph(acc_no):
-    acc = Monthly_Bal.query.filter_by(acc_no=acc_no)
+    data = Daily_Bal.query.filter_by(acc_no=acc_no)
 
     valid = False
-    if acc:
-        valid = True 
+    
+    sz = 0
+    for acc in data:
+        sz += 1
+        if sz > 1:
+            valid = True
+            break
+        
 
     url = url_for("main.account_graph_data", acc_no=acc_no)
 
@@ -234,9 +240,9 @@ def account_graph(acc_no):
 @main.route('/<int:acc_no>/account_graph_data/')
 @login_required
 def account_graph_data(acc_no):
-    monthly_balances = Monthly_Bal.query.filter_by(acc_no=acc_no)
+    monthly_balances = Daily_Bal.query.filter_by(acc_no=acc_no)
 
-    labels = [str(month.date) for month in monthly_balances]
+    labels = [format_date_for_graph(month.date) for month in monthly_balances]
     values = [month.bal for month in monthly_balances]
 
     chart_max = max(values) * 1.25

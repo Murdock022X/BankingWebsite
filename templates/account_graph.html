@@ -6,7 +6,7 @@
     url = {{ url|tojson }}
 </script>
 
-<section class="hero">
+<section class="hero has-text-centered has-text-black">
     <div class="hero-body">
         <div class="container">
             <p class="title">Account History Chart</p>
@@ -14,12 +14,12 @@
             {% if valid %}
 
             <canvas id="account_history_chart"></canvas>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/chart.js@4.2.1/dist/chart.umd.min.js"></script>
             <script src="{{ url_for('static', filename='account_graph.js') }}"></script>
 
             {% else %}
 
-            <p class="subtitle">No Data Yet</p>
+            <p class="subtitle">Not Enough Data Yet</p>
 
             {% endif %}
         </div>

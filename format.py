@@ -76,4 +76,5 @@ def format_date(dt: datetime):
 
     return res
 
-    
+def format_date_for_graph(dt):
+    return dt.strftime("%m-%d-%y")

@@ -27,7 +27,6 @@ def checkings_savings_retrieval(username):
     return savings_accounts, checkings_accounts
 
 def make_withdrawal(acc_no, amt):
-    print(acc_no, amt)
     acc = Account.query.get(acc_no)
 
     if acc.bal - amt < acc.min_bal:

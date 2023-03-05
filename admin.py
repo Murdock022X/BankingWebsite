@@ -1,5 +1,5 @@
 from models import User, Account, Alerts, Messages, Bank_Settings, \
-    Statements, Monthly_Bal
+    Statements, Daily_Bal
 from app import db
 from datetime import datetime, date
 from flask import Blueprint, render_template, redirect, flash, \
@@ -27,11 +27,11 @@ class Admin_Tools():
 
         return True
 
-    def commit_compound():
+    def commit_all_compound():
         accs = Account.query.all()
 
         for acc in accs:
-            acc.bal *= acc.ir
+            acc.bal += acc.bal * acc.ir
         
         db.session.commit()
 
@@ -72,20 +72,24 @@ class Admin_Tools():
 
             sm.write()
 
-    def commit_monthly_bal(acc_no):
+    def commit_daily_bal(acc_no, date=date.today()):
         acc = Account.query.get(acc_no)
-        
-        bal_statement = Monthly_Bal(acc_no=acc_no, date=date.today(), bal=acc.bal)
+
+        bal_statement = Daily_Bal(acc_no=acc_no, date=date, bal=acc.bal)
 
         db.session.add(bal_statement)
 
         db.session.commit()
 
-    def commit_all_monthly_bal():
+    def commit_all_daily_bal():
         accounts = Account.query.all()
 
         for account in accounts:
-            Admin_Tools.commit_monthly_bal(account.acc_no)
+            Admin_Tools.commit_daily_bal(account.acc_no)
+
+    def daily_processes():
+        Admin_Tools.commit_all_compound()
+        Admin_Tools.commit_all_daily_bal()
 
 class Account_Metrics():
 
