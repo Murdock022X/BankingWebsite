@@ -5,12 +5,12 @@ from flask_login import login_required, current_user, LoginManager
 from models import User, Account, Bank_Settings, Messages, \
     Alerts, Statements, Daily_Bal
 from format import format_acc_no, format_money, format_acc, format_rates, \
-    deep_format_acc, format_statement_filename, format_date, \
-        format_date_for_graph
+    deep_format_acc, format_statement_filename, format_date_2, \
+    format_date_3
 from werkzeug.security import check_password_hash
 from app import db
 from accounts import make_withdrawal, make_deposit, get_account, delete_acc, \
-    checkings_savings_retrieval, get_accounts_user, transfer_all
+    checkings_savings_retrieval, get_accounts_user, transfer_all, create_acc
 from utils import get_messages, get_alerts, get_statements, get_statement
 from pathlib import Path
 
@@ -48,7 +48,6 @@ def create_account():
         min_bal = 0.0
         acc_type = 0
         ir = 0.0
-        min_bal = 0.0
 
         try:
             bal = float(request.form['bal'])
@@ -76,9 +75,7 @@ def create_account():
                     flash('Starting Balance Smaller Than Minimum Balance Allowed')
                 
                 else:
-                    new_acc = Account(acc_type=acc_type, username=current_user.username, ir=ir, min_bal=min_bal, bal=bal)
-                    db.session.add(new_acc)
-                    db.session.commit()
+                    create_acc(username=current_user.username, bal=bal, min_bal=min_bal, ir=ir, acc_type=acc_type)
                     return redirect(url_for('main.view_accounts'))
     
     format_rates(rates)
@@ -98,6 +95,7 @@ def summary():
 @login_required
 def withdraw(acc_no):
     if request.method == 'POST':
+        description = request.form['description']
         try:
             amt_withdraw = float(request.form['bal'])
         
@@ -105,7 +103,7 @@ def withdraw(acc_no):
             flash('Please Provide A Valid Amount To Withdraw')
 
         else:
-            make_withdrawal(acc_no, amt_withdraw)
+            make_withdrawal(acc_no=acc_no, amt=amt_withdraw, description=description)
 
             return redirect(url_for('main.view_accounts'))
 
@@ -115,6 +113,7 @@ def withdraw(acc_no):
 @login_required
 def deposit(acc_no):
     if request.method == 'POST':
+        description = request.form['description']
         try:
             amt_deposit = float(request.form['bal'])
         
@@ -122,7 +121,7 @@ def deposit(acc_no):
             flash('Please Provide A Valid Amount To Deposit')
 
         else:
-            make_deposit(acc_no, amt_deposit)
+            make_deposit(acc_no=acc_no, amt=amt_deposit, description=description)
 
             return redirect(url_for('main.view_accounts'))
 
@@ -199,11 +198,13 @@ def view_eStatements():
     statements = Statements.query.filter_by(username=current_user.username)
 
     filenames = {}
+    dates = {}
 
     for statement in statements:
         filenames[statement.id] = Path(statement.path).parts[-1]
+        dates[statement.id] = format_date_3(statement.date)
 
-    return render_template('eStatements.html', statements=statements, filenames=filenames)
+    return render_template('eStatements.html', statements=statements, filenames=filenames, dates=dates)
 
 @main.route('/<int:id>/get_eStatement/', methods=['GET','POST'])
 @login_required
@@ -242,10 +243,7 @@ def account_graph(acc_no):
 def account_graph_data(acc_no):
     monthly_balances = Daily_Bal.query.filter_by(acc_no=acc_no)
 
-    labels = [format_date_for_graph(month.date) for month in monthly_balances]
+    labels = [format_date_2(month.date) for month in monthly_balances]
     values = [month.bal for month in monthly_balances]
 
-    chart_max = max(values) * 1.25
-    step_val = max(values) * 1.25 / 20
-
-    return {"labels": labels, "values": values, "chart_max": chart_max, "step_val": step_val}
+    return {"labels": labels, "values": values}

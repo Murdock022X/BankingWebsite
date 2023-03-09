@@ -15,7 +15,7 @@
             {% for statement in statements %}
                 <tr>
                     <td><a href="{{ url_for('main.get_eStatement', id=statement.id) }}">{{ filenames[statement.id] }}</a></td>
-                    <td>{{ statement.date }}</td>
+                    <td>{{ dates[statement.id] }}</td>
                 </tr>
             {% endfor %}
         </tbody>

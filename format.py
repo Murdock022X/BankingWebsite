@@ -14,7 +14,10 @@ def format_acc_no(num):
 
 def format_money(num):
     # Display money balances correctly
-    return '$' + ('%.2f' % num)
+    if num < 0:
+        return '-$%.2f' % abs(num)
+
+    return '$%.2f' % num
 
 def format_ir(num):
     # Display interest rate correctly
@@ -46,7 +49,7 @@ def deep_format_acc(acc):
 def format_statement_filename(username):
     return 'STATEMENT_' + username + '_' + date.today().strftime('%m_%d_%y') + '.pdf'
 
-def format_date(dt: datetime):
+def format_date_1(dt: datetime):
 
     weekday_map = {0: 'Monday', 1: 'Tuesday', 2: 'Wednesday', 3: 'Thursday', 
                    4: 'Friday', 5: 'Saturday', 6: 'Sunday'}
@@ -76,5 +79,26 @@ def format_date(dt: datetime):
 
     return res
 
-def format_date_for_graph(dt):
-    return dt.strftime("%m-%d-%y")
+def format_date_2(dt):
+    return dt.strftime("%m-%d-20%y")
+
+def format_date_3(dt):
+    day_map = {0: '0th', 1: '1st', 2: '2nd', 3: '3rd', 4: '4th', 
+               5: '5th', 6: '6th', 7: '7th', 8: '8th', 9: '9th'}
+    
+    month_map = {1: 'January', 2: 'Feburary', 3: 'March', 4: 'April', 
+                 5: 'May', 6: 'June', 7: 'July', 8: 'August', 
+                 9: 'September', 10: 'October', 11: 'November', 
+                 12: 'December'}
+    
+    res = month_map[dt.month] + ' '
+
+    if dt.day // 10:
+        res += str(dt.day)[0]
+
+    res += day_map[int(str(dt.day)[-1])] + ', ' + str(dt.year)
+
+    return res
+
+def format_date_4(dt):
+    return dt.strftime('%m/%d/20%y')

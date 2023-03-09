@@ -20,6 +20,8 @@ def main():
         password=generate_password_hash('HarrisonWells', method='sha256'), 
         name='Admin'))
 
+        models.db.session.add(models.Curr_Term(term=0))
+
         models.db.session.commit()
 
     return 1

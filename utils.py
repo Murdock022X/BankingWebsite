@@ -1,7 +1,15 @@
 from models import Messages, Alerts, Statements
-from fpdf import HTMLMixin, FPDF
-from flask import Response
-from format import format_statement_filename, format_date
+from flask import Response, url_for
+from format import format_statement_filename, format_date_1
+from pathlib import Path
+from flask import flash
+
+def check_access(id1, id2):
+    if id1 == id2:
+        return True
+    
+    flash("You Can't Access That Page")
+    return False
 
 def get_alerts():
     alerts = Alerts.query.all()
@@ -10,7 +18,7 @@ def get_alerts():
 
     for alert in alerts:
         formatted = {}
-        formatted['date'] = format_date(alert.date)
+        formatted['date'] = format_date_1(alert.date)
         formatted['content'] = alert.content
 
         res.append(formatted)
@@ -24,16 +32,13 @@ def get_messages(username):
 
     for message in messages:
         formatted = {}
-        formatted['date'] = format_date(message.date)
+        formatted['date'] = format_date_1(message.date)
         formatted['content'] = message.content
         formatted['id'] = message.id
 
         res.append(formatted)
 
     return res
-
-class MyFPDF(FPDF, HTMLMixin):
-    pass
 
 def get_statements(username):
     return Statements.query.filter_by(username=username)

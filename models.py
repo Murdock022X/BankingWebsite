@@ -75,13 +75,20 @@ class Transactions(db.Model):
 
     date = db.Column(db.DateTime, server_default=func.now())
 
-    username = db.Column(db.String(100))
-
-    frm_acc = db.Column(db.Integer)
-
-    to_acc = db.Column(db.Integer)
+    acc_no = db.Column(db.Integer)
 
     amt = db.Column(db.Float)
+
+    start_bal = db.Column(db.Float)
+
+    end_bal = db.Column(db.Float)
+
+    # False for withdrawal, true for deposit
+    withdrawal_deposit = db.Column(db.Boolean)
+
+    description = db.Column(db.String(1000))
+
+    term = db.Column(db.Integer)
 
 class Statements(db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -94,6 +101,8 @@ class Statements(db.Model):
     
     path = db.Column(db.String(1000))
 
+    term = db.Column(db.Integer)
+
 class Daily_Bal(db.Model):
     id = db.Column(db.Integer, primary_key=True)
 
@@ -102,4 +111,15 @@ class Daily_Bal(db.Model):
     date = db.Column(db.Date)
 
     bal = db.Column(db.Float)
+
+class Term_Data(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
     
+    acc_no = db.Column(db.Integer)
+    
+    term = db.Column(db.Integer)
+
+    start_bal = db.Column(db.Float)
+
+class Curr_Term(db.Model):
+    term = db.Column(db.Integer, primary_key=True)

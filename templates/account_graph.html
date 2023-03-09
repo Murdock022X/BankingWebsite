@@ -3,27 +3,24 @@
 {% block content %}
 
 <script>
+    // Pass url endpoint into javascript to retrieve graph data.
     url = {{ url|tojson }}
 </script>
 
-<section class="hero has-text-centered has-text-black">
-    <div class="hero-body">
-        <div class="container">
-            <p class="title">Account History Chart</p>
+<div class="container" id="chart_contain">
+    <p class="title has-text-centered">Account History Chart</p>
 
-            {% if valid %}
+    {% if valid %}
+    <!--Creates the graph of account data-->
+    <canvas id="account_history_chart"></canvas>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.2.1/dist/chart.umd.min.js"></script>
+    <script src="{{ url_for('static', filename='account_graph.js') }}"></script>
 
-            <canvas id="account_history_chart"></canvas>
-            <script src="https://cdn.jsdelivr.net/npm/chart.js@4.2.1/dist/chart.umd.min.js"></script>
-            <script src="{{ url_for('static', filename='account_graph.js') }}"></script>
+    {% else %}
 
-            {% else %}
+    <p class="subtitle">Not Enough Data Yet</p>
 
-            <p class="subtitle">Not Enough Data Yet</p>
-
-            {% endif %}
-        </div>
-    </div>
-</section>
+    {% endif %}
+</div>
 
 {% endblock %}
