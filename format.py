@@ -5,7 +5,7 @@ def format_acc(acc):
     acc.acc_no = format_acc_no(acc.acc_no)
     acc.bal = format_money(acc.bal)
     acc.min_bal = format_money(acc.min_bal)
-    acc.ir = format_ir(acc.ir)
+    acc.ir = format_apy(acc.ir)
     acc.acc_type = format_acc_type(acc.acc_type)
 
 def format_acc_no(num):
@@ -19,7 +19,7 @@ def format_money(num):
 
     return '$%.2f' % num
 
-def format_ir(num):
+def format_apy(num):
     # Display interest rate correctly
     return '%.2f' % num + '%'
 
@@ -30,16 +30,16 @@ def format_acc_type(num):
         return 'Checkings'
     
 def format_rates(rates):
-    rates.savings_ir = format_ir(rates.savings_ir)
+    rates.savings_apy = format_apy(rates.savings_apy)
     rates.savings_min = format_money(rates.savings_min)
-    rates.checkings_ir = format_ir(rates.checkings_ir)
+    rates.checkings_apy = format_apy(rates.checkings_apy)
     rates.checkings_min = format_money(rates.checkings_min)
 
 def deep_format_acc(acc):
     res = {}
     res['acc_no'] = format_acc_no(acc.acc_no)
     res['acc_type'] = format_acc_type(acc.acc_type)
-    res['ir'] = format_ir(acc.ir)
+    res['apy'] = format_apy(acc.apy)
     res['bal'] = format_money(acc.bal)
     res['min_bal'] = format_money(acc.min_bal)
     res['acc_int'] = acc.acc_no
@@ -73,9 +73,9 @@ def format_date_1(dt: datetime):
     elif dt.hour < 1:
         hour += 12
 
-    time_str = '%d:%d:%d %s' % (hour, dt.minute, dt.second, period) 
+    time_str = f'{hour:02}:{dt.minute:02}:{dt.second:02} {period}'
 
-    res = "%s, %s %d, %d %s" % (weekday, month, dt.day, dt.year, time_str)
+    res = f'{weekday}, {month}, {dt.day:02}, {dt.year} {time_str} UTC'
 
     return res
 

@@ -27,7 +27,7 @@ class Account(db.Model):
     username = db.Column(db.String(100))
     
     # Store interest rate
-    ir = db.Column(db.Float)
+    apy = db.Column(db.Float)
 
     # Store balance
     bal = db.Column(db.Float)
@@ -40,13 +40,13 @@ class Bank_Settings(db.Model):
     id = db.Column(db.Integer, primary_key=True)
 
     # Store savings interest rate
-    savings_ir = db.Column(db.Float)
+    savings_apy = db.Column(db.Float)
+    
+    # Store checkings interest rate
+    checkings_apy = db.Column(db.Float)
 
     # Store savings minimum balance
     savings_min = db.Column(db.Float)
-
-    # Store checkings interest rate
-    checkings_ir = db.Column(db.Float)
 
     # Store checkings minimum balance
     checkings_min = db.Column(db.Float)

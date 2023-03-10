@@ -13,6 +13,8 @@ from accounts import make_withdrawal, make_deposit, get_account, delete_acc, \
     checkings_savings_retrieval, get_accounts_user, transfer_all, create_acc
 from utils import get_messages, get_alerts, get_statements, get_statement
 from pathlib import Path
+from forms import WithdrawalForm, DepositForm, CreateAccountForm, \
+    DeleteAccountForm
 
 main = Blueprint('main', __name__)
 
@@ -41,45 +43,27 @@ def view_accounts():
 @main.route('/create_account/', methods=['POST', 'GET'])
 @login_required
 def create_account():
-    rates = Bank_Settings.query.filter_by(id = 1).first()
+    rates = Bank_Settings.query.get(1)
+    
+    form = CreateAccountForm()
 
-    if request.method == 'POST':
-        bal = 0.0
-        min_bal = 0.0
-        acc_type = 0
-        ir = 0.0
+    if form.validate_on_submit():
+        min_bal = rates.savings_min
+        apy = rates.savings_apy
 
-        try:
-            bal = float(request.form['bal'])
-            
-        except ValueError as err:
-            flash('Enter A Valid Balance')
+        if form.acc_type.data == 1:
+            min_bal = rates.checkings_min
+            apy = rates.checkings_apy
 
+        if form.balance.data < min_bal:
+            flash('Starting Balance Smaller Than Minimum Balance Allowed For This Account Type.')
+        
         else:
-            try:
-                acc_type = int(request.form['acc_type'])
-
-                if acc_type == 0:
-                    ir = rates.savings_ir
-                    min_bal = rates.savings_min
-                
-                else:
-                    ir = rates.checkings_ir
-                    min_bal = rates.checkings_min
-
-            except ValueError as err:
-                flash('Select A Valid Account Type')
-
-            else:
-                if bal < min_bal:
-                    flash('Starting Balance Smaller Than Minimum Balance Allowed')
-                
-                else:
-                    create_acc(username=current_user.username, bal=bal, min_bal=min_bal, ir=ir, acc_type=acc_type)
-                    return redirect(url_for('main.view_accounts'))
+            create_acc(username=current_user.username, bal=form.balance.data, min_bal=min_bal, apy=apy, acc_type=form.acc_type.data)
+            return redirect(url_for('main.view_accounts'))
     
     format_rates(rates)
-    return render_template('create_acc.html', rates=rates)
+    return render_template('create_acc.html', rates=rates, form=form)
 
 @main.route('/summary/')
 @login_required
@@ -94,72 +78,57 @@ def summary():
 @main.route('/<int:acc_no>/withdraw/', methods=['GET', 'POST'])
 @login_required
 def withdraw(acc_no):
-    if request.method == 'POST':
-        description = request.form['description']
-        try:
-            amt_withdraw = float(request.form['bal'])
+    form = WithdrawalForm()
+
+    if form.validate_on_submit():
+        withdrawed = make_withdrawal(acc_no=acc_no, amt=form.amt.data, 
+                                     description=form.description.data)
         
-        except ValueError as err:
-            flash('Please Provide A Valid Amount To Withdraw')
+        if not withdrawed:
+            flash('The Amount You Want To Withdraw Is Too Much.')
 
         else:
-            make_withdrawal(acc_no=acc_no, amt=amt_withdraw, description=description)
-
             return redirect(url_for('main.view_accounts'))
 
-    return render_template('withdraw.html')
+    return render_template('withdraw.html', form=form)
 
 @main.route('/<int:acc_no>/deposit/', methods=['GET', 'POST'])
 @login_required
 def deposit(acc_no):
-    if request.method == 'POST':
-        description = request.form['description']
-        try:
-            amt_deposit = float(request.form['bal'])
-        
-        except ValueError as err:
-            flash('Please Provide A Valid Amount To Deposit')
+    form = DepositForm()
 
-        else:
-            make_deposit(acc_no=acc_no, amt=amt_deposit, description=description)
+    if form.validate_on_submit():
+        make_deposit(acc_no=acc_no, amt=form.amt.data, description=form.description.data)
 
-            return redirect(url_for('main.view_accounts'))
+        return redirect(url_for('main.view_accounts'))
 
-    return render_template('deposit.html')
+    return render_template('deposit.html', form=form)
 
 @main.route('/<int:acc_no>/delete_account/', methods=['GET', 'POST'])
 @login_required
 def delete_account(acc_no):
-    if request.method == 'POST':
-        transfer_no = 0
 
-        try:
-            transfer_no = int(request.form['acc_no'])
+    form = DeleteAccountForm()
 
-        except ValueError as err:
-            flash('Invalid Account Transfer Number')
+    if form.validate_on_submit():
+        hash = current_user.password
+
+        if check_password_hash(hash, form.password.data):
+            transfer_status = transfer_all(acc_no, form.transfer_no.data)
+
+            if not transfer_status:
+                flash('Invalid Account Transfer Number')
+            
+            else:
+                delete_acc(acc_no)
+
+                return redirect(url_for('main.view_accounts'))
+
 
         else:
-            password = request.form['password']
+            flash('Incorrect Password')
 
-            hash = current_user.password
-
-            if check_password_hash(hash, password):
-                transfer_status = transfer_all(acc_no, transfer_no)
-
-                if not transfer_status:
-                    flash('Invalid Account Transfer Number')
-                
-                else:
-                    delete_acc(acc_no)
-
-                    return redirect(url_for('main.view_accounts'))
-
-
-            else:
-                flash('Incorrect Password')
-
-    return render_template('delete.html', account_number=format_acc_no(acc_no))
+    return render_template('delete.html', account_number=format_acc_no(acc_no), form=form)
 
 @main.route('/<int:acc_no>/account_info/')
 @login_required

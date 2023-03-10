@@ -8,7 +8,7 @@
     <h4>Account Number: {{ acc['acc_no'] }}</h4>
     <h4>Balance: {{ acc['bal'] }}</h4>
     <h4>Minimum Balance Allowed: {{ acc['min_bal'] }}</h4>
-    <h4>Interest Rate: {{ acc['ir'] }}</h4>
+    <h4>APY: {{ acc['apy'] }}</h4>
     <hr>
     <div class="buttons">
       <a href="{{ url_for('main.account_graph', acc_no=acc['acc_int']) }}" class="button is-white">Account History</a>
@@ -25,7 +25,7 @@
     <h4>Account Number: {{ acc['acc_no'] }}</h4>
     <h4>Balance: {{ acc['bal'] }}</h4>
     <h4>Minimum Balance Allowed: {{ acc['min_bal'] }}</h4>
-    <h4>Interest Rate: {{ acc['ir'] }}</h4>
+    <h4>APY: {{ acc['apy'] }}</h4>
     <hr>
     <div class="buttons">
       <a href="{{ url_for('main.account_graph', acc_no=acc['acc_int']) }}" class="button is-white">Account History</a>

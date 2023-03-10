@@ -1,7 +1,163 @@
 from pathlib import Path
 from fpdf import FPDF
-from models import Transactions
-from format import format_acc_no, format_date_4, format_money
+from models import Transactions, Curr_Term, User, Account, Term_Data
+from format import format_acc_no, format_date_3, format_date_4, format_money, \
+    format_statement_filename
+from datetime import date
+from flask import current_app
+
+class Account_Metrics():
+    """
+    This class is used as a member of statement data it holds 
+    all data related to an account.
+    """    
+
+    def __init__(self, account, term):
+        """Initiate the account metrics object.
+
+        Args:
+            account (Account): Current Term
+            term (int): The current term.
+        """        
+        
+        # Get Total Balance for all accounts.
+        self.acc_no = account.acc_no
+
+        self.term = term
+
+        self.start_bal = format_money(
+            Term_Data.query.filter_by(acc_no=self.acc_no, 
+                                      term=term).first().start_bal)
+
+        self.end_bal = format_money(account.bal)
+
+        self.transactions = Transactions.query.filter_by(
+            acc_no=self.acc_no).all()
+
+        self.withdrawal_total = 0.0
+
+        self.deposit_total = 0.0
+
+        for transaction in self.transactions:
+            if transaction.withdrawal_deposit:
+                self.deposit_total += transaction.amt
+            else:
+                self.withdrawal_total += transaction.amt
+
+        self.withdrawal_total = format_money(self.withdrawal_total)
+        self.deposit_total = format_money(self.deposit_total)
+
+class Statement_Data():
+    """
+    Statement data object, passed to PDF class to write the Statement pdf.
+    """    
+
+    def __init__(self, username):
+        """
+        Initialize object and gather information, including 
+        Account_Metrics object.
+
+        Args:
+            username (str): The username to gather data on.
+        """        
+
+        # Store username
+        self.username = username
+
+        # Store name of user.
+        self.name = User.query.filter_by(username=username).first().name
+
+        self.term = Curr_Term.query.all()[0].term
+
+        # Get all accounts associated with user.
+        self.accounts = Account.query.filter_by(username=username).all()
+
+        self.savings_total = 0.0
+        self.checkings_total = 0.0
+
+        # Get account metrics object for each account.
+        self.acc_metrics = {}
+        for acc in self.accounts:
+            if acc.acc_type == 0:
+                self.savings_total += acc.bal
+            elif acc.acc_type == 1:
+                self.checkings_total += acc.bal
+
+            self.acc_metrics[acc.acc_no] = Account_Metrics(acc, self.term)
+
+        self.savings_total = format_money(self.savings_total)
+
+        self.checkings_total = format_money(self.checkings_total)
+
+        self.date = format_date_3(date.today())
+
+    def get_acc_metrics(self):
+        """
+        Return the account metrics object.
+
+        Returns:
+            Account_Metrics: The account metrics object associated 
+            with the username. 
+        """     
+
+        return self.acc_metrics
+
+class Statement_Maker():
+    """
+    The statement maker class used to make statements for users. 
+    """
+
+    def __init__(self, username):
+        """
+        Initiate the Statement Maker Object for given username. 
+        Prepares the pdf for writing.
+
+        Args:
+            username (str): The username to create a statement maker for.
+        """        
+
+        # Store username
+        self.username = username
+
+        self.state_data = Statement_Data(username=username)
+
+        # Get the project root pth.
+        self.project_root = current_app.config['PROJECT_ROOT']
+
+        # Directory path to users pdf directory.
+        dir_pth = self.project_root / Path('pdfs') / Path(self.username)
+
+        # If directory path does not exist make the directory.
+        if not dir_pth.exists():
+            dir_pth.mkdir(parents=True)
+
+        # The name of the file to write.
+        name = format_statement_filename(self.username)
+
+        # Get the full path of the file. PDF data is now ready to write.
+        self.pth = dir_pth / Path(name)
+
+        self.pdf = PDF(self.state_data, self.project_root)
+        
+        self.pdf.add_page()
+
+        self.pdf.set_title('Statement For ' + self.state_data.date)
+
+        self.pdf.set_author('henrymurdockbanking.me')
+
+        self.pdf.overview()
+
+        self.pdf.acc_summary()
+
+        self.pdf.account_transactions()
+
+    def write(self):
+        """
+        Outputs the pdf to the file path.
+        """
+
+        # Write the pdf data.
+        self.pdf.output(self.pth)
 
 class PDF(FPDF):
 

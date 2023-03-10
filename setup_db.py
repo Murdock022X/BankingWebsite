@@ -7,13 +7,13 @@ def main():
     with app.app_context():
         models.db.create_all()
 
-        savings_ir = 0.25
+        savings_apy = 0.25
         savings_min = 5.0
-        checkings_ir = 0.0
+        checkings_apy = 0.0
         checkings_min = 0.0
 
-        models.db.session.add(models.Bank_Settings(savings_ir=savings_ir,
-        savings_min=savings_min, checkings_ir=checkings_ir, 
+        models.db.session.add(models.Bank_Settings(savings_apy=savings_apy,
+        savings_min=savings_min, checkings_apy=checkings_apy, 
         checkings_min=checkings_min))
 
         models.db.session.add(models.User(id=1, username='executive', 

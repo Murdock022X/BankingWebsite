@@ -1,35 +1,36 @@
-from flask import Blueprint, render_template, redirect, request, url_for, flash, current_app
-from flask_login import LoginManager, login_user, logout_user, current_user
+from flask import Blueprint, render_template, redirect, request, url_for, \
+    flash, current_app
+from flask_login import LoginManager, login_user, logout_user, current_user, \
+    login_required
 from werkzeug.security import generate_password_hash, check_password_hash
 from models import User
 from app import db
 from admin import Admin_Tools
 import logger
 from datetime import datetime
+from forms import SignupForm, LoginForm
 
 auth = Blueprint('auth', __name__)
 
 @auth.route('/login', methods=['GET', 'POST'])
 def login():
-    if request.method == 'POST':
+    form = LoginForm()
 
-        # Get username and password fields
-        username = request.form['username']
-        password = request.form['password']
-
+    if form.validate_on_submit():
         # Find user with username data
-        user = User.query.filter_by(username=username).first()
+        user = User.query.filter_by(username=form.username.data).first()
         # Check if there is a user with that username if so check password
-        if user:
 
+        if user:
+            
             # Get the password hash
             hash = user.password
 
             # Check the password against hash
-            if check_password_hash(hash, password):
+            if check_password_hash(hash, form.password.data):
                 login_user(user)
 
-                logger.Logger.log_general('Logged In:', username)
+                logger.Logger.log_general('Logged In:', form.username.data)
 
                 # Redirect to profile
                 return redirect(url_for('main.profile'))
@@ -40,57 +41,34 @@ def login():
         else:
             flash('User Not Found')
 
-    return render_template('login.html')
+    return render_template('login.html', form=form)
 
 @auth.route('/signup/', methods=['GET', 'POST'])
 def signup():
-    if request.method == 'POST':
-        logger.Logger.log_general('Post signup')
+    form = SignupForm()
 
-        # Get username, password, and name.
-        username = request.form['username']
-        password = request.form['password']
-        name = request.form['name']
-
+    if form.validate_on_submit():
         # Query for other users
-        check_users = User.query.filter_by(username=username).first()
+        check_users = User.query.filter_by(username=form.username.data).first()
 
         # Good to continue if no other users with this username
         if not check_users:
-            if username:
-                if password:
-                    if name:
+            # Generate password hash and create new User entry
+            hash = generate_password_hash(form.password.data, method='sha256')
+            new_user = User(username=form.username.data, name=form.name.data, password=hash)
 
-                        # Generate password hash and create new User entry
-                        hash = generate_password_hash(password, method='sha256')
-                        new_user = User(username=username, name=name, password=hash)
+            # Add user to database and commit
+            db.session.add(new_user)
 
-                        # Add user to database and commit
-                        db.session.add(new_user)
+            db.session.commit()
 
-                        db.session.commit()
-
-                        logger.Logger.log_general('Signed Up:', username, hash, name)
-
-                        # Redirect to login
-                        return redirect(url_for('auth.login'))
-                    
-                    else:
-                        flash('Provide A Name')
-
-                else:
-                    flash('Provide A Password')
-
-            else:
-                flash('Provide A Username')
-
-        else:
-            flash('Username Taken')
+            # Redirect to login
+            return redirect(url_for('auth.login'))
         
-    logger.Logger.log_general('Rendering signup')
-    return render_template('signup.html')
+    return render_template('signup.html', form=form)
 
 @auth.route('/logout')
+@login_required
 def logout():
     logout_user()
     return redirect(url_for('main.home'))

@@ -4,22 +4,31 @@
 
 <div class="box has-background-success">
     <form method="POST">
+        {{ form.hidden_tag() }}
 
-        <label class="label">Description</label>
+        <label class="label">{{ form.description.label }}</label>
         <div class="field">
             <div class="control">
-                <input class="input is-large" type="text" name="description" placeholder="Description For Withdrawal">
+                {{ form.description() }}
             </div>
+
+            {% for error in form.description.errors %}
+                <p class="help is-danger">{{ error }}</p>
+            {% endfor %}
         </div>
 
-        <label class="label">Withdrawal Amount</label>
+        <label class="label">{{ form.amt.label }}</label>
         <div class="field">
             <div class="control">
-                <input class="input is-large" autocomplete="off" type="text" name="bal" placeholder="100.00">
+                {{ form.amt() }}
             </div>
+
+            {% for error in form.amt.errors %}
+                <p class="help is-danger">{{ error }}</p>
+            {% endfor %}
         </div>
 
-        <button type="submit" class="button is-block is-info is-large is-fullwidth">Withdraw</button>
+        {{ form.submit() }}
     </form>
 </div>
 

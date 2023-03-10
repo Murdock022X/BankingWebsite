@@ -2,8 +2,8 @@ from models import Account, Transactions, Curr_Term, Term_Data
 import format
 from app import db
 
-def create_acc(username, bal = 0.0, min_bal = 0.0, acc_type = 0, ir = 0.0):
-    new_acc = Account(acc_type=acc_type, username=username, ir=ir, min_bal=min_bal, bal=bal)
+def create_acc(username, bal=0.0, min_bal=0.0, acc_type=0, apy=0.0):
+    new_acc = Account(acc_type=acc_type, username=username, apy=apy, min_bal=min_bal, bal=bal)
     db.session.add(new_acc)
     db.session.commit()
 
@@ -54,6 +54,8 @@ def make_withdrawal(acc_no, amt, description):
     acc.bal -= amt
 
     db.session.commit()
+
+    return True
 
 def make_deposit(acc_no, amt, description):
     acc = Account.query.get(acc_no)

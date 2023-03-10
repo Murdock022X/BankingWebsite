@@ -3,13 +3,14 @@ from models import User, Account, Alerts, Messages, Bank_Settings, \
 from app import db
 from datetime import datetime, date
 from flask import Blueprint, render_template, redirect, flash, \
-    request, current_app
+    request, current_app, url_for
 from flask_login import login_required, current_user
 from format import format_statement_filename, format_date_3, format_money
 from pathlib import Path
 from fpdf import Template
-from pdf import PDF
+from pdf import Statement_Maker
 from utils import check_access
+from forms import BankSettingsForm, SendAlertForm, SendMessageForm
 
 class Admin_Tools():
     """
@@ -181,250 +182,81 @@ class Admin_Tools():
         Admin_Tools.assemble_all_statements()
         Admin_Tools.inc_term()
 
-class Account_Metrics():
-    """
-    This class is used as a member of statement data it holds 
-    all data related to an account.
-    """    
-
-    def __init__(self, account, term):
-        """Initiate the account metrics object.
-
-        Args:
-            account (Account): Current Term
-            term (int): The current term.
-        """        
-        
-        # Get Total Balance for all accounts.
-        self.acc_no = account.acc_no
-
-        self.term = term
-
-        self.start_bal = format_money(
-            Term_Data.query.filter_by(acc_no=self.acc_no, 
-                                      term=term).first().start_bal)
-
-        self.end_bal = format_money(account.bal)
-
-        self.transactions = Transactions.query.filter_by(
-            acc_no=self.acc_no).all()
-
-        self.withdrawal_total = 0.0
-
-        self.deposit_total = 0.0
-
-        for transaction in self.transactions:
-            if transaction.withdrawal_deposit:
-                self.deposit_total += transaction.amt
-            else:
-                self.withdrawal_total += transaction.amt
-
-        self.withdrawal_total = format_money(self.withdrawal_total)
-        self.deposit_total = format_money(self.deposit_total)
-
-class Statement_Data():
-    """
-    Statement data object, passed to PDF class to write the Statement pdf.
-    """    
-
-    def __init__(self, username):
-        """
-        Initialize object and gather information, including 
-        Account_Metrics object.
-
-        Args:
-            username (str): The username to gather data on.
-        """        
-
-        # Store username
-        self.username = username
-
-        # Store name of user.
-        self.name = User.query.filter_by(username=username).first().name
-
-        self.term = Curr_Term.query.all()[0].term
-
-        # Get all accounts associated with user.
-        self.accounts = Account.query.filter_by(username=username).all()
-
-        self.savings_total = 0.0
-        self.checkings_total = 0.0
-
-        # Get account metrics object for each account.
-        self.acc_metrics = {}
-        for acc in self.accounts:
-            if acc.acc_type == 0:
-                self.savings_total += acc.bal
-            elif acc.acc_type == 1:
-                self.checkings_total += acc.bal
-
-            self.acc_metrics[acc.acc_no] = Account_Metrics(acc, self.term)
-
-        self.savings_total = format_money(self.savings_total)
-
-        self.checkings_total = format_money(self.checkings_total)
-
-        self.date = format_date_3(date.today())
-
-    def get_acc_metrics(self):
-        """
-        Return the account metrics object.
-
-        Returns:
-            Account_Metrics: The account metrics object associated 
-            with the username. 
-        """     
-
-        return self.acc_metrics
-
-class Statement_Maker():
-    """
-    The statement maker class used to make statements for users. 
-    """
-
-    def __init__(self, username):
-        """
-        Initiate the Statement Maker Object for given username. 
-        Prepares the pdf for writing.
-
-        Args:
-            username (str): The username to create a statement maker for.
-        """        
-
-        # Store username
-        self.username = username
-
-        self.state_data = Statement_Data(username=username)
-
-        # Get the project root pth.
-        self.project_root = current_app.config['PROJECT_ROOT']
-
-        # Directory path to users pdf directory.
-        dir_pth = self.project_root / Path('pdfs') / Path(self.username)
-
-        # If directory path does not exist make the directory.
-        if not dir_pth.exists():
-            dir_pth.mkdir(parents=True)
-
-        # The name of the file to write.
-        name = format_statement_filename(self.username)
-
-        # Get the full path of the file. PDF data is now ready to write.
-        self.pth = dir_pth / Path(name)
-
-        self.pdf = PDF(self.state_data, self.project_root)
-        
-        self.pdf.add_page()
-
-        self.pdf.set_title('Statement For ' + self.state_data.date)
-
-        self.pdf.set_author('henrymurdockbanking.me')
-
-        self.pdf.overview()
-
-        self.pdf.acc_summary()
-
-        self.pdf.account_transactions()
-
-    def write(self):
-        """
-        Outputs the pdf to the file path.
-        """        
-        # Write the pdf data.
-        self.pdf.output(self.pth)
-
 admin = Blueprint('admin', __name__)
 
 @admin.route('/bank_settings/', methods=['POST', 'GET'])
 @login_required
 def bank_settings():
     if not check_access(current_user.id, 1):
-        return redirect('profile.html')
+        return redirect(url_for('main.profile'))
     
-    if request.method == 'POST':
-        modifier = request.form['modifier']
-        val = 0.0
-        try:
-            val = float(request.form['val'])
+    form = BankSettingsForm()
 
-        except ValueError as err:
-            flash('Invalid Value For Modifier')
+    if form.validate_on_submit():
+        settings = Bank_Settings.query.get(1)
 
-        else:
-            settings = Bank_Settings.query.get(1)
+        if form.change_type.data == 0:
+            settings.savings_apy = form.savings_apy.data
+        elif form.change_type.data == 1:
+            settings.checkings_apy = form.checkings_apy.data
+        elif form.change_type.data == 2:
+            settings.savings_min = form.savings_min.data
+        elif form.change_type.data == 3:
+            settings.checkings_min = form.checkings_min.data
 
-            if modifier == '0':
-                settings.savings_ir = val
-            elif modifier == '1':
-                settings.savings_min = val
-            elif modifier == '2':
-                settings.checkings_ir = val
-            elif modifier == '3':
-                settings.checkings_min = val
-            else:
-                flash("Something Wrong!")
+        flash('Setting Altered')
 
-            db.session.commit()
+        db.session.commit()
 
-    return render_template('bank_settings.html')
+    return render_template('bank_settings.html', form=form)
 
 @admin.route('/send_alert/', methods=['POST', 'GET'])
 @login_required
 def send_alert():
     if not check_access(current_user.id, 1):
-        return redirect('profile.html')
+        return redirect(url_for('main.profile'))
     
-    if request.method == 'POST':
-        content = request.form['content']
+    form = SendAlertForm()
 
-        if not content:
-            flash('No Content Provided!')
+    if form.validate_on_submit():
 
-        else:
-            Admin_Tools.commit_alert(content=content)
+        Admin_Tools.commit_alert(content=form.content.data)
     
-    return render_template('send_alert.html')
+    return render_template('send_alert.html', form=form)
 
 @admin.route('/send_message/', methods=['POST', 'GET'])
 @login_required
 def send_message():
-    if check_access(current_user.id, 1):
-        return redirect('profile.html')
-    
-    if request.method == 'POST':
-        username = request.form['username']
-        content = request.form['content']
-
-        if not content:
-            flash('No Content Provided!')
-
-        elif not username:
-            flash('No Username Provided!')
-
-        else:
-            Admin_Tools.commit_message(content=content, username=username)
-
-    return render_template('send_message.html')
-
-@admin.route('/compound/', methods=['POST', 'GET'])
-@login_required
-def compound():
     if not check_access(current_user.id, 1):
-        return redirect('profile.html')
+        return redirect(url_for('main.profile'))
     
-    if request.method == 'POST':
-        Admin_Tools.commit_compound()
+    form = SendMessageForm()
 
-    return render_template('compound.html')
+    if form.validate_on_submit():
 
-@admin.route('/get_statements/', methods=['POST', 'GET'])
-@login_required
-def make_statements():
-    if current_user.id != 1:
-        flash('Only Admins Can Access That Page')
-        return redirect('profile.html')
-    
-    if request.method == 'POST':
-        Admin_Tools.assemble_all_statements()
+        Admin_Tools.commit_message(content=form.content.data, username=form.username.data)
 
-    return render_template('make_statements.html')
+    return render_template('send_message.html', form=form)
+
+# @admin.route('/compound/', methods=['POST', 'GET'])
+# @login_required
+# def compound():
+#     if not check_access(current_user.id, 1):
+#         return redirect('profile.html')
+#    
+#     if request.method == 'POST':
+#         Admin_Tools.commit_compound()
+# 
+#     return render_template('compound.html')
+
+# @admin.route('/get_statements/', methods=['POST', 'GET'])
+# @login_required
+# def make_statements():
+#     if current_user.id != 1:
+#         flash('Only Admins Can Access That Page')
+#         return redirect('profile.html')
+#     
+#     if request.method == 'POST':
+#         Admin_Tools.assemble_all_statements()
+# 
+#     return render_template('make_statements.html')

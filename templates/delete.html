@@ -2,28 +2,34 @@
 
 {% block content %}
 
-<div class="column is-4 is-offset-4">
+<div class="box has-background-success">
     <h1 class="title">Delete Account {{ account_number }}?</h1>
     <form method="POST">
-        <h3 class="subtitle">Transfer Balance To A Different Account?</h3>
-        <div class="box">
-            <div class="field">
-                <div class="control">
-                    <input class="input is-large" type="text" name="acc_no" placeholder="Account Number For Transfer" value="{{ request.form['acc_no'] }}">
-                </div>
-            </div>
-        </div>
-        
-        <h3 class="subtitle">Enter Password To Confirm Deletion</h3>
-        <div class="box">
-            <div class="field">
-                <div class="control">
-                    <input class="input is-large" type="password" name="password" placeholder="Your Password" value="{{ request.form['password'] }}">
-                </div>
-            </div>
-        </div>
+        {{ form.hidden_tag() }}
 
-        <button type="submit" class="button is-block is-info is-large is-fullwidth">Delete</button>
+        <label class="label">{{ form.transfer_no.label }}</label>
+        <div class="field">
+            <div class="control">
+                {{ form.transfer_no(class="input") }}
+            </div>
+
+            {% for error in form.transfer_no.errors %}
+                <p class="help is-danger">{{ error }}</p>
+            {% endfor %}
+        </div>
+    
+        <label class="label">{{ form.password.label }}</label>
+        <div class="field">
+            <div class="control">
+                {{ form.password() }}
+            </div>
+
+            {% for error in form.password.errors %}
+                <p class="help is-danger">{{ error }}</p>
+            {% endfor %}
+        </div>
+            
+        {{ form.submit(class="button") }}
     </form>
 </div>
 
