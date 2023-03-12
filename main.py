@@ -56,13 +56,15 @@ def create_account():
             apy = rates.checkings_apy
 
         if form.balance.data < min_bal:
-            flash('Starting Balance Smaller Than Minimum Balance Allowed For This Account Type.')
+            flash('Starting Balance Smaller Than Minimum Balance Allowed For This Account Type', category='danger')
         
         else:
             create_acc(username=current_user.username, bal=form.balance.data, min_bal=min_bal, apy=apy, acc_type=form.acc_type.data)
+
+            flash('Account Created', category='info')
             return redirect(url_for('main.view_accounts'))
     
-    format_rates(rates)
+    rates = format_rates(rates)
     return render_template('create_acc.html', rates=rates, form=form)
 
 @main.route('/summary/')
@@ -117,16 +119,18 @@ def delete_account(acc_no):
             transfer_status = transfer_all(acc_no, form.transfer_no.data)
 
             if not transfer_status:
-                flash('Invalid Account Transfer Number')
+                flash('Invalid Account Transfer Number', category='danger')
             
             else:
                 delete_acc(acc_no)
+
+                flash('Account Deleted', category='danger')
 
                 return redirect(url_for('main.view_accounts'))
 
 
         else:
-            flash('Incorrect Password')
+            flash('Incorrect Password', category='danger')
 
     return render_template('delete.html', account_number=format_acc_no(acc_no), form=form)
 

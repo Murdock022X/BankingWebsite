@@ -5,7 +5,7 @@ from datetime import datetime, date
 from flask import Blueprint, render_template, redirect, flash, \
     request, current_app, url_for
 from flask_login import login_required, current_user
-from format import format_statement_filename, format_date_3, format_money
+from format import format_rates
 from pathlib import Path
 from fpdf import Template
 from pdf import Statement_Maker
@@ -192,23 +192,27 @@ def bank_settings():
     
     form = BankSettingsForm()
 
+    old_rates = Bank_Settings.query.get(1)
+
     if form.validate_on_submit():
-        settings = Bank_Settings.query.get(1)
+        change_type = int(form.change_type.data)
 
-        if form.change_type.data == 0:
-            settings.savings_apy = form.savings_apy.data
-        elif form.change_type.data == 1:
-            settings.checkings_apy = form.checkings_apy.data
-        elif form.change_type.data == 2:
-            settings.savings_min = form.savings_min.data
-        elif form.change_type.data == 3:
-            settings.checkings_min = form.checkings_min.data
-
-        flash('Setting Altered')
+        if change_type == 0:
+            old_rates.savings_apy = form.new_value.data
+        elif change_type == 1:
+            old_rates.checkings_apy = form.new_value.data
+        elif change_type == 2:
+            old_rates.savings_min = form.new_value.data
+        elif change_type == 3:
+            old_rates.checkings_min = form.new_value.data
 
         db.session.commit()
 
-    return render_template('bank_settings.html', form=form)
+        flash('Rates Altered', category='info')
+
+    settings = format_rates(old_rates)
+
+    return render_template('bank_settings.html', form=form, rates=settings)
 
 @admin.route('/send_alert/', methods=['POST', 'GET'])
 @login_required
@@ -221,6 +225,8 @@ def send_alert():
     if form.validate_on_submit():
 
         Admin_Tools.commit_alert(content=form.content.data)
+
+        flash('Alert Sent', category='info')
     
     return render_template('send_alert.html', form=form)
 
@@ -235,6 +241,8 @@ def send_message():
     if form.validate_on_submit():
 
         Admin_Tools.commit_message(content=form.content.data, username=form.username.data)
+
+        flash('Message Sent', category='info')
 
     return render_template('send_message.html', form=form)
 

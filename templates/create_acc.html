@@ -10,14 +10,14 @@
     <div class="box has-background-success has-text-black">
         <h3>Savings Account</h3>
         <div class="box has-text-black">
-            <h4>APY: {{ rates.savings_apy }}</h4>
-            <h4>Minimum Balance: {{ rates.savings_min }}</h4>
+            <h4>APY: {{ rates['savings_apy'] }}</h4>
+            <h4>Minimum Balance: {{ rates['savings_min'] }}</h4>
         </div>
         
         <h3>Checkings Account</h3>
         <div class="box has-text-black">
-            <h4>APY: {{ rates.checkings_apy }}</h4>
-            <h4>Minimum Balance: {{ rates.checkings_min }}</h4>
+            <h4>APY: {{ rates['checkings_apy'] }}</h4>
+            <h4>Minimum Balance: {{ rates['checkings_min'] }}</h4>
         </div>
     </div>
 
@@ -48,7 +48,7 @@
                 </div>
             </div>
 
-            {{ form.submit() }}
+            {{ form.submit(class="button") }}
         </form>
     </div>
 </div>

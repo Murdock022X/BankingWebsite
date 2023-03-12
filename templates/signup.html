@@ -5,7 +5,7 @@
 
 <div class="column is-4 is-offset-4">
     <h3 class="title">Sign Up</h3>
-    <div class="box">
+    <div class="box has-background-success">
 
         <form method='post'>
             {{ form.hidden_tag() }}
@@ -13,40 +13,28 @@
             <label class="label">{{ form.username.label }}</label>
             <div class="field">
                 <div class="control has-icons-left">
-                    {{ form.username() }}
+                    {{ form.username(class="input") }}
                     <span class="icon is-left">
                         <i class="fas fa-solid fa-user"></i>
                     </span>
                 </div>
-
-                {% for error in form.username.errors %}
-                    <p class="help is-danger">{{ error }}</p>
-                {% endfor %}
             </div>
 
             <label class="label">{{ form.password.label }}</label>
             <div class="field">
                 <div class="control">
-                    {{ form.password() }}
+                    {{ form.password(class="input") }}
                 </div>
-
-                {% for error in form.password.errors %}
-                    <p class="help is-danger">{{ error }}</p>
-                {% endfor %}
             </div>
 
             <label class="label">{{ form.name.label }}</label>
             <div class="field">
                 <div class="control">
-                    {{ form.name() }}
+                    {{ form.name(class="input") }}
                 </div>
-
-                {% for error in form.name.errors %}
-                    <p class="help is-danger">{{ error }}</p>
-                {% endfor %}
             </div>
 
-            {{ form.submit() }}
+            {{ form.submit(class="button") }}
         </form>
     </div>
 </div>

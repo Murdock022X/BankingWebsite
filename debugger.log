@@ -13826,3 +13826,1425 @@ jinja2.exceptions.TemplateSyntaxError: expected token 'end of statement block', 
 23:11:28,258 werkzeug INFO 127.0.0.1 - - [09/Mar/2023 23:11:28] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
 23:11:30,846 werkzeug INFO 127.0.0.1 - - [09/Mar/2023 23:11:30] "GET /signup/ HTTP/1.1" 200 -
 23:11:30,865 werkzeug INFO 127.0.0.1 - - [09/Mar/2023 23:11:30] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+01:56:25,980 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+01:56:25,980 werkzeug INFO [33mPress CTRL+C to quit[0m
+01:56:28,966 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 01:56:28] "GET / HTTP/1.1" 200 -
+01:56:29,5 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 01:56:29] "GET /static/nav.js HTTP/1.1" 200 -
+01:56:34,284 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 01:56:34] "GET /profile/ HTTP/1.1" 200 -
+01:56:34,307 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 01:56:34] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+01:56:37,122 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 01:56:37] "GET /accounts/ HTTP/1.1" 200 -
+01:56:37,140 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 01:56:37] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+01:56:38,947 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 01:56:38] "GET /create_account/ HTTP/1.1" 200 -
+01:56:38,965 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 01:56:38] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+01:56:41,878 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 01:56:41] "GET /summary/ HTTP/1.1" 200 -
+01:56:41,899 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 01:56:41] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+01:56:43,954 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 01:56:43] "GET /alerts/ HTTP/1.1" 200 -
+01:56:43,978 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 01:56:43] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+01:56:45,364 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 01:56:45] "GET /messages/ HTTP/1.1" 200 -
+01:56:45,383 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 01:56:45] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+01:56:46,212 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 01:56:46] "GET /alerts/ HTTP/1.1" 200 -
+01:56:46,245 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 01:56:46] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+01:56:46,806 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 01:56:46] "GET /view_eStatements/ HTTP/1.1" 200 -
+01:56:46,827 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 01:56:46] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+01:56:47,940 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 01:56:47] "GET /bank_settings/ HTTP/1.1" 200 -
+01:56:47,960 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 01:56:47] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+01:57:02,785 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 01:57:02] "GET /send_message/ HTTP/1.1" 200 -
+01:57:02,806 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 01:57:02] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+01:57:03,376 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 01:57:03] "GET /send_alert/ HTTP/1.1" 200 -
+01:57:03,399 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 01:57:03] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+01:57:15,65 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 01:57:15] "GET /send_message/ HTTP/1.1" 200 -
+01:57:15,90 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 01:57:15] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+01:57:18,816 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 01:57:18] "GET /send_alert/ HTTP/1.1" 200 -
+01:57:18,841 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 01:57:18] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+01:57:19,605 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 01:57:19] "GET /bank_settings/ HTTP/1.1" 200 -
+01:57:19,628 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 01:57:19] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+01:57:39,453 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+01:57:39,454 werkzeug INFO [33mPress CTRL+C to quit[0m
+01:57:42,218 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 01:57:42] "GET /bank_settings/ HTTP/1.1" 200 -
+01:57:42,232 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 01:57:42] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+01:57:42,266 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 01:57:42] "GET /static/favicon.ico HTTP/1.1" 200 -
+01:57:52,130 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 01:57:52] "GET /send_alert/ HTTP/1.1" 200 -
+01:57:52,149 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 01:57:52] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+01:57:53,54 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 01:57:53] "GET /send_message/ HTTP/1.1" 200 -
+01:57:53,76 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 01:57:53] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+01:57:56,514 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 01:57:56] "GET /view_eStatements/ HTTP/1.1" 200 -
+01:57:56,535 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 01:57:56] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+01:57:58,89 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 01:57:58] "GET /alerts/ HTTP/1.1" 200 -
+01:57:58,112 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 01:57:58] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+01:57:59,637 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 01:57:59] "GET /messages/ HTTP/1.1" 200 -
+01:57:59,658 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 01:57:59] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+01:58:03,855 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 01:58:03] "GET /accounts/ HTTP/1.1" 200 -
+01:58:03,880 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 01:58:03] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+01:58:05,212 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 01:58:05] "GET /create_account/ HTTP/1.1" 200 -
+01:58:05,235 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 01:58:05] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+01:58:17,393 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+01:58:17,393 werkzeug INFO [33mPress CTRL+C to quit[0m
+01:58:21,337 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 01:58:21] "GET /bank_settings/ HTTP/1.1" 200 -
+01:58:21,360 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 01:58:21] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+01:58:27,434 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 01:58:27] "GET /send_alert/ HTTP/1.1" 200 -
+01:58:27,455 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 01:58:27] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+01:58:35,141 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 01:58:35] "GET /send_message/ HTTP/1.1" 200 -
+01:58:35,166 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 01:58:35] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+01:59:46,57 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+01:59:46,58 werkzeug INFO [33mPress CTRL+C to quit[0m
+01:59:50,286 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 01:59:50] "GET /send_message/ HTTP/1.1" 200 -
+01:59:50,300 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 01:59:50] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+01:59:50,336 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 01:59:50] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+01:59:52,319 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 01:59:52] "GET /send_message/ HTTP/1.1" 200 -
+01:59:52,333 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 01:59:52] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+01:59:52,369 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 01:59:52] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+01:59:52,942 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 01:59:52] "GET /send_message/ HTTP/1.1" 200 -
+01:59:52,955 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 01:59:52] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+01:59:52,987 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 01:59:52] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+02:00:21,69 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+02:00:21,69 werkzeug INFO [33mPress CTRL+C to quit[0m
+02:00:24,424 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:00:24] "GET /send_message/ HTTP/1.1" 200 -
+02:00:24,439 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:00:24] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+02:00:24,475 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:00:24] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+02:00:25,205 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:00:25] "GET /send_message/ HTTP/1.1" 200 -
+02:00:25,216 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:00:25] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+02:00:25,252 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:00:25] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+02:02:40,611 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+02:02:40,611 werkzeug INFO [33mPress CTRL+C to quit[0m
+02:02:49,445 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:02:49] "GET /send_message/ HTTP/1.1" 200 -
+02:02:49,459 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:02:49] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+02:02:49,495 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:02:49] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+02:02:53,969 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:02:53] "GET /login HTTP/1.1" 200 -
+02:02:53,997 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:02:53] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+02:02:56,465 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:02:56] "GET /signup/ HTTP/1.1" 200 -
+02:02:56,491 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:02:56] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+02:03:08,96 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+02:03:08,96 werkzeug INFO [33mPress CTRL+C to quit[0m
+02:03:10,488 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:03:10] "GET /signup/ HTTP/1.1" 200 -
+02:03:10,503 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:03:10] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+02:03:10,544 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:03:10] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+02:03:13,59 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:03:13] "GET /login HTTP/1.1" 200 -
+02:03:13,88 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:03:13] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+02:04:06,164 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+02:04:06,164 werkzeug INFO [33mPress CTRL+C to quit[0m
+02:04:08,703 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:04:08] "GET /login HTTP/1.1" 200 -
+02:04:08,719 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:04:08] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+02:04:08,824 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:04:08] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+02:04:11,59 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:04:11] "GET /signup/ HTTP/1.1" 200 -
+02:04:11,88 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:04:11] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+02:04:14,684 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:04:14] "[32mGET /logout HTTP/1.1[0m" 302 -
+02:04:14,694 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:04:14] "GET / HTTP/1.1" 200 -
+02:04:14,716 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:04:14] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+02:04:17,31 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:04:17] "[32mGET /view_eStatements/ HTTP/1.1[0m" 302 -
+02:04:17,38 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:04:17] "GET /login?next=%2Fview_eStatements%2F HTTP/1.1" 200 -
+02:04:17,65 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:04:17] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+02:04:19,12 root INFO Log Info: executive 
+02:04:19,13 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:04:19] "[32mPOST /login?next=%2Fview_eStatements%2F HTTP/1.1[0m" 302 -
+02:04:19,22 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:04:19] "GET /profile/ HTTP/1.1" 200 -
+02:04:19,50 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:04:19] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+02:04:20,834 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:04:20] "GET /bank_settings/ HTTP/1.1" 200 -
+02:04:20,862 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:04:20] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+02:04:22,96 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:04:22] "GET /send_alert/ HTTP/1.1" 200 -
+02:04:22,117 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:04:22] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+02:04:23,151 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:04:23] "GET /send_message/ HTTP/1.1" 200 -
+02:04:23,181 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:04:23] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+02:04:24,194 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:04:24] "GET /view_eStatements/ HTTP/1.1" 200 -
+02:04:24,216 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:04:24] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+02:04:28,129 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:04:28] "GET /bank_settings/ HTTP/1.1" 200 -
+02:04:28,156 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:04:28] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+02:04:31,643 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:04:31] "GET /send_alert/ HTTP/1.1" 200 -
+02:04:31,667 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:04:31] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+02:05:02,576 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+02:05:02,576 werkzeug INFO [33mPress CTRL+C to quit[0m
+02:05:05,17 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:05:05] "GET /send_alert/ HTTP/1.1" 200 -
+02:05:05,30 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:05:05] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+02:05:05,67 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:05:05] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+02:05:36,833 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+02:05:36,833 werkzeug INFO [33mPress CTRL+C to quit[0m
+02:05:39,12 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:05:39] "GET /send_alert/ HTTP/1.1" 200 -
+02:05:39,28 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:05:39] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+02:05:39,147 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:05:39] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+02:07:15,364 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+02:07:15,364 werkzeug INFO [33mPress CTRL+C to quit[0m
+02:07:18,55 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:07:18] "GET /send_alert/ HTTP/1.1" 200 -
+02:07:18,68 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:07:18] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+02:07:18,162 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:07:18] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+02:07:19,336 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:07:19] "GET /bank_settings/ HTTP/1.1" 200 -
+02:07:19,362 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:07:19] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+02:07:25,779 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:07:25] "GET /send_alert/ HTTP/1.1" 200 -
+02:07:25,800 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:07:25] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+02:07:27,233 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:07:27] "GET /send_message/ HTTP/1.1" 200 -
+02:07:27,262 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:07:27] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+02:07:28,173 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:07:28] "GET /view_eStatements/ HTTP/1.1" 200 -
+02:07:28,194 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:07:28] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+02:07:30,424 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:07:30] "GET /alerts/ HTTP/1.1" 200 -
+02:07:30,452 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:07:30] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+02:07:32,304 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:07:32] "GET /create_account/ HTTP/1.1" 200 -
+02:07:32,329 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:07:32] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+02:07:34,217 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:07:34] "GET /create_account/ HTTP/1.1" 200 -
+02:07:34,234 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:07:34] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+02:07:35,808 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:07:35] "GET /summary/ HTTP/1.1" 200 -
+02:07:35,832 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:07:35] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+02:07:37,809 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:07:37] "GET /accounts/ HTTP/1.1" 200 -
+02:07:37,831 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:07:37] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+02:07:39,228 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:07:39] "GET /profile/ HTTP/1.1" 200 -
+02:07:39,252 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:07:39] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+02:07:40,818 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:07:40] "GET /profile/ HTTP/1.1" 200 -
+02:07:40,831 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:07:40] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+02:09:24,712 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+02:09:24,712 werkzeug INFO [33mPress CTRL+C to quit[0m
+02:09:27,293 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:09:27] "GET /accounts/ HTTP/1.1" 200 -
+02:09:27,318 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:09:27] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+02:09:45,202 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+02:09:45,202 werkzeug INFO [33mPress CTRL+C to quit[0m
+02:09:47,551 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:09:47] "GET /accounts/ HTTP/1.1" 200 -
+02:09:47,566 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:09:47] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+02:09:47,600 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:09:47] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+02:10:58,785 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+02:10:58,785 werkzeug INFO [33mPress CTRL+C to quit[0m
+02:11:01,203 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:11:01] "GET /accounts/ HTTP/1.1" 200 -
+02:11:01,219 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:11:01] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+02:11:01,254 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:11:01] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+02:11:09,12 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:11:09] "GET /profile/ HTTP/1.1" 200 -
+02:11:09,35 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:11:09] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+02:11:11,765 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:11:11] "GET /accounts/ HTTP/1.1" 200 -
+02:11:11,790 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:11:11] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+02:11:13,317 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:11:13] "GET /create_account/ HTTP/1.1" 200 -
+02:11:13,338 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:11:13] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+02:11:15,121 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:11:15] "GET /summary/ HTTP/1.1" 200 -
+02:11:15,144 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:11:15] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+02:11:16,642 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:11:16] "GET /alerts/ HTTP/1.1" 200 -
+02:11:16,666 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:11:16] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+02:11:17,641 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:11:17] "GET /view_eStatements/ HTTP/1.1" 200 -
+02:11:17,663 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:11:17] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+02:11:18,945 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:11:18] "GET /bank_settings/ HTTP/1.1" 200 -
+02:11:18,970 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:11:18] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+02:11:23,521 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:11:23] "GET /login HTTP/1.1" 200 -
+02:11:23,545 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:11:23] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+02:11:37,550 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:11:37] "GET /alerts/ HTTP/1.1" 200 -
+02:11:37,582 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:11:37] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+02:11:39,483 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:11:39] "GET /messages/ HTTP/1.1" 200 -
+02:11:39,510 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:11:39] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+02:11:41,356 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:11:41] "GET /accounts/ HTTP/1.1" 200 -
+02:11:41,378 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:11:41] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+02:12:46,297 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+02:12:46,297 werkzeug INFO [33mPress CTRL+C to quit[0m
+02:12:48,397 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:12:48] "GET /accounts/ HTTP/1.1" 200 -
+02:12:48,410 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:12:48] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+02:12:48,456 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:12:48] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+02:13:07,632 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+02:13:07,632 werkzeug INFO [33mPress CTRL+C to quit[0m
+02:13:09,722 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:13:09] "GET /accounts/ HTTP/1.1" 200 -
+02:13:09,735 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:13:09] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+02:13:09,770 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:13:09] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+02:13:13,974 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:13:13] "GET /create_account/ HTTP/1.1" 200 -
+02:13:14,2 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:13:14] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+02:13:21,295 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:13:21] "[32mPOST /create_account/ HTTP/1.1[0m" 302 -
+02:13:21,302 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:13:21] "GET /accounts/ HTTP/1.1" 200 -
+02:13:21,330 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:13:21] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+02:13:44,820 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+02:13:44,820 werkzeug INFO [33mPress CTRL+C to quit[0m
+02:13:46,644 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:13:46] "GET /accounts/ HTTP/1.1" 200 -
+02:13:46,659 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:13:46] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+02:13:46,693 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:13:46] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+02:16:25,452 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+02:16:25,452 werkzeug INFO [33mPress CTRL+C to quit[0m
+02:16:27,784 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:16:27] "GET /accounts/ HTTP/1.1" 200 -
+02:16:27,800 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:16:27] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+02:16:27,913 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 02:16:27] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+10:57:56,922 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+10:57:56,923 werkzeug INFO [33mPress CTRL+C to quit[0m
+10:58:06,71 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 10:58:06] "GET / HTTP/1.1" 200 -
+10:58:06,114 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 10:58:06] "GET /static/nav.js HTTP/1.1" 200 -
+10:58:12,5 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 10:58:12] "[32mGET /view_eStatements/ HTTP/1.1[0m" 302 -
+10:58:12,19 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 10:58:12] "GET /login?next=%2Fview_eStatements%2F HTTP/1.1" 200 -
+10:58:12,37 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 10:58:12] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+10:59:46,318 root INFO Log Info: executive 
+10:59:46,319 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 10:59:46] "[32mPOST /login?next=%2Fview_eStatements%2F HTTP/1.1[0m" 302 -
+10:59:46,328 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 10:59:46] "GET /profile/ HTTP/1.1" 200 -
+10:59:46,348 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 10:59:46] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+11:01:48,534 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+11:01:48,534 werkzeug INFO [33mPress CTRL+C to quit[0m
+11:01:50,788 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 11:01:50] "GET /profile/ HTTP/1.1" 200 -
+11:01:50,799 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 11:01:50] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+11:01:50,833 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 11:01:50] "GET /static/favicon.ico HTTP/1.1" 200 -
+11:02:13,846 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+11:02:13,847 werkzeug INFO [33mPress CTRL+C to quit[0m
+11:02:16,234 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 11:02:16] "GET /profile/ HTTP/1.1" 200 -
+11:02:16,244 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 11:02:16] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+11:02:16,275 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 11:02:16] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+11:02:29,322 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 11:02:29] "GET /create_account/ HTTP/1.1" 200 -
+11:02:29,340 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 11:02:29] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+11:02:33,436 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 11:02:33] "[32mPOST /create_account/ HTTP/1.1[0m" 302 -
+11:02:33,450 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 11:02:33] "GET /accounts/ HTTP/1.1" 200 -
+11:02:33,470 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 11:02:33] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+11:02:37,431 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 11:02:37] "GET /profile/ HTTP/1.1" 200 -
+11:02:37,448 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 11:02:37] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+11:03:16,239 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+11:03:16,239 werkzeug INFO [33mPress CTRL+C to quit[0m
+11:03:18,547 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 11:03:18] "GET /profile/ HTTP/1.1" 200 -
+11:03:18,558 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 11:03:18] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+11:03:18,592 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 11:03:18] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+11:03:22,747 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 11:03:22] "GET /accounts/ HTTP/1.1" 200 -
+11:03:22,762 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 11:03:22] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+11:03:25,285 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 11:03:25] "GET /create_account/ HTTP/1.1" 200 -
+11:03:25,298 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 11:03:25] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+11:03:39,500 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+11:03:39,500 werkzeug INFO [33mPress CTRL+C to quit[0m
+11:03:41,661 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 11:03:41] "GET /create_account/ HTTP/1.1" 200 -
+11:03:41,672 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 11:03:41] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+11:03:41,712 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 11:03:41] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+11:03:57,597 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 11:03:57] "GET /create_account/ HTTP/1.1" 200 -
+11:03:57,608 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 11:03:57] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+11:04:08,214 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 11:04:08] "GET /create_account/ HTTP/1.1" 200 -
+11:04:08,226 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 11:04:08] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+11:04:10,638 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 11:04:10] "GET /accounts/ HTTP/1.1" 200 -
+11:04:10,656 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 11:04:10] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+11:14:32,259 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 11:14:32] "GET /profile/ HTTP/1.1" 200 -
+11:14:32,276 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 11:14:32] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+11:14:34,999 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 11:14:34] "GET /accounts/ HTTP/1.1" 200 -
+11:14:35,15 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 11:14:35] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+11:14:40,208 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 11:14:40] "GET /create_account/ HTTP/1.1" 200 -
+11:14:40,224 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 11:14:40] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+11:14:43,92 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 11:14:43] "GET /summary/ HTTP/1.1" 200 -
+11:14:43,107 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 11:14:43] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+11:15:04,776 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+11:15:04,776 werkzeug INFO [33mPress CTRL+C to quit[0m
+11:15:07,275 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 11:15:07] "GET /summary/ HTTP/1.1" 200 -
+11:15:07,286 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 11:15:07] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+11:15:07,319 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 11:15:07] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+11:22:18,791 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 11:22:18] "GET /1/account_info/ HTTP/1.1" 200 -
+11:22:18,809 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 11:22:18] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+11:22:51,743 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+11:22:51,743 werkzeug INFO [33mPress CTRL+C to quit[0m
+11:22:54,697 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 11:22:54] "GET /1/account_info/ HTTP/1.1" 200 -
+11:22:54,709 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 11:22:54] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+11:22:54,743 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 11:22:54] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+11:34:04,98 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 11:34:04] "GET /profile/ HTTP/1.1" 200 -
+11:34:04,114 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 11:34:04] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+11:34:07,718 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 11:34:07] "GET /accounts/ HTTP/1.1" 200 -
+11:34:07,734 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 11:34:07] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+11:34:10,602 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 11:34:10] "GET /create_account/ HTTP/1.1" 200 -
+11:34:10,619 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 11:34:10] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+11:34:19,457 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 11:34:19] "GET /summary/ HTTP/1.1" 200 -
+11:34:19,474 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 11:34:19] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+11:34:25,54 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 11:34:25] "GET /1/account_info/ HTTP/1.1" 200 -
+11:34:25,69 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 11:34:25] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+11:34:26,979 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 11:34:26] "GET /alerts/ HTTP/1.1" 200 -
+11:34:27,0 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 11:34:27] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+11:34:28,251 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 11:34:28] "GET /messages/ HTTP/1.1" 200 -
+11:34:28,271 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 11:34:28] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+11:34:29,417 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 11:34:29] "GET /view_eStatements/ HTTP/1.1" 200 -
+11:34:29,434 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 11:34:29] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+11:34:30,680 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 11:34:30] "GET /bank_settings/ HTTP/1.1" 200 -
+11:34:30,698 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 11:34:30] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+11:34:32,754 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 11:34:32] "GET /send_alert/ HTTP/1.1" 200 -
+11:34:32,771 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 11:34:32] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+11:34:36,595 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 11:34:36] "POST /send_alert/ HTTP/1.1" 200 -
+11:34:36,608 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 11:34:36] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+11:34:37,774 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 11:34:37] "GET /send_message/ HTTP/1.1" 200 -
+11:34:37,787 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 11:34:37] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+11:34:47,486 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 11:34:47] "POST /send_message/ HTTP/1.1" 200 -
+11:34:47,497 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 11:34:47] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+11:34:49,22 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 11:34:49] "GET /bank_settings/ HTTP/1.1" 200 -
+11:34:49,33 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 11:34:49] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+11:34:54,462 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 11:34:54] "GET /alerts/ HTTP/1.1" 200 -
+11:34:54,482 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 11:34:54] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+11:34:56,729 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 11:34:56] "GET /messages/ HTTP/1.1" 200 -
+11:34:56,752 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 11:34:56] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+11:45:33,363 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 11:45:33] "[32mGET /1/delete_messages/ HTTP/1.1[0m" 302 -
+11:45:33,370 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 11:45:33] "GET /messages/ HTTP/1.1" 200 -
+11:45:33,387 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 11:45:33] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+11:45:34,763 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 11:45:34] "GET /alerts/ HTTP/1.1" 200 -
+11:45:34,785 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 11:45:34] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+17:25:52,842 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+17:25:52,842 werkzeug INFO [33mPress CTRL+C to quit[0m
+17:25:56,176 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 17:25:56] "GET / HTTP/1.1" 200 -
+17:25:56,216 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 17:25:56] "GET /static/nav.js HTTP/1.1" 200 -
+17:26:14,392 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 17:26:14] "GET /login HTTP/1.1" 200 -
+17:26:14,419 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 17:26:14] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+17:26:19,426 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 17:26:19] "GET /signup/ HTTP/1.1" 200 -
+17:26:19,449 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 17:26:19] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+17:26:27,535 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 17:26:27] "GET /login HTTP/1.1" 200 -
+17:26:27,575 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 17:26:27] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+17:26:28,497 root INFO Log Info: executive 
+17:26:28,498 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 17:26:28] "[32mPOST /login HTTP/1.1[0m" 302 -
+17:26:28,512 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 17:26:28] "GET /profile/ HTTP/1.1" 200 -
+17:26:28,546 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 17:26:28] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+17:26:29,748 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 17:26:29] "[32mGET /logout HTTP/1.1[0m" 302 -
+17:26:29,764 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 17:26:29] "GET / HTTP/1.1" 200 -
+17:26:29,793 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 17:26:29] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+17:26:32,873 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 17:26:32] "GET /login HTTP/1.1" 200 -
+17:26:32,912 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 17:26:32] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+17:26:33,976 root INFO Log Info: executive 
+17:26:33,977 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 17:26:33] "[32mPOST /login HTTP/1.1[0m" 302 -
+17:26:33,988 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 17:26:33] "GET /profile/ HTTP/1.1" 200 -
+17:26:34,19 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 17:26:34] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+17:26:34,724 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 17:26:34] "GET /view_eStatements/ HTTP/1.1" 200 -
+17:26:34,752 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 17:26:34] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+17:26:35,587 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 17:26:35] "GET /bank_settings/ HTTP/1.1" 200 -
+17:26:35,611 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 17:26:35] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+17:28:24,579 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+17:28:24,579 werkzeug INFO [33mPress CTRL+C to quit[0m
+17:28:27,405 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 17:28:27] "GET /bank_settings/ HTTP/1.1" 200 -
+17:28:27,423 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 17:28:27] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+17:28:27,542 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 17:28:27] "GET /static/favicon.ico HTTP/1.1" 200 -
+17:28:31,322 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 17:28:31] "GET /send_alert/ HTTP/1.1" 200 -
+17:28:31,352 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 17:28:31] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+17:28:34,187 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 17:28:34] "GET /send_message/ HTTP/1.1" 200 -
+17:28:34,212 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 17:28:34] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+17:29:04,620 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+17:29:04,620 werkzeug INFO [33mPress CTRL+C to quit[0m
+17:29:07,28 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 17:29:07] "GET /send_message/ HTTP/1.1" 200 -
+17:29:07,46 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 17:29:07] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+17:29:07,88 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 17:29:07] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+17:29:30,815 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+17:29:30,815 werkzeug INFO [33mPress CTRL+C to quit[0m
+17:29:33,138 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 17:29:33] "GET /send_message/ HTTP/1.1" 200 -
+17:29:33,158 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 17:29:33] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+17:29:33,288 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 17:29:33] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+17:29:35,366 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 17:29:35] "GET /send_alert/ HTTP/1.1" 200 -
+17:29:35,396 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 17:29:35] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+17:29:36,901 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 17:29:36] "GET /bank_settings/ HTTP/1.1" 200 -
+17:29:36,928 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 17:29:36] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+17:29:46,270 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 17:29:46] "GET /create_account/ HTTP/1.1" 200 -
+17:29:46,315 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 17:29:46] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+17:32:18,51 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+17:32:18,51 werkzeug INFO [33mPress CTRL+C to quit[0m
+17:32:20,264 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 17:32:20] "GET /create_account/ HTTP/1.1" 200 -
+17:32:20,284 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 17:32:20] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+17:32:20,444 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 17:32:20] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+17:32:22,902 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 17:32:22] "GET /bank_settings/ HTTP/1.1" 200 -
+17:32:22,943 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 17:32:22] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+17:34:08,16 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+17:34:08,16 werkzeug INFO [33mPress CTRL+C to quit[0m
+17:34:10,267 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 17:34:10] "GET /bank_settings/ HTTP/1.1" 200 -
+17:34:10,285 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 17:34:10] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+17:34:10,437 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 17:34:10] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+17:34:36,678 app ERROR Exception on /bank_settings/ [POST]
+Traceback (most recent call last):
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1808, in _execute_context
+    context = constructor(
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/engine/default.py", line 1261, in _init_compiled
+    l_param: List[Any] = [
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/engine/default.py", line 1262, in <listcomp>
+    flattened_processors[key](compiled_params[key])
+  File "lib/sqlalchemy/cyextension/processors.pyx", line 21, in sqlalchemy.cyextension.processors.to_float
+ValueError: could not convert string to float: '0.25%'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "/home/orthanc/banking_website_v2/admin.py", line 213, in bank_settings
+    return render_template('bank_settings.html', form=form, rates=rates)
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/flask/templating.py", line 147, in render_template
+    return _render(app, template, context)
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/flask/templating.py", line 130, in _render
+    rv = template.render(context)
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/orthanc/banking_website_v2/templates/bank_settings.html", line 1, in top-level template code
+    {% extends "form_base.html" %}
+  File "/home/orthanc/banking_website_v2/templates/form_base.html", line 40, in top-level template code
+    {% if current_user.id == 1 %}
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/jinja2/environment.py", line 485, in getattr
+    return getattr(obj, attribute)
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/orm/attributes.py", line 557, in __get__
+    return self.impl.get(state, dict_)  # type: ignore[no-any-return]
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/orm/attributes.py", line 1070, in get
+    value = self._fire_loader_callables(state, key, passive)
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/orm/attributes.py", line 1100, in _fire_loader_callables
+    return state._load_expired(state, passive)
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/orm/state.py", line 807, in _load_expired
+    self.manager.expired_attribute_loader(self, toload, passive)
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/orm/loading.py", line 1598, in load_scalar_attributes
+    result = load_on_ident(
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/orm/loading.py", line 481, in load_on_ident
+    return load_on_pk_identity(
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/orm/loading.py", line 670, in load_on_pk_identity
+    session.execute(
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 2229, in execute
+    return self._execute_internal(
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 2103, in _execute_internal
+    ) = compile_state_cls.orm_pre_session_exec(
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/orm/context.py", line 460, in orm_pre_session_exec
+    session._autoflush()
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 2904, in _autoflush
+    raise e.with_traceback(sys.exc_info()[2])
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 2893, in _autoflush
+    self.flush()
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 4153, in flush
+    self._flush(objects)
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 4290, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/util/langhelpers.py", line 147, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 4250, in _flush
+    flush_context.execute()
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/orm/unitofwork.py", line 467, in execute
+    rec.execute(self)
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/orm/unitofwork.py", line 644, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/orm/persistence.py", line 85, in save_obj
+    _emit_update_statements(
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/orm/persistence.py", line 894, in _emit_update_statements
+    c = connection.execute(
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1414, in execute
+    return meth(
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/sql/elements.py", line 485, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1638, in _execute_clauseelement
+    ret = self._execute_context(
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1814, in _execute_context
+    self._handle_dbapi_exception(
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 2325, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1808, in _execute_context
+    context = constructor(
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/engine/default.py", line 1261, in _init_compiled
+    l_param: List[Any] = [
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/engine/default.py", line 1262, in <listcomp>
+    flattened_processors[key](compiled_params[key])
+  File "lib/sqlalchemy/cyextension/processors.pyx", line 21, in sqlalchemy.cyextension.processors.to_float
+sqlalchemy.exc.StatementError: (raised as a result of Query-invoked autoflush; consider using a session.no_autoflush block if this flush is occurring prematurely)
+(builtins.ValueError) could not convert string to float: '0.25%'
+[SQL: UPDATE bank__settings SET savings_apy=?, checkings_apy=?, savings_min=?, checkings_min=? WHERE bank__settings.id = ?]
+[parameters: [{'checkings_min': '$0.00', 'savings_apy': '0.25%', 'checkings_apy': '0.00%', 'savings_min': '$5.00', 'bank__settings_id': 1}]]
+17:34:36,692 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 17:34:36] "[35m[1mPOST /bank_settings/ HTTP/1.1[0m" 500 -
+17:34:36,818 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 17:34:36] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+17:37:17,126 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 17:37:17] "GET /bank_settings/ HTTP/1.1" 200 -
+17:37:23,766 app ERROR Exception on /bank_settings/ [POST]
+Traceback (most recent call last):
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1808, in _execute_context
+    context = constructor(
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/engine/default.py", line 1261, in _init_compiled
+    l_param: List[Any] = [
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/engine/default.py", line 1262, in <listcomp>
+    flattened_processors[key](compiled_params[key])
+  File "lib/sqlalchemy/cyextension/processors.pyx", line 21, in sqlalchemy.cyextension.processors.to_float
+ValueError: could not convert string to float: '0.25%'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "/home/orthanc/banking_website_v2/admin.py", line 213, in bank_settings
+    return render_template('bank_settings.html', form=form, rates=rates)
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/flask/templating.py", line 147, in render_template
+    return _render(app, template, context)
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/flask/templating.py", line 130, in _render
+    rv = template.render(context)
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/orthanc/banking_website_v2/templates/bank_settings.html", line 1, in top-level template code
+    {% extends "form_base.html" %}
+  File "/home/orthanc/banking_website_v2/templates/form_base.html", line 40, in top-level template code
+    {% if current_user.id == 1 %}
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/jinja2/environment.py", line 485, in getattr
+    return getattr(obj, attribute)
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/orm/attributes.py", line 557, in __get__
+    return self.impl.get(state, dict_)  # type: ignore[no-any-return]
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/orm/attributes.py", line 1070, in get
+    value = self._fire_loader_callables(state, key, passive)
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/orm/attributes.py", line 1100, in _fire_loader_callables
+    return state._load_expired(state, passive)
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/orm/state.py", line 807, in _load_expired
+    self.manager.expired_attribute_loader(self, toload, passive)
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/orm/loading.py", line 1598, in load_scalar_attributes
+    result = load_on_ident(
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/orm/loading.py", line 481, in load_on_ident
+    return load_on_pk_identity(
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/orm/loading.py", line 670, in load_on_pk_identity
+    session.execute(
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 2229, in execute
+    return self._execute_internal(
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 2103, in _execute_internal
+    ) = compile_state_cls.orm_pre_session_exec(
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/orm/context.py", line 460, in orm_pre_session_exec
+    session._autoflush()
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 2904, in _autoflush
+    raise e.with_traceback(sys.exc_info()[2])
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 2893, in _autoflush
+    self.flush()
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 4153, in flush
+    self._flush(objects)
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 4290, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/util/langhelpers.py", line 147, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 4250, in _flush
+    flush_context.execute()
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/orm/unitofwork.py", line 467, in execute
+    rec.execute(self)
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/orm/unitofwork.py", line 644, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/orm/persistence.py", line 85, in save_obj
+    _emit_update_statements(
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/orm/persistence.py", line 894, in _emit_update_statements
+    c = connection.execute(
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1414, in execute
+    return meth(
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/sql/elements.py", line 485, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1638, in _execute_clauseelement
+    ret = self._execute_context(
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1814, in _execute_context
+    self._handle_dbapi_exception(
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 2325, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1808, in _execute_context
+    context = constructor(
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/engine/default.py", line 1261, in _init_compiled
+    l_param: List[Any] = [
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/engine/default.py", line 1262, in <listcomp>
+    flattened_processors[key](compiled_params[key])
+  File "lib/sqlalchemy/cyextension/processors.pyx", line 21, in sqlalchemy.cyextension.processors.to_float
+sqlalchemy.exc.StatementError: (raised as a result of Query-invoked autoflush; consider using a session.no_autoflush block if this flush is occurring prematurely)
+(builtins.ValueError) could not convert string to float: '0.25%'
+[SQL: UPDATE bank__settings SET savings_apy=?, checkings_apy=?, savings_min=?, checkings_min=? WHERE bank__settings.id = ?]
+[parameters: [{'checkings_min': '$0.00', 'savings_apy': '0.25%', 'checkings_apy': '0.00%', 'savings_min': '$5.00', 'bank__settings_id': 1}]]
+17:37:23,768 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 17:37:23] "[35m[1mPOST /bank_settings/ HTTP/1.1[0m" 500 -
+17:41:48,483 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+17:41:48,483 werkzeug INFO [33mPress CTRL+C to quit[0m
+17:41:52,7 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 17:41:52] "GET /bank_settings/ HTTP/1.1" 200 -
+17:41:57,732 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 17:41:57] "GET /bank_settings/ HTTP/1.1" 200 -
+17:41:57,750 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 17:41:57] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+17:41:57,793 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 17:41:57] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+17:42:03,562 app ERROR Exception on /bank_settings/ [POST]
+Traceback (most recent call last):
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1808, in _execute_context
+    context = constructor(
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/engine/default.py", line 1261, in _init_compiled
+    l_param: List[Any] = [
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/engine/default.py", line 1262, in <listcomp>
+    flattened_processors[key](compiled_params[key])
+  File "lib/sqlalchemy/cyextension/processors.pyx", line 21, in sqlalchemy.cyextension.processors.to_float
+ValueError: could not convert string to float: '0.25%'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "/home/orthanc/banking_website_v2/admin.py", line 215, in bank_settings
+    return render_template('bank_settings.html', form=form, rates=rates)
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/flask/templating.py", line 147, in render_template
+    return _render(app, template, context)
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/flask/templating.py", line 130, in _render
+    rv = template.render(context)
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/orthanc/banking_website_v2/templates/bank_settings.html", line 1, in top-level template code
+    {% extends "form_base.html" %}
+  File "/home/orthanc/banking_website_v2/templates/form_base.html", line 40, in top-level template code
+    {% if current_user.id == 1 %}
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/jinja2/environment.py", line 485, in getattr
+    return getattr(obj, attribute)
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/orm/attributes.py", line 557, in __get__
+    return self.impl.get(state, dict_)  # type: ignore[no-any-return]
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/orm/attributes.py", line 1070, in get
+    value = self._fire_loader_callables(state, key, passive)
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/orm/attributes.py", line 1100, in _fire_loader_callables
+    return state._load_expired(state, passive)
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/orm/state.py", line 807, in _load_expired
+    self.manager.expired_attribute_loader(self, toload, passive)
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/orm/loading.py", line 1598, in load_scalar_attributes
+    result = load_on_ident(
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/orm/loading.py", line 481, in load_on_ident
+    return load_on_pk_identity(
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/orm/loading.py", line 670, in load_on_pk_identity
+    session.execute(
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 2229, in execute
+    return self._execute_internal(
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 2103, in _execute_internal
+    ) = compile_state_cls.orm_pre_session_exec(
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/orm/context.py", line 460, in orm_pre_session_exec
+    session._autoflush()
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 2904, in _autoflush
+    raise e.with_traceback(sys.exc_info()[2])
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 2893, in _autoflush
+    self.flush()
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 4153, in flush
+    self._flush(objects)
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 4290, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/util/langhelpers.py", line 147, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 4250, in _flush
+    flush_context.execute()
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/orm/unitofwork.py", line 467, in execute
+    rec.execute(self)
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/orm/unitofwork.py", line 644, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/orm/persistence.py", line 85, in save_obj
+    _emit_update_statements(
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/orm/persistence.py", line 894, in _emit_update_statements
+    c = connection.execute(
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1414, in execute
+    return meth(
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/sql/elements.py", line 485, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1638, in _execute_clauseelement
+    ret = self._execute_context(
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1814, in _execute_context
+    self._handle_dbapi_exception(
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 2325, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1808, in _execute_context
+    context = constructor(
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/engine/default.py", line 1261, in _init_compiled
+    l_param: List[Any] = [
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/engine/default.py", line 1262, in <listcomp>
+    flattened_processors[key](compiled_params[key])
+  File "lib/sqlalchemy/cyextension/processors.pyx", line 21, in sqlalchemy.cyextension.processors.to_float
+sqlalchemy.exc.StatementError: (raised as a result of Query-invoked autoflush; consider using a session.no_autoflush block if this flush is occurring prematurely)
+(builtins.ValueError) could not convert string to float: '0.25%'
+[SQL: UPDATE bank__settings SET savings_apy=?, checkings_apy=?, savings_min=?, checkings_min=? WHERE bank__settings.id = ?]
+[parameters: [{'savings_min': '$5.00', 'savings_apy': '0.25%', 'checkings_min': '$0.00', 'checkings_apy': '0.00%', 'bank__settings_id': 1}]]
+17:42:03,570 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 17:42:03] "[35m[1mPOST /bank_settings/ HTTP/1.1[0m" 500 -
+17:43:42,306 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+17:43:42,306 werkzeug INFO [33mPress CTRL+C to quit[0m
+17:43:45,191 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 17:43:45] "GET /bank_settings/ HTTP/1.1" 200 -
+17:43:49,863 app ERROR Exception on /bank_settings/ [POST]
+Traceback (most recent call last):
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1808, in _execute_context
+    context = constructor(
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/engine/default.py", line 1261, in _init_compiled
+    l_param: List[Any] = [
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/engine/default.py", line 1262, in <listcomp>
+    flattened_processors[key](compiled_params[key])
+  File "lib/sqlalchemy/cyextension/processors.pyx", line 21, in sqlalchemy.cyextension.processors.to_float
+ValueError: could not convert string to float: '0.25%'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "/home/orthanc/banking_website_v2/admin.py", line 217, in bank_settings
+    return render_template('bank_settings.html', form=form, rates=rates)
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/flask/templating.py", line 147, in render_template
+    return _render(app, template, context)
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/flask/templating.py", line 130, in _render
+    rv = template.render(context)
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/orthanc/banking_website_v2/templates/bank_settings.html", line 1, in top-level template code
+    {% extends "form_base.html" %}
+  File "/home/orthanc/banking_website_v2/templates/form_base.html", line 40, in top-level template code
+    {% if current_user.id == 1 %}
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/jinja2/environment.py", line 485, in getattr
+    return getattr(obj, attribute)
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/orm/attributes.py", line 557, in __get__
+    return self.impl.get(state, dict_)  # type: ignore[no-any-return]
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/orm/attributes.py", line 1070, in get
+    value = self._fire_loader_callables(state, key, passive)
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/orm/attributes.py", line 1100, in _fire_loader_callables
+    return state._load_expired(state, passive)
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/orm/state.py", line 807, in _load_expired
+    self.manager.expired_attribute_loader(self, toload, passive)
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/orm/loading.py", line 1598, in load_scalar_attributes
+    result = load_on_ident(
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/orm/loading.py", line 481, in load_on_ident
+    return load_on_pk_identity(
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/orm/loading.py", line 670, in load_on_pk_identity
+    session.execute(
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 2229, in execute
+    return self._execute_internal(
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 2103, in _execute_internal
+    ) = compile_state_cls.orm_pre_session_exec(
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/orm/context.py", line 460, in orm_pre_session_exec
+    session._autoflush()
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 2904, in _autoflush
+    raise e.with_traceback(sys.exc_info()[2])
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 2893, in _autoflush
+    self.flush()
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 4153, in flush
+    self._flush(objects)
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 4290, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/util/langhelpers.py", line 147, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 4250, in _flush
+    flush_context.execute()
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/orm/unitofwork.py", line 467, in execute
+    rec.execute(self)
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/orm/unitofwork.py", line 644, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/orm/persistence.py", line 85, in save_obj
+    _emit_update_statements(
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/orm/persistence.py", line 894, in _emit_update_statements
+    c = connection.execute(
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1414, in execute
+    return meth(
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/sql/elements.py", line 485, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1638, in _execute_clauseelement
+    ret = self._execute_context(
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1814, in _execute_context
+    self._handle_dbapi_exception(
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 2325, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1808, in _execute_context
+    context = constructor(
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/engine/default.py", line 1261, in _init_compiled
+    l_param: List[Any] = [
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/sqlalchemy/engine/default.py", line 1262, in <listcomp>
+    flattened_processors[key](compiled_params[key])
+  File "lib/sqlalchemy/cyextension/processors.pyx", line 21, in sqlalchemy.cyextension.processors.to_float
+sqlalchemy.exc.StatementError: (raised as a result of Query-invoked autoflush; consider using a session.no_autoflush block if this flush is occurring prematurely)
+(builtins.ValueError) could not convert string to float: '0.25%'
+[SQL: UPDATE bank__settings SET savings_apy=?, checkings_apy=?, savings_min=?, checkings_min=? WHERE bank__settings.id = ?]
+[parameters: [{'checkings_min': '$0.00', 'savings_apy': '0.25%', 'savings_min': '$5.00', 'checkings_apy': '0.00%', 'bank__settings_id': 1}]]
+17:43:49,871 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 17:43:49] "[35m[1mPOST /bank_settings/ HTTP/1.1[0m" 500 -
+17:47:13,38 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+17:47:13,39 werkzeug INFO [33mPress CTRL+C to quit[0m
+17:47:34,664 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+17:47:34,665 werkzeug INFO [33mPress CTRL+C to quit[0m
+17:47:36,887 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 17:47:36] "GET /bank_settings/ HTTP/1.1" 200 -
+17:48:27,199 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+17:48:27,200 werkzeug INFO [33mPress CTRL+C to quit[0m
+17:48:29,284 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 17:48:29] "GET /send_alert/ HTTP/1.1" 200 -
+17:48:29,308 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 17:48:29] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+17:48:30,314 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 17:48:30] "GET /bank_settings/ HTTP/1.1" 200 -
+17:48:30,345 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 17:48:30] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+17:48:36,332 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 17:48:36] "POST /bank_settings/ HTTP/1.1" 200 -
+17:48:36,355 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 17:48:36] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+17:56:32,481 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+17:56:32,481 werkzeug INFO [33mPress CTRL+C to quit[0m
+17:56:39,604 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 17:56:39] "POST /bank_settings/ HTTP/1.1" 200 -
+17:56:39,621 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 17:56:39] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+17:56:39,669 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 17:56:39] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+17:56:43,981 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 17:56:43] "POST /bank_settings/ HTTP/1.1" 200 -
+17:56:44,2 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 17:56:44] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+17:56:58,169 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+17:56:58,169 werkzeug INFO [33mPress CTRL+C to quit[0m
+17:57:03,296 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 17:57:03] "POST /bank_settings/ HTTP/1.1" 200 -
+17:57:03,317 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 17:57:03] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+17:57:03,358 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 17:57:03] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+17:57:05,668 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 17:57:05] "POST /bank_settings/ HTTP/1.1" 200 -
+17:57:05,687 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 17:57:05] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+17:57:34,825 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+17:57:34,825 werkzeug INFO [33mPress CTRL+C to quit[0m
+17:57:38,64 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 17:57:38] "POST /bank_settings/ HTTP/1.1" 200 -
+17:57:38,87 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 17:57:38] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+17:57:41,687 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 17:57:41] "POST /bank_settings/ HTTP/1.1" 200 -
+17:57:41,706 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 17:57:41] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+17:57:47,281 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 17:57:47] "POST /bank_settings/ HTTP/1.1" 200 -
+17:57:47,301 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 17:57:47] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:12:50,76 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+18:12:50,76 werkzeug INFO [33mPress CTRL+C to quit[0m
+18:12:53,477 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:12:53] "GET / HTTP/1.1" 200 -
+18:12:53,526 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:12:53] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:12:55,57 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:12:55] "GET /login HTTP/1.1" 200 -
+18:12:55,94 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:12:55] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:12:56,403 root INFO Log Info: executive 
+18:12:56,405 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:12:56] "[32mPOST /login HTTP/1.1[0m" 302 -
+18:12:56,422 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:12:56] "GET /profile/ HTTP/1.1" 200 -
+18:12:56,456 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:12:56] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:12:59,741 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:12:59] "GET /bank_settings/ HTTP/1.1" 200 -
+18:12:59,768 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:12:59] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:13:07,385 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:13:07] "POST /bank_settings/ HTTP/1.1" 200 -
+18:13:07,410 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:13:07] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:14:41,384 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+18:14:41,399 werkzeug INFO [33mPress CTRL+C to quit[0m
+18:14:45,744 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:14:45] "POST /bank_settings/ HTTP/1.1" 200 -
+18:14:45,764 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:14:45] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:14:45,846 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:14:45] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+18:14:49,584 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:14:49] "POST /bank_settings/ HTTP/1.1" 200 -
+18:14:49,604 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:14:49] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:15:02,654 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+18:15:02,654 werkzeug INFO [33mPress CTRL+C to quit[0m
+18:15:05,949 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:15:05] "POST /bank_settings/ HTTP/1.1" 200 -
+18:15:05,967 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:15:05] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:15:06,13 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:15:06] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+18:15:10,506 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:15:10] "POST /bank_settings/ HTTP/1.1" 200 -
+18:15:10,527 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:15:10] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:15:53,491 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+18:15:53,491 werkzeug INFO [33mPress CTRL+C to quit[0m
+18:15:57,408 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:15:57] "POST /bank_settings/ HTTP/1.1" 200 -
+18:15:57,425 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:15:57] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:15:57,472 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:15:57] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+18:15:59,711 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:15:59] "POST /bank_settings/ HTTP/1.1" 200 -
+18:15:59,731 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:15:59] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:16:23,267 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+18:16:23,267 werkzeug INFO [33mPress CTRL+C to quit[0m
+18:16:28,526 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:16:28] "GET /login HTTP/1.1" 200 -
+18:16:28,554 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:16:28] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:16:30,838 root INFO Log Info: executive 
+18:16:30,839 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:16:30] "[32mPOST /login HTTP/1.1[0m" 302 -
+18:16:30,855 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:16:30] "GET /profile/ HTTP/1.1" 200 -
+18:16:30,893 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:16:30] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:16:37,141 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:16:37] "GET /bank_settings/ HTTP/1.1" 200 -
+18:16:37,173 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:16:37] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:16:43,293 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:16:43] "POST /bank_settings/ HTTP/1.1" 200 -
+18:16:43,319 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:16:43] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:17:43,334 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+18:17:43,334 werkzeug INFO [33mPress CTRL+C to quit[0m
+18:17:45,208 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:17:45] "POST /bank_settings/ HTTP/1.1" 200 -
+18:17:45,228 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:17:45] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:17:45,372 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:17:45] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+18:18:03,648 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+18:18:03,649 werkzeug INFO [33mPress CTRL+C to quit[0m
+18:18:05,989 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:18:05] "POST /bank_settings/ HTTP/1.1" 200 -
+18:18:06,10 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:18:06] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:18:06,159 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:18:06] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+18:18:28,763 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+18:18:28,763 werkzeug INFO [33mPress CTRL+C to quit[0m
+18:18:30,898 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:18:30] "POST /bank_settings/ HTTP/1.1" 200 -
+18:18:30,918 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:18:30] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:18:31,62 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:18:31] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+18:19:59,697 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+18:19:59,697 werkzeug INFO [33mPress CTRL+C to quit[0m
+18:20:05,698 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:20:05] "POST /bank_settings/ HTTP/1.1" 200 -
+18:20:05,721 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:20:05] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:21:16,362 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+18:21:16,362 werkzeug INFO [33mPress CTRL+C to quit[0m
+18:21:21,813 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:21:21] "POST /bank_settings/ HTTP/1.1" 200 -
+18:21:21,835 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:21:21] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:21:21,978 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:21:21] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+18:21:31,493 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+18:21:31,493 werkzeug INFO [33mPress CTRL+C to quit[0m
+18:21:36,451 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:21:36] "POST /bank_settings/ HTTP/1.1" 200 -
+18:21:36,475 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:21:36] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:28:30,558 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+18:28:30,558 werkzeug INFO [33mPress CTRL+C to quit[0m
+18:28:33,210 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:28:33] "POST /bank_settings/ HTTP/1.1" 200 -
+18:28:33,238 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:28:33] "GET /static/delete.js HTTP/1.1" 200 -
+18:28:33,240 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:28:33] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:28:33,382 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:28:33] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+18:28:53,320 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+18:28:53,320 werkzeug INFO [33mPress CTRL+C to quit[0m
+18:28:55,258 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:28:55] "POST /bank_settings/ HTTP/1.1" 200 -
+18:28:55,283 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:28:55] "GET /static/delete.js HTTP/1.1" 200 -
+18:28:55,286 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:28:55] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:28:55,424 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:28:55] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+18:28:59,848 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:28:59] "POST /bank_settings/ HTTP/1.1" 200 -
+18:28:59,875 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:28:59] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+18:28:59,876 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:28:59] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:29:52,58 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+18:29:52,58 werkzeug INFO [33mPress CTRL+C to quit[0m
+18:29:54,307 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:29:54] "POST /bank_settings/ HTTP/1.1" 200 -
+18:29:54,330 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:29:54] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+18:29:54,334 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:29:54] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:29:54,480 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:29:54] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+18:29:59,613 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:29:59] "POST /bank_settings/ HTTP/1.1" 200 -
+18:29:59,638 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:29:59] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:29:59,639 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:29:59] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+18:29:59,776 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:29:59] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+18:30:03,917 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:30:03] "GET /send_message/ HTTP/1.1" 200 -
+18:30:03,944 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:30:03] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+18:30:03,945 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:30:03] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:30:06,590 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:30:06] "GET /bank_settings/ HTTP/1.1" 200 -
+18:30:06,624 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:30:06] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+18:30:06,624 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:30:06] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:30:09,715 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:30:09] "GET /bank_settings/ HTTP/1.1" 200 -
+18:30:09,739 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:30:09] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+18:30:09,740 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:30:09] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:30:09,875 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:30:09] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+18:30:11,368 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:30:11] "GET /send_alert/ HTTP/1.1" 200 -
+18:30:11,406 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:30:11] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+18:30:11,408 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:30:11] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:30:13,949 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:30:13] "GET /send_message/ HTTP/1.1" 200 -
+18:30:13,995 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:30:13] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+18:30:13,995 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:30:13] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:30:15,913 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:30:15] "GET /bank_settings/ HTTP/1.1" 200 -
+18:30:15,953 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:30:15] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+18:30:15,954 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:30:15] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:30:21,150 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:30:21] "GET /bank_settings/ HTTP/1.1" 200 -
+18:30:21,175 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:30:21] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:30:21,177 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:30:21] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+18:30:26,736 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:30:26] "GET /login HTTP/1.1" 200 -
+18:30:26,778 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:30:26] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+18:30:26,779 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:30:26] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:30:44,579 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:30:44] "POST /login HTTP/1.1" 200 -
+18:30:44,604 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:30:44] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+18:30:44,607 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:30:44] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:32:33,707 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:32:33] "POST /login HTTP/1.1" 200 -
+18:32:33,732 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:32:33] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+18:32:33,736 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:32:33] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:32:33,954 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:32:33] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+18:32:42,86 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+18:32:42,86 werkzeug INFO [33mPress CTRL+C to quit[0m
+18:32:45,465 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:32:45] "GET /bank_settings/ HTTP/1.1" 200 -
+18:32:45,492 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:32:45] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+18:32:45,495 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:32:45] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:32:49,518 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:32:49] "POST /bank_settings/ HTTP/1.1" 200 -
+18:32:49,546 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:32:49] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:32:49,550 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:32:49] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+18:34:09,257 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+18:34:09,257 werkzeug INFO [33mPress CTRL+C to quit[0m
+18:34:11,326 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:34:11] "POST /bank_settings/ HTTP/1.1" 200 -
+18:34:11,349 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:34:11] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:34:11,352 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:34:11] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+18:34:11,490 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:34:11] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+18:34:29,672 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+18:34:29,672 werkzeug INFO [33mPress CTRL+C to quit[0m
+18:34:32,52 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:34:32] "POST /bank_settings/ HTTP/1.1" 200 -
+18:34:32,72 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:34:32] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+18:34:32,75 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:34:32] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:34:32,227 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:34:32] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+18:34:37,167 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:34:37] "GET /login HTTP/1.1" 200 -
+18:34:37,191 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:34:37] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+18:34:37,194 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:34:37] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:34:39,912 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:34:39] "GET /signup/ HTTP/1.1" 200 -
+18:34:39,962 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:34:39] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:34:39,963 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:34:39] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+18:34:53,991 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+18:34:53,992 werkzeug INFO [33mPress CTRL+C to quit[0m
+18:34:56,59 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:34:56] "GET /signup/ HTTP/1.1" 200 -
+18:34:56,81 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:34:56] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+18:34:56,84 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:34:56] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:34:56,262 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:34:56] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+18:35:00,231 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:35:00] "GET /signup/ HTTP/1.1" 200 -
+18:35:00,261 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:35:00] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+18:35:00,262 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:35:00] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:35:02,507 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:35:02] "[32mGET /logout HTTP/1.1[0m" 302 -
+18:35:02,524 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:35:02] "GET / HTTP/1.1" 200 -
+18:35:02,572 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:35:02] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+18:35:02,575 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:35:02] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:35:05,953 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:35:05] "[32mGET /profile/ HTTP/1.1[0m" 302 -
+18:35:05,967 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:35:05] "GET /login?next=%2Fprofile%2F HTTP/1.1" 200 -
+18:35:06,17 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:35:06] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:35:06,18 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:35:06] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+18:35:08,178 root INFO Log Info: executive 
+18:35:08,179 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:35:08] "[32mPOST /login?next=%2Fprofile%2F HTTP/1.1[0m" 302 -
+18:35:08,194 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:35:08] "GET /profile/ HTTP/1.1" 200 -
+18:35:08,247 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:35:08] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+18:35:08,249 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:35:08] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:35:23,764 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+18:35:23,764 werkzeug INFO [33mPress CTRL+C to quit[0m
+18:35:26,286 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:35:26] "GET /profile/ HTTP/1.1" 200 -
+18:35:26,306 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:35:26] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+18:35:26,312 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:35:26] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:35:26,447 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:35:26] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+18:35:28,784 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:35:28] "GET /login HTTP/1.1" 200 -
+18:35:28,835 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:35:28] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+18:35:28,838 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:35:28] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:35:30,77 root INFO Log Info: executive 
+18:35:30,78 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:35:30] "[32mPOST /login HTTP/1.1[0m" 302 -
+18:35:30,91 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:35:30] "GET /profile/ HTTP/1.1" 200 -
+18:35:30,157 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:35:30] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:35:30,158 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:35:30] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+18:35:32,428 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:35:32] "[32mGET /logout HTTP/1.1[0m" 302 -
+18:35:32,445 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:35:32] "GET / HTTP/1.1" 200 -
+18:35:32,494 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:35:32] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+18:35:32,499 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:35:32] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:35:34,664 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:35:34] "GET /login HTTP/1.1" 200 -
+18:35:34,713 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:35:34] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+18:35:34,745 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:35:34] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:35:36,123 root INFO Log Info: executive 
+18:35:36,124 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:35:36] "[32mPOST /login HTTP/1.1[0m" 302 -
+18:35:36,137 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:35:36] "GET /profile/ HTTP/1.1" 200 -
+18:35:36,190 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:35:36] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+18:35:36,191 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:35:36] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:35:38,647 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:35:38] "GET /profile/ HTTP/1.1" 200 -
+18:35:38,677 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:35:38] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+18:35:38,678 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:35:38] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:35:47,102 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:35:47] "GET /profile/ HTTP/1.1" 200 -
+18:35:47,123 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:35:47] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+18:35:47,125 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:35:47] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:35:49,196 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:35:49] "GET /accounts/ HTTP/1.1" 200 -
+18:35:49,227 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:35:49] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+18:35:49,228 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:35:49] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:36:11,713 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:36:11] "GET /1/account_graph/ HTTP/1.1" 200 -
+18:36:11,744 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:36:11] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+18:36:11,746 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:36:11] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:36:17,714 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:36:17] "GET /summary/ HTTP/1.1" 200 -
+18:36:17,744 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:36:17] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+18:36:17,746 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:36:17] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:36:20,490 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:36:20] "GET /create_account/ HTTP/1.1" 200 -
+18:36:20,526 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:36:20] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+18:36:20,528 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:36:20] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:36:35,772 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:36:35] "[32mPOST /create_account/ HTTP/1.1[0m" 302 -
+18:36:35,784 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:36:35] "GET /accounts/ HTTP/1.1" 200 -
+18:36:35,824 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:36:35] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:36:35,825 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:36:35] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+18:37:37,75 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+18:37:37,75 werkzeug INFO [33mPress CTRL+C to quit[0m
+18:37:41,99 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:37:41] "GET /create_account/ HTTP/1.1" 200 -
+18:37:41,134 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:37:41] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+18:37:41,138 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:37:41] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:37:52,733 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:37:52] "POST /create_account/ HTTP/1.1" 200 -
+18:37:52,756 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:37:52] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+18:37:52,760 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:37:52] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:38:32,354 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+18:38:32,354 werkzeug INFO [33mPress CTRL+C to quit[0m
+18:38:35,982 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:38:35] "POST /create_account/ HTTP/1.1" 200 -
+18:38:36,3 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:38:36] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+18:38:36,6 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:38:36] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:38:36,59 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:38:36] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+18:38:53,58 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:38:53] "POST /create_account/ HTTP/1.1" 200 -
+18:38:53,84 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:38:53] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+18:38:53,86 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:38:53] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:39:16,119 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:39:16] "GET /summary/ HTTP/1.1" 200 -
+18:39:16,142 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:39:16] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+18:39:16,144 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:39:16] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:39:20,285 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:39:20] "GET /alerts/ HTTP/1.1" 200 -
+18:39:20,318 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:39:20] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+18:39:20,320 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:39:20] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:39:22,438 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:39:22] "GET /messages/ HTTP/1.1" 200 -
+18:39:22,474 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:39:22] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+18:39:22,475 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:39:22] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:39:23,913 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:39:23] "GET /alerts/ HTTP/1.1" 200 -
+18:39:23,951 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:39:23] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:39:23,952 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:39:23] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+18:39:24,910 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:39:24] "GET /view_eStatements/ HTTP/1.1" 200 -
+18:39:24,942 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:39:24] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+18:39:24,944 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:39:24] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:39:26,696 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:39:26] "GET /bank_settings/ HTTP/1.1" 200 -
+18:39:26,729 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:39:26] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+18:39:26,731 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:39:26] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:44:13,358 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+18:44:13,358 werkzeug INFO [33mPress CTRL+C to quit[0m
+18:44:17,358 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:44:17] "GET /login HTTP/1.1" 200 -
+18:44:17,391 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:44:17] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+18:44:17,393 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:44:17] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:44:20,900 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:44:20] "POST /login HTTP/1.1" 200 -
+18:44:20,928 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:44:20] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+18:44:20,928 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:44:20] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:44:26,302 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:44:26] "[32mPOST /login HTTP/1.1[0m" 302 -
+18:44:26,318 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:44:26] "GET /profile/ HTTP/1.1" 200 -
+18:44:26,341 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:44:26] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+18:44:26,343 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:44:26] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:44:38,797 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:44:38] "GET /signup/ HTTP/1.1" 200 -
+18:44:38,831 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:44:38] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:44:38,833 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:44:38] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+18:44:56,75 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:44:56] "[32mPOST /signup/ HTTP/1.1[0m" 302 -
+18:44:56,89 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:44:56] "GET /login HTTP/1.1" 200 -
+18:44:56,127 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:44:56] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:44:56,127 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:44:56] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+18:45:08,869 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:45:08] "[32mPOST /login HTTP/1.1[0m" 302 -
+18:45:08,882 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:45:08] "GET /profile/ HTTP/1.1" 200 -
+18:45:08,917 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:45:08] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+18:45:08,920 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:45:08] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:45:12,327 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:45:12] "GET /profile/ HTTP/1.1" 200 -
+18:45:12,354 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:45:12] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:45:12,354 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:45:12] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+18:45:16,67 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:45:16] "GET /accounts/ HTTP/1.1" 200 -
+18:45:16,101 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:45:16] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+18:45:16,102 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:45:16] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:45:18,269 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:45:18] "GET /create_account/ HTTP/1.1" 200 -
+18:45:18,301 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:45:18] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+18:45:18,301 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:45:18] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:45:24,960 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:45:24] "[32mPOST /create_account/ HTTP/1.1[0m" 302 -
+18:45:24,975 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:45:24] "GET /accounts/ HTTP/1.1" 200 -
+18:45:25,15 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:45:25] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+18:45:25,17 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:45:25] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:45:42,838 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:45:42] "GET /accounts/ HTTP/1.1" 200 -
+18:45:42,863 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:45:42] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:45:42,864 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:45:42] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+18:45:45,571 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:45:45] "GET /create_account/ HTTP/1.1" 200 -
+18:45:45,602 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:45:45] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+18:45:45,604 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:45:45] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:45:48,241 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:45:48] "GET /summary/ HTTP/1.1" 200 -
+18:45:48,277 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:45:48] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+18:45:48,281 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:45:48] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:45:51,462 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:45:51] "GET /alerts/ HTTP/1.1" 200 -
+18:45:51,503 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:45:51] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:45:51,504 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:45:51] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+18:45:53,150 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:45:53] "GET /messages/ HTTP/1.1" 200 -
+18:45:53,182 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:45:53] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+18:45:53,183 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:45:53] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:45:55,338 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:45:55] "GET /view_eStatements/ HTTP/1.1" 200 -
+18:45:55,373 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:45:55] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+18:45:55,375 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:45:55] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:45:58,515 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:45:58] "GET /login HTTP/1.1" 200 -
+18:45:58,550 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:45:58] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+18:45:58,553 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:45:58] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:46:05,564 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:46:05] "[32mPOST /login HTTP/1.1[0m" 302 -
+18:46:05,577 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:46:05] "GET /profile/ HTTP/1.1" 200 -
+18:46:05,617 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:46:05] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+18:46:05,619 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:46:05] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:46:06,939 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:46:06] "GET /bank_settings/ HTTP/1.1" 200 -
+18:46:06,978 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:46:06] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+18:46:06,981 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:46:06] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:46:14,206 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:46:14] "POST /bank_settings/ HTTP/1.1" 200 -
+18:46:14,235 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:46:14] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+18:46:14,235 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:46:14] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:46:59,690 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+18:46:59,690 werkzeug INFO [33mPress CTRL+C to quit[0m
+18:47:04,337 app ERROR Exception on /bank_settings/ [POST]
+Traceback (most recent call last):
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "/home/orthanc/banking_website_v2/admin.py", line 199, in bank_settings
+    print(form.change_type.data, form.savings_apy.data)
+AttributeError: 'BankSettingsForm' object has no attribute 'savings_apy'
+18:47:04,340 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:47:04] "[35m[1mPOST /bank_settings/ HTTP/1.1[0m" 500 -
+18:47:04,403 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:47:04] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+18:47:14,420 app ERROR Exception on /bank_settings/ [POST]
+Traceback (most recent call last):
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "/home/orthanc/banking_website_v2/admin.py", line 199, in bank_settings
+    print(form.change_type.data, form.savings_apy.data)
+AttributeError: 'BankSettingsForm' object has no attribute 'savings_apy'
+18:47:14,421 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:47:14] "[35m[1mPOST /bank_settings/ HTTP/1.1[0m" 500 -
+18:47:21,738 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:47:21] "GET /bank_settings/ HTTP/1.1" 200 -
+18:47:23,333 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:47:23] "GET /bank_settings/ HTTP/1.1" 200 -
+18:47:23,356 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:47:23] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+18:47:23,358 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:47:23] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:47:28,755 app ERROR Exception on /bank_settings/ [POST]
+Traceback (most recent call last):
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "/home/orthanc/banking_website_v2/admin.py", line 199, in bank_settings
+    print(form.change_type.data, form.savings_apy.data)
+AttributeError: 'BankSettingsForm' object has no attribute 'savings_apy'
+18:47:28,756 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:47:28] "[35m[1mPOST /bank_settings/ HTTP/1.1[0m" 500 -
+18:48:38,807 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+18:48:38,807 werkzeug INFO [33mPress CTRL+C to quit[0m
+18:48:44,367 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:48:44] "POST /bank_settings/ HTTP/1.1" 200 -
+18:48:44,396 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:48:44] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:48:44,397 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:48:44] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+18:48:48,820 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:48:48] "POST /bank_settings/ HTTP/1.1" 200 -
+18:48:48,843 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:48:48] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+18:48:48,845 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:48:48] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:48:48,898 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:48:48] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+18:50:06,303 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+18:50:06,303 werkzeug INFO [33mPress CTRL+C to quit[0m
+18:50:10,108 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:50:10] "POST /bank_settings/ HTTP/1.1" 200 -
+18:50:10,130 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:50:10] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+18:50:10,132 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:50:10] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:50:10,183 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:50:10] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+18:50:11,445 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:50:11] "POST /bank_settings/ HTTP/1.1" 200 -
+18:50:11,468 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:50:11] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+18:50:11,470 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:50:11] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:50:15,468 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:50:15] "GET /create_account/ HTTP/1.1" 200 -
+18:50:15,495 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:50:15] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+18:50:15,499 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:50:15] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:50:56,909 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+18:50:56,910 werkzeug INFO [33mPress CTRL+C to quit[0m
+18:50:59,610 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:50:59] "GET /create_account/ HTTP/1.1" 200 -
+18:50:59,633 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:50:59] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+18:50:59,635 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:50:59] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:50:59,701 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:50:59] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+18:51:03,968 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:51:03] "GET /alerts/ HTTP/1.1" 200 -
+18:51:04,2 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:51:04] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+18:51:04,4 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:51:04] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:51:05,383 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:51:05] "GET /accounts/ HTTP/1.1" 200 -
+18:51:05,414 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:51:05] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+18:51:05,417 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:51:05] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:51:09,488 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:51:09] "GET /create_account/ HTTP/1.1" 200 -
+18:51:09,522 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:51:09] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:51:09,522 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:51:09] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+18:51:41,520 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+18:51:41,521 werkzeug INFO [33mPress CTRL+C to quit[0m
+18:51:43,577 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:51:43] "GET /create_account/ HTTP/1.1" 200 -
+18:51:43,599 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:51:43] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+18:51:43,602 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:51:43] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:51:43,664 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:51:43] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+18:51:53,687 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:51:53] "GET /bank_settings/ HTTP/1.1" 200 -
+18:51:53,721 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:51:53] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+18:51:53,723 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:51:53] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:53:07,690 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+18:53:07,690 werkzeug INFO [33mPress CTRL+C to quit[0m
+18:53:10,93 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:53:10] "GET /bank_settings/ HTTP/1.1" 200 -
+18:53:10,113 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:53:10] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+18:53:10,116 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:53:10] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:53:10,162 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:53:10] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+18:53:15,413 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:53:15] "POST /bank_settings/ HTTP/1.1" 200 -
+18:53:15,442 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:53:15] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:53:15,443 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:53:15] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+18:53:20,957 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:53:20] "POST /bank_settings/ HTTP/1.1" 200 -
+18:53:20,981 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:53:20] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+18:53:20,985 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:53:20] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:53:21,37 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:53:21] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+18:53:28,927 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:53:28] "POST /bank_settings/ HTTP/1.1" 200 -
+18:53:28,951 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:53:28] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:53:28,952 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:53:28] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+18:53:59,480 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+18:53:59,480 werkzeug INFO [33mPress CTRL+C to quit[0m
+18:54:04,169 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:54:04] "POST /bank_settings/ HTTP/1.1" 200 -
+18:54:04,197 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:54:04] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+18:54:04,199 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:54:04] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:56:13,647 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+18:56:13,647 werkzeug INFO [33mPress CTRL+C to quit[0m
+18:56:17,89 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:56:17] "POST /bank_settings/ HTTP/1.1" 200 -
+18:56:17,112 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:56:17] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+18:56:17,116 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:56:17] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:56:17,165 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:56:17] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+18:56:18,581 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:56:18] "POST /bank_settings/ HTTP/1.1" 200 -
+18:56:18,605 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:56:18] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+18:56:18,607 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:56:18] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:56:37,3 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+18:56:37,3 werkzeug INFO [33mPress CTRL+C to quit[0m
+18:56:41,619 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:56:41] "POST /bank_settings/ HTTP/1.1" 200 -
+18:56:41,642 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:56:41] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+18:56:41,644 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:56:41] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:56:41,694 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:56:41] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+18:56:43,439 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:56:43] "POST /bank_settings/ HTTP/1.1" 200 -
+18:56:43,465 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:56:43] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+18:56:43,466 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:56:43] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:58:03,348 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+18:58:03,348 werkzeug INFO [33mPress CTRL+C to quit[0m
+18:58:07,727 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:58:07] "POST /bank_settings/ HTTP/1.1" 200 -
+18:58:07,747 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:58:07] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+18:58:07,750 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:58:07] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:58:07,830 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:58:07] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+18:58:11,282 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:58:11] "POST /bank_settings/ HTTP/1.1" 200 -
+18:58:11,305 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:58:11] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+18:58:11,307 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:58:11] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:58:24,636 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+18:58:24,636 werkzeug INFO [33mPress CTRL+C to quit[0m
+18:58:28,248 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:58:28] "POST /bank_settings/ HTTP/1.1" 200 -
+18:58:28,268 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:58:28] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+18:58:28,270 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:58:28] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+18:58:28,319 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:58:28] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+18:58:41,520 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:58:41] "POST /bank_settings/ HTTP/1.1" 200 -
+18:58:41,544 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:58:41] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+18:58:41,546 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 18:58:41] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+19:00:30,208 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+19:00:30,208 werkzeug INFO [33mPress CTRL+C to quit[0m
+19:01:30,663 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+19:01:30,663 werkzeug INFO [33mPress CTRL+C to quit[0m
+19:01:35,863 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 19:01:35] "GET /send_alert/ HTTP/1.1" 200 -
+19:01:35,889 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 19:01:35] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+19:01:35,891 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 19:01:35] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+19:01:39,130 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 19:01:39] "GET /send_message/ HTTP/1.1" 200 -
+19:01:39,163 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 19:01:39] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+19:01:39,163 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 19:01:39] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+19:02:20,398 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+19:02:20,398 werkzeug INFO [33mPress CTRL+C to quit[0m
+19:02:23,26 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 19:02:23] "GET /send_message/ HTTP/1.1" 200 -
+19:02:23,49 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 19:02:23] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+19:02:23,52 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 19:02:23] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+19:02:23,98 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 19:02:23] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -

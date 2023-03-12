@@ -8,32 +8,40 @@
 
 <h2 class="subtitle has-text-black">User Info</h2>
 
-<div class="box has-text-left has-background-success has-text-black">
-    <p>Username: {{ user.username }}</p>
+<div class="column is-4 is-offset-4">
+    <div class="box has-text-left has-background-success has-text-black">
+        <p>Username: {{ user.username }}</p>
+    </div>
 </div>
+
+<div class="block"></div>
 
 <h2 class="subtitle has-text-black">Associated Accounts</h2>
 
-{% if accounts %}
+<div class="column is-4 is-offset-4">
 
-<div class="box has-text-left has-background-success has-text-black">
-    <ul>
-    {% for acc_no in accounts %}
-      <li>{{ acc_no }}</li>
-    {% endfor %}
-    </ul>
-</div>
+    {% if accounts %}
 
-{% else %}
-
-    <div class="box has-text-centered">
-      <section class="hero">
-          <div class="hero-body">
-              <p class="title">No Associated Accounts Yet</p>
-          </div>
-      </section>
+    <div class="box has-text-left has-background-success has-text-black">
+        <ul>
+        {% for acc_no in accounts %}
+        <li>Account {{ acc_no }}</li>
+        {% endfor %}
+        </ul>
     </div>
 
-{% endif %}
+    {% else %}
+
+        <div class="box has-text-centered">
+        <section class="hero">
+            <div class="hero-body">
+                <p class="title">No Associated Accounts Yet</p>
+            </div>
+        </section>
+        </div>
+
+    {% endif %}
+
+</div>
 
 {% endblock %}

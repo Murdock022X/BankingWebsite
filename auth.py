@@ -30,16 +30,16 @@ def login():
             if check_password_hash(hash, form.password.data):
                 login_user(user)
 
-                logger.Logger.log_general('Logged In:', form.username.data)
+                flash('Logged In', category='info')
 
                 # Redirect to profile
                 return redirect(url_for('main.profile'))
             
             else:
-                flash('Incorrect Password')
+                flash('Incorrect Password', category='danger')
 
         else:
-            flash('User Not Found')
+            flash('User Not Found', category='danger')
 
     return render_template('login.html', form=form)
 
@@ -62,8 +62,13 @@ def signup():
 
             db.session.commit()
 
+            flash('User Account Created', category='info')
+
             # Redirect to login
             return redirect(url_for('auth.login'))
+        
+        else:
+            flash('That Username Is Taken', category='danger')
         
     return render_template('signup.html', form=form)
 

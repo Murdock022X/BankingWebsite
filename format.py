@@ -30,10 +30,14 @@ def format_acc_type(num):
         return 'Checkings'
     
 def format_rates(rates):
-    rates.savings_apy = format_apy(rates.savings_apy)
-    rates.savings_min = format_money(rates.savings_min)
-    rates.checkings_apy = format_apy(rates.checkings_apy)
-    rates.checkings_min = format_money(rates.checkings_min)
+    res = {}
+
+    res['savings_apy'] = format_apy(rates.savings_apy)
+    res['savings_min'] = format_money(rates.savings_min)
+    res['checkings_apy'] = format_apy(rates.checkings_apy)
+    res['checkings_min'] = format_money(rates.checkings_min)
+
+    return res
 
 def deep_format_acc(acc):
     res = {}

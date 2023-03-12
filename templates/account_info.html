@@ -6,7 +6,7 @@
 <div class="box has-background-success has-text-black">
     <h2>Balance: {{ acc['bal'] }}</h2>
     <h2>Minimum Balance Allowed: {{ acc['min_bal'] }}</h2>
-    <h2>Interest Rate: {{ acc['ir'] }}</h2>
+    <h2>APY: {{ acc['apy'] }}</h2>
     <hr>
     <div class="buttons">
       <a href="{{ url_for('main.withdraw', acc_no=acc['acc_int']) }}" class="button is-white">Withdraw</a>

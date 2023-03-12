@@ -59,19 +59,25 @@
 
     <hr>
 
-    {% with messages = get_flashed_messages() %}
+    <script src="{{ url_for('static', filename='delete.js') }}"></script>
 
+    {% with messages = get_flashed_messages(with_categories=true) %}
     {% if messages %}
+        {% for category, message in messages %}
 
-    <div class="notification is-danger has-text-centered">
-        {{ messages[0] }}
-    </div>
+        <div class="notification has-background-{{ category }} has-text-black has-text-centered">
+            <button class="delete"></button>
+
+            {{ message }}
+        
+        </div>
+
+        {% endfor %}
 
     {% endif %}
-
     {% endwith %}
     
-    <div class="hero-body">
+    <div class="hero-body has-text-black">
         {% block content %}
         {% endblock %}
     </div>

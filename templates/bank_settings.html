@@ -14,33 +14,46 @@
 
 <h2 class="subtitle">Bank Settings</h2>
 
-<div class="box has-background-success has-text-centered">
-    <form method="POST" action="">
-        {{ form.hidden_tag() }}
+<div class="column is-4 is-offset-4">
+    <div class="box has-background-success has-text-black">
+        <h3>Savings Account</h3>
+        <div class="box has-text-black">
+            <h4>APY: {{ rates['savings_apy'] }}</h4>
+            <h4>Minimum Balance: {{ rates['savings_min'] }}</h4>
+        </div>
+        
+        <h3>Checkings Account</h3>
+        <div class="box has-text-black">
+            <h4>APY: {{ rates['checkings_apy'] }}</h4>
+            <h4>Minimum Balance: {{ rates['checkings_min'] }}</h4>
+        </div>
+    </div>
 
-        <label class="label">{{ form.change_type.label }}</label>
-        <div class="field">
-            <div class="control has-text-centered">
-                {{ form.change_type(class="select is-centered") }}
+    <div class="box has-background-success has-text-centered">
+        <form method="POST" action="">
+            {{ form.hidden_tag() }}
+
+            <label class="label">{{ form.change_type.label }}</label>
+            <div class="field">
+                <div class="control has-text-centered">
+                    {{ form.change_type(class="select") }}
+                </div>
             </div>
 
-            {% for error in form.change_type.errors %}
-                <p class="help is-danger">{{ error }}</p>
-            {% endfor %}
-
-        </div>
-
-        <hr>
-
-        <label class="label">{{ form.new_value.label }}</label>
-        <div class="field">
-            <div class="control">
-                {{ form.new_value(class="input") }}
+            
+            <label class="label">{{ form.new_value.label }}</label>
+            <div class="field">
+                <div class="control">
+                    {{ form.new_value(class="input") }}
+                </div>
             </div>
-        </div>
+            
+            <hr>
+            
+            {{ form.submit(class="button") }}
+        </form>
+    </div>
 
-        {{ form.submit() }}
-    </form>
 </div>
 
 {% endblock %}
