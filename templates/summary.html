@@ -16,7 +16,7 @@
         <tbody>
             {% for acc in accounts %}
                 <tr>
-                    <td><a href="{{ url_for('main.account_info', acc_no=acc['acc_int']) }}">{{ acc['acc_no'] }}</a></td>
+                    <td>{{ acc['acc_no'] }}</td>
                     <td>{{ acc['acc_type'] }}</td>
                     <td>{{ acc['bal'] }}</td>
                     <td>{{ acc['apy'] }}</td>

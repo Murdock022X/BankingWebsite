@@ -8,6 +8,14 @@ from pathlib import Path
 db = SQLAlchemy()
 
 def create_app():
+    """Creates the app and defines several important aspects of the app 
+    including database configuration, secret key, a Path object with the 
+    project root, blueprint routes for the app, the login manager and how 
+    to load users.
+
+    Returns:
+        Flask: The initialized flask app object.
+    """    
     # Initialize app
     app = Flask(__name__)
 
@@ -43,6 +51,7 @@ def create_app():
     login_manager = LoginManager()
     login_manager.login_view = 'auth.login'
     login_manager.init_app(app)
+    login_manager.login_message_category = "info"
 
     # Import the User model
     from models import User

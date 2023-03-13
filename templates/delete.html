@@ -14,7 +14,7 @@
             </div>
 
             {% for error in form.transfer_no.errors %}
-                <p class="help is-danger">{{ error }}</p>
+                <span class="tag is-danger">{{ error }}</span>
             {% endfor %}
         </div>
     
@@ -25,7 +25,7 @@
             </div>
 
             {% for error in form.password.errors %}
-                <p class="help is-danger">{{ error }}</p>
+                <span class="tag is-danger">{{ error }}</span>
             {% endfor %}
         </div>
             

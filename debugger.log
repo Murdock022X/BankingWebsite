@@ -15248,3 +15248,432 @@ AttributeError: 'BankSettingsForm' object has no attribute 'savings_apy'
 19:02:23,49 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 19:02:23] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
 19:02:23,52 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 19:02:23] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
 19:02:23,98 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 19:02:23] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+23:02:10,931 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+23:02:10,931 werkzeug INFO [33mPress CTRL+C to quit[0m
+23:02:13,898 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 23:02:13] "GET / HTTP/1.1" 200 -
+23:02:13,935 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 23:02:13] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+23:02:13,937 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 23:02:13] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+23:02:15,66 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 23:02:15] "GET /view_eStatements/ HTTP/1.1" 200 -
+23:02:15,104 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 23:02:15] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+23:02:15,104 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 23:02:15] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+23:02:17,190 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 23:02:17] "[32mGET /logout HTTP/1.1[0m" 302 -
+23:02:17,199 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 23:02:17] "GET / HTTP/1.1" 200 -
+23:02:17,229 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 23:02:17] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+23:02:17,234 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 23:02:17] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+23:02:18,122 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 23:02:18] "[32mGET /view_eStatements/ HTTP/1.1[0m" 302 -
+23:02:18,133 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 23:02:18] "GET /login?next=%2Fview_eStatements%2F HTTP/1.1" 200 -
+23:02:18,171 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 23:02:18] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+23:02:18,172 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 23:02:18] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+23:03:26,428 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+23:03:26,428 werkzeug INFO [33mPress CTRL+C to quit[0m
+23:03:31,389 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 23:03:31] "[32mGET /alerts/ HTTP/1.1[0m" 302 -
+23:03:31,408 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 23:03:31] "GET /login?next=%2Falerts%2F HTTP/1.1" 200 -
+23:03:31,446 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 23:03:31] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+23:03:31,448 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 23:03:31] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+23:03:37,719 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+23:03:37,720 werkzeug INFO [33mPress CTRL+C to quit[0m
+23:03:39,882 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 23:03:39] "[32mGET /view_eStatements/ HTTP/1.1[0m" 302 -
+23:03:39,902 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 23:03:39] "GET /login?next=%2Fview_eStatements%2F HTTP/1.1" 200 -
+23:03:39,937 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 23:03:39] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+23:03:39,938 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 23:03:39] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+23:04:17,468 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+23:04:17,468 werkzeug INFO [33mPress CTRL+C to quit[0m
+23:04:22,918 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 23:04:22] "[32mGET /profile/ HTTP/1.1[0m" 302 -
+23:04:22,937 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 23:04:22] "GET /login?next=%2Fprofile%2F HTTP/1.1" 200 -
+23:04:22,981 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 23:04:22] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+23:04:22,982 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 23:04:22] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+23:04:55,302 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+23:04:55,303 werkzeug INFO [33mPress CTRL+C to quit[0m
+23:04:59,740 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 23:04:59] "[32mGET /summary/ HTTP/1.1[0m" 302 -
+23:04:59,758 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 23:04:59] "GET /login?next=%2Fsummary%2F HTTP/1.1" 200 -
+23:04:59,805 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 23:04:59] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+23:04:59,809 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 23:04:59] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+23:07:42,456 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+23:07:42,456 werkzeug INFO [33mPress CTRL+C to quit[0m
+23:07:47,260 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 23:07:47] "[32mGET /summary/ HTTP/1.1[0m" 302 -
+23:07:47,273 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 23:07:47] "GET /login?next=%2Fsummary%2F HTTP/1.1" 200 -
+23:07:47,290 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 23:07:47] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+23:07:47,291 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 23:07:47] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+23:07:51,707 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 23:07:51] "[32mPOST /login?next=%2Fsummary%2F HTTP/1.1[0m" 302 -
+23:07:51,718 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 23:07:51] "GET /profile/ HTTP/1.1" 200 -
+23:07:51,755 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 23:07:51] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+23:07:51,756 werkzeug INFO 127.0.0.1 - - [11/Mar/2023 23:07:51] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+23:02:53,649 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+23:02:53,651 werkzeug INFO [33mPress CTRL+C to quit[0m
+23:02:57,26 app ERROR Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/orthanc/banking_website_v2/main.py", line 30, in home
+    return render_template('home.html')
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/flask/templating.py", line 147, in render_template
+    return _render(app, template, context)
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/flask/templating.py", line 130, in _render
+    rv = template.render(context)
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/orthanc/banking_website_v2/templates/home.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/orthanc/banking_website_v2/templates/base.html", line 68, in template
+    {{ category = 'danger' }}
+jinja2.exceptions.TemplateSyntaxError: expected token 'end of print statement', got '='
+23:02:57,28 werkzeug INFO 127.0.0.1 - - [12/Mar/2023 23:02:57] "[35m[1mGET / HTTP/1.1[0m" 500 -
+23:02:57,187 werkzeug INFO 127.0.0.1 - - [12/Mar/2023 23:02:57] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+23:03:52,91 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+23:03:52,92 werkzeug INFO [33mPress CTRL+C to quit[0m
+23:03:54,296 werkzeug INFO 127.0.0.1 - - [12/Mar/2023 23:03:54] "GET / HTTP/1.1" 200 -
+23:03:54,320 werkzeug INFO 127.0.0.1 - - [12/Mar/2023 23:03:54] "GET /static/nav.js HTTP/1.1" 200 -
+23:03:54,321 werkzeug INFO 127.0.0.1 - - [12/Mar/2023 23:03:54] "GET /static/delete.js HTTP/1.1" 200 -
+23:03:57,34 werkzeug INFO 127.0.0.1 - - [12/Mar/2023 23:03:57] "GET /login HTTP/1.1" 200 -
+23:03:57,77 werkzeug INFO 127.0.0.1 - - [12/Mar/2023 23:03:57] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+23:03:57,78 werkzeug INFO 127.0.0.1 - - [12/Mar/2023 23:03:57] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+23:03:58,433 werkzeug INFO 127.0.0.1 - - [12/Mar/2023 23:03:58] "[32mPOST /login HTTP/1.1[0m" 302 -
+23:03:58,450 werkzeug INFO 127.0.0.1 - - [12/Mar/2023 23:03:58] "GET /profile/ HTTP/1.1" 200 -
+23:03:58,479 werkzeug INFO 127.0.0.1 - - [12/Mar/2023 23:03:58] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+23:03:58,481 werkzeug INFO 127.0.0.1 - - [12/Mar/2023 23:03:58] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+23:04:01,463 werkzeug INFO 127.0.0.1 - - [12/Mar/2023 23:04:01] "GET /accounts/ HTTP/1.1" 200 -
+23:04:01,487 werkzeug INFO 127.0.0.1 - - [12/Mar/2023 23:04:01] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+23:04:01,490 werkzeug INFO 127.0.0.1 - - [12/Mar/2023 23:04:01] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+23:04:02,332 app ERROR Exception on /1/account_graph/ [GET]
+Traceback (most recent call last):
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "/home/orthanc/banking_website_v2/main.py", line 405, in account_graph
+    data = Daily_Bal.query.filter_by(acc_no=acc_no)
+NameError: name 'Daily_Bal' is not defined
+23:04:02,333 werkzeug INFO 127.0.0.1 - - [12/Mar/2023 23:04:02] "[35m[1mGET /1/account_graph/ HTTP/1.1[0m" 500 -
+23:05:24,609 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+23:05:24,609 werkzeug INFO [33mPress CTRL+C to quit[0m
+23:05:29,235 app ERROR Exception on /1/account_graph/ [GET]
+Traceback (most recent call last):
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "/home/orthanc/banking_website_v2/main.py", line 412, in account_graph
+    if len(data) >= 1:
+TypeError: object of type 'Query' has no len()
+23:05:29,237 werkzeug INFO 127.0.0.1 - - [12/Mar/2023 23:05:29] "[35m[1mGET /1/account_graph/ HTTP/1.1[0m" 500 -
+23:05:47,222 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+23:05:47,223 werkzeug INFO [33mPress CTRL+C to quit[0m
+23:05:49,842 werkzeug INFO 127.0.0.1 - - [12/Mar/2023 23:05:49] "GET /1/account_graph/ HTTP/1.1" 200 -
+23:05:49,862 werkzeug INFO 127.0.0.1 - - [12/Mar/2023 23:05:49] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+23:05:49,865 werkzeug INFO 127.0.0.1 - - [12/Mar/2023 23:05:49] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+23:05:52,849 werkzeug INFO 127.0.0.1 - - [12/Mar/2023 23:05:52] "GET /accounts/ HTTP/1.1" 200 -
+23:05:52,881 werkzeug INFO 127.0.0.1 - - [12/Mar/2023 23:05:52] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+23:05:52,884 werkzeug INFO 127.0.0.1 - - [12/Mar/2023 23:05:52] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+23:05:54,385 werkzeug INFO 127.0.0.1 - - [12/Mar/2023 23:05:54] "GET /1/withdraw/ HTTP/1.1" 200 -
+23:05:54,413 werkzeug INFO 127.0.0.1 - - [12/Mar/2023 23:05:54] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+23:05:54,415 werkzeug INFO 127.0.0.1 - - [12/Mar/2023 23:05:54] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+23:06:00,786 app ERROR Exception on /1/withdraw/ [POST]
+Traceback (most recent call last):
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "/home/orthanc/banking_website_v2/main.py", line 172, in withdraw
+    withdrawed = make_withdrawal(acc_no=acc_no, amt=form.amt.data,
+  File "/home/orthanc/banking_website_v2/accounts.py", line 46, in make_withdrawal
+    if acc.bal - amt < acc.min_bal:
+TypeError: unsupported operand type(s) for -: 'float' and 'decimal.Decimal'
+23:06:00,787 werkzeug INFO 127.0.0.1 - - [12/Mar/2023 23:06:00] "[35m[1mPOST /1/withdraw/ HTTP/1.1[0m" 500 -
+23:07:03,687 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+23:07:03,687 werkzeug INFO [33mPress CTRL+C to quit[0m
+23:07:32,333 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+23:07:32,333 werkzeug INFO [33mPress CTRL+C to quit[0m
+23:07:35,731 werkzeug INFO 127.0.0.1 - - [12/Mar/2023 23:07:35] "[32mPOST /1/withdraw/ HTTP/1.1[0m" 302 -
+23:07:35,753 werkzeug INFO 127.0.0.1 - - [12/Mar/2023 23:07:35] "GET /accounts/ HTTP/1.1" 200 -
+23:07:35,772 werkzeug INFO 127.0.0.1 - - [12/Mar/2023 23:07:35] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+23:07:35,774 werkzeug INFO 127.0.0.1 - - [12/Mar/2023 23:07:35] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+23:07:37,717 werkzeug INFO 127.0.0.1 - - [12/Mar/2023 23:07:37] "GET /1/withdraw/ HTTP/1.1" 200 -
+23:07:37,744 werkzeug INFO 127.0.0.1 - - [12/Mar/2023 23:07:37] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+23:07:37,747 werkzeug INFO 127.0.0.1 - - [12/Mar/2023 23:07:37] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+23:07:41,591 werkzeug INFO 127.0.0.1 - - [12/Mar/2023 23:07:41] "[32mPOST /1/withdraw/ HTTP/1.1[0m" 302 -
+23:07:41,602 werkzeug INFO 127.0.0.1 - - [12/Mar/2023 23:07:41] "GET /accounts/ HTTP/1.1" 200 -
+23:07:41,634 werkzeug INFO 127.0.0.1 - - [12/Mar/2023 23:07:41] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+23:07:41,636 werkzeug INFO 127.0.0.1 - - [12/Mar/2023 23:07:41] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+23:07:42,669 werkzeug INFO 127.0.0.1 - - [12/Mar/2023 23:07:42] "GET /1/account_graph/ HTTP/1.1" 200 -
+23:07:42,702 werkzeug INFO 127.0.0.1 - - [12/Mar/2023 23:07:42] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+23:07:42,709 werkzeug INFO 127.0.0.1 - - [12/Mar/2023 23:07:42] "GET /static/account_graph.js HTTP/1.1" 200 -
+23:07:42,710 werkzeug INFO 127.0.0.1 - - [12/Mar/2023 23:07:42] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+23:07:42,791 werkzeug INFO 127.0.0.1 - - [12/Mar/2023 23:07:42] "GET /1/account_graph_data/ HTTP/1.1" 200 -
+23:08:02,487 werkzeug INFO 127.0.0.1 - - [12/Mar/2023 23:08:02] "GET /accounts/ HTTP/1.1" 200 -
+23:08:02,517 werkzeug INFO 127.0.0.1 - - [12/Mar/2023 23:08:02] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+23:08:02,517 werkzeug INFO 127.0.0.1 - - [12/Mar/2023 23:08:02] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+23:08:03,294 werkzeug INFO 127.0.0.1 - - [12/Mar/2023 23:08:03] "GET /1/delete_account/ HTTP/1.1" 200 -
+23:08:03,322 werkzeug INFO 127.0.0.1 - - [12/Mar/2023 23:08:03] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+23:08:03,325 werkzeug INFO 127.0.0.1 - - [12/Mar/2023 23:08:03] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+23:08:14,96 app ERROR Exception on /1/delete_account/ [POST]
+Traceback (most recent call last):
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "/home/orthanc/banking_website_v2/main.py", line 244, in delete_account
+    transfer_status = transfer_all(acc_no, form.transfer_no.data)
+TypeError: transfer_all() missing 1 required positional argument: 'description'
+23:08:14,98 werkzeug INFO 127.0.0.1 - - [12/Mar/2023 23:08:14] "[35m[1mPOST /1/delete_account/ HTTP/1.1[0m" 500 -
+23:09:15,373 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+23:09:15,373 werkzeug INFO [33mPress CTRL+C to quit[0m
+23:09:22,307 app ERROR Exception on /1/delete_account/ [POST]
+Traceback (most recent call last):
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "/home/orthanc/banking_website_v2/main.py", line 244, in delete_account
+    transfer_status = transfer_all(acc_no, form.transfer_no.data, description=form.description.data)
+AttributeError: 'DeleteAccountForm' object has no attribute 'description'
+23:09:22,309 werkzeug INFO 127.0.0.1 - - [12/Mar/2023 23:09:22] "[35m[1mPOST /1/delete_account/ HTTP/1.1[0m" 500 -
+23:11:32,475 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+23:11:32,475 werkzeug INFO [33mPress CTRL+C to quit[0m
+23:11:38,114 werkzeug INFO 127.0.0.1 - - [12/Mar/2023 23:11:38] "POST /1/delete_account/ HTTP/1.1" 200 -
+23:11:38,133 werkzeug INFO 127.0.0.1 - - [12/Mar/2023 23:11:38] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+23:11:38,136 werkzeug INFO 127.0.0.1 - - [12/Mar/2023 23:11:38] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+23:13:15,678 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+23:13:15,678 werkzeug INFO [33mPress CTRL+C to quit[0m
+23:13:21,610 werkzeug INFO 127.0.0.1 - - [12/Mar/2023 23:13:21] "GET /accounts/ HTTP/1.1" 200 -
+23:13:21,631 werkzeug INFO 127.0.0.1 - - [12/Mar/2023 23:13:21] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+23:13:21,633 werkzeug INFO 127.0.0.1 - - [12/Mar/2023 23:13:21] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+23:13:23,594 werkzeug INFO 127.0.0.1 - - [12/Mar/2023 23:13:23] "GET /1/deposit/ HTTP/1.1" 200 -
+23:13:23,621 werkzeug INFO 127.0.0.1 - - [12/Mar/2023 23:13:23] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+23:13:23,623 werkzeug INFO 127.0.0.1 - - [12/Mar/2023 23:13:23] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+23:13:31,251 werkzeug INFO 127.0.0.1 - - [12/Mar/2023 23:13:31] "[32mPOST /1/deposit/ HTTP/1.1[0m" 302 -
+23:13:31,262 werkzeug INFO 127.0.0.1 - - [12/Mar/2023 23:13:31] "GET /accounts/ HTTP/1.1" 200 -
+23:13:31,294 werkzeug INFO 127.0.0.1 - - [12/Mar/2023 23:13:31] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+23:13:31,295 werkzeug INFO 127.0.0.1 - - [12/Mar/2023 23:13:31] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+23:13:35,407 werkzeug INFO 127.0.0.1 - - [12/Mar/2023 23:13:35] "GET /1/account_graph/ HTTP/1.1" 200 -
+23:13:35,436 werkzeug INFO 127.0.0.1 - - [12/Mar/2023 23:13:35] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+23:13:35,440 werkzeug INFO 127.0.0.1 - - [12/Mar/2023 23:13:35] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+23:13:35,440 werkzeug INFO 127.0.0.1 - - [12/Mar/2023 23:13:35] "[36mGET /static/account_graph.js HTTP/1.1[0m" 304 -
+23:13:35,462 werkzeug INFO 127.0.0.1 - - [12/Mar/2023 23:13:35] "GET /1/account_graph_data/ HTTP/1.1" 200 -
+23:20:02,520 werkzeug INFO 127.0.0.1 - - [12/Mar/2023 23:20:02] "GET /1/account_graph/ HTTP/1.1" 200 -
+23:20:02,563 werkzeug INFO 127.0.0.1 - - [12/Mar/2023 23:20:02] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+23:20:02,566 werkzeug INFO 127.0.0.1 - - [12/Mar/2023 23:20:02] "[36mGET /static/account_graph.js HTTP/1.1[0m" 304 -
+23:20:02,568 werkzeug INFO 127.0.0.1 - - [12/Mar/2023 23:20:02] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+23:20:02,592 werkzeug INFO 127.0.0.1 - - [12/Mar/2023 23:20:02] "GET /1/account_graph_data/ HTTP/1.1" 200 -
+23:23:56,429 werkzeug INFO 127.0.0.1 - - [12/Mar/2023 23:23:56] "GET /1/account_graph/ HTTP/1.1" 200 -
+23:23:56,464 werkzeug INFO 127.0.0.1 - - [12/Mar/2023 23:23:56] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+23:23:56,467 werkzeug INFO 127.0.0.1 - - [12/Mar/2023 23:23:56] "[36mGET /static/account_graph.js HTTP/1.1[0m" 304 -
+23:23:56,467 werkzeug INFO 127.0.0.1 - - [12/Mar/2023 23:23:56] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+23:23:56,484 werkzeug INFO 127.0.0.1 - - [12/Mar/2023 23:23:56] "GET /1/account_graph_data/ HTTP/1.1" 200 -
+10:15:37,861 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+10:15:37,861 werkzeug INFO [33mPress CTRL+C to quit[0m
+10:15:43,482 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:15:43] "GET / HTTP/1.1" 200 -
+10:15:43,538 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:15:43] "GET /static/delete.js HTTP/1.1" 200 -
+10:15:43,538 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:15:43] "GET /static/nav.js HTTP/1.1" 200 -
+10:15:48,428 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:15:48] "GET /signup/ HTTP/1.1" 200 -
+10:15:48,457 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:15:48] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+10:15:48,459 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:15:48] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+10:16:03,676 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:16:03] "POST /signup/ HTTP/1.1" 200 -
+10:16:03,695 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:16:03] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+10:16:03,696 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:16:03] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+10:16:32,51 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:16:32] "[32mPOST /signup/ HTTP/1.1[0m" 302 -
+10:16:32,65 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:16:32] "GET /login HTTP/1.1" 200 -
+10:16:32,82 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:16:32] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+10:16:32,83 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:16:32] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+10:16:42,146 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:16:42] "GET /signup/ HTTP/1.1" 200 -
+10:16:42,174 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:16:42] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+10:16:42,177 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:16:42] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+10:16:43,262 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:16:43] "GET /login HTTP/1.1" 200 -
+10:16:43,289 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:16:43] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+10:16:43,290 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:16:43] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+10:16:50,683 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:16:50] "POST /login HTTP/1.1" 200 -
+10:16:50,704 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:16:50] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+10:16:50,708 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:16:50] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+10:16:55,97 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:16:55] "POST /login HTTP/1.1" 200 -
+10:16:55,116 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:16:55] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+10:16:55,118 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:16:55] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+10:17:00,505 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:17:00] "[32mPOST /login HTTP/1.1[0m" 302 -
+10:17:00,521 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:17:00] "GET /profile/ HTTP/1.1" 200 -
+10:17:00,542 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:17:00] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+10:17:00,545 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:17:00] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+10:17:33,881 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:17:33] "GET /accounts/ HTTP/1.1" 200 -
+10:17:33,910 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:17:33] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+10:17:33,912 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:17:33] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+10:17:41,448 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:17:41] "GET /profile/ HTTP/1.1" 200 -
+10:17:41,468 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:17:41] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+10:17:41,469 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:17:41] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+10:17:46,689 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:17:46] "GET /accounts/ HTTP/1.1" 200 -
+10:17:46,715 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:17:46] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+10:17:46,717 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:17:46] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+10:17:48,949 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:17:48] "GET /1/account_graph/ HTTP/1.1" 200 -
+10:17:48,975 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:17:48] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+10:17:48,980 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:17:48] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+10:17:48,980 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:17:48] "GET /static/account_graph.js HTTP/1.1" 200 -
+10:17:49,70 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:17:49] "GET /1/account_graph_data/ HTTP/1.1" 200 -
+10:17:58,454 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:17:58] "GET /1/withdraw/ HTTP/1.1" 200 -
+10:17:58,480 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:17:58] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+10:17:58,483 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:17:58] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+10:18:10,770 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:18:10] "[32mPOST /1/withdraw/ HTTP/1.1[0m" 302 -
+10:18:10,781 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:18:10] "GET /accounts/ HTTP/1.1" 200 -
+10:18:10,811 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:18:10] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+10:18:10,815 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:18:10] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+10:18:12,369 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:18:12] "GET /1/account_graph/ HTTP/1.1" 200 -
+10:18:12,396 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:18:12] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+10:18:12,398 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:18:12] "[36mGET /static/account_graph.js HTTP/1.1[0m" 304 -
+10:18:12,400 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:18:12] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+10:18:12,440 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:18:12] "GET /1/account_graph_data/ HTTP/1.1" 200 -
+10:18:25,393 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:18:25] "GET /accounts/ HTTP/1.1" 200 -
+10:18:25,426 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:18:25] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+10:18:25,429 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:18:25] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+10:18:27,843 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:18:27] "GET /1/delete_account/ HTTP/1.1" 200 -
+10:18:27,872 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:18:27] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+10:18:27,874 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:18:27] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+10:18:29,763 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:18:29] "POST /1/delete_account/ HTTP/1.1" 200 -
+10:18:29,785 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:18:29] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+10:18:29,788 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:18:29] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+10:18:36,155 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:18:36] "POST /1/delete_account/ HTTP/1.1" 200 -
+10:18:36,176 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:18:36] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+10:18:36,178 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:18:36] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+10:19:30,939 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:19:30] "POST /1/delete_account/ HTTP/1.1" 200 -
+10:19:30,959 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:19:30] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+10:19:30,961 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:19:30] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+10:20:48,428 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+10:20:48,428 werkzeug INFO [33mPress CTRL+C to quit[0m
+10:20:53,56 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:20:53] "POST /1/delete_account/ HTTP/1.1" 200 -
+10:20:53,76 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:20:53] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+10:20:53,78 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:20:53] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+10:20:53,125 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:20:53] "GET /static/favicon.ico HTTP/1.1" 200 -
+10:21:34,198 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+10:21:34,198 werkzeug INFO [33mPress CTRL+C to quit[0m
+10:21:39,286 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:21:39] "POST /1/delete_account/ HTTP/1.1" 200 -
+10:21:39,306 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:21:39] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+10:21:39,308 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:21:39] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+10:21:39,357 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:21:39] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+10:21:56,240 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+10:21:56,240 werkzeug INFO [33mPress CTRL+C to quit[0m
+10:21:59,653 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:21:59] "POST /1/delete_account/ HTTP/1.1" 200 -
+10:21:59,674 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:21:59] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+10:21:59,675 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:21:59] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+10:21:59,722 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:21:59] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+10:22:10,9 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:22:10] "POST /1/delete_account/ HTTP/1.1" 200 -
+10:22:10,31 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:22:10] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+10:22:10,33 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:22:10] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+10:22:15,21 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:22:15] "GET /accounts/ HTTP/1.1" 200 -
+10:22:15,43 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:22:15] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+10:22:15,45 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:22:15] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+10:23:09,737 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+10:23:09,737 werkzeug INFO [33mPress CTRL+C to quit[0m
+10:23:12,912 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:23:12] "GET /accounts/ HTTP/1.1" 200 -
+10:23:12,929 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:23:12] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+10:23:12,931 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:23:12] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+10:23:12,977 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:23:12] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+10:23:14,776 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:23:14] "GET /accounts/ HTTP/1.1" 200 -
+10:23:14,792 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:23:14] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+10:23:14,794 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:23:14] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+10:23:14,838 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:23:14] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+10:23:16,196 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:23:16] "GET /accounts/ HTTP/1.1" 200 -
+10:23:16,214 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:23:16] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+10:23:16,216 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:23:16] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+10:23:16,260 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:23:16] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+10:23:21,938 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:23:21] "GET /2/delete_account/ HTTP/1.1" 200 -
+10:23:21,966 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:23:21] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+10:23:21,966 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:23:21] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+10:23:25,716 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:23:25] "POST /2/delete_account/ HTTP/1.1" 200 -
+10:23:25,738 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:23:25] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+10:23:25,739 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:23:25] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+10:23:53,964 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:23:53] "GET /accounts/ HTTP/1.1" 200 -
+10:23:53,982 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:23:53] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+10:23:53,984 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:23:53] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+10:44:45,625 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+10:44:45,625 werkzeug INFO [33mPress CTRL+C to quit[0m
+10:52:47,39 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+10:52:47,40 werkzeug INFO [33mPress CTRL+C to quit[0m
+10:52:52,296 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:52:52] "GET /1/delete_account/ HTTP/1.1" 200 -
+10:52:52,322 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:52:52] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+10:52:52,324 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:52:52] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+10:52:56,372 app ERROR Exception on /1/delete_account/ [POST]
+Traceback (most recent call last):
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/orthanc/banking_website_v2/banking/lib/python3.8/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "/home/orthanc/banking_website_v2/main.py", line 267, in delete_account
+    flash(transfer_codes[transfer_status] + ' Stopped deletion of account.', category='danger')
+KeyError: None
+10:52:56,374 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:52:56] "[35m[1mPOST /1/delete_account/ HTTP/1.1[0m" 500 -
+10:52:56,428 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:52:56] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+10:53:34,200 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+10:53:34,200 werkzeug INFO [33mPress CTRL+C to quit[0m
+10:53:38,340 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:53:38] "GET /accounts/ HTTP/1.1" 200 -
+10:53:38,364 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:53:38] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+10:53:38,366 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:53:38] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+10:53:45,75 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:53:45] "GET /2/delete_account/ HTTP/1.1" 200 -
+10:53:45,98 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:53:45] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+10:53:45,99 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:53:45] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -
+10:53:52,310 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:53:52] "[32mPOST /2/delete_account/ HTTP/1.1[0m" 302 -
+10:53:52,322 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:53:52] "GET /accounts/ HTTP/1.1" 200 -
+10:53:52,352 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:53:52] "[36mGET /static/delete.js HTTP/1.1[0m" 304 -
+10:53:52,354 werkzeug INFO 127.0.0.1 - - [13/Mar/2023 10:53:52] "[36mGET /static/nav.js HTTP/1.1[0m" 304 -

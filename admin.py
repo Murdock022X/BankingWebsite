@@ -1,12 +1,11 @@
 from models import User, Account, Alerts, Messages, Bank_Settings, \
-    Statements, Daily_Bal, Term_Data, Curr_Term, Transactions
+    Statements, Term_Data, Curr_Term
 from app import db
 from datetime import datetime, date
 from flask import Blueprint, render_template, redirect, flash, \
     request, current_app, url_for
 from flask_login import login_required, current_user
 from format import format_rates
-from pathlib import Path
 from fpdf import Template
 from pdf import Statement_Maker
 from utils import check_access
@@ -17,6 +16,7 @@ class Admin_Tools():
     Toolbox for admin users, these functions should 
     only be available to admins.
     """    
+
 
     def modify_bank_settings(savings_ir = -1.0, savings_min = -1.0, checkings_ir = -1.0, checkings_min = -1.0):
         """Changes necessary bank setting to new setting.
@@ -43,6 +43,7 @@ class Admin_Tools():
         # Commit To Database
         db.session.commit()
 
+
     def commit_all_compound():
         """
         Compounds the value on all accounts.
@@ -55,6 +56,7 @@ class Admin_Tools():
         
         # Commit To Database
         db.session.commit()
+
 
     def commit_alert(content):
         """
@@ -76,6 +78,7 @@ class Admin_Tools():
 
         db.session.commit()
     
+
     def commit_message(content, username):
         """Commit a message to the database. (Messages are sent to specific 
         users, alerts are sent to all users.)
@@ -95,6 +98,7 @@ class Admin_Tools():
         db.session.add(message)
 
         db.session.commit()
+
 
     def assemble_all_statements():
         """
@@ -123,66 +127,100 @@ class Admin_Tools():
             # Write the pdf to the filepath.
             sm.write()
 
-    def commit_daily_bal(acc_no, date=date.today()):
-        # Get the account to commit account balance entry on.
-        acc = Account.query.get(acc_no)
 
-        # Create Daily_Bal object to store current balance.
-        bal_statement = Daily_Bal(acc_no=acc_no, date=date, bal=acc.bal)
+#
+# Function no longer in use.
+#     def commit_bal_data(acc_no, date=date.today()):
+#         """Commit data on the current balance of this account to database.
+#
+#         Args:
+#             acc_no (int): The account number to commit balance data for.
+#             date (date, optional): A date object to store the time for which 
+#             this balance was taken. Defaults to date.today().
+#         """        
+# 
+#         # Get the account to commit account balance entry on.
+#         acc = Account.query.get(acc_no)
+#
+#         # Create Daily_Bal object to store current balance.
+#         bal_statement = Balance_Data(acc_no=acc_no, date=date, bal=acc.bal)
+# 
+#         # Add bal_statement to database and commit.
+#         db.session.add(bal_statement)
+#
+#         db.session.commit()
 
-        # Add bal_statement to database and commit.
-        db.session.add(bal_statement)
 
-        db.session.commit()
+#
+# This function is no longer useful.
+#     def commit_all_bal_data():
+#         """
+#         Commit current balance to database.
+#         """        
+#
+#         # Get all accounts
+#         accounts = Account.query.all()
+# 
+#         # Enter daily_bal into database.
+#         for account in accounts:
+#             Admin_Tools.commit_bal_data(account.acc_no)
 
-    def commit_all_daily_bal():
-        """
-        Commit current balance to database.
-        """        
-
-        # Get all accounts
-        accounts = Account.query.all()
-
-        # Enter daily_bal into database.
-        for account in accounts:
-            Admin_Tools.commit_daily_bal(account.acc_no)
 
     def inc_term():
         """
         Increment current term to next term.
         """        
 
+        # Get the current term and increment.
         term = Curr_Term.query.first()
         term.term += 1
 
         db.session.commit()
 
+        # Get all accounts
         accs = Account.query.all()
 
+        # Create a new term data entry for all acounts.
         for acc in accs:
-            new_term = Term_Data(acc_no=acc.acc_no, term=term.term, start_bal=acc.bal)
 
+            # Create the term data object.
+            new_term = Term_Data(acc_no=acc.acc_no, term=term.term, 
+                                 start_bal=acc.bal)
+
+            # Add the term data object to session and commit.
             db.session.add(new_term)
 
             db.session.commit()
 
-    def daily_processes():
-        """
-        These processes should be exexcuted daily.
-        """
+#
+# Function no longer useful.
+#
+#     def daily_processes():
+#         """
+#         These processes should be exexcuted daily.
+#         """
+#
+#         # Commit balances for all accounts.
+#         Admin_Tools.commit_all_bal_data()
 
-        Admin_Tools.commit_all_daily_bal()
 
     def term_processes():
         """
         These processes will be executed each term. Term starts sunday, 1 week long.
         """        
 
+        # Compound all accounts at the end of term.
         Admin_Tools.commit_all_compound()
+
+        # Assemble statements for all users.
         Admin_Tools.assemble_all_statements()
+
+        # Increment the current term.
         Admin_Tools.inc_term()
 
+# Create the admin blueprint to be used for privelged actions.
 admin = Blueprint('admin', __name__)
+
 
 @admin.route('/bank_settings/', methods=['POST', 'GET'])
 @login_required
