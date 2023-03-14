@@ -1,0 +1,94 @@
+{
+    "0": [
+        "Starting balance smaller than minimum balance allowed for this account type.",
+        "danger"
+    ],
+    "1": [
+        "Account created.",
+        "info"
+    ],
+    "2": [
+        "Withdrawal error, withdrawal not processed (You likely tried to access an account that does not exist).",
+        "danger"
+    ],
+    "3": [
+        "The amount you want to withdraw is too much.",
+        "danger"
+    ],
+    "4": [
+        "Withdrawal successful.",
+        "info"
+    ],
+    "5": [
+        "Deposit error, deposit not processed (You likely tried to access an account that does not exist).",
+        "danger"
+    ],
+    "6": [
+        "Deposit successful.",
+        "info"
+    ],
+    "7": [
+        "Incorrect Password, stopped deletion of account.",
+        "danger"
+    ],
+    "8": [
+        "Transfer failed. Failed to find sending account.",
+        "danger"
+    ],
+    "9": [
+        "Transfer failed. Failed to find recieving account.",
+        "danger"
+    ],
+    "10": [
+        "Transfer failed. Recieving and sending account owners did not match.",
+        "danger"
+    ],
+    "11": [
+        "Successfully transferred balance.",
+        "info"
+    ],
+    "12": [
+        "Successfully closed account.",
+        "info"
+    ],
+    "13": [
+        "User not found.",
+        "danger"
+    ],
+    "14": [
+        "Incorrect password.",
+        "danger"
+    ],
+    "15": [
+        "Logged in successfully.",
+        "info"
+    ],
+    "16": [
+        "Username taken, please select a different username.",
+        "danger"
+    ],
+    "17": [
+        "New user account created successfully.",
+        "info"
+    ],
+    "18": [
+        "Logged out successfully.",
+        "info"
+    ],
+    "19": [
+        "You don't have permission to access that page.",
+        "danger"
+    ],
+    "20": [
+        "Bank rates altered.",
+        "info"
+    ],
+    "21": [
+        "Alert sent.",
+        "info"
+    ],
+    "22": [
+        "Message sent.",
+        "info"
+    ]
+}

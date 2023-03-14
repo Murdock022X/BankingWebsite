@@ -1,0 +1,59 @@
+{% extends "form_base.html" %}
+
+{% block content %}
+
+<h1 class="title">Admin Controls</h1>
+
+<div class="tabs">
+    <ul>
+        <li class="is-active"><a href="{{ url_for('admin.bank_settings') }}">Bank Settings</a></li>
+        <li><a href="{{ url_for('admin.send_alert') }}">Send Alert</a></li>
+        <li><a href="{{ url_for('admin.send_message') }}">Send Message</a></li>
+    </ul>
+</div>
+
+<h2 class="subtitle">Bank Settings</h2>
+
+<div class="column is-4 is-offset-4">
+    <div class="box has-background-success has-text-black">
+        <h3>Savings Account</h3>
+        <div class="box has-text-black">
+            <h4>APY: {{ rates['savings_apy'] }}</h4>
+            <h4>Minimum Balance: {{ rates['savings_min'] }}</h4>
+        </div>
+        
+        <h3>Checkings Account</h3>
+        <div class="box has-text-black">
+            <h4>APY: {{ rates['checkings_apy'] }}</h4>
+            <h4>Minimum Balance: {{ rates['checkings_min'] }}</h4>
+        </div>
+    </div>
+
+    <div class="box has-background-success has-text-centered">
+        <form method="POST" action="">
+            {{ form.csrf_token }}
+
+            <label class="label">{{ form.change_type.label }}</label>
+            <div class="field">
+                <div class="control has-text-centered">
+                    {{ form.change_type(class="select") }}
+                </div>
+            </div>
+
+            
+            <label class="label">{{ form.new_value.label }}</label>
+            <div class="field">
+                <div class="control">
+                    {{ form.new_value(class="input") }}
+                </div>
+            </div>
+            
+            <hr>
+            
+            {{ form.submit(class="button") }}
+        </form>
+    </div>
+
+</div>
+
+{% endblock %}

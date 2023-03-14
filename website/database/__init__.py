@@ -1,0 +1,1 @@
+from website.database.setup_db import setup

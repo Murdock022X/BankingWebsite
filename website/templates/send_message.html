@@ -1,0 +1,43 @@
+{% extends "form_base.html" %}
+
+{% block content %}
+
+<h1 class="title">Admin Controls</h1>
+
+<div class="tabs">
+    <ul>
+        <li><a href="{{ url_for('admin.bank_settings') }}">Bank Settings</a></li>
+        <li><a href="{{ url_for('admin.send_alert') }}">Send Alert</a></li>
+        <li class="is-active"><a href="{{ url_for('admin.send_message') }}">Send Message</a></li>
+    </ul>
+</div>
+
+<h2 class="subtitle">Send A Message To A Bank User</h2>
+
+<div class="box has-background-success">
+    <form method="POST">
+        {{ form.csrf_token }}
+
+        
+        <label class="label">{{ form.username.label }}</label>
+        <div class="field">
+            <div class="control is-half">
+                {{ form.username(class="input") }}
+            </div>
+        </div>
+
+        <label class="label">{{ form.content.label }}</label>
+        <div class="field">
+            <div class="control">
+                {{ form.content(class="textarea") }}
+            </div>
+        </div>
+
+        <hr>
+
+        {{ form.submit(class="button") }}
+
+    </form>
+</div>
+
+{% endblock %}

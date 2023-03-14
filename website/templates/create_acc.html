@@ -1,0 +1,56 @@
+{% extends "form_base.html" %}
+
+{% block content %}
+<script src=
+'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js'>
+    </script>
+
+<div class="column is-4 is-offset-4">
+    <h2 class="title">Create Account</h2>
+    <div class="box has-background-success has-text-black">
+        <h3>Savings Account</h3>
+        <div class="box has-text-black">
+            <h4>APY: {{ rates['savings_apy'] }}</h4>
+            <h4>Minimum Balance: {{ rates['savings_min'] }}</h4>
+        </div>
+        
+        <h3>Checkings Account</h3>
+        <div class="box has-text-black">
+            <h4>APY: {{ rates['checkings_apy'] }}</h4>
+            <h4>Minimum Balance: {{ rates['checkings_min'] }}</h4>
+        </div>
+    </div>
+
+    <div class="box has-background-success">
+        <form method="POST">
+            {{ form.csrf_token }}
+
+            <label class="label">{{ form.acc_type.label }}</label>
+            <div class="field">
+                <div class="control has-text-centered">
+                    {{ form.acc_type(class="select is-centered") }}
+                </div>
+
+                {% for error in form.acc_type.errors %}
+                    <span class="tag is-danger">{{ error }}</span>
+                {% endfor %}
+            </div>
+
+            <hr class="is-success">
+
+            <label class="label">{{ form.balance.label }}</label>
+            <div class="field is-success">
+                <div class="control">
+                    {{ form.balance(class="input") }}
+                </div>
+
+                {% for error in form.balance.errors %}
+                    <span class="tag is-danger">{{ error }}</span>
+                {% endfor %}
+            </div>
+
+            {{ form.submit(class="button") }}
+        </form>
+    </div>
+</div>
+{% endblock %}

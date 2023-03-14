@@ -1,0 +1,25 @@
+{% extends "form_base.html" %}
+
+{% block content %}
+
+<h1 class="title">Statements</h1>
+<div class="box has-background-success">
+    <table class="table is-fullwidth is-striped is-hoverable is-bordered">
+        <thead>
+            <tr>
+                <th><abbr title="Statement">Statement</abbr></th>
+                <th><abbr title="Statement Date">Statement Date</abbr></th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for statement in statements %}
+                <tr>
+                    <td><a href="{{ url_for('main.get_eStatement', id=statement.id) }}">{{ filenames[statement.id] }}</a></td>
+                    <td>{{ dates[statement.id] }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+{% endblock %}

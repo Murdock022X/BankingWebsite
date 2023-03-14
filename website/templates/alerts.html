@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<script src="https://kit.fontawesome.com/211e3cc0ac.js" crossorigin="anonymous"></script>
+
+<div class="tabs">
+    <ul>
+        <li class="is-active"><a href="{{ url_for('main.alerts') }}">Alerts</a></li>
+        <li><a href="{{ url_for('main.messages') }}">Messages</a></li>
+    </ul>
+</div>
+
+{% if not alerts %}
+
+<div class="box has-text-centered">
+    <section class="hero">
+        <div class="hero-body">
+            <p class="title">No Alerts</p>
+        </div>
+    </section>
+</div>
+
+{% endif %}
+
+{% for alert in alerts %}
+
+<div class="box has-background-success has-text-black">
+    <p>{{ alert['date'] }}</p>
+    <hr>
+    <p>{{ alert['content'] }}</p>
+</div>
+
+{% endfor %}
+
+{% endblock %}
