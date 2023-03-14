@@ -149,7 +149,8 @@ def summary():
     # attribute.
     user_accounts = []
     for acc in accs:
-        user_accounts.append(deep_format_acc(acc))
+        if acc.status:
+            user_accounts.append(deep_format_acc(acc))
         
     # Renders the html string with data.
     return render_template('summary.html', accounts=user_accounts)

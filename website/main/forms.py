@@ -1,6 +1,6 @@
 from flask_wtf import FlaskForm
 from wtforms import SelectField, DecimalField, SubmitField, StringField, \
-    IntegerField, PasswordField
+    IntegerField, PasswordField, TextAreaField
 from wtforms.validators import DataRequired, InputRequired, Length, Optional
 
 class CreateAccountForm(FlaskForm):
@@ -13,14 +13,14 @@ class CreateAccountForm(FlaskForm):
     submit = SubmitField('Create Account')
 
 class WithdrawalForm(FlaskForm):
-    description = StringField('Description', validators=[DataRequired()])
+    description = TextAreaField('Description', validators=[DataRequired()])
 
     amt = DecimalField('Amount', validators=[InputRequired()])
 
     submit = SubmitField('Withdraw')
 
 class DepositForm(FlaskForm):
-    description = StringField('Description', validators=[DataRequired()])
+    description = TextAreaField('Description', validators=[DataRequired()])
 
     amt = DecimalField('Amount', validators=[InputRequired()])
 

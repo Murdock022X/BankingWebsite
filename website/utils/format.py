@@ -32,7 +32,7 @@ def format_acc_type(num):
 def format_status(status):
     if status:
         return 'Open'
-    return 'Else'
+    return 'Closed'
 
 def format_rates(rates):
     res = {}

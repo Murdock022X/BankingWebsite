@@ -32,7 +32,7 @@ class Account_Metrics():
         self.end_bal = format_money(account.bal)
 
         self.transactions = Transactions.query.filter_by(
-            acc_no=self.acc_no).all()
+            acc_no=self.acc_no, term=self.term).all()
 
         self.withdrawal_total = 0.0
 

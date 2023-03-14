@@ -38,3 +38,17 @@ def get_statements(username):
 
 def get_statement(id):
     return Statements.query.get(id)
+
+def term_interest(apy, term_len=52):
+    """Calculate the yield over the term based on term length and apy.
+
+    Args:
+        apy (float): The apy for the account.
+        term_len (int, optional): The number of terms in a year. 
+        Defaults to 52. (52 weeks in a year)
+
+    Returns:
+        float: The term yield.
+    """    
+
+    return apy / term_len

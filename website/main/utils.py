@@ -1,6 +1,6 @@
 from website.models import Account, Transactions, Curr_Term, Term_Data, db
 import website.utils.format as format
-from datetime import date
+from datetime import datetime
 
 def create_acc(username, bal=0.0, min_bal=0.0, acc_type=0, apy=0.0):
     new_acc = Account(acc_type=acc_type, username=username, apy=apy, min_bal=min_bal, bal=bal)
@@ -58,7 +58,8 @@ def make_withdrawal(acc_no, amt, description):
 
     transaction = Transactions(acc_no=acc_no, amt=amt, start_bal=acc.bal, 
                                end_bal=acc.bal - amt, withdrawal_deposit=False,
-                               description=description, term=term)
+                               description=description, term=term, 
+                               date=datetime.now())
 
     db.session.add(transaction)
 
@@ -80,7 +81,8 @@ def make_deposit(acc_no, amt, description):
 
     transaction = Transactions(acc_no=acc_no, amt=amt, start_bal=acc.bal, 
                                end_bal=acc.bal + amt, withdrawal_deposit=True, 
-                               description=description, term=term)
+                               description=description, term=term, 
+                               date=datetime.now())
     db.session.add(transaction)
 
     acc.bal += amt
@@ -161,7 +163,7 @@ class Account_History:
         
         sz = len(transactions)
 
-        self.labels = [format.format_date_2(date.today())]
+        self.labels = [format.format_date_2(datetime.now())]
         self.values = [curr_bal]
 
         i = sz - 1
