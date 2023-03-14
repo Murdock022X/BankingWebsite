@@ -6,7 +6,6 @@ website/admin/__pycache__
 website/auth/__pycache__
 website/main/__pycache__
 website/database/__pycache__
-website/node_modules
 website/pdfs
 website/utils/__pycache__
 website/debugger.log
