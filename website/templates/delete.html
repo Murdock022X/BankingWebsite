@@ -2,35 +2,37 @@
 
 {% block content %}
 
-<div class="box has-background-success">
-    <h1 class="title">Delete Account {{ account_number }}?</h1>
-    <form method="POST">
-        {{ form.csrf_token }}
+<div class="column is-4 is-offset-4">
+    <div class="box has-background-success">
+        <h1 class="title">Close Account {{ account_number }}?</h1>
+        <form method="POST">
+            {{ form.csrf_token }}
 
-        <label class="label">{{ form.transfer_no.label }}</label>
-        <div class="field">
-            <div class="control">
-                {{ form.transfer_no(class="input") }}
+            <label class="label">{{ form.transfer_no.label }}</label>
+            <div class="field">
+                <div class="control">
+                    {{ form.transfer_no(class="input") }}
+                </div>
+
+                {% for error in form.transfer_no.errors %}
+                    <span class="tag is-danger">{{ error }}</span>
+                {% endfor %}
             </div>
+        
+            <label class="label">{{ form.password.label }}</label>
+            <div class="field has-text-centered">
+                <div class="control has-text-centered">
+                    {{ form.password(class='input') }}
+                </div>
 
-            {% for error in form.transfer_no.errors %}
-                <span class="tag is-danger">{{ error }}</span>
-            {% endfor %}
-        </div>
-    
-        <label class="label">{{ form.password.label }}</label>
-        <div class="field">
-            <div class="control">
-                {{ form.password() }}
+                {% for error in form.password.errors %}
+                    <span class="tag is-danger">{{ error }}</span>
+                {% endfor %}
             </div>
-
-            {% for error in form.password.errors %}
-                <span class="tag is-danger">{{ error }}</span>
-            {% endfor %}
-        </div>
-            
-        {{ form.submit(class="button") }}
-    </form>
+                
+            {{ form.submit(class="button") }}
+        </form>
+    </div>
 </div>
 
 {% endblock %}

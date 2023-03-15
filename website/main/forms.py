@@ -2,6 +2,7 @@ from flask_wtf import FlaskForm
 from wtforms import SelectField, DecimalField, SubmitField, StringField, \
     IntegerField, PasswordField, TextAreaField
 from wtforms.validators import DataRequired, InputRequired, Length, Optional
+from website.main.utils import account_exist
 
 class CreateAccountForm(FlaskForm):
     acc_type = SelectField('Account Type', 
@@ -27,9 +28,16 @@ class DepositForm(FlaskForm):
     submit = SubmitField('Deposit')
 
 class CloseAccountForm(FlaskForm):
-    transfer_no = IntegerField('Transfer Number', validators=[Optional()])
+    transfer_no = IntegerField('Transfer Number', validators=[Optional(), account_exist])
 
     password = PasswordField('Password', validators=[DataRequired(), 
                                                    Length(min=6, max=100)])
     
-    submit = SubmitField('Delete')
+    submit = SubmitField('Close Account')
+
+class TransferForm(FlaskForm):
+    transfer_no = IntegerField('Transfer Number', validators=[InputRequired(), account_exist])
+    
+    amt = DecimalField('Amount To Transfer', validators=[InputRequired()])
+
+    submit = SubmitField('Transfer')

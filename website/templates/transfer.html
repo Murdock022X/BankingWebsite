@@ -1,0 +1,37 @@
+{% extends "form_base.html" %}
+
+{% block content %}
+
+<div class="column is-4 is-offset-4">
+    <div class="box has-background-success">
+        <form method="POST">
+            {{ form.csrf_token }}
+
+            <label class="label">{{ form.transfer_no.label }}</label>
+            <div class="field">
+                <div class="control">
+                    {{ form.transfer_no(class='input') }}
+                </div>
+
+                {% for error in form.transfer_no.errors %}
+                    <p class="help is-danger">{{ error }}</p>
+                {% endfor %}
+            </div>
+
+            <label class="label">{{ form.amt.label }}</label>
+            <div class="field">
+                <div class="control">
+                    {{ form.amt(class='input') }}
+                </div>
+
+                {% for error in form.amt.errors %}
+                    <p class="help is-danger">{{ error }}</p>
+                {% endfor %}
+            </div>
+
+            {{ form.submit(class='button') }}
+        </form>
+    </div>
+</div>
+
+{% endblock %}

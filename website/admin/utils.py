@@ -4,6 +4,11 @@ from datetime import datetime, date
 from website.admin.pdf import Statement_Maker
 from website import db
 from website.utils.utils import term_interest
+from wtforms.validators import ValidationError
+
+def user_exists(form, field):
+    if not User.query.filter_by(username=field.data).first():
+        raise ValidationError('This user does not exist.')
 
 class Admin_Tools():
     """
@@ -11,10 +16,7 @@ class Admin_Tools():
     only be available to admins.
     """    
 
-    def __init__(self, user):
-        self.verified = user.id == 1
-
-    def modify_bank_settings(self, savings_ir = -1.0, savings_min = -1.0, checkings_ir = -1.0, checkings_min = -1.0):
+    def modify_bank_settings(savings_ir = -1.0, savings_min = -1.0, checkings_ir = -1.0, checkings_min = -1.0):
         """Changes necessary bank setting to new setting.
 
         Args:
@@ -100,6 +102,11 @@ class Admin_Tools():
             username (str): The username for the user to send to.
         """        
         
+        user = User.query.filter_by(username=username).first()
+
+        if not user:
+            return '0'
+
         # Get Current Datetime
         dt = datetime.now()
 
@@ -111,6 +118,8 @@ class Admin_Tools():
 
         db.session.commit()
 
+        return '1'
+    
 
     def assemble_all_statements():
         """

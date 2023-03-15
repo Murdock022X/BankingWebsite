@@ -19,8 +19,6 @@ def login():
         a successful post request a redirect response is sent. 
     """    
 
-    flash_offset = 13
-
     # Create the login form.
     form = LoginForm()
 
@@ -42,16 +40,16 @@ def login():
                 login_user(user)
 
                 # Flash that the user has logged in.
-                flash_codes(flash_code='2', flash_offset=flash_offset)
+                flash_codes(flash_code='2')
 
                 # Redirect to profile
                 return redirect(url_for('main.profile'))
             
             else:
-                flash_codes(flash_code='1', flash_offset=flash_offset)
+                flash_codes(flash_code='1')
 
         else:
-            flash_codes(flash_code='0', flash_offset=flash_offset)
+            flash_codes(flash_code='0')
 
     # Return the rendered template for login.html.
     return render_template('login.html', form=form)
@@ -66,8 +64,6 @@ def signup():
         a post request that isn't successful at signing up. In the case of 
         a successful post request a redirect response is sent.
     """    
-
-    flash_offset = 16
 
     # Create the signup form.
     form = SignupForm()
@@ -90,13 +86,13 @@ def signup():
 
             db.session.commit()
 
-            flash_codes(flash_code='1', flash_offset=flash_offset)
+            flash_codes(flash_code='1')
 
             # Redirect to login
             return redirect(url_for('auth.login'))
         
         else:
-            flash_codes(flash_code='0', flash_offset=flash_offset)
+            flash_codes(flash_code='0')
         
     # Return the rendered html page.
     return render_template('signup.html', form=form)
@@ -109,11 +105,11 @@ def logout():
     Returns:
         response: A redirect response to the home page.
     """    
+    
+    flash_codes()
 
     # Logout current user.
     logout_user()
-
-    flash_codes(flash_code='0', flash_offset=18)
 
     # Redirect to main.home.
     return redirect(url_for('main.home'))

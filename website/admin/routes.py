@@ -32,7 +32,7 @@ def bank_settings():
 
         db.session.commit()
 
-        flash_codes(flash_code='0', flash_offset=20)
+        flash_codes()
 
     settings = format_rates(old_rates)
 
@@ -48,7 +48,7 @@ def send_alert():
 
         Admin_Tools.commit_alert(content=form.content.data)
 
-        flash_codes(flash_code='0', flash_offset=21)
+        flash_codes()
     
     return render_template('send_alert.html', form=form)
 
@@ -60,9 +60,9 @@ def send_message():
 
     if form.validate_on_submit():
 
-        Admin_Tools.commit_message(content=form.content.data, username=form.username.data)
+        flash_code = Admin_Tools.commit_message(content=form.content.data, username=form.username.data)
 
-        flash_codes(flash_code='0', flash_offset=22)
+        flash_codes(flash_code=flash_code)
 
     return render_template('send_message.html', form=form)
 

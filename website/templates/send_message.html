@@ -17,13 +17,16 @@
 <div class="box has-background-success">
     <form method="POST">
         {{ form.csrf_token }}
-
         
         <label class="label">{{ form.username.label }}</label>
         <div class="field">
             <div class="control is-half">
                 {{ form.username(class="input") }}
             </div>
+
+            {% for error in form.username.errors %}
+                <p class="help is-danger">{{ error }}</p>
+            {% endfor %}
         </div>
 
         <label class="label">{{ form.content.label }}</label>
@@ -31,6 +34,10 @@
             <div class="control">
                 {{ form.content(class="textarea") }}
             </div>
+
+            {% for error in form.content.errors %}
+                <p class="help is-danger">{{ error }}</p>
+            {% endfor %}
         </div>
 
         <hr>

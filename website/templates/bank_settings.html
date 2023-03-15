@@ -38,6 +38,10 @@
                 <div class="control has-text-centered">
                     {{ form.change_type(class="select") }}
                 </div>
+
+                {% for error in form.change_type.errors %}
+                    <p class="help is-danger">{{ error }}</p>
+                {% endfor %}
             </div>
 
             
@@ -46,6 +50,10 @@
                 <div class="control">
                     {{ form.new_value(class="input") }}
                 </div>
+
+                {% for error in form.new_value.errors %}
+                    <p class="help is-danger">{{ error }}</p>
+                {% endfor %}
             </div>
             
             <hr>

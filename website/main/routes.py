@@ -19,9 +19,11 @@ from website.utils.utils import get_messages, get_alerts
 from pathlib import Path
 
 from website.main.forms import WithdrawalForm, DepositForm, \
-    CreateAccountForm, CloseAccountForm
+    CreateAccountForm, CloseAccountForm, TransferForm
 
 from website.utils.flash_codes import flash_codes
+
+from website.main.utils import transfer
 
 # Create the main blueprint route
 main = Blueprint('main', __name__)
@@ -91,8 +93,6 @@ def create_account():
         account creation.
     """    
 
-    flash_offset = 0
-
     # Get the rates to display for both account types.
     rates = Bank_Settings.query.get(1)
     
@@ -112,7 +112,7 @@ def create_account():
         # Flash a message if the requested starting bal is smaller 
         # than the min bal allowed on the account.
         if form.balance.data < min_bal:
-            flash_codes(flash_code='0', flash_offset=flash_offset)
+            flash_codes(flash_code='0')
 
         # Ready for account creation.
         else:
@@ -121,7 +121,7 @@ def create_account():
                        min_bal=min_bal, apy=apy, acc_type=form.acc_type.data)
 
             # Flash account creation message.
-            flash_codes(flash_code='1', flash_offset=flash_offset)
+            flash_codes(flash_code='1')
 
             # Return redirection response to view accounts endpoint.
             return redirect(url_for('main.view_accounts'))
@@ -170,8 +170,6 @@ def withdraw(acc_no):
         a successful post request a redirect response is sent.
     """    
 
-    flash_offset = 2
-
     # Create the account withdrawal form.
     form = WithdrawalForm()
 
@@ -184,11 +182,11 @@ def withdraw(acc_no):
         
         # Withdrawal failed.
         if flash_code == '0' or flash_code == '1':
-            flash_codes(flash_code=flash_code, flash_offset=flash_offset)
+            flash_codes(flash_code=flash_code)
 
         # Return the redirect response to view accounts.
         else:
-            flash_codes(flash_code=flash_code, flash_offset=flash_offset)
+            flash_codes(flash_code=flash_code)
             return redirect(url_for('main.view_accounts'))
 
     return render_template('withdraw.html', form=form)
@@ -208,8 +206,6 @@ def deposit(acc_no):
         a successful post request a redirect response is sent.
     """   
 
-    flash_offset = 5
-
     # Create the deposit form. 
     form = DepositForm()
 
@@ -221,10 +217,10 @@ def deposit(acc_no):
                                         description=form.description.data)
 
         if flash_code == '0':
-            flash_codes(flash_code=flash_code, flash_offset=flash_offset)
+            flash_codes(flash_code=flash_code)
 
         else:
-            flash_codes(flash_code=flash_code, flash_offset=flash_offset)
+            flash_codes(flash_code=flash_code)
             
             # Return a redirect response to the view accounts page.
             return redirect(url_for('main.view_accounts'))
@@ -245,9 +241,7 @@ def close_account(acc_no):
         str/response: Returns an html string in the case of a get request or 
         a post request that isn't successful at deleting. In the case of 
         a successful post request a redirect response is sent.
-    """    
-
-    flash_offset = 7
+    """
 
     # Create the delete account form.
     form = CloseAccountForm()
@@ -274,7 +268,7 @@ def close_account(acc_no):
 
                 # Increment flash offset by one because first error code
                 # for the function is password error.
-                flash_codes(flash_code=transfer_code, flash_offset=flash_offset + 1)
+                flash_codes(flash_code=transfer_code)
             
             if transfer_code == '4':
                 acc = Account.query.get(acc_no)
@@ -284,13 +278,13 @@ def close_account(acc_no):
                 db.session.commit()
 
                 # Success.
-                flash_codes(flash_code='5', flash_offset=flash_offset)
+                flash_codes(flash_code='5')
 
                 # Return redirect response to view accounts.
                 return redirect(url_for('main.view_accounts'))
 
         else:
-            flash_codes(flash_code='0', flash_offset=flash_offset)
+            flash_codes(flash_code='0')
 
     # Return the rendered html string with the data inserted.
     return render_template('delete.html', account_number=format_acc_no(acc_no), form=form)
@@ -471,3 +465,17 @@ def account_graph_data(acc_no):
 
     # Return with "labels" and "values".
     return {"labels": acc_hist.labels, "values": acc_hist.values}
+
+
+@main.route('/<int:acc_no>/transfer/')
+@login_required
+def transfer_route(acc_no):
+    form = TransferForm()
+
+    if form.validate_on_submit():
+
+        transfer(acc_no=acc_no, transfer_no=form.transfer_no.data, )
+
+        return redirect(url_for('main.view_accounts'))
+
+    return render_template('transfer.html', form=form)

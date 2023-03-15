@@ -1,6 +1,7 @@
 from website.models import Account, Transactions, Curr_Term, Term_Data, db
 import website.utils.format as format
 from datetime import datetime
+from wtforms.validators import ValidationError
 
 def create_acc(username, bal=0.0, min_bal=0.0, acc_type=0, apy=0.0):
     new_acc = Account(acc_type=acc_type, username=username, apy=apy, min_bal=min_bal, bal=bal)
@@ -153,6 +154,11 @@ def transfer(acc_no, transfer_no, description, amt=0.0, deletion=False):
 
     # Success code.
     return '4'
+
+
+def account_exist(form, field):
+    if not Account.query.get(int(field.data)):
+        raise ValidationError('This Account Does Not Exist.')
 
 class Account_History:
 

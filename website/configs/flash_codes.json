@@ -1,94 +1,120 @@
 {
-    "0": [
-        "Starting balance smaller than minimum balance allowed for this account type.",
-        "danger"
-    ],
-    "1": [
-        "Account created.",
-        "info"
-    ],
-    "2": [
-        "Withdrawal error, withdrawal not processed (You likely tried to access an account that does not exist).",
-        "danger"
-    ],
-    "3": [
-        "The amount you want to withdraw is too much.",
-        "danger"
-    ],
-    "4": [
-        "Withdrawal successful.",
-        "info"
-    ],
-    "5": [
-        "Deposit error, deposit not processed (You likely tried to access an account that does not exist).",
-        "danger"
-    ],
-    "6": [
-        "Deposit successful.",
-        "info"
-    ],
-    "7": [
-        "Incorrect Password, stopped deletion of account.",
-        "danger"
-    ],
-    "8": [
-        "Transfer failed. Failed to find sending account.",
-        "danger"
-    ],
-    "9": [
-        "Transfer failed. Failed to find recieving account.",
-        "danger"
-    ],
-    "10": [
-        "Transfer failed. Recieving and sending account owners did not match.",
-        "danger"
-    ],
-    "11": [
-        "Successfully transferred balance.",
-        "info"
-    ],
-    "12": [
-        "Successfully closed account.",
-        "info"
-    ],
-    "13": [
-        "User not found.",
-        "danger"
-    ],
-    "14": [
-        "Incorrect password.",
-        "danger"
-    ],
-    "15": [
-        "Logged in successfully.",
-        "info"
-    ],
-    "16": [
-        "Username taken, please select a different username.",
-        "danger"
-    ],
-    "17": [
-        "New user account created successfully.",
-        "info"
-    ],
-    "18": [
-        "Logged out successfully.",
-        "info"
-    ],
-    "19": [
-        "You don't have permission to access that page.",
-        "danger"
-    ],
-    "20": [
-        "Bank rates altered.",
-        "info"
-    ],
-    "21": [
-        "Alert sent.",
-        "info"
-    ],
-    "22": [
-        "Message sent.",
-        "info"
-    ]
+    "create_account": {
+        "0": [
+            "Starting balance smaller than minimum balance allowed for this account type.",
+            "danger"
+        ],
+        "1": [
+            "Account created.",
+            "info"
+        ]
+    },
+    "withdraw": {
+        "0": [
+            "Withdrawal error, withdrawal not processed (You likely tried to access an account that does not exist).",
+            "danger"
+        ],
+        "1": [
+            "The amount you want to withdraw is too much.",
+            "danger"
+        ],
+        "2": [
+            "Withdrawal successful.",
+            "info"
+        ]
+    },
+    "deposit": {
+        "0": [
+            "Deposit error, deposit not processed (You likely tried to access an account that does not exist).",
+            "danger"
+        ],
+        "1": [
+            "Deposit successful.",
+            "info"
+        ]
+    },
+    "close_account": {
+        "0": [
+            "Incorrect Password, stopped deletion of account.",
+            "danger"
+        ],
+        "1": [
+            "Transfer failed. Failed to find sending account.",
+            "danger"
+        ],
+        "2": [
+            "Transfer failed. Failed to find recieving account.",
+            "danger"
+        ],
+        "3": [
+            "Transfer failed. Recieving and sending account owners did not match.",
+            "danger"
+        ],
+        "4": [
+            "Successfully transferred balance.",
+            "info"
+        ],
+        "5": [
+            "Successfully closed account.",
+            "info"
+        ]
+    },
+    "login": {
+        "0": [
+            "User not found.",
+            "danger"
+        ],
+        "1": [
+            "Incorrect password.",
+            "danger"
+        ],
+        "2": [
+            "Logged in successfully.",
+            "info"
+        ]
+    },
+    "signup": {
+        "0": [
+            "Username taken, please select a different username.",
+            "danger"
+        ],
+        "1": [
+            "New user account created successfully.",
+            "info"
+        ]
+    },
+    "logout": {
+        "0": [
+            "Logged out successfully.",
+            "info"
+        ]
+    },
+    "admin_only": {
+        "0": [
+            "You don't have permission to access that page.",
+            "danger"
+        ]
+    },
+    "bank_settings": {
+        "0": [
+            "Bank rates altered.",
+            "info"
+        ]
+    },
+    "send_alert": {
+        "0": [
+            "Alert sent.",
+            "info"
+        ]
+    },
+    "send_message": {
+        "0": [
+            "Could not find specified user, did not send message.",
+            "danger"
+        ],
+        "1": [
+            "Message sent.",
+            "info"
+        ]
+    }
 }
