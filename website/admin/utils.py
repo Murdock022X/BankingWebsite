@@ -5,10 +5,56 @@ from website.admin.pdf import Statement_Maker
 from website import db
 from website.utils.utils import term_interest
 from wtforms.validators import ValidationError
+from website.utils.flash_codes import flash_codes
+from functools import wraps
+from flask import redirect, url_for
+from flask_login import current_user
+
+def admin_only(f):
+    """Check that the user accessing a route is an admin.
+
+    Args:
+        f (function): The function we are trying to access.
+
+    Returns:
+        function/response: In the case of a successful check we call 
+        the function with the parameters, thus wrapping it. In the case 
+        of a failure we return a redirect to main.profile.
+    """    
+
+    # This function wraps another function.
+    @wraps(f)
+    def wrapper(*args, **kwargs):
+
+        # If the current user id is not 1 then user is not admin.
+        if current_user.id != 1:
+
+            # Flash code and redirect.
+            flash_codes(caller='admin_only')
+            return redirect(url_for('main.profile'))
+        
+        # Return the function call.
+        return f(*args, **kwargs)
+    
+    return wrapper
 
 def user_exists(form, field):
+    """Validator for wtforms. Ensures that for a given username, 
+    a user exists for that username.
+
+    Args:
+        form (FlaskForm): The given form.
+        field (wtforms.StringField): A string field from wtforms 
+        that has been filled out by user.
+
+    Raises:
+        ValidationError: Raises an error that the field is not valid if we 
+        cannot find a user in the database related to this user.
+    """    
+
     if not User.query.filter_by(username=field.data).first():
         raise ValidationError('This user does not exist.')
+    
 
 class Admin_Tools():
     """
@@ -16,7 +62,7 @@ class Admin_Tools():
     only be available to admins.
     """    
 
-    def modify_bank_settings(savings_ir = -1.0, savings_min = -1.0, checkings_ir = -1.0, checkings_min = -1.0):
+    def modify_bank_settings(new_value, change_type):
         """Changes necessary bank setting to new setting.
 
         Args:
@@ -31,23 +77,29 @@ class Admin_Tools():
         settings = Bank_Settings.query.get(1)
 
         # Update the correct interest rate or minimum balance allowed.
-        if settings.savings_ir != -1.0:
-            settings.savings_ir = savings_ir
-        if settings.savings_min != -1.0:
-            settings.savings_min = savings_min
-        if settings.checkings_ir != -1.0:
-            settings.checkings_ir = checkings_ir
-        if settings.checkings_min != -1.0:
-            settings.checkings_min = checkings_min
+        
 
         # Commit To Database
         db.session.commit()
 
+
     def compound_acc(acc):
+        """Compound the balance on an account, this should be 
+        activated at end of term. Also stores the transaction.
+
+        Args:
+            acc (Account): The account to modify with new balances.
+        """        
+
+        # Get the current term.
         term = Curr_Term.query.first().term
 
+        # Get the interest rate for the term. Term = 1 week, to keep things 
+        # simple we assume exactly 52 weeks in the year, i.e don't account 
+        # for leap years, or extra days in the 52nd week.
         dividends = acc.bal * term_interest(acc.apy)
 
+        # Create the account transaction.
         transaction = Transactions(acc_no=acc.acc_no, term=term, 
                                    start_bal=acc.bal, 
                                    end_bal=acc.bal + dividends, 
@@ -55,22 +107,29 @@ class Admin_Tools():
                                    withdrawal_deposit=True, 
                                    description='Dividend deposit.')
 
+        # Add the calculated dividends to the balance.
         acc.bal += dividends
         
+        # Add the transaction to session.
         db.session.add(transaction)
 
+        # Commit.
         db.session.commit()
+
 
     def commit_all_compound():
         """
-        Compounds the value on all accounts.
-        """        
+        Compounds the value on all accounts. Activate at end of term.
+        """    
+
+        # Get all the accounts.    
         accs = Account.query.all()
 
         # Add compound interest to account balance for each account.
         for acc in accs:
             if acc.status:
                 Admin_Tools.compound_acc(acc)
+
 
     def commit_alert(content):
         """

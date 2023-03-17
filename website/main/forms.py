@@ -40,4 +40,6 @@ class TransferForm(FlaskForm):
     
     amt = DecimalField('Amount To Transfer', validators=[InputRequired()])
 
+    description = TextAreaField('Note On Transfer', validators=[Optional()])
+
     submit = SubmitField('Transfer')

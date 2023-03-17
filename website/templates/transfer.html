@@ -29,6 +29,17 @@
                 {% endfor %}
             </div>
 
+            <label class="label">{{ form.description.label }}</label>
+            <div class="field">
+                <div class="control">
+                    {{ form.description(class='textarea') }}
+                </div>
+
+                {% for error in form.description.errors %}
+                    <p class="help is-danger">{{ error }}</p>
+                {% endfor %}
+            </div>
+
             {{ form.submit(class='button') }}
         </form>
     </div>

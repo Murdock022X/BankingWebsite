@@ -30,6 +30,7 @@
       <a href="{{ url_for('main.withdraw', acc_no=acc['acc_int']) }}" class="button is-white">Withdraw</a>
       <a href="{{ url_for('main.deposit', acc_no=acc['acc_int']) }}" class="button is-white">Deposit</a>
       <a href="{{ url_for('main.close_account', acc_no=acc['acc_int']) }}" class="button is-white">Close Account</a>
+      <a href="{{ url_for('main.transfer_route', acc_no=acc['acc_int']) }}" class="button is-white">Transfer</a>
     </div>
   </div>
   {% endfor %}
@@ -60,6 +61,7 @@
       <a href="{{ url_for('main.withdraw', acc_no=acc['acc_int']) }}" class="button is-white">Withdraw</a>
       <a href="{{ url_for('main.deposit', acc_no=acc['acc_int']) }}" class="button is-white">Deposit</a>
       <a href="{{ url_for('main.close_account', acc_no=acc['acc_int']) }}" class="button is-white">Close Account</a>
+      <a href="{{ url_for('main.transfer_route', acc_no=acc['acc_int']) }}" class="button is-white">Transfer</a>
     </div>
   </div>
   {% endfor %}

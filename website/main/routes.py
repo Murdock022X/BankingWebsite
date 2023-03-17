@@ -1,28 +1,18 @@
 from flask import Blueprint, render_template, redirect, url_for, send_file
-
 from flask_login import login_required, current_user
-
 from website.models import Account, Bank_Settings, Messages, Statements, \
     Transactions, db
-
 from website.utils.format import format_acc_no, format_rates, \
     deep_format_acc, format_date_3
-
 from werkzeug.security import check_password_hash
-
 from website.main.utils import make_withdrawal, make_deposit, \
-    checkings_savings_retrieval, get_accounts_user, transfer, create_acc, \
-    Account_History
-
+    checkings_savings_retrieval, transfer, create_acc, \
+    account_history, account_check
 from website.utils.utils import get_messages, get_alerts
-
 from pathlib import Path
-
 from website.main.forms import WithdrawalForm, DepositForm, \
     CreateAccountForm, CloseAccountForm, TransferForm
-
 from website.utils.flash_codes import flash_codes
-
 from website.main.utils import transfer
 
 # Create the main blueprint route
@@ -52,8 +42,6 @@ def profile():
     user_accounts = Account.query.filter_by(username=current_user.username)
 
     user_accounts = [deep_format_acc(acc) for acc in user_accounts]
-
-    print(user_accounts)
 
     # Passes relevant data to the template and renders.
     return render_template('profile.html', user=current_user, 
@@ -143,7 +131,7 @@ def summary():
     """    
 
     # Get accounts for this user.
-    accs = get_accounts_user(username=current_user.username)
+    accs = Account.query.filter_by(username=current_user.username)
 
     # Create a list of dictionaries with formatted data for each account 
     # attribute.
@@ -158,6 +146,7 @@ def summary():
 
 @main.route('/<int:acc_no>/withdraw/', methods=['GET', 'POST'])
 @login_required
+@account_check
 def withdraw(acc_no):
     """A page with a form to withdraw money from the selected account.
 
@@ -179,14 +168,11 @@ def withdraw(acc_no):
         # Use make_withdrawal function to make a withdrawal from the account.
         flash_code = make_withdrawal(acc_no=acc_no, amt=form.amt.data, 
                                      description=form.description.data)
-        
-        # Withdrawal failed.
-        if flash_code == '0' or flash_code == '1':
-            flash_codes(flash_code=flash_code)
+
+        flash_codes(flash_code=flash_code)
 
         # Return the redirect response to view accounts.
-        else:
-            flash_codes(flash_code=flash_code)
+        if flash_code == '2':
             return redirect(url_for('main.view_accounts'))
 
     return render_template('withdraw.html', form=form)
@@ -194,6 +180,7 @@ def withdraw(acc_no):
 
 @main.route('/<int:acc_no>/deposit/', methods=['GET', 'POST'])
 @login_required
+@account_check
 def deposit(acc_no):
     """A page with a form to deposit money into the selected account.
 
@@ -216,12 +203,9 @@ def deposit(acc_no):
         flash_code = make_deposit(acc_no=acc_no, amt=form.amt.data, 
                                         description=form.description.data)
 
-        if flash_code == '0':
-            flash_codes(flash_code=flash_code)
+        flash_codes(flash_code=flash_code)
 
-        else:
-            flash_codes(flash_code=flash_code)
-            
+        if flash_code == '1':
             # Return a redirect response to the view accounts page.
             return redirect(url_for('main.view_accounts'))
 
@@ -231,6 +215,7 @@ def deposit(acc_no):
 
 @main.route('/<int:acc_no>/close_account/', methods=['GET', 'POST'])
 @login_required
+@account_check
 def close_account(acc_no):
     """Delete the selected account, also has an option to transfer the balance on this account to another account.
 
@@ -248,37 +233,30 @@ def close_account(acc_no):
 
     # Check if the form has been validated and submitted.
     if form.validate_on_submit():
-
         # Get the stored password hash.
         hash = current_user.password
 
         # Check the entered password against the password hash.
         if check_password_hash(hash, form.password.data):
-            transfer_code = '4'
-
+            transfer_status = True
             if form.transfer_no.data:
                 # Transfer all money to a different account.
-                transfer_code = transfer(acc_no, form.transfer_no.data, 
+                transfer_status = transfer(acc_no, form.transfer_no.data, 
                                             description='Upon deletion of'
                                                 ' account ' + \
-                                                    format_acc_no(acc_no) + \
-                                                        ', funds transferred to'
+                                                    format_acc_no(acc_no) +    
+                                                    ', funds transferred to'
                                                         ' this account.', 
                                                         deletion=True)
-
-                # Increment flash offset by one because first error code
-                # for the function is password error.
-                flash_codes(flash_code=transfer_code)
             
-            if transfer_code == '4':
+            if transfer_status:
                 acc = Account.query.get(acc_no)
                 acc.close()   
 
                 # Commit our changes made in functions.
                 db.session.commit()
 
-                # Success.
-                flash_codes(flash_code='5')
+                flash_codes(flash_code='1')
 
                 # Return redirect response to view accounts.
                 return redirect(url_for('main.view_accounts'))
@@ -287,7 +265,7 @@ def close_account(acc_no):
             flash_codes(flash_code='0')
 
     # Return the rendered html string with the data inserted.
-    return render_template('delete.html', account_number=format_acc_no(acc_no), form=form)
+    return render_template('close_account.html', account_number=format_acc_no(acc_no), form=form)
 
 
 # Route removed as it was unhelpful.
@@ -341,6 +319,7 @@ def messages():
 
 @main.route('/<int:id>/delete_messages/')
 @login_required
+@account_check
 def delete_message(id):
     """Delete the selected account.
 
@@ -394,6 +373,7 @@ def view_eStatements():
 
 @main.route('/<int:id>/get_eStatement/', methods=['GET','POST'])
 @login_required
+@account_check
 def get_eStatement(id):
     """Send the file to the user for the requested statement.
 
@@ -416,6 +396,7 @@ def get_eStatement(id):
 
 @main.route('/<int:acc_no>/account_graph/')
 @login_required
+@account_check
 def account_graph(acc_no):
     """Display a graph of account history for the selected account.
 
@@ -448,6 +429,7 @@ def account_graph(acc_no):
 
 @main.route('/<int:acc_no>/account_graph_data/')
 @login_required
+@account_check
 def account_graph_data(acc_no):
     """An endpoint to be used by javascript to retrieve balance data 
     associated with the account. Data is serialized into json format.
@@ -461,21 +443,44 @@ def account_graph_data(acc_no):
     """    
 
     # Retrieve balance data.
-    acc_hist = Account_History(acc_no)
+    labels, values = account_history(acc_no)
 
     # Return with "labels" and "values".
-    return {"labels": acc_hist.labels, "values": acc_hist.values}
+    return {"labels": labels, "values": values}
 
 
-@main.route('/<int:acc_no>/transfer/')
+@main.route('/<int:acc_no>/transfer/', methods=['GET', 'POST'])
 @login_required
+@account_check
 def transfer_route(acc_no):
+    """Transfer the amount requested from the account for this page to the 
+    requested transfer number.
+
+    Args:
+        acc_no (int): The current account to transfer from.
+
+    Returns:
+        str/response: Returns the html string in the case of a get request. 
+        In the case of a validated post request, we return a redirect to 
+        the view 'main.view_accounts'.
+    """    
+
+    # Initialize the transfer form.
     form = TransferForm()
 
+    # Check if we have a validated submission.
     if form.validate_on_submit():
 
-        transfer(acc_no=acc_no, transfer_no=form.transfer_no.data, )
-
-        return redirect(url_for('main.view_accounts'))
+        # Attempt to transfer the requested amount.
+        transfer_status = transfer(acc_no=acc_no, 
+                              transfer_no=int(form.transfer_no.data), 
+                              description=str(form.description.data), 
+                              amt=float(form.amt.data))
+        
+        # If transfer is succesful commit session and redirect to 
+        # main.view_accounts.
+        if transfer_status:
+            db.session.commit()
+            return redirect(url_for('main.view_accounts'))
 
     return render_template('transfer.html', form=form)

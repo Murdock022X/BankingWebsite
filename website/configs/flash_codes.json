@@ -39,22 +39,6 @@
             "danger"
         ],
         "1": [
-            "Transfer failed. Failed to find sending account.",
-            "danger"
-        ],
-        "2": [
-            "Transfer failed. Failed to find recieving account.",
-            "danger"
-        ],
-        "3": [
-            "Transfer failed. Recieving and sending account owners did not match.",
-            "danger"
-        ],
-        "4": [
-            "Successfully transferred balance.",
-            "info"
-        ],
-        "5": [
             "Successfully closed account.",
             "info"
         ]
@@ -115,6 +99,49 @@
         "1": [
             "Message sent.",
             "info"
+        ]
+    },
+    "transfer": {
+        "0": [
+            "Transfer failed. Failed to find sending account.",
+            "danger"
+        ],
+        "1": [
+            "Transfer failed. Failed to find recieving account.",
+            "danger"
+        ],
+        "2": [
+            "Transfer failed. The recieving account is not open."
+        ],
+        "3": [
+            "Transfer failed. Recieving and sending account owners did not match.",
+            "danger"
+        ],
+        "4": [
+            "Transfer failed. This transfer would leave this account below the minimum balance.",
+            "danger"
+        ],
+        "5": [
+            "Successfully transferred balance.",
+            "info"
+        ]
+    },
+    "account_check": {
+        "0": [
+            "That account does not exist.",
+            "danger"
+        ],
+        "1": [
+            "You need to login to access accounts.",
+            "danger"
+        ],
+        "2": [
+            "You don't have permission to access that account.",
+            "danger"
+        ],
+        "3": [
+            "That account is not open.",
+            "danger"
         ]
     }
 }

@@ -17,35 +17,37 @@ class Account_Metrics():
 
         Args:
             account (Account): Current Term
-            term (int): The current term.
         """        
         
-        # Get Total Balance for all accounts.
+        # Set the account number that we are getting metrics for.
         self.acc_no = account.acc_no
 
-        self.term = term
-
+        # Get the starting balance we had at the beginning of the term 
+        # and format.
         self.start_bal = format_money(
             Term_Data.query.filter_by(acc_no=self.acc_no, 
                                       term=term).first().start_bal)
 
+        # Get the ending balance for the term and format it.
         self.end_bal = format_money(account.bal)
 
+        # Get all transactions for this account over this period.
         self.transactions = Transactions.query.filter_by(
             acc_no=self.acc_no, term=self.term).all()
 
+        # Get the total amount withdrawed and deposited over this period.
         self.withdrawal_total = 0.0
-
         self.deposit_total = 0.0
-
         for transaction in self.transactions:
             if transaction.withdrawal_deposit:
                 self.deposit_total += transaction.amt
             else:
                 self.withdrawal_total += transaction.amt
 
+        # Format those amounts.
         self.withdrawal_total = format_money(self.withdrawal_total)
         self.deposit_total = format_money(self.deposit_total)
+
 
 class Statement_Data():
     """
@@ -67,16 +69,22 @@ class Statement_Data():
         # Store name of user.
         self.name = User.query.filter_by(username=username).first().name
 
+        # Get what term this is.
         self.term = Curr_Term.query.all()[0].term
 
         # Get all accounts associated with user.
         self.accounts = Account.query.filter_by(username=username).all()
 
+        # Get the total amount saved in all checkings and 
+        # savings for this user.
         self.savings_total = 0.0
         self.checkings_total = 0.0
 
         # Get account metrics object for each account.
         self.acc_metrics = {}
+
+        # Iterate over accounts at the same time to get the 3 
+        # above data points. Map account number to the account metrics object.
         for acc in self.accounts:
             if acc.acc_type == 0:
                 self.savings_total += acc.bal
@@ -85,11 +93,13 @@ class Statement_Data():
 
             self.acc_metrics[acc.acc_no] = Account_Metrics(acc, self.term)
 
+        # Format totals into monetary strings.
         self.savings_total = format_money(self.savings_total)
-
         self.checkings_total = format_money(self.checkings_total)
 
+        # Format the date for the statement.
         self.date = format_date_3(date.today())
+
 
     def get_acc_metrics(self):
         """
@@ -100,7 +110,9 @@ class Statement_Data():
             with the username. 
         """     
 
+        # Get the map from accounts to account metrics object.
         return self.acc_metrics
+
 
 class Statement_Maker():
     """
@@ -119,6 +131,7 @@ class Statement_Maker():
         # Store username
         self.username = username
 
+        # Create and store statement data object for user.
         self.state_data = Statement_Data(username=username)
 
         # Get the project root pth.
@@ -137,26 +150,22 @@ class Statement_Maker():
         # Get the full path of the file. PDF data is now ready to write.
         self.pth = dir_pth / Path(name)
 
+        # Create the pdf and fill in the fields.
         self.pdf = PDF(self.state_data, self.project_root)
-        
         self.pdf.add_page()
-
         self.pdf.set_title('Statement For ' + self.state_data.date)
-
         self.pdf.set_author('henrymurdockbanking.me')
-
         self.pdf.overview()
-
         self.pdf.acc_summary()
-
         self.pdf.account_transactions()
+
 
     def write(self):
         """
         Outputs the pdf to the file path.
         """
 
-        # Write the pdf data.
+        # Write the pdf data to path.
         self.pdf.output(self.pth)
 
 class PDF(FPDF):
@@ -166,34 +175,48 @@ class PDF(FPDF):
         My pdf class inheriting from FPDF. Used to write e-statements.
 
         Args:
-            state_data (Statement_Data): Statement_Data object defined in 
-            admin.py, contains information required to make e-statement.
+            state_data (Statement_Data): Statement_Data object,
+            contains information required to make e-statement.
             project_root (Path): The path to the root of the project.
         """    
 
+        # Inherit FPDF class
         FPDF.__init__(self)
+
+        # Store state data
         self.state_data = state_data
+
+        # Store project root.
         self.project_root = project_root
+
 
     def header(self):
         """
         Write the header on every page of the pdf statement.
         """           
 
+        # Set font.
         self.set_font('Helvetica', 'B', 20)
 
+        # Store current y value of the cursor.
         y = self.get_y()
 
+        # Insert the icon for the website into the pdf.
         self.image(self.project_root / Path('static/favicon.ico'), w=15, h=15)
 
+        # Get the string width for cell we are about to make.
         w = self.get_string_width('Statement For ' + self.state_data.date)
 
+        # Set the y value to be 5 lower on the page.
         self.set_y(y + 5)
 
+        # Set the x value so that the cell is centered.
         self.set_x((210 - w) / 2)
 
+        # Create the title cell with date.
         self.cell(w=w + 6, h=10, txt='Statement For ' + self.state_data.date, 
                   border='B', ln=1, align='C')
+
 
     def overview(self, y_start = 30.0):
         """
@@ -203,35 +226,49 @@ class PDF(FPDF):
         Args:
             y_start (float, optional): The starting y position for 
             the overview. Defaults to 30.0.
-        """                      
+        """    
+
+        # Set the font.                  
         self.set_font('Helvetica', '', 12)
 
+        # Set the y value to y start.
         self.set_y(y_start)
 
+        # Create a cell with the name of who the statement is for.
         self.cell(w=100, h=5, txt='Name: ' + self.state_data.name, 
                   ln=1, align='L')
 
+        # Create a cell with the total amount the user has in theirs
+        # savings accounts.
         self.cell(w=100, h=5, 
                   txt='Savings Total: ' + self.state_data.savings_total, 
                   ln=1, align='L')
 
+        # Create a cell with the total amount the user has in theirs
+        # checkings accounts.
         self.cell(w=100, h=5, 
                   txt='Checkings Total: ' + self.state_data.checkings_total, 
                   ln=0, align='L')
 
+        # Break line space of 15mm.
         self.ln(15)
 
     def acc_summary(self):
         """
         Creates an overview of accounts, shows starting and ending balance 
         for this term as well as total deposits and withdrawals.
-        """        
+        """
+
+        # Set font.   
         self.set_font('Helvetica', '', 12)
 
         self.cell(w=190, h=5, txt='Accounts Summary', ln=0, align='C')
 
+        # Linespace 10mm.
         self.ln(10)
 
+        # Create overview header for table. 
+        # Account | Starting Balance | Withdrawals | Deposits | Ending Balance
         x = 10.0
         self.cell(w=36, h=5, txt='Account', border='B', ln=0, align='C')
 
@@ -252,12 +289,15 @@ class PDF(FPDF):
         self.set_x(x)
         self.cell(w=36, h=5, txt='Ending Balance', border='B', ln=0, align='C')
 
+        # Line spacing of 10mm.
         self.ln(10)
 
-        pg = 0
-
+        # Set font to be smaller for table cells.
         self.set_font('Helvetica', '', 10)
 
+        # Iterate over each account in statement data. Get relevant data for 
+        # fields defined in header above and fill in a row with those values 
+        # inline with the headers.
         for acc in self.state_data.accounts:
             acc_type = 'Savings'
             if acc.acc_type == 1:
@@ -298,6 +338,7 @@ class PDF(FPDF):
             
             self.ln(10)
 
+        # End block break 15mm.
         self.ln(15)
 
     def account_transactions(self):
@@ -411,6 +452,7 @@ class PDF(FPDF):
 
                 cnt += 1
 
+            # Line break 5mm.
             self.ln(5)
 
                 

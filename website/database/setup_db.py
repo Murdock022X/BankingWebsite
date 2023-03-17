@@ -3,7 +3,7 @@ from website import create_app, models
 
 def setup():
     """
-    Sets up the database for the app with some baseline data.
+    Sets up the database for the app with some default data.
     """    
 
     app = create_app()

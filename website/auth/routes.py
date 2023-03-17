@@ -46,12 +46,13 @@ def login():
                 return redirect(url_for('main.profile'))
             
             else:
+                # Flash code for password fail.
                 flash_codes(flash_code='1')
 
         else:
+            # Flash code for user not found.
             flash_codes(flash_code='0')
 
-    # Return the rendered template for login.html.
     return render_template('login.html', form=form)
 
 
@@ -73,8 +74,6 @@ def signup():
 
         # Query for other users with same username.
         check_users = User.query.filter_by(username=form.username.data).first()
-
-        # Good to continue if no other users with this username
         if not check_users:
 
             # Generate password hash and create new User entry
@@ -86,15 +85,16 @@ def signup():
 
             db.session.commit()
 
+            # Flash success message.
             flash_codes(flash_code='1')
 
-            # Redirect to login
+            # Redirect to login.
             return redirect(url_for('auth.login'))
         
         else:
+            # Flash username taken.
             flash_codes(flash_code='0')
         
-    # Return the rendered html page.
     return render_template('signup.html', form=form)
 
 @auth.route('/logout')
@@ -108,8 +108,6 @@ def logout():
     
     flash_codes()
 
-    # Logout current user.
     logout_user()
 
-    # Redirect to main.home.
     return redirect(url_for('main.home'))
