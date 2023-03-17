@@ -4,8 +4,7 @@ from flask_login import login_required
 from website.utils.format import format_rates
 from website.admin.forms import BankSettingsForm, SendAlertForm, SendMessageForm
 from website.utils.flash_codes import flash_codes
-from website.utils.admin_only import admin_only
-from website.admin.utils import Admin_Tools
+from website.admin.utils import Admin_Tools, admin_only
 
 # Create the admin blueprint to be used for privelged actions.
 admin = Blueprint('admin', __name__)
