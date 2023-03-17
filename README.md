@@ -1,6 +1,6 @@
 # Banking Website
 
-# [See The Project Live](https://henrymurdockbanking.me/)
+## [See The Project Live](https://henrymurdockbanking.me/)
 
 ## Project Description
 This project is an attempt to recreate a simple banking application. It is 
