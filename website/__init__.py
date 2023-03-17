@@ -5,6 +5,7 @@ import json
 import os
 from pathlib import Path
 
+# Initialize the login manager and Sqlalchemy database.
 db = SQLAlchemy()
 
 login_manager = LoginManager()
@@ -12,6 +13,12 @@ login_manager.login_view = 'auth.login'
 login_manager.login_message_category = "danger"
 
 def create_app():
+    """Create the instance of our flask app, setting up relevant 
+    configurations, login manager, database uri, and flask blueprints.
+
+    Returns:
+        Flask: The flask app instance that is created.
+    """    
     app = Flask(__name__)
     
     # Store path to project root.
@@ -33,6 +40,7 @@ def create_app():
     app.config['FLASH_CODES'] = json.load(flash_config)
     flash_config.close()
 
+    # Initialize database and login managers to be connected to app.
     db.init_app(app=app)
     login_manager.init_app(app=app)
 
@@ -47,7 +55,5 @@ def create_app():
     # Create admin blueprint
     from website.admin.routes import admin
     app.register_blueprint(admin)
-
-    login_manager.init_app(app)
     
     return app
