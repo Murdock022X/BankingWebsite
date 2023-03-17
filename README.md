@@ -32,6 +32,7 @@ I learned to use:
   - Basic javascript syntax and how it mirrors that of JSON.
   - How to retrieve information from a url using the javascript fetch command.
   - How to serialize information from python into json format and give it to javascript.
+- PyFPDF2: A python library I used to generate the E-Statement Pdfs.
 - Json: I had not worked with json file formats before, and I became completely comfortable with the json format during this project.
 - Module structure: I learned how to make the python interpreter see folders and files as modules and submodules in python, creating an __init__ file and accessing that module.
 - Server Setup: I learned how to setup and configure a web hosting server:
