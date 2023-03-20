@@ -1,4 +1,4 @@
-# (Banking Website)[https://henrymurdockbanking.me/]
+# (https://henrymurdockbanking.me/)[Banking Website]
 
 ## Project Description
 This project is an attempt to recreate a simple banking application. It is 
