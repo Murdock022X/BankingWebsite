@@ -14,6 +14,7 @@ website. For example the project allows you to:
 
 ## What I learned
 I learned to use:
+- Git Command Line Essentials
 - Flask: This was my first exposure to web applications and flask was an excellent framework for helping me learn fundamentals including:
   - Routes
   - Get and Post
