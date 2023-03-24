@@ -13,10 +13,9 @@ website. For example the project allows you to:
 - The application also automatically generates E-Statement PDFs for your account during a term (one week).
 
 ## What I learned
-I learned to use:
 - Git Command Line Essentials
 - Flask: This was my first exposure to web applications and flask was an excellent framework for helping me learn fundamentals including:
-  - Routes
+  - Web Routes
   - Get and Post
   - Web Structure
 - Flask-Login: A flask addon module used to easily log users in and out.
