@@ -33,7 +33,7 @@ class Account_Metrics():
 
         # Get all transactions for this account over this period.
         self.transactions = Transactions.query.filter_by(
-            acc_no=self.acc_no, term=self.term).all()
+            acc_no=self.acc_no, term=term).all()
 
         # Get the total amount withdrawed and deposited over this period.
         self.withdrawal_total = 0.0
